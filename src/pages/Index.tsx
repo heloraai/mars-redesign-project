@@ -49,7 +49,7 @@ const Hero = () => (
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           Since 2009 · 17 years in Singapore
         </span>
-        <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
+        <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[64px]">
           Your EOR & HR partner across <span className="text-accent">Southeast Asia.</span>
         </h1>
         <p className="mt-6 max-w-xl text-base text-white/75 sm:text-lg">

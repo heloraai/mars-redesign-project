@@ -104,7 +104,8 @@
     font-feature-settings: "ss01", "cv11";
   }
   h1, h2, h3, h4 {
-    @apply font-display tracking-tight text-foreground;
+    @apply font-display tracking-tight;
+    color: inherit;
   }
 }
 
