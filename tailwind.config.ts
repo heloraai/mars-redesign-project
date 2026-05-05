@@ -65,8 +65,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['"Cormorant Garamond"', 'EB Garamond', 'Garamond', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
