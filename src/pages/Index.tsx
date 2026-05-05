@@ -203,10 +203,23 @@ const Hero = () => {
               <a href="#about">{t("hero.ctaSecondary")}</a>
             </Button>
           </div>
-          <div className="mt-12 grid grid-cols-3 gap-6 border-t border-white/10 pt-8 max-w-md">
-            <CountStat to={17} label={t("hero.statYears")} />
-            <CountStat to={8} label={t("hero.statMarkets")} />
-            <CountStat to={100} suffix="+" label={t("hero.statEmployers")} />
+          <div className="mt-12 flex flex-wrap items-start gap-x-12 gap-y-6 border-t border-white/10 pt-8">
+            <CountStat
+              to={17}
+              label={t("hero.statYears")}
+              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
+            />
+            <CountStat
+              to={8}
+              label={t("hero.statMarkets")}
+              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
+            />
+            <CountStat
+              to={100}
+              suffix="+"
+              label={t("hero.statEmployers")}
+              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
+            />
           </div>
         </div>
 
@@ -254,11 +267,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="absolute -bottom-5 -left-5 hidden rounded-xl border border-border bg-card p-3 shadow-card md:block">
-            <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-accent" />
-              <span className="text-xs font-medium text-foreground">{t("hero.snapshotBadge")}</span>
-            </div>
+          <div className="mt-4 inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 shadow-card">
+            <ShieldCheck className="h-4 w-4 text-accent" />
+            <span className="text-xs font-medium text-foreground">{t("hero.snapshotBadge")}</span>
           </div>
         </div>
       </div>
