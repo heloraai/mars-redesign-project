@@ -66,7 +66,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
+        display: ['"Bodoni Moda"', '"Bodoni 72"', 'Didot', 'ui-serif', 'Georgia', 'serif'],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
