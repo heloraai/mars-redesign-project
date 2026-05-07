@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { withBase } from "@/lib/href";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -16,140 +17,117 @@ const setMeta = (name: string, content: string, attr: "name" | "property" = "nam
 };
 
 const usePageMeta = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = "About Mars Consulting — Singapore HR & EOR Specialists Since 2009";
-    setMeta(
-      "description",
-      "Mars Consulting was founded in Singapore in April 2009. 17 years of HR, EOR, and executive search experience across 8 APAC markets. MOM EA Licence No. 09C2925.",
-    );
+    document.title = t("aboutPage.metaTitle");
+    setMeta("description", t("aboutPage.metaDesc"));
     return () => {
       document.title = prevTitle;
     };
-  }, []);
+  }, [t]);
 };
 
-const Hero = () => (
-  <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
-    <div
-      className="pointer-events-none absolute inset-0 opacity-[0.07]"
-      style={{
-        backgroundImage:
-          "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
-        backgroundSize: "28px 28px",
-      }}
-    />
-    <div className="pointer-events-none absolute -top-32 -left-24 h-[420px] w-[420px] rounded-full bg-accent/25 blur-3xl animate-blob-drift" />
-    <div className="container-narrow relative py-20 lg:py-28">
-      <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-white/80">
-        <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-        About Mars Consulting
-      </span>
-      <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-        Seventeen Years Building the{" "}
-        <span className="text-accent">HR Infrastructure</span> Behind Global Teams
-      </h1>
-      <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">
-        Mars Consulting was founded in Singapore in April 2009 with one conviction: that great
-        businesses are built by the right people, placed in the right roles, supported by the
-        right systems. Today we are a full-service HR partner across 8 markets — providing
-        Employer of Record, global payroll, executive search, HR outsourcing, and AI-powered
-        process automation to companies at every stage of growth.
-      </p>
-    </div>
-  </section>
-);
-
-const TIMELINE = [
-  {
-    year: "2009",
-    body:
-      "Founded in Singapore. Initially focused on permanent and contract recruitment for technology and financial services sectors. Built from day one on the principle that HR advice is only as good as the operational knowledge behind it.",
-  },
-  {
-    year: "2013",
-    body:
-      "Expanded into Business Process Outsourcing. Extended industry coverage beyond tech and finance into real estate and construction — bringing structured HR operations to sectors that historically relied on informal hiring practices.",
-  },
-  {
-    year: "2017",
-    body:
-      "Launched Employer of Record services. Expanded geographic coverage to 6+ countries across APAC, opening the capability to all industries. This marked the shift from regional recruiter to cross-border HR infrastructure provider.",
-  },
-  {
-    year: "2020",
-    body:
-      "Introduced HR Outsourcing — embedding experienced HR consultants directly within client organisations for strategic and operational work. This model allows companies to access senior HR capability without the cost of a full-time hire.",
-  },
-  {
-    year: "2026",
-    body:
-      "Launched AI Innovation practice — helping clients automate HR and business workflows through intelligent process design, WhatsApp-based automation, and embedded AI consulting teams.",
-  },
-];
-
-const Timeline = () => (
-  <section className="bg-background py-24">
-    <div className="container-narrow">
-      <div className="max-w-2xl">
-        <p className="eyebrow">Our journey</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">How we got here</h2>
+const Hero = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        style={{
+          backgroundImage:
+            "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+        }}
+      />
+      <div className="pointer-events-none absolute -top-32 -left-24 h-[420px] w-[420px] rounded-full bg-accent/25 blur-3xl animate-blob-drift" />
+      <div className="container-narrow relative py-20 lg:py-28">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-white/80">
+          <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+          {t("aboutPage.pill")}
+        </span>
+        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
+          {t("aboutPage.headlineLead")}{" "}
+          <span className="text-accent">{t("aboutPage.headlineAccent")}</span>{" "}
+          {t("aboutPage.headlineTail")}
+        </h1>
+        <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">{t("aboutPage.sub")}</p>
       </div>
-      <ol className="mt-12 space-y-6">
-        {TIMELINE.map((m) => (
-          <li
-            key={m.year}
-            className="grid gap-6 rounded-2xl border border-border bg-card p-6 shadow-card md:grid-cols-[160px_1fr] md:items-start md:gap-10 md:p-8"
-          >
-            <div className="flex items-center gap-3 md:block">
-              <span className="font-display text-4xl font-semibold text-accent">{m.year}</span>
-            </div>
-            <p className="text-base leading-relaxed text-muted-foreground">{m.body}</p>
-          </li>
-        ))}
-      </ol>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
-const Founder = () => (
-  <section className="border-t border-border bg-secondary/40 py-24">
-    <div className="container-narrow grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-start">
-      <div>
-        <p className="eyebrow">Founder</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-          Practitioner-led. Not consultant-led.
-        </h2>
+const Timeline = () => {
+  const { t } = useTranslation();
+  const items = [
+    { year: "2009", body: t("aboutPage.timeline.y2009") },
+    { year: "2013", body: t("aboutPage.timeline.y2013") },
+    { year: "2017", body: t("aboutPage.timeline.y2017") },
+    { year: "2020", body: t("aboutPage.timeline.y2020") },
+    { year: "2026", body: t("aboutPage.timeline.y2026") },
+  ];
+  return (
+    <section className="bg-background py-24">
+      <div className="container-narrow">
+        <div className="max-w-2xl">
+          <p className="eyebrow">{t("aboutPage.timeline.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.timeline.headline")}
+          </h2>
+        </div>
+        <ol className="mt-12 space-y-6">
+          {items.map((m) => (
+            <li
+              key={m.year}
+              className="grid gap-6 rounded-2xl border border-border bg-card p-6 shadow-card md:grid-cols-[160px_1fr] md:items-start md:gap-10 md:p-8"
+            >
+              <div className="flex items-center gap-3 md:block">
+                <span className="font-display text-4xl font-semibold text-accent">{m.year}</span>
+              </div>
+              <p className="text-base leading-relaxed text-muted-foreground">{m.body}</p>
+            </li>
+          ))}
+        </ol>
       </div>
-      <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
-        <p>
-          Mars Consulting was founded by{" "}
-          <span className="font-semibold text-foreground">Yuggie Wang</span>, a Singapore-based HR
-          and enterprise systems professional with deep expertise in SAP HR platforms and
-          workforce management strategy.
-        </p>
-        <p>
-          With a background spanning enterprise technology and human capital operations, Yuggie
-          built Mars Consulting on the conviction that HR advice must be grounded in operational
-          reality — that the people who understand how systems actually run are best placed to
-          design the structures that support them.
-        </p>
-        <p>
-          This philosophy shapes everything: how we scope engagements, how we staff projects, and
-          how we tell clients when a simpler solution is the right one.
-        </p>
+    </section>
+  );
+};
+
+const Founder = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-t border-border bg-secondary/40 py-24">
+      <div className="container-narrow grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-start">
+        <div>
+          <p className="eyebrow">{t("aboutPage.founder.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.founder.headline")}
+          </h2>
+        </div>
+        <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
+          <p>
+            {t("aboutPage.founder.p1Lead")}{" "}
+            <span className="font-semibold text-foreground">
+              {t("aboutPage.founder.p1Name")}
+            </span>
+            {t("aboutPage.founder.p1Tail")}
+          </p>
+          <p>{t("aboutPage.founder.p2")}</p>
+          <p>{t("aboutPage.founder.p3")}</p>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const Numbers = () => {
+  const { t } = useTranslation();
   const stats = [
-    { n: "17+", l: "Years in operation" },
-    { n: "8", l: "Markets covered" },
-    { n: "100+", l: "Expert consultants" },
-    { n: "100+", l: "Global clients" },
-    { n: "2,560+", l: "Successful placements" },
+    { n: "17+", l: t("aboutPage.numbers.years") },
+    { n: "8", l: t("aboutPage.numbers.markets") },
+    { n: "100+", l: t("aboutPage.numbers.consultants") },
+    { n: "100+", l: t("aboutPage.numbers.clients") },
+    { n: "2,560+", l: t("aboutPage.numbers.placements") },
   ];
   return (
     <section className="border-y border-border bg-background">
@@ -169,143 +147,128 @@ const Numbers = () => {
   );
 };
 
-const Licences = () => (
-  <section className="bg-background py-24">
-    <div className="container-narrow">
-      <div className="max-w-2xl">
-        <p className="eyebrow">Licences &amp; regulatory standing</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-          Licensed, regulated, and accountable
-        </h2>
-        <p className="mt-4 text-muted-foreground">
-          Mars Consulting operates under full regulatory compliance in Singapore. Our licences and
-          registrations are publicly verifiable on the MOM and ACRA registers.
-        </p>
-      </div>
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
-        <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
-          <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
-            <ShieldCheck className="h-5 w-5" />
-          </span>
-          <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
-            Ministry of Manpower (MOM)
-          </p>
-          <p className="mt-1 font-display text-xl font-semibold text-foreground">
-            Comprehensive EA Licence
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">Licence No. 09C2925</p>
-          <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
-            Employment Agency licence — authorising placement of local and foreign candidates in
-            Singapore.
-          </p>
-        </article>
-        <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
-          <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
-            <Building2 className="h-5 w-5" />
-          </span>
-          <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
-            ACRA Singapore
-          </p>
-          <p className="mt-1 font-display text-xl font-semibold text-foreground">
-            Corporate Service Provider
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Registered Filing Agent (RFA) · Registered Corporate Secretary
-          </p>
-          <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
-            Accounting and Corporate Regulatory Authority registration.
-          </p>
-        </article>
-      </div>
-      <p className="mt-8 text-sm text-muted-foreground">
-        Licence details are publicly verifiable on the MOM Employment Agency Directory and the
-        ACRA BizFile+ register.
-      </p>
-    </div>
-  </section>
-);
-
-const PRINCIPLES = [
-  {
-    title: "Honest scoping",
-    body:
-      "We tell clients when a SaaS platform is sufficient and they do not need us. We only engage where our capability adds material value over a cheaper alternative.",
-    icon: Compass,
-  },
-  {
-    title: "Operational depth",
-    body:
-      "We do not subcontract jurisdiction-specific compliance to third parties we have not worked with. Every country we operate in has an established in-country partner relationship built over years, not sourced for a single engagement.",
-    icon: Award,
-  },
-  {
-    title: "Single point of accountability",
-    body:
-      "Regardless of how many countries or services are involved, one relationship manager is accountable for the full scope of work. You do not manage a supplier network. You manage one call.",
-    icon: Users,
-  },
-];
-
-const Principles = () => (
-  <section className="border-t border-border bg-secondary/40 py-24">
-    <div className="container-narrow">
-      <div className="max-w-2xl">
-        <p className="eyebrow">What we stand for</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">How we work</h2>
-      </div>
-      <div className="mt-12 grid gap-6 md:grid-cols-3">
-        {PRINCIPLES.map((p) => {
-          const Icon = p.icon;
-          return (
-            <article
-              key={p.title}
-              className="rounded-2xl border border-border bg-card p-7 shadow-card"
-            >
-              <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary text-primary-foreground">
-                <Icon className="h-5 w-5" />
-              </span>
-              <h3 className="mt-6 font-display text-lg font-semibold text-foreground">
-                {p.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
-            </article>
-          );
-        })}
-      </div>
-    </div>
-  </section>
-);
-
-const CTABanner = () => (
-  <section className="bg-background py-24">
-    <div className="container-narrow">
-      <div className="overflow-hidden rounded-3xl border border-border bg-gradient-hero p-10 text-primary-foreground shadow-elevated lg:p-14">
-        <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-          <div>
-            <h2 className="font-display text-3xl font-semibold sm:text-4xl">
-              17 years of being the operator behind the operator
-            </h2>
-            <p className="mt-4 max-w-xl text-white/75">
-              Talk to a Singapore-licensed specialist about EOR, executive search, or AI-powered
-              HR automation across APAC.
+const Licences = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="bg-background py-24">
+      <div className="container-narrow">
+        <div className="max-w-2xl">
+          <p className="eyebrow">{t("aboutPage.licences.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.licences.headline")}
+          </h2>
+          <p className="mt-4 text-muted-foreground">{t("aboutPage.licences.body")}</p>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
+            <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
+              <ShieldCheck className="h-5 w-5" />
+            </span>
+            <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
+              {t("aboutPage.licences.momAuthority")}
             </p>
-          </div>
-          <div className="lg:justify-self-end">
-            <Button
-              asChild
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              <a href={withBase("/#contact")}>
-                Book a Call <ArrowRight />
-              </a>
-            </Button>
+            <p className="mt-1 font-display text-xl font-semibold text-foreground">
+              {t("aboutPage.licences.momLabel")}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{t("aboutPage.licences.momCode")}</p>
+            <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
+              {t("aboutPage.licences.momNote")}
+            </p>
+          </article>
+          <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
+            <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
+              <Building2 className="h-5 w-5" />
+            </span>
+            <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
+              {t("aboutPage.licences.acraAuthority")}
+            </p>
+            <p className="mt-1 font-display text-xl font-semibold text-foreground">
+              {t("aboutPage.licences.acraLabel")}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {t("aboutPage.licences.acraCode")}
+            </p>
+            <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
+              {t("aboutPage.licences.acraNote")}
+            </p>
+          </article>
+        </div>
+        <p className="mt-8 text-sm text-muted-foreground">{t("aboutPage.licences.verifiable")}</p>
+      </div>
+    </section>
+  );
+};
+
+const Principles = () => {
+  const { t } = useTranslation();
+  const items = [
+    { title: t("aboutPage.principles.honestTitle"), body: t("aboutPage.principles.honestBody"), icon: Compass },
+    { title: t("aboutPage.principles.depthTitle"), body: t("aboutPage.principles.depthBody"), icon: Award },
+    { title: t("aboutPage.principles.accountTitle"), body: t("aboutPage.principles.accountBody"), icon: Users },
+  ];
+  return (
+    <section className="border-t border-border bg-secondary/40 py-24">
+      <div className="container-narrow">
+        <div className="max-w-2xl">
+          <p className="eyebrow">{t("aboutPage.principles.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.principles.headline")}
+          </h2>
+        </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {items.map((p) => {
+            const Icon = p.icon;
+            return (
+              <article
+                key={p.title}
+                className="rounded-2xl border border-border bg-card p-7 shadow-card"
+              >
+                <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary text-primary-foreground">
+                  <Icon className="h-5 w-5" />
+                </span>
+                <h3 className="mt-6 font-display text-lg font-semibold text-foreground">
+                  {p.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+              </article>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const CTABanner = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="bg-background py-24">
+      <div className="container-narrow">
+        <div className="overflow-hidden rounded-3xl border border-border bg-gradient-hero p-10 text-primary-foreground shadow-elevated lg:p-14">
+          <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+            <div>
+              <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+                {t("aboutPage.ctaBanner.headline")}
+              </h2>
+              <p className="mt-4 max-w-xl text-white/75">{t("aboutPage.ctaBanner.body")}</p>
+            </div>
+            <div className="lg:justify-self-end">
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90"
+              >
+                <a href={withBase("/#contact")}>
+                  {t("aboutPage.ctaBanner.cta")} <ArrowRight />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 const About = () => {
   usePageMeta();

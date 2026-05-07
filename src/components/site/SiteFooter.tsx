@@ -1,29 +1,31 @@
+import { useTranslation } from "react-i18next";
 import { withBase } from "@/lib/href";
 
 export const SiteFooter = () => {
+  const { t } = useTranslation();
   const sections = [
     {
-      h: "Solutions",
+      h: t("footer.sections.solutions"),
       l: [
-        { label: "EOR & Payroll", href: "/eor" },
-        { label: "Recruitment & Executive Search", href: "/recruitment" },
-        { label: "AI Innovation", href: "/ai-innovation" },
+        { label: t("footer.links.eor"), href: "/eor" },
+        { label: t("footer.links.recruitment"), href: "/recruitment" },
+        { label: t("footer.links.aiLab"), href: "/ai-innovation" },
       ],
     },
     {
-      h: "Company",
+      h: t("footer.sections.company"),
       l: [
-        { label: "About", href: "/about" },
-        { label: "Clients", href: "/#clients" },
-        { label: "Contact", href: "/#contact" },
+        { label: t("footer.links.about"), href: "/about" },
+        { label: t("footer.links.clients"), href: "/#clients" },
+        { label: t("footer.links.contact"), href: "/#contact" },
       ],
     },
     {
-      h: "Compliance",
+      h: t("footer.sections.compliance"),
       l: [
-        { label: "MOM EA Licence 09C2925", href: "#" },
-        { label: "ACRA Filing Agent", href: "#" },
-        { label: "Privacy", href: "#" },
+        { label: t("footer.links.mom"), href: "#" },
+        { label: t("footer.links.acra"), href: "#" },
+        { label: t("footer.links.privacy"), href: "#" },
       ],
     },
   ];
@@ -37,7 +39,7 @@ export const SiteFooter = () => {
             className="h-12 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-            Singapore-licensed Employer of Record and HR services across Southeast Asia. Since 2009.
+            {t("footer.tagline")}
           </p>
         </div>
         {sections.map((c) => (
@@ -57,11 +59,11 @@ export const SiteFooter = () => {
       </div>
       <div className="container-narrow mt-12 space-y-3 border-t border-border pt-6 text-xs text-muted-foreground">
         <div className="flex flex-col items-start justify-between gap-3 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Mars Consulting Pte Ltd. All rights reserved.</p>
-          <p>Singapore · Jakarta · Ho Chi Minh City · Kuala Lumpur</p>
+          <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
+          <p>{t("footer.cities")}</p>
         </div>
         <p className="text-[11px] leading-relaxed text-muted-foreground/80">
-          MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider &amp; Registered Filing Agent  ·  Registered Corporate Secretary
+          {t("footer.compliance")}
         </p>
       </div>
     </footer>

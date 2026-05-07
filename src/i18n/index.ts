@@ -7,6 +7,7 @@ import ms from "./locales/ms";
 import id from "./locales/id";
 import hi from "./locales/hi";
 import th from "./locales/th";
+import vi from "./locales/vi";
 import fil from "./locales/fil";
 
 export const SUPPORTED_LANGUAGES = [
@@ -39,6 +40,7 @@ void i18n
       id: { translation: id },
       hi: { translation: hi },
       th: { translation: th },
+      vi: { translation: vi },
       fil: { translation: fil },
     },
     returnNull: false,

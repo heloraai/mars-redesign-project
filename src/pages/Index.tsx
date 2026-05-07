@@ -251,49 +251,18 @@ const LicenseStrip = () => {
 
 interface TwinPillar {
   id: string;
-  tag: string;
-  title: string;
-  body: string;
-  bullets: string[];
-  ctaLabel: string;
+  keyBase: "twinPillars.eor" | "twinPillars.recruitment";
   ctaHref: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
 const TWIN_PILLARS: TwinPillar[] = [
-  {
-    id: "eor",
-    tag: "Flagship",
-    title: "Employer of Record & Global Payroll",
-    body:
-      "Hire, pay, and stay compliant in Singapore and 7 other APAC markets — without setting up a local entity. We handle employment contracts, payroll, statutory filings, and offboarding from day one.",
-    bullets: [
-      "Onboarding in 5 working days",
-      "CPF, EPF, BPJS, MPF, and local tax filings handled",
-      "MOM EA Licence No. 09C2925",
-    ],
-    ctaLabel: "Explore EOR",
-    ctaHref: "/eor",
-    icon: Globe2,
-  },
-  {
-    id: "recruitment",
-    tag: "Search",
-    title: "Recruitment & Executive Search",
-    body:
-      "Permanent placement, contract staffing, and confidential C-suite search across Singapore and APAC. We source passive candidates other platforms cannot reach, then hand off directly into EOR onboarding when needed.",
-    bullets: [
-      "2,560+ successful placements since 2009",
-      "C-suite shortlist within 21-day sprint",
-      "Technology, finance, healthcare, manufacturing",
-    ],
-    ctaLabel: "Explore Recruitment",
-    ctaHref: "/recruitment",
-    icon: Users,
-  },
+  { id: "eor", keyBase: "twinPillars.eor", ctaHref: "/eor", icon: Globe2 },
+  { id: "recruitment", keyBase: "twinPillars.recruitment", ctaHref: "/recruitment", icon: Users },
 ];
 
 const TwinPillarCard = ({ p }: { p: TwinPillar }) => {
+  const { t } = useTranslation();
   const Icon = p.icon;
   return (
     <article
@@ -306,25 +275,25 @@ const TwinPillarCard = ({ p }: { p: TwinPillar }) => {
           <Icon className="h-5 w-5" />
         </span>
         <span className="rounded-full border border-border bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-          {p.tag}
+          {t(`${p.keyBase}.tag`)}
         </span>
       </div>
       <h3 className="mt-6 font-display text-2xl font-semibold leading-tight text-foreground">
-        {p.title}
+        {t(`${p.keyBase}.title`)}
       </h3>
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t(`${p.keyBase}.body`)}</p>
       <ul className="mt-5 space-y-2.5">
-        {p.bullets.map((b) => (
-          <li key={b} className="flex items-start gap-2.5 text-sm text-foreground/85">
+        {(["bullet1", "bullet2", "bullet3"] as const).map((bk) => (
+          <li key={bk} className="flex items-start gap-2.5 text-sm text-foreground/85">
             <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-            <span>{b}</span>
+            <span>{t(`${p.keyBase}.${bk}`)}</span>
           </li>
         ))}
       </ul>
       <div className="mt-auto pt-7 border-t border-border">
         <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
           <a href={withBase(p.ctaHref)}>
-            {p.ctaLabel} <ArrowRight />
+            {t(`${p.keyBase}.cta`)} <ArrowRight />
           </a>
         </Button>
       </div>
@@ -332,108 +301,99 @@ const TwinPillarCard = ({ p }: { p: TwinPillar }) => {
   );
 };
 
-const TwinPillars = () => (
-  <section className="bg-background py-24">
-    <div className="container-narrow">
-      <div className="max-w-3xl">
-        <p className="eyebrow">What we do</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-          Two things we do better than anyone else in the region.
-        </h2>
-      </div>
-      <div className="mt-12 grid gap-6 lg:grid-cols-2">
-        {TWIN_PILLARS.map((p) => (
-          <TwinPillarCard key={p.id} p={p} />
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-const FAQ_TEASER = [
-  {
-    q: "Where does Mars fit when a global EOR platform 'almost works' but breaks at jurisdiction-specific complexity?",
-    a:
-      "Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Indonesia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance.",
-  },
-  {
-    q: "How does Mars structure cross-border payroll without triggering permanent establishment exposure?",
-    a:
-      "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Vietnam, Indonesia, the Philippines, Malaysia, and Thailand — neutralising permanent establishment risk while preserving operational control over headcount, KPIs, and termination rights.",
-  },
-  {
-    q: "How does recruitment hand-off integrate with EOR onboarding to compress time-to-productivity?",
-    a:
-      "The traditional friction point in international expansion is the operational silo between talent acquisition and local HR operations. Mars resolves this by architecting a seamless recruitment and EOR onboarding handoff. The moment a candidate signs an executive offer letter, our EOR compliance engine initiates the localised onboarding sequence concurrently with the candidate's notice period — generating jurisdiction-specific employment contracts, initiating required work visa applications, and establishing localised payroll profiles. By running the recruitment close and the statutory onboarding protocols in parallel, we compress time-to-productivity.",
-  },
-];
-
-const FAQTeaser = () => (
-  <section className="border-t border-border bg-background py-24">
-    <div className="container-narrow">
-      <div className="max-w-2xl">
-        <p className="eyebrow">FAQ</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-          The questions serious buyers ask us
-        </h2>
-      </div>
-      <Accordion
-        type="single"
-        collapsible
-        className="mt-10 grid gap-3 rounded-2xl border border-border bg-card p-3 shadow-card"
-      >
-        {FAQ_TEASER.map((item, i) => (
-          <AccordionItem
-            key={i}
-            value={`faq-${i}`}
-            className="rounded-xl border border-border/70 bg-background last:border-b"
-          >
-            <AccordionTrigger className="px-5 text-left text-base font-medium text-foreground hover:no-underline">
-              {item.q}
-            </AccordionTrigger>
-            <AccordionContent className="px-5 text-sm leading-relaxed text-muted-foreground">
-              {item.a}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-      <p className="mt-6 text-sm text-muted-foreground">
-        <a href={withBase("/eor#faq")} className="font-medium text-foreground underline-offset-4 hover:underline">
-          Read all expert Q&amp;A →
-        </a>
-      </p>
-    </div>
-  </section>
-);
-
-const AIInnovationBlock = () => (
-  <section id="ai-lab" className="border-t border-border bg-background py-16">
-    <div className="container-narrow grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
-      <div className="flex items-center gap-4">
-        <span className="grid h-12 w-12 place-items-center rounded-lg bg-primary/10 text-primary">
-          <Sparkles className="h-5 w-5" />
-        </span>
-        <div>
-          <p className="eyebrow">Since 2026</p>
-          <h2 className="font-display text-2xl font-semibold text-foreground">AI Innovation</h2>
+const TwinPillars = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="bg-background py-24">
+      <div className="container-narrow">
+        <div className="max-w-3xl">
+          <p className="eyebrow">{t("twinPillars.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("twinPillars.headline")}
+          </h2>
+        </div>
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          {TWIN_PILLARS.map((p) => (
+            <TwinPillarCard key={p.id} p={p} />
+          ))}
         </div>
       </div>
-      <div>
-        <p className="text-muted-foreground">
-          We now help clients automate the HR and operational workflows behind their hires:
-          medical leave ingestion via WhatsApp, AI-driven payroll preprocessing, and embedded AI
-          consultants for teams building internal automation capabilities.
-        </p>
-        <a
-          href={withBase("/ai-innovation")}
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:underline"
+    </section>
+  );
+};
+
+const FAQTeaser = () => {
+  const { t } = useTranslation();
+  const items = (["1", "2", "3"] as const).map((i) => ({
+    q: t(`faqTeaser.q${i}`),
+    a: t(`faqTeaser.a${i}`),
+  }));
+  return (
+    <section className="border-t border-border bg-background py-24">
+      <div className="container-narrow">
+        <div className="max-w-2xl">
+          <p className="eyebrow">{t("faqTeaser.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("faqTeaser.headline")}
+          </h2>
+        </div>
+        <Accordion
+          type="single"
+          collapsible
+          className="mt-10 grid gap-3 rounded-2xl border border-border bg-card p-3 shadow-card"
         >
-          Explore AI Innovation <ArrowRight className="h-4 w-4" />
-        </a>
+          {items.map((item, i) => (
+            <AccordionItem
+              key={i}
+              value={`faq-${i}`}
+              className="rounded-xl border border-border/70 bg-background last:border-b"
+            >
+              <AccordionTrigger className="px-5 text-left text-base font-medium text-foreground hover:no-underline">
+                {item.q}
+              </AccordionTrigger>
+              <AccordionContent className="px-5 text-sm leading-relaxed text-muted-foreground">
+                {item.a}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+        <p className="mt-6 text-sm text-muted-foreground">
+          <a href={withBase("/eor#faq")} className="font-medium text-foreground underline-offset-4 hover:underline">
+            {t("faqTeaser.readAll")}
+          </a>
+        </p>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
+
+const AIInnovationBlock = () => {
+  const { t } = useTranslation();
+  return (
+    <section id="ai-lab" className="border-t border-border bg-background py-16">
+      <div className="container-narrow grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
+        <div className="flex items-center gap-4">
+          <span className="grid h-12 w-12 place-items-center rounded-lg bg-primary/10 text-primary">
+            <Sparkles className="h-5 w-5" />
+          </span>
+          <div>
+            <p className="eyebrow">{t("aiBlock.eyebrow")}</p>
+            <h2 className="font-display text-2xl font-semibold text-foreground">{t("aiBlock.title")}</h2>
+          </div>
+        </div>
+        <div>
+          <p className="text-muted-foreground">{t("aiBlock.body")}</p>
+          <a
+            href={withBase("/ai-innovation")}
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:underline"
+          >
+            {t("aiBlock.cta")} <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const LogoMarquee = () => {
   const { t } = useTranslation();
