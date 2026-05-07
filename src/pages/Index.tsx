@@ -261,7 +261,7 @@ const TrustBar = () => {
   return (
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-10">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
           <CountStat
             to={17}
             label={t("hero.statYears")}
@@ -295,17 +295,6 @@ const TrustBar = () => {
             className="font-display text-3xl font-semibold text-foreground"
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
           />
-          <div className="flex items-start gap-2.5">
-            <ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-accent" />
-            <div>
-              <p className="font-display text-base font-semibold leading-tight text-foreground">
-                09C2925
-              </p>
-              <p className="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground">
-                {t("hero.statLicence")}
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -533,28 +522,6 @@ const CountriesMap = () => {
             {t("countries.headline")}
           </h2>
           <p className="mt-5 max-w-lg text-white/70">{t("countries.body")}</p>
-          <div className="mt-8 grid grid-cols-3 gap-y-3 max-w-sm">
-            <div>
-              <p className="font-display text-2xl font-semibold text-white">
-                {t("countries.statOnboardingValue")}
-              </p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-white/55">
-                {t("countries.statOnboarding")}
-              </p>
-            </div>
-            <CountStat
-              to={0}
-              label={t("countries.statMisses")}
-              className="font-display text-2xl font-semibold text-white"
-              labelClassName="mt-1 text-xs uppercase tracking-wider text-white/55"
-            />
-            <CountStat
-              to={3}
-              label={t("countries.statLicences")}
-              className="font-display text-2xl font-semibold text-white"
-              labelClassName="mt-1 text-xs uppercase tracking-wider text-white/55"
-            />
-          </div>
         </div>
         <div className="relative aspect-[4/3] rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-elevated">
           <div
