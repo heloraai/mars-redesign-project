@@ -196,8 +196,8 @@ const ms: Translation = {
     logosNote: "· Logo pelanggan tersedia di bawah NDA atas permintaan",
   },
   testimonial: {
-    eyebrow: "Mengapa Mars",
-    headline: "17 tahun menjadi pengendali di sebalik pengendali.",
+    eyebrow: "Kisah klien",
+    headline: "Dipercayai oleh pasukan yang berkembang di seluruh APAC.",
     body:
       "Ditubuhkan di Singapura pada 2009, Mars Consulting telah berkembang dari butik pengambilan ke platform pekerjaan serantau — secara senyap menjalankan pengambilan, gaji dan pematuhan untuk syarikat AI, scale-up dan perusahaan berkaitan kerajaan di seluruh Asia Tenggara.",
     quote:

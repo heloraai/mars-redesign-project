@@ -195,8 +195,8 @@ const en = {
       "From Series-A AI startups to listed industrial groups — across technology, financial services, healthcare, and manufacturing.",
   },
   testimonial: {
-    eyebrow: "Why Mars",
-    headline: "17 years of being the operator behind the operator.",
+    eyebrow: "Client story",
+    headline: "Trusted by teams scaling across APAC.",
     body:
       "Founded in Singapore in 2009, Mars Consulting has grown from a recruiting boutique into a regional employment platform — quietly running hires, payroll and compliance for AI startups, scale-ups and government-linked enterprises across Southeast Asia.",
     quote:
