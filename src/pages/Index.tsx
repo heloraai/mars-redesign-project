@@ -41,7 +41,8 @@ const CountStat = ({
 }: CountStatProps) => {
   const { ref, inView } = useInView<HTMLDivElement>();
   const value = useCountUp({ to, start: inView });
-  const display = decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
+  const display =
+    decimals > 0 ? value.toFixed(decimals) : Math.round(value).toLocaleString("en-US");
   return (
     <div ref={ref}>
       <p className={className ?? "font-display text-2xl font-semibold text-white"}>
@@ -203,47 +204,6 @@ const Hero = () => {
               <a href="#about">{t("hero.ctaSecondary")}</a>
             </Button>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-white/10 pt-8 sm:grid-cols-3">
-            <CountStat
-              to={17}
-              label={t("hero.statYears")}
-              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
-            />
-            <CountStat
-              to={8}
-              label={t("hero.statMarkets")}
-              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
-            />
-            <CountStat
-              to={100}
-              suffix="+"
-              label={t("hero.statConsultants")}
-              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
-            />
-            <CountStat
-              to={100}
-              suffix="+"
-              label={t("hero.statClients")}
-              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
-            />
-            <CountStat
-              to={2560}
-              suffix="+"
-              label={t("hero.statPlacements")}
-              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
-            />
-            <div className="flex items-start gap-2">
-              <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-accent" />
-              <div>
-                <p className="font-display text-sm font-semibold leading-tight text-white">
-                  09C2925
-                </p>
-                <p className="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55">
-                  {t("hero.statLicence")}
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Service deliverable preview — monthly compliance snapshot */}
@@ -290,9 +250,61 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 shadow-card">
-            <ShieldCheck className="h-4 w-4 text-accent" />
-            <span className="text-xs font-medium text-foreground">{t("hero.snapshotBadge")}</span>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const TrustBar = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-y border-border bg-background">
+      <div className="container-narrow py-10">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+          <CountStat
+            to={17}
+            label={t("hero.statYears")}
+            className="font-display text-3xl font-semibold text-foreground"
+            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
+          />
+          <CountStat
+            to={8}
+            label={t("hero.statMarkets")}
+            className="font-display text-3xl font-semibold text-foreground"
+            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
+          />
+          <CountStat
+            to={100}
+            suffix="+"
+            label={t("hero.statConsultants")}
+            className="font-display text-3xl font-semibold text-foreground"
+            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
+          />
+          <CountStat
+            to={100}
+            suffix="+"
+            label={t("hero.statClients")}
+            className="font-display text-3xl font-semibold text-foreground"
+            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
+          />
+          <CountStat
+            to={2560}
+            suffix="+"
+            label={t("hero.statPlacements")}
+            className="font-display text-3xl font-semibold text-foreground"
+            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
+          />
+          <div className="flex items-start gap-2.5">
+            <ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-accent" />
+            <div>
+              <p className="font-display text-base font-semibold leading-tight text-foreground">
+                09C2925
+              </p>
+              <p className="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground">
+                {t("hero.statLicence")}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -980,6 +992,7 @@ const Index = () => (
   <main className="min-h-screen bg-background">
     <Nav />
     <Hero />
+    <TrustBar />
     <LogoMarquee />
     <LicenseStrip />
     <CountriesMap />
