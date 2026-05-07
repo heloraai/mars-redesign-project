@@ -29,6 +29,10 @@ const th: Translation = {
     snapshotPayroll: "จ่ายเงินเดือน",
     snapshotPayrollValue: "SGD 412,890 · เสร็จสิ้น",
     snapshotBadge: "3 ใบอนุญาต SG · ไม่พลาดข้อบังคับ",
+    statConsultants: "ที่ปรึกษาผู้เชี่ยวชาญ",
+    statClients: "ลูกค้าทั่วโลก",
+    statPlacements: "การจัดหาที่สำเร็จ",
+    statLicence: "ใบอนุญาต MOM EA 09C2925",
   },
   marquee: {
     label: "นายจ้างกว่า 100 ราย · ตั้งแต่ปี 2009",
@@ -237,6 +241,8 @@ const th: Translation = {
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. สงวนลิขสิทธิ์ทั้งหมด",
     cities: "สิงคโปร์ · จาการ์ตา · โฮจิมินห์ · กัวลาลัมเปอร์",
+    compliance:
+      "ใบอนุญาต MOM EA แบบครอบคลุม เลขที่ 09C2925  ·  ผู้ให้บริการนิติบุคคล ACRA และตัวแทนยื่นเอกสารที่ขึ้นทะเบียน  ·  เลขานุการบริษัทที่ขึ้นทะเบียน",
   },
 };
 

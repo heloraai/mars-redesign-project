@@ -29,6 +29,10 @@ const fil: Translation = {
     snapshotPayroll: "Payroll run",
     snapshotPayrollValue: "SGD 412,890 · natapos",
     snapshotBadge: "3 SG licences · 0 statutory misses",
+    statConsultants: "Mga eksperto na consultant",
+    statClients: "Mga global na kliyente",
+    statPlacements: "Matagumpay na placement",
+    statLicence: "MOM EA Licence 09C2925",
   },
   marquee: {
     label: "100+ employers · mula 2009",
@@ -237,6 +241,8 @@ const fil: Translation = {
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Lahat ng karapatan ay nakalaan.",
     cities: "Singapore · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    compliance:
+      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider & Registered Filing Agent  ·  Registered Corporate Secretary",
   },
 };
 

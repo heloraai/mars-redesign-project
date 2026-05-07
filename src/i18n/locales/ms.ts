@@ -29,6 +29,10 @@ const ms: Translation = {
     snapshotPayroll: "Gaji dijalankan",
     snapshotPayrollValue: "SGD 412,890 · selesai",
     snapshotBadge: "3 lesen SG · 0 terlepas statutori",
+    statConsultants: "Perunding pakar",
+    statClients: "Klien global",
+    statPlacements: "Penempatan berjaya",
+    statLicence: "Lesen MOM EA 09C2925",
   },
   marquee: {
     label: "100+ majikan · sejak 2009",
@@ -237,6 +241,8 @@ const ms: Translation = {
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Hak cipta terpelihara.",
     cities: "Singapura · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    compliance:
+      "Lesen MOM EA Komprehensif No. 09C2925  ·  Penyedia Perkhidmatan Korporat ACRA & Ejen Pemfailan Berdaftar  ·  Setiausaha Korporat Berdaftar",
   },
 };
 

@@ -203,7 +203,7 @@ const Hero = () => {
               <a href="#about">{t("hero.ctaSecondary")}</a>
             </Button>
           </div>
-          <div className="mt-12 flex flex-wrap items-start gap-x-12 gap-y-6 border-t border-white/10 pt-8">
+          <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-white/10 pt-8 sm:grid-cols-3">
             <CountStat
               to={17}
               label={t("hero.statYears")}
@@ -217,9 +217,32 @@ const Hero = () => {
             <CountStat
               to={100}
               suffix="+"
-              label={t("hero.statEmployers")}
+              label={t("hero.statConsultants")}
               labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
             />
+            <CountStat
+              to={100}
+              suffix="+"
+              label={t("hero.statClients")}
+              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
+            />
+            <CountStat
+              to={2560}
+              suffix="+"
+              label={t("hero.statPlacements")}
+              labelClassName="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55"
+            />
+            <div className="flex items-start gap-2">
+              <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-accent" />
+              <div>
+                <p className="font-display text-sm font-semibold leading-tight text-white">
+                  09C2925
+                </p>
+                <p className="mt-1 whitespace-nowrap text-xs uppercase tracking-wider text-white/55">
+                  {t("hero.statLicence")}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -741,53 +764,51 @@ const HowItWorks = () => {
   );
 };
 
+const CLIENT_LOGOS: string[] = [
+  "cd2d3a_b0677f4d0b6e48738fffd0611d7555a9mv2.png",
+  "cd2d3a_9d6afc0f1b0244dfacf4138799ef18e9mv2.png",
+  "cd2d3a_63f1981b7e9b49ee87b6bcd314258748mv2.png",
+  "cd2d3a_f866bc6db7b64948890853b22fc727ffmv2.png",
+  "cd2d3a_a15225f158514a19a64c40531e537777mv2.png",
+  "cd2d3a_7359bcf89035429dae024730477f9fc1mv2.png",
+  "cd2d3a_9081dc4a1b0944c280d6cd48655c2278mv2.png",
+  "cd2d3a_54583bb9b07e4932a5e9c8d1e1e48c7amv2.png",
+  "cd2d3a_b3af992ce69b4c58ae72386b0bcf1f37mv2.png",
+  "cd2d3a_b980eb97d2de42e295cc3c098650b177mv2.png",
+  "cd2d3a_5382acda8bb447189ac3e6b95c66f375mv2.png",
+  "cd2d3a_10fe9a1d545d4c16ae5189bf934383c2mv2.png",
+  "cd2d3a_6dd37d513261487b8a99565ba2a4d215mv2.png",
+  "acb62c_2d7c5d44efaf4dbda51f1ad53f08f5e1mv2.jpg",
+  "acb62c_de121da1b70344dba9043203bab102f9mv2.jpg",
+];
+
 const Clients = () => {
   const { t } = useTranslation();
-  const industries = [
-    "AI / ML",
-    "Tech & SaaS",
-    "Finance",
-    "Manufacturing",
-    "Retail & e-commerce",
-    "Healthcare",
-  ];
-  const engagements = [
-    { sector: "AI / ML", label: "Series-B AI co", note: "Singapore + Jakarta · 12 hires in 2025" },
-    { sector: "Tech & SaaS", label: "US scale-up", note: "Vietnam EOR · 8 engineers" },
-    { sector: "Manufacturing", label: "Listed industrial group", note: "Indonesia payroll · 60+ HC" },
-    { sector: "Finance", label: "Asia private credit fund", note: "SG hiring + secondment" },
-    { sector: "AI / ML", label: "Stealth foundation-model team", note: "SG ↔ JP confidential search" },
-    { sector: "Retail & e-commerce", label: "Cross-border DTC brand", note: "Malaysia & Thailand EOR" },
-  ];
   return (
-    <section className="bg-background py-24">
+    <section id="clients" className="border-t border-border bg-background py-24">
       <div className="container-narrow">
-        <p className="eyebrow">{t("clients.eyebrow")}</p>
-        <h2 className="mt-3 max-w-2xl font-display text-3xl font-semibold sm:text-4xl">
+        <p className="eyebrow text-center">{t("clients.eyebrow")}</p>
+        <h2 className="mx-auto mt-3 max-w-2xl text-center font-display text-3xl font-semibold sm:text-4xl">
           {t("clients.headline")}
         </h2>
-        <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {engagements.map((e) => (
-            <div key={e.label} className="rounded-xl border border-border bg-card p-5 shadow-card">
-              <p className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                {e.sector}
-              </p>
-              <p className="mt-1.5 font-display text-base font-semibold text-foreground">{e.label}</p>
-              <p className="mt-1 text-sm text-muted-foreground">{e.note}</p>
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {CLIENT_LOGOS.map((file) => (
+            <div
+              key={file}
+              className="group flex aspect-[3/2] items-center justify-center rounded-xl border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-elevated"
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}clients/${file}`}
+                alt="Mars Consulting client"
+                loading="lazy"
+                className="max-h-14 w-auto max-w-full object-contain opacity-80 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+              />
             </div>
           ))}
         </div>
-        <div className="mt-8 flex flex-wrap items-center gap-2">
-          {industries.map((i) => (
-            <span
-              key={i}
-              className="rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-foreground/80"
-            >
-              {i}
-            </span>
-          ))}
-          <span className="text-xs text-muted-foreground">{t("clients.logosNote")}</span>
-        </div>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-muted-foreground">
+          {t("clients.logosNote")}
+        </p>
       </div>
     </section>
   );
@@ -942,9 +963,14 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="container-narrow mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
-        <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
-        <p>{t("footer.cities")}</p>
+      <div className="container-narrow mt-12 space-y-3 border-t border-border pt-6 text-xs text-muted-foreground">
+        <div className="flex flex-col items-start justify-between gap-3 md:flex-row md:items-center">
+          <p>{t("footer.copyright", { year: new Date().getFullYear() })}</p>
+          <p>{t("footer.cities")}</p>
+        </div>
+        <p className="text-[11px] leading-relaxed text-muted-foreground/80">
+          {t("footer.compliance")}
+        </p>
       </div>
     </footer>
   );

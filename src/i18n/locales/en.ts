@@ -11,15 +11,19 @@ const en = {
   },
   hero: {
     pill: "Since 2009 · 17 years in Singapore",
-    headlineLead: "The EOR & HR partner for",
-    headlineAccent: "Southeast Asia's AI era.",
+    headlineLead: "17 years of being the",
+    headlineAccent: "operator behind the operator.",
     sub:
-      "Hire, pay and stay compliant in 8 APAC markets — without setting up an entity. One Singapore-licensed partner running this since 2009, now built for AI-native teams.",
-    ctaPrimary: "Book a 20-min EOR call",
-    ctaSecondary: "Why Mars",
-    statYears: "Years in Singapore",
+      "Singapore-licensed Employer of Record, executive search, and HR infrastructure across 8 APAC markets. Since 2009.",
+    ctaPrimary: "Book a Call",
+    ctaSecondary: "Explore Our Services",
+    statYears: "Years in operation",
     statMarkets: "APAC markets",
     statEmployers: "Employers served",
+    statConsultants: "Expert consultants",
+    statClients: "Global clients",
+    statPlacements: "Successful placements",
+    statLicence: "MOM EA Licence 09C2925",
     snapshotEyebrow: "Monthly compliance snapshot",
     snapshotSample: "Sample · April 2026 · Client A (anonymised)",
     snapshotStatus: "On time",
@@ -185,9 +189,10 @@ const en = {
     },
   },
   clients: {
-    eyebrow: "Working with operators across APAC",
-    headline: "From Series-A AI startups to listed manufacturers.",
-    logosNote: "· Client logos available under NDA on request",
+    eyebrow: "Our clients",
+    headline: "Trusted by companies across industries and stages",
+    logosNote:
+      "From Series-A AI startups to listed industrial groups — across technology, financial services, healthcare, and manufacturing.",
   },
   testimonial: {
     eyebrow: "Why Mars",
@@ -235,6 +240,8 @@ const en = {
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. All rights reserved.",
     cities: "Singapore · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    compliance:
+      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider & Registered Filing Agent  ·  Registered Corporate Secretary",
   },
 } as const;
 

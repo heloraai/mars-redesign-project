@@ -30,6 +30,10 @@ const hi: Translation = {
     snapshotPayroll: "पेरोल चला",
     snapshotPayrollValue: "SGD 412,890 · पूरा",
     snapshotBadge: "3 SG लाइसेंस · 0 स्टेच्यूटरी मिस",
+    statConsultants: "विशेषज्ञ सलाहकार",
+    statClients: "वैश्विक ग्राहक",
+    statPlacements: "सफल नियुक्तियाँ",
+    statLicence: "MOM EA लाइसेंस 09C2925",
   },
   marquee: {
     label: "100+ नियोक्ता · 2009 से",
@@ -238,6 +242,8 @@ const hi: Translation = {
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. सर्वाधिकार सुरक्षित।",
     cities: "सिंगापुर · जकार्ता · हो ची मिन्ह सिटी · कुआलालंपुर",
+    compliance:
+      "MOM व्यापक EA लाइसेंस सं. 09C2925  ·  ACRA कॉर्पोरेट सेवा प्रदाता और पंजीकृत फाइलिंग एजेंट  ·  पंजीकृत कॉर्पोरेट सचिव",
   },
 };
 
