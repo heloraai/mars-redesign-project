@@ -196,8 +196,8 @@ const fil: Translation = {
     logosNote: "· Available ang client logos sa ilalim ng NDA kapag hiniling",
   },
   testimonial: {
-    eyebrow: "Bakit Mars",
-    headline: "17 taon ng pagiging operator sa likod ng operator.",
+    eyebrow: "Kuwento ng kliyente",
+    headline: "Pinagkakatiwalaan ng mga koponan na lumalago sa buong APAC.",
     body:
       "Itinatag sa Singapore noong 2009, lumago ang Mars Consulting mula isang recruiting boutique tungo sa regional employment platform — tahimik na pinapatakbo ang hiring, payroll at compliance para sa AI startups, scale-ups at government-linked enterprises sa buong Southeast Asia.",
     quote:
