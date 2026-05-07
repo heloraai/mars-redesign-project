@@ -82,7 +82,7 @@ const Hero = () => {
       />
       <div className="pointer-events-none absolute -top-32 -left-24 h-[420px] w-[420px] rounded-full bg-accent/25 blur-3xl animate-blob-drift" />
       <div className="pointer-events-none absolute -bottom-24 right-0 h-[380px] w-[380px] rounded-full bg-white/10 blur-3xl animate-blob-drift [animation-delay:-7s]" />
-      <div className="container-narrow relative grid gap-12 py-20 lg:grid-cols-[1.15fr_1fr] lg:py-28">
+      <div className="container-narrow relative grid gap-12 py-20 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:py-28">
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-white/80">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
@@ -111,13 +111,13 @@ const Hero = () => {
 
         {/* Service deliverable preview — monthly compliance snapshot */}
         <div className="relative animate-fade-up [animation-delay:120ms]">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-elevated backdrop-blur-sm">
-            <div className="flex items-center justify-between pb-4">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-elevated backdrop-blur-sm">
+            <div className="flex items-start justify-between gap-4 px-1 pb-4 pt-1">
               <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-white/55">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-white/65">
                   {t("hero.snapshotEyebrow")}
                 </p>
-                <p className="mt-0.5 text-xs text-white/45">{t("hero.snapshotSample")}</p>
+                <p className="mt-1 text-xs text-white/50">{t("hero.snapshotSample")}</p>
               </div>
               <span className="rounded-full bg-accent/15 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-accent">
                 {t("hero.snapshotStatus")}
