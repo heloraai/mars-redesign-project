@@ -398,7 +398,7 @@ const FAQTeaser = () => (
         ))}
       </Accordion>
       <p className="mt-6 text-sm text-muted-foreground">
-        <a href={withBase("/#faq")} className="font-medium text-foreground underline-offset-4 hover:underline">
+        <a href={withBase("/eor#faq")} className="font-medium text-foreground underline-offset-4 hover:underline">
           Read all expert Q&amp;A →
         </a>
       </p>

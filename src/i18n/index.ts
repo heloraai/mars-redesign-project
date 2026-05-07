@@ -11,11 +11,12 @@ import fil from "./locales/fil";
 
 export const SUPPORTED_LANGUAGES = [
   { code: "en", label: "English", native: "English" },
-  { code: "ms", label: "Malay", native: "Bahasa Melayu" },
   { code: "id", label: "Indonesian", native: "Bahasa Indonesia" },
-  { code: "hi", label: "Hindi", native: "हिन्दी" },
-  { code: "th", label: "Thai", native: "ไทย" },
+  { code: "ms", label: "Malay", native: "Bahasa Melayu" },
+  { code: "th", label: "Thai", native: "ภาษาไทย" },
+  { code: "vi", label: "Vietnamese", native: "Tiếng Việt" },
   { code: "fil", label: "Filipino", native: "Filipino" },
+  { code: "hi", label: "Hindi", native: "हिन्दी" },
 ] as const;
 
 export type SupportedLanguageCode = (typeof SUPPORTED_LANGUAGES)[number]["code"];
