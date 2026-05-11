@@ -60,7 +60,7 @@ const zh: Translation = {
   },
   twinPillars: {
     eyebrow: "我们的服务",
-    headline: "两项核心能力，在区域内深耕超过十五年。",
+    headline: "两大核心能力，深耕区域超过十五年。",
     eor: {
       tag: "核心业务",
       title: "雇主记录（EOR）与全球薪资",
@@ -508,7 +508,7 @@ const zh: Translation = {
     },
     compliance: {
       eyebrow: "数据驻留与治理",
-      headline: "PDPA 合规。闭环运行。零训练数据泄露。",
+      headline: "数据不出境。闭环运行。PDPA 达标。",
       p1:
         "在人力资源领域用大模型，数据治理是硬要求。我们的 AI 架构严格运行在企业级闭环模型实例上，客户人力资源数据绝不用于基础模型训练。",
       p2:
