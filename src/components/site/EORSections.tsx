@@ -14,21 +14,21 @@ import { Button } from "@/components/ui/button";
 import { withBase } from "@/lib/href";
 
 interface CountryCoord {
-  code: "IN" | "TH" | "HK" | "VN" | "PH" | "MY" | "SG" | "ID";
+  code: "IN" | "TH" | "HK" | "CN" | "US" | "AE" | "MY" | "SG";
   payroll: string;
   x: number;
   y: number;
 }
 
 const COUNTRY_COORDS: CountryCoord[] = [
+  { code: "AE", payroll: "WPS · GPSSA", x: 4, y: 28 },
   { code: "IN", payroll: "EPF · ESI", x: 8, y: 42 },
   { code: "TH", payroll: "SSO · PIT", x: 32, y: 36 },
-  { code: "HK", payroll: "MPF", x: 62, y: 22 },
-  { code: "VN", payroll: "SI · PIT", x: 46, y: 44 },
-  { code: "PH", payroll: "SSS · PhilHealth", x: 78, y: 44 },
   { code: "MY", payroll: "EPF · SOCSO", x: 38, y: 60 },
-  { code: "SG", payroll: "CPF · IR8A", x: 44, y: 68 },
-  { code: "ID", payroll: "BPJS · PPh21", x: 52, y: 84 },
+  { code: "SG", payroll: "CPF · IR8A", x: 44, y: 70 },
+  { code: "CN", payroll: "Social Insurance", x: 58, y: 12 },
+  { code: "HK", payroll: "MPF", x: 62, y: 24 },
+  { code: "US", payroll: "FICA · State taxes", x: 90, y: 18 },
 ];
 
 export const CountriesMapSection = () => {

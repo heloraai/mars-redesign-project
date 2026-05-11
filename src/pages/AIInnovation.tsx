@@ -79,6 +79,17 @@ const Hero = () => {
             <a href="#capabilities">{t("aiPage.ctaSecondary")}</a>
           </Button>
         </div>
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          {([t("aiPage.trustBadge1"), t("aiPage.trustBadge2"), t("aiPage.trustBadge3")] as const).map((badge) => (
+            <span
+              key={badge}
+              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70"
+            >
+              <ShieldCheck className="h-3 w-3 text-accent" />
+              {badge}
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -114,8 +125,19 @@ const Capabilities = () => {
         t("aiPage.capabilities.consultants.bullet1"),
         t("aiPage.capabilities.consultants.bullet2"),
         t("aiPage.capabilities.consultants.bullet3"),
+        t("aiPage.capabilities.consultants.bullet4"),
       ],
       icon: Users,
+    },
+    {
+      title: t("aiPage.capabilities.onboarding.title"),
+      body: t("aiPage.capabilities.onboarding.body"),
+      bullets: [
+        t("aiPage.capabilities.onboarding.bullet1"),
+        t("aiPage.capabilities.onboarding.bullet2"),
+        t("aiPage.capabilities.onboarding.bullet3"),
+      ],
+      icon: CheckCircle2,
     },
   ];
   return (
@@ -173,6 +195,7 @@ const Compliance = () => {
         <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>{t("aiPage.compliance.p1")}</p>
           <p>{t("aiPage.compliance.p2")}</p>
+          <p className="font-medium text-foreground">{t("aiPage.compliance.p3")}</p>
           <div className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-card">
             <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-primary/5 text-primary">
               <ShieldCheck className="h-5 w-5" />
@@ -194,7 +217,7 @@ const Compliance = () => {
 
 const FAQ = () => {
   const { t } = useTranslation();
-  const items = (["1", "2", "3"] as const).map((i) => ({
+  const items = (["1", "2", "3", "4"] as const).map((i) => ({
     q: t(`aiPage.faq.q${i}`),
     a: t(`aiPage.faq.a${i}`),
   }));
@@ -227,6 +250,28 @@ const FAQ = () => {
             </AccordionItem>
           ))}
         </Accordion>
+      </div>
+    </section>
+  );
+};
+
+const Roadmap = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-t border-border bg-secondary/40 py-24">
+      <div className="container-narrow max-w-3xl">
+        <p className="eyebrow">{t("aiPage.roadmap.eyebrow")}</p>
+        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+          {t("aiPage.roadmap.headline")}
+        </h2>
+        <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+          {t("aiPage.roadmap.body")}
+        </p>
+        <Button asChild className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
+          <a href={withBase("/#contact")}>
+            {t("aiPage.roadmap.cta")} <ArrowRight />
+          </a>
+        </Button>
       </div>
     </section>
   );
@@ -272,6 +317,7 @@ const AIInnovation = () => {
       <Capabilities />
       <Compliance />
       <FAQ />
+      <Roadmap />
       <CTABanner />
       <SiteFooter />
     </main>

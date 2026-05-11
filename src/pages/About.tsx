@@ -64,6 +64,7 @@ const Timeline = () => {
     { year: "2013", body: t("aboutPage.timeline.y2013") },
     { year: "2017", body: t("aboutPage.timeline.y2017") },
     { year: "2020", body: t("aboutPage.timeline.y2020") },
+    { year: "2025", body: t("aboutPage.timeline.y2025") },
     { year: "2026", body: t("aboutPage.timeline.y2026") },
   ];
   return (
@@ -114,6 +115,7 @@ const Founder = () => {
           </p>
           <p>{t("aboutPage.founder.p2")}</p>
           <p>{t("aboutPage.founder.p3")}</p>
+          <p>{t("aboutPage.founder.p4")}</p>
         </div>
       </div>
     </section>
@@ -123,16 +125,15 @@ const Founder = () => {
 const Numbers = () => {
   const { t } = useTranslation();
   const stats = [
-    { n: "17+", l: t("aboutPage.numbers.years") },
+    { n: "2009", l: t("aboutPage.numbers.years") },
     { n: "8", l: t("aboutPage.numbers.markets") },
     { n: "100+", l: t("aboutPage.numbers.consultants") },
-    { n: "100+", l: t("aboutPage.numbers.clients") },
-    { n: "2,560+", l: t("aboutPage.numbers.placements") },
+    { n: "3", l: t("aboutPage.numbers.licences") },
   ];
   return (
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-12">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
           {stats.map((s) => (
             <div key={s.l}>
               <p className="font-display text-3xl font-semibold text-foreground">{s.n}</p>
@@ -159,7 +160,7 @@ const Licences = () => {
           </h2>
           <p className="mt-4 text-muted-foreground">{t("aboutPage.licences.body")}</p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
             <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
               <ShieldCheck className="h-5 w-5" />
@@ -173,6 +174,21 @@ const Licences = () => {
             <p className="mt-1 text-sm text-muted-foreground">{t("aboutPage.licences.momCode")}</p>
             <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
               {t("aboutPage.licences.momNote")}
+            </p>
+          </article>
+          <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
+            <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
+              <ShieldCheck className="h-5 w-5" />
+            </span>
+            <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
+              {t("aboutPage.licences.masAuthority")}
+            </p>
+            <p className="mt-1 font-display text-xl font-semibold text-foreground">
+              {t("aboutPage.licences.masLabel")}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{t("aboutPage.licences.masCode")}</p>
+            <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
+              {t("aboutPage.licences.masNote")}
             </p>
           </article>
           <article className="rounded-2xl border border-border bg-card p-7 shadow-card">

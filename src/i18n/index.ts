@@ -3,6 +3,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en";
+import zh from "./locales/zh";
 import ms from "./locales/ms";
 import id from "./locales/id";
 import hi from "./locales/hi";
@@ -12,6 +13,7 @@ import fil from "./locales/fil";
 
 export const SUPPORTED_LANGUAGES = [
   { code: "en", label: "English", native: "English" },
+  { code: "zh", label: "Chinese", native: "简体中文" },
   { code: "id", label: "Indonesian", native: "Bahasa Indonesia" },
   { code: "ms", label: "Malay", native: "Bahasa Melayu" },
   { code: "th", label: "Thai", native: "ภาษาไทย" },
@@ -36,6 +38,7 @@ void i18n
     },
     resources: {
       en: { translation: en },
+      zh: { translation: zh },
       ms: { translation: ms },
       id: { translation: id },
       hi: { translation: hi },

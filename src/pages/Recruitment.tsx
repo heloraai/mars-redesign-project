@@ -297,7 +297,7 @@ const Integration = () => {
 const StatsBar = () => {
   const { t } = useTranslation();
   const stats = [
-    { n: t("recruitmentPage.stats.placementsValue"), l: t("recruitmentPage.stats.placements") },
+    { n: t("recruitmentPage.stats.serviceTracksValue"), l: t("recruitmentPage.stats.serviceTracks") },
     { n: t("recruitmentPage.stats.sinceValue"), l: t("recruitmentPage.stats.since") },
     { n: t("recruitmentPage.stats.coverageValue"), l: t("recruitmentPage.stats.coverage") },
     { n: t("recruitmentPage.stats.sprintValue"), l: t("recruitmentPage.stats.sprint") },
