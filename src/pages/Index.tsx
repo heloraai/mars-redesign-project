@@ -65,10 +65,10 @@ const CountStat = ({
 const Hero = () => {
   const { t } = useTranslation();
   const snapshotRows: { country: string; ppl: string; tax: string }[] = [
-    { country: "Singapore", ppl: "42 employees", tax: "CPF · IR8A filed" },
-    { country: "Malaysia", ppl: "31 employees", tax: "EPF · SOCSO filed" },
-    { country: "Hong Kong", ppl: "24 employees", tax: "MPF filed" },
-    { country: "China", ppl: "18 employees", tax: "Social Insurance filed" },
+    { country: t("countries.name.SG"), ppl: `42 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
+    { country: t("countries.name.MY"), ppl: `31 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
+    { country: t("countries.name.HK"), ppl: `24 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
+    { country: t("countries.name.CN"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
   ];
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
