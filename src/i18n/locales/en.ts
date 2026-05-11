@@ -29,6 +29,11 @@ const en = {
     snapshotPayroll: "Payroll run",
     snapshotPayrollValue: "SGD 412,890 · cleared",
     snapshotBadge: "3 SG licences · 0 statutory misses",
+    snapshotEmployeesLabel: "employees",
+    snapshotTaxSG: "CPF · IR8A filed",
+    snapshotTaxMY: "EPF · SOCSO filed",
+    snapshotTaxHK: "MPF filed",
+    snapshotTaxCN: "Social Insurance filed",
   },
   marquee: {
     label:

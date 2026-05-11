@@ -30,6 +30,11 @@ const zh: Translation = {
     snapshotPayroll: "薪资发放",
     snapshotPayrollValue: "SGD 412,890 · 已清算",
     snapshotBadge: "3 项新加坡执照 · 0 次法定违规",
+    snapshotEmployeesLabel: "名员工",
+    snapshotTaxSG: "CPF · IR8A 已申报",
+    snapshotTaxMY: "EPF · SOCSO 已申报",
+    snapshotTaxHK: "MPF 已申报",
+    snapshotTaxCN: "社会保险 已申报",
   },
   marquee: {
     label:
