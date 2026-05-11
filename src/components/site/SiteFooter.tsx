@@ -10,6 +10,7 @@ export const SiteFooter = () => {
         { label: t("footer.links.eor"), href: "/eor" },
         { label: t("footer.links.recruitment"), href: "/recruitment" },
         { label: t("footer.links.aiLab"), href: "/ai-innovation" },
+        { label: t("footer.links.hrOutsourcing"), href: "/#contact" },
       ],
     },
     {

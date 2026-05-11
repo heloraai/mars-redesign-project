@@ -66,9 +66,9 @@ const Hero = () => {
   const { t } = useTranslation();
   const snapshotRows: { country: string; ppl: string; tax: string }[] = [
     { country: "Singapore", ppl: "42 employees", tax: "CPF · IR8A filed" },
-    { country: "Indonesia", ppl: "31 employees", tax: "BPJS · PPh21 filed" },
-    { country: "Vietnam", ppl: "24 employees", tax: "SI · PIT filed" },
-    { country: "Malaysia", ppl: "18 employees", tax: "EPF · SOCSO filed" },
+    { country: "Malaysia", ppl: "31 employees", tax: "EPF · SOCSO filed" },
+    { country: "Hong Kong", ppl: "24 employees", tax: "MPF filed" },
+    { country: "China", ppl: "18 employees", tax: "Social Insurance filed" },
   ];
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
@@ -164,9 +164,9 @@ const TrustBar = () => {
   return (
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-10">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
           <CountStat
-            to={17}
+            to={2009}
             label={t("hero.statYears")}
             className="font-display text-3xl font-semibold text-foreground"
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
@@ -184,20 +184,12 @@ const TrustBar = () => {
             className="font-display text-3xl font-semibold text-foreground"
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
           />
-          <CountStat
-            to={100}
-            suffix="+"
-            label={t("hero.statClients")}
-            className="font-display text-3xl font-semibold text-foreground"
-            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
-          />
-          <CountStat
-            to={2560}
-            suffix="+"
-            label={t("hero.statPlacements")}
-            className="font-display text-3xl font-semibold text-foreground"
-            labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
-          />
+          <div>
+            <p className="font-display text-3xl font-semibold text-foreground">09C2925</p>
+            <p className="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground">
+              {t("hero.statLicence")}
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -496,9 +488,8 @@ const Testimonial = () => {
             {t("testimonial.headline")}
           </h2>
           <p className="mt-5 max-w-lg text-white/75">{t("testimonial.body")}</p>
-          <div className="mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-8 max-w-md">
+          <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 max-w-xs">
             {[
-              { n: "100+", l: t("testimonial.statClients") },
               { n: "100+", l: t("testimonial.statConsultants") },
               { n: "3", l: t("testimonial.statLicences") },
             ].map((s) => (

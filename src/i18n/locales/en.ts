@@ -4,25 +4,22 @@ const en = {
   nav: {
     eor: "EOR & Payroll",
     recruitment: "Recruitment & Executive Search",
-    aiLab: "AI Innovation",
+    aiLab: "AI Automation",
     about: "About",
     contact: "Contact",
-    bookCall: "Book a call",
+    bookCall: "Book a Consultation",
   },
   hero: {
-    pill: "Since 2009 · 17 years in Singapore",
-    headlineLead: "17 years of being the",
-    headlineAccent: "operator behind the operator.",
+    pill: "Singapore MOM Licensed · Established since 2009",
+    headlineLead: "Hire, pay and scale teams",
+    headlineAccent: "across APAC.",
     sub:
-      "Singapore-licensed Employer of Record, executive search, and HR infrastructure across 8 APAC markets. Since 2009.",
-    ctaPrimary: "Book a Call",
-    ctaSecondary: "Explore Our Services",
-    statYears: "Years in operation",
+      "Singapore-licensed Employer of Record, executive search, and HR operations infrastructure across 8 markets — built for companies entering Asia, scaling regional teams, and managing cross-border payroll without setting up local entities.",
+    ctaPrimary: "Book a Consultation",
+    ctaSecondary: "See How It Works",
+    statYears: "Established",
     statMarkets: "APAC markets",
-    statEmployers: "Employers served",
     statConsultants: "Expert consultants",
-    statClients: "Global clients",
-    statPlacements: "Successful placements",
     statLicence: "MOM EA Licence 09C2925",
     snapshotEyebrow: "Monthly compliance snapshot",
     snapshotSample: "Sample · April 2026 · Client A (anonymised)",
@@ -34,7 +31,8 @@ const en = {
     snapshotBadge: "3 SG licences · 0 statutory misses",
   },
   marquee: {
-    label: "100+ employers · since 2009",
+    label:
+      "Singapore MOM Licensed · Established since 2009 · 8 Markets · EOR & Payroll · Recruitment · AI Automation · 100+ Consultants · MOM EA Licence 09C2925",
   },
   licenses: {
     eyebrow: "Licensed & regulated in Singapore",
@@ -50,8 +48,8 @@ const en = {
     },
     acra: {
       authority: "ACRA Singapore",
-      label: "Registered Filing Agent",
-      code: "ACRA-licensed",
+      label: "Corporate Filing Agent",
+      code: "ACRA-registered",
     },
   },
   twinPillars: {
@@ -63,7 +61,7 @@ const en = {
       body:
         "Hire, pay, and stay compliant in Singapore and 7 other APAC markets — without setting up a local entity. We handle employment contracts, payroll, statutory filings, and offboarding from day one.",
       bullet1: "Onboarding in 5 working days",
-      bullet2: "CPF, EPF, BPJS, MPF, and local tax filings handled",
+      bullet2: "CPF, EPF, MPF, and statutory filings handled in each market",
       bullet3: "MOM EA Licence No. 09C2925",
       cta: "Explore EOR",
     },
@@ -71,10 +69,10 @@ const en = {
       tag: "Search",
       title: "Recruitment & Executive Search",
       body:
-        "Permanent placement, contract staffing, and confidential C-suite search across Singapore and APAC. We source passive candidates other platforms cannot reach, then hand off directly into EOR onboarding when needed.",
-      bullet1: "2,560+ successful placements since 2009",
+        "Permanent placement, contract staffing, and confidential C-suite search across Singapore and APAC. We conduct deep market mapping to reach passive candidates, then hand off directly into EOR onboarding when needed.",
+      bullet1: "Permanent, contract, and confidential C-suite mandates",
       bullet2: "C-suite shortlist within 21-day sprint",
-      bullet3: "Technology, finance, healthcare, manufacturing",
+      bullet3: "Technology, financial services, healthcare, manufacturing",
       cta: "Explore Recruitment",
     },
   },
@@ -82,32 +80,32 @@ const en = {
     eyebrow: "Why Mars",
     headline: "Why Mars, not a global EOR platform?",
     p1:
-      "Global EOR platforms — Deel, Remote, Rippling — operate on standardised, high-volume SaaS models. They work well until they don't: equity compensation reporting across jurisdictions, non-standard termination negotiations in Indonesia, PE exposure that needs a counsel opinion before payroll cycle one.",
+      "Global EOR SaaS platforms operate on standardised, high-volume models. They work well until they don't: equity compensation reporting across jurisdictions, non-standard termination negotiations in Malaysia or China, PE exposure that needs a counsel opinion before payroll cycle one.",
     p2:
       "Mars intervenes where localised regulatory friction outpaces generic software. We replace automated workflows with bespoke governance frameworks, active in-country legal oversight, and senior-level human intervention for the edge cases that require it.",
     p3:
       "We are not cheaper than a SaaS platform. We are what you use when the cost of a compliance error exceeds the cost of our service.",
-    cta: "Talk to a specialist",
+    cta: "Talk to a Specialist",
   },
   countries: {
     eyebrow: "Coverage",
     headline:
-      "Hire compliantly across 8 APAC markets — under one Singapore contract.",
+      "Hire compliantly across 8 markets — under one Singapore contract.",
     body:
       "We've been running payroll, statutory filings and employment contracts in these markets since 2009. You stay the operator; we stay the legal employer.",
     statOnboarding: "Onboarding",
     statOnboardingValue: "5 days",
-    statMisses: "Statutory misses",
+    statMisses: "Statutory misses (since 2009)",
     statLicences: "SG licences",
     name: {
+      SG: "Singapore",
+      MY: "Malaysia",
+      HK: "Hong Kong",
+      CN: "China",
+      US: "United States",
+      AE: "United Arab Emirates",
       IN: "India",
       TH: "Thailand",
-      HK: "Hong Kong",
-      VN: "Vietnam",
-      PH: "Philippines",
-      MY: "Malaysia",
-      SG: "Singapore",
-      ID: "Indonesia",
     },
   },
   comparison: {
@@ -138,7 +136,7 @@ const en = {
         label: "Payroll & statutory filings",
         entity: "You run + file",
         contractor: "Worker self-files",
-        mars: "CPF/EPF/BPJS/MPF — we file",
+        mars: "CPF/EPF/MPF and equivalents — we file",
       },
       risk: {
         label: "Misclassification risk",
@@ -179,14 +177,14 @@ const en = {
     step4: {
       title: "We run payroll & compliance",
       desc:
-        "One monthly invoice from Mars. CPF / EPF / BPJS / MPF and equivalents filed in each market — we send you the report; you do nothing.",
+        "One monthly invoice from Mars. CPF, EPF, MPF, and equivalent statutory filings in each market — we send you the report; you do nothing.",
     },
   },
   clients: {
     eyebrow: "Our clients",
     headline: "Trusted by companies across industries and stages",
     logosNote:
-      "From Series-A AI startups to listed industrial groups — across technology, financial services, healthcare, and manufacturing.",
+      "From Series-A technology startups to listed industrial groups — across financial services, healthcare, manufacturing, and real estate in Singapore and across the region.",
   },
   faqTeaser: {
     eyebrow: "FAQ",
@@ -194,52 +192,60 @@ const en = {
     readAll: "Read all expert Q&A →",
     q1: "Where does Mars fit when a global EOR platform 'almost works' but breaks at jurisdiction-specific complexity?",
     a1:
-      "Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Indonesia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance.",
+      "Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Malaysia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance.",
     q2: "How does Mars structure cross-border payroll without triggering permanent establishment exposure?",
     a2:
-      "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Vietnam, Indonesia, the Philippines, Malaysia, and Thailand — neutralising permanent establishment risk while preserving operational control over headcount, KPIs, and termination rights.",
-    q3: "How does recruitment hand-off integrate with EOR onboarding to compress time-to-productivity?",
+      "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Malaysia, China, the United Arab Emirates, India, and Thailand — neutralising permanent establishment risk while preserving operational control over headcount, KPIs, and termination rights.",
+    q3: "How does Mars's AI automation integrate with existing HR and payroll workflows?",
     a3:
-      "The traditional friction point in international expansion is the operational silo between talent acquisition and local HR operations. Mars resolves this by architecting a seamless recruitment and EOR onboarding handoff. The moment a candidate signs an executive offer letter, our EOR compliance engine initiates the localised onboarding sequence concurrently with the candidate's notice period — generating jurisdiction-specific employment contracts, initiating required work visa applications, and establishing localised payroll profiles. By running the recruitment close and the statutory onboarding protocols in parallel, we compress time-to-productivity.",
+      "Our AI automation layer does not replace your existing HR systems — it sits upstream of them. The WhatsApp-based ingestion bot captures leave and expense data, the AI preprocessing engine converts raw operational inputs into structured pre-payroll files, and the output is pushed via API into whichever HRIS or payroll platform you run. Human payroll practitioners review the staged output before it enters the statutory cycle. The result is faster processing with a clean audit trail and no change to your downstream compliance workflow.",
   },
   aiBlock: {
-    eyebrow: "Since 2026",
-    title: "AI Innovation",
+    eyebrow: "Since 2025 · IMDA Digital Leaders Programme",
+    title: "AI-Powered HR Automation",
     body:
-      "We now help clients automate the HR and operational workflows behind their hires: medical leave ingestion via WhatsApp, AI-driven payroll preprocessing, and embedded AI consultants for teams building internal automation capabilities.",
-    cta: "Explore AI Innovation",
+      "We deploy AI-powered workflows alongside senior HR practitioners to automate the high-friction processes around distributed teams: payroll preprocessing, employee onboarding and offboarding, and medical certificate management via WhatsApp — so your team manages people, not paperwork. IMDA Digital Leaders Programme approved.",
+    cta: "Explore AI Automation",
   },
   testimonial: {
     eyebrow: "Client story",
     headline: "Trusted by teams scaling across APAC.",
     body:
-      "Founded in Singapore in 2009, Mars Consulting has grown from a recruiting boutique into a regional employment platform — quietly running hires, payroll and compliance for AI startups, scale-ups and government-linked enterprises across Southeast Asia.",
+      "Founded in Singapore in 2009, Mars Consulting has grown from a recruiting boutique into a regional employment platform — running hires, payroll and compliance for technology companies, financial services firms, and industrial groups across Asia.",
     quote:
       "Mars onboarded our research team across Singapore and Jakarta in under two weeks. They handled everything — contracts, equity acknowledgements, local statutory filings — so we could focus on shipping models.",
     attribution: "Head of People · Series-B AI company",
-    location: "Singapore ↔ Jakarta · 12 hires in 2025",
-    statClients: "Global clients",
+    location: "Singapore ↔ APAC · Multi-market EOR rollout · 2025",
     statConsultants: "Consultants",
     statLicences: "SG licences",
   },
   contact: {
     eyebrow: "Talk to a Singapore-licensed specialist",
-    headline: "See if EOR is the right move — in 20 minutes.",
+    headline: "Talk to a Singapore-licensed specialist — in 20 minutes.",
     bullet1: "Country-by-country cost breakdown",
     bullet2: "Sample contract & onboarding checklist",
     bullet3: "Honest answer on whether you should set up an entity instead",
     response: "Average response: under 4 business hours",
     label: {
+      service: "What can we help with?",
       email: "Work email",
       company: "Company",
-      country: "Country to hire in",
-      hires: "Number of hires (next 6 months)",
+      country: "Country or region of interest",
+      hires: "Team size you're looking to hire",
     },
     placeholder: {
+      service: "Select a service",
       email: "you@company.com",
       company: "Company name",
-      country: "e.g. Indonesia",
-      hires: "5",
+      country: "e.g. China, Malaysia, UAE",
+      hires: "e.g. 5",
+    },
+    serviceOptions: {
+      eor: "EOR & Payroll",
+      recruitment: "Recruitment & Executive Search",
+      ai: "AI Automation",
+      hr: "HR Outsourcing",
+      unsure: "Not sure yet",
     },
     submit: "Book my 20-min call",
     privacy:
@@ -256,7 +262,8 @@ const en = {
     links: {
       eor: "EOR & Payroll",
       recruitment: "Recruitment & Executive Search",
-      aiLab: "AI Innovation",
+      aiLab: "AI Automation",
+      hrOutsourcing: "HR Outsourcing",
       about: "About",
       clients: "Clients",
       contact: "Contact",
@@ -267,7 +274,7 @@ const en = {
     copyright: "© {{year}} Mars Consulting Pte Ltd. All rights reserved.",
     cities: "Singapore · Jakarta · Ho Chi Minh City · Kuala Lumpur",
     compliance:
-      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider & Registered Filing Agent  ·  Registered Corporate Secretary",
+      "MOM Comprehensive EA Licence No. 09C2925  ·  MAS Payroll Service Exemption  ·  ACRA Registered Filing Agent",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapore & APAC — Mars Consulting",
@@ -281,16 +288,26 @@ const en = {
       "Singapore-licensed Employer of Record services. We become the legal employer; you direct the work. Employment contracts, payroll, statutory filings, and offboarding handled from day one.",
     ctaPrimary: "Get an EOR Quote",
     ctaSecondary: "See How It Works",
-    trustLine: "MOM EA Licence No. 09C2925 · 17 years · 8 APAC markets · 5-day onboarding",
+    trustLine:
+      "MOM EA Licence No. 09C2925 · Established since 2009 · 8 markets · 5-day onboarding",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 days",
       coverage: "APAC coverage",
       coverageValue: "8 markets",
-      clients: "Global clients",
+      clients: "Expert consultants",
       clientsValue: "100+",
-      misses: "Statutory misses",
+      misses: "Statutory misses (since 2009)",
       missesValue: "0",
+    },
+    included: {
+      title: "What we handle on your behalf",
+      item1: "Employment contracts in local language, jurisdiction-specific",
+      item2: "Onboarding and resignation process management",
+      item3: "Payroll processing and tax management",
+      item4: "Statutory contributions: CPF, EPF, MPF, FICA, and equivalents",
+      item5: "Offboarding, final pay calculation, and statutory clearance",
+      item6: "Occupational injury and workplace incident coordination",
     },
     faq: {
       eyebrow: "FAQ",
@@ -299,7 +316,7 @@ const en = {
         "These are the questions our clients ask on the second or third call. We have put them here so you can ask them on the first.",
       q1: "Where does Mars Consulting fit when a global EOR platform 'almost works' but breaks at jurisdiction-specific complexity?",
       a1:
-        "Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Indonesia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance. This approach mitigates jurisdictional risk by providing active, on-the-ground legal and operational oversight, resolving edge cases that require senior-level human intervention rather than merely a dashboard interface.",
+        "Mars Consulting fills the gap when standardised EOR software fractures at jurisdiction-specific complexity. Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Malaysia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance. This approach mitigates jurisdictional risk by providing active, on-the-ground legal and operational oversight, resolving edge cases that require senior-level human intervention rather than merely a dashboard interface.",
       q2: "How does Mars structure engagement governance for multi-entity or multi-region MNCs?",
       a2:
         "Engagement governance for multi-region MNCs requires a centralised control plane overlaid with decentralised statutory execution. Mars structures these engagements through a unified Service Level Agreement covering all active jurisdictions, paired with a dedicated regional governance lead based in Singapore. This architecture guarantees a single point of accountability for the client while executing statutory obligations — such as localised benefits administration, statutory reporting, and labour dispute resolution — through deeply embedded in-country HR and legal experts. By separating the strategic MNC governance layer from localised execution, we enforce consistent reporting standards across the client's portfolio while neutralising localised compliance and jurisdictional risks before they escalate to headquarters level.",
@@ -308,7 +325,7 @@ const en = {
         "In cross-border HR and EOR deployments, the baseline cost of service is marginal compared to the compounded cost of error. Misclassifying an employee, failing to structure a termination within local statutory bounds, or mishandling cross-border tax liabilities frequently results in multi-year litigation, operational bans, or severe financial penalties. Our pricing philosophy reflects a strict risk-mitigation premium. Rather than competing on transactional volume, we invest heavily in pre-deployment compliance architecture, continuous legal monitoring, and senior-level operational oversight. The fee structure subsidises the deployment of localised legal expertise, effectively transferring the financial and jurisdictional risk of cross-border expansion away from the client's balance sheet and onto our managed infrastructure.",
       q4: "How does Mars structure cross-border payroll for a Singapore-headquartered group hiring across Southeast Asia without triggering permanent establishment exposure?",
       a4:
-        "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Vietnam, Indonesia, the Philippines, Malaysia, and Thailand — neutralising permanent establishment risk while preserving operational control over headcount, KPIs, and termination rights. International tax planning is integrated upstream of the first payroll cycle: we model the interaction between secondment cost recharge, employer-side social contribution ceilings, and applicable double-taxation treaty positions before any payment is initiated. Funds flow through ring-fenced operating accounts subject to MAS-grade KYC/AML controls, with cross-border payroll reconciled in the client's base reporting currency and supported by jurisdiction-specific statutory filings.",
+        "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Malaysia, China, the United Arab Emirates, India, and Thailand — neutralising permanent establishment risk while preserving operational control over headcount, KPIs, and termination rights. International tax planning is integrated upstream of the first payroll cycle: we model the interaction between secondment cost recharge, employer-side social contribution ceilings, and applicable double-taxation treaty positions before any payment is initiated. Funds flow through ring-fenced operating accounts subject to MAS-grade KYC/AML controls, with cross-border payroll reconciled in the client's base reporting currency and supported by jurisdiction-specific statutory filings.",
       q5: "When and how do labour dispatch structures apply as a cost-optimisation lever?",
       a5:
         "Labour dispatch structures serve as a critical cost-optimisation lever when entering Asian markets with high statutory employer burdens or rigid permanent employment regulations. Unlike standard EOR, labour dispatch allows the client to utilise a localised, licensed agency to formally employ and dispatch staff to the operational site. This structure caps statutory severance liabilities, provides flexible headcount scaling, and optimises employer-side tax contributions. We integrate labour dispatch within broader international tax planning frameworks to ensure that cross-border chargebacks for dispatched labour are fully deductible and aligned with prevailing transfer pricing regulations, significantly reducing the blended cost of international human capital.",
@@ -329,15 +346,15 @@ const en = {
   recruitmentPage: {
     metaTitle: "Recruitment & Executive Search Singapore — Mars Consulting",
     metaDesc:
-      "Permanent placement, contract staffing and confidential C-suite executive search across Singapore and APAC. 2,560+ successful placements. 17 years. MOM-licensed.",
+      "Permanent placement, contract staffing and confidential C-suite executive search across Singapore and APAC. MOM EA licensed since 2009. Technology, financial services, healthcare, manufacturing.",
     pill: "Recruitment & Executive Search",
     headlineLead: "Recruitment & Executive Search Across",
     headlineAccent: "Singapore and APAC",
     sub:
-      "Permanent placement, contract staffing, and confidential C-suite search — delivered by practitioners who have placed over 2,560 candidates across technology, financial services, healthcare, and manufacturing since 2009.",
+      "Permanent placement, contract staffing, and confidential C-suite search — delivered by practitioners with deep market knowledge across technology, financial services, healthcare, and manufacturing in Singapore and APAC.",
     ctaPrimary: "Discuss a Search Mandate",
     ctaSecondary: "See Our Process",
-    trustLine: "MOM EA Licence No. 09C2925 · 17 years · 8 APAC markets",
+    trustLine: "MOM EA Licence No. 09C2925 · Established since 2009 · 8 markets",
     tracks: {
       eyebrow: "Service tracks",
       headline: "Three search tracks. One team.",
@@ -406,10 +423,10 @@ const en = {
       cta: "Learn how EOR works",
     },
     stats: {
-      placements: "Successful placements",
-      placementsValue: "2,560+",
-      since: "Since 2009",
-      sinceValue: "17 years",
+      serviceTracks: "Service tracks",
+      serviceTracksValue: "3",
+      since: "Established",
+      sinceValue: "2009",
       coverage: "APAC coverage",
       coverageValue: "8 markets",
       sprint: "C-suite shortlist sprint",
@@ -428,7 +445,7 @@ const en = {
     ctaBanner: {
       headline: "Ready to start a search?",
       body:
-        "Whether you need a VP in Singapore next quarter or a confidential CFO search across three jurisdictions, we have done it before.",
+        "Whether you need a VP in Singapore next quarter or a confidential CFO search across three jurisdictions — our regional search team has the market access, in-country network, and operational infrastructure to deliver.",
       bullet1: "21-day shortlist sprint for retained executive mandates",
       bullet2: "Direct EOR handoff for international placements",
       bullet3: "MOM EA Licence No. 09C2925",
@@ -436,19 +453,22 @@ const en = {
     },
   },
   aiPage: {
-    metaTitle: "AI Innovation & HR Automation — Mars Consulting",
+    metaTitle: "AI HR Automation Singapore — Mars Consulting · IMDA DLP Approved",
     metaDesc:
-      "AI workflow automation for distributed HR teams in Southeast Asia. WhatsApp-based MC ingestion, AI payroll preprocessing, and embedded AI consulting.",
-    pill: "AI Innovation · Since 2026",
-    headlineLead: "Automate the HR and operational workflows",
-    headlineAccent: "behind your hires",
+      "AI-powered HR workflow automation for distributed teams across Southeast Asia. IMDA Digital Leaders Programme approved. WhatsApp MC automation, AI payroll preprocessing, embedded AI consultants. Since 2025.",
+    pill: "AI Automation · Since 2025 · IMDA Digital Leaders Programme",
+    headlineLead: "Automate the HR workflows",
+    headlineAccent: "that slow your team down.",
     sub:
-      "We help clients automate the high-friction administrative processes that surround distributed teams: medical leave ingestion via WhatsApp, AI-driven payroll preprocessing, and embedded AI consultants for teams building internal automation capabilities.",
+      "We deploy AI-powered workflows alongside senior HR practitioners to automate the high-friction processes around distributed teams: payroll preprocessing, employee onboarding and offboarding, and medical certificate management via WhatsApp — so your team manages people, not paperwork.",
     ctaPrimary: "Talk to the AI Team",
     ctaSecondary: "See Capabilities",
+    trustBadge1: "IMDA Digital Leaders Programme",
+    trustBadge2: "Singapore data residency",
+    trustBadge3: "PDPA-compliant",
     capabilities: {
       eyebrow: "What we build",
-      headline: "Three capabilities. One operating layer.",
+      headline: "Four capabilities. One operating layer.",
       whatsapp: {
         title: "WhatsApp HR Automation Bot",
         body:
@@ -460,9 +480,9 @@ const en = {
       payroll: {
         title: "AI Payroll Preprocessing",
         body:
-          "AI calculation engines that process raw operational data — POS feeds, attendance logs, commission triggers — into auditable pre-payroll files. Decoupled from final financial execution to preserve immutable audit trails for statutory reporting.",
-        bullet1: "Tiered commission structures across 40+ locations",
-        bullet2: "Pre-payroll cycle time: 5 days → 4 hours",
+          "AI calculation engines that process raw payroll inputs — attendance data, commission structures, benefits adjustments — into auditable pre-payroll files, paired with senior payroll practitioners who govern multi-jurisdiction payroll operations across 8 markets. Decoupled from final financial execution to preserve immutable audit trails for statutory reporting.",
+        bullet1: "Multi-jurisdiction payroll support across 8 markets",
+        bullet2: "Pre-payroll cycle time: days → hours",
         bullet3: "Cryptographically hashed adjustment ledger",
       },
       consultants: {
@@ -472,6 +492,15 @@ const en = {
         bullet1: "Fractional Head of AI · 2-week deployment",
         bullet2: "Workflow automation pods",
         bullet3: "AI readiness audit and rollout playbook",
+        bullet4: "IMDA Digital Leaders Programme approved organisation",
+      },
+      onboarding: {
+        title: "Onboarding & Offboarding Automation",
+        body:
+          "Automated employee lifecycle workflows — from offer acceptance through statutory account setup to offboarding and final pay processing. Integrated with HRIS and statutory reporting systems to remove manual steps from every stage of the employee journey.",
+        bullet1: "Automated statutory account creation on hire",
+        bullet2: "Offboarding triggered by resignation or contract end",
+        bullet3: "Final pay and clearance handled within statutory deadlines",
       },
     },
     compliance: {
@@ -481,6 +510,8 @@ const en = {
         "Deploying LLMs in human resources requires rigorous data governance. Our AI architecture operates strictly on enterprise-grade, closed-loop model instances. Client HR data is never used for foundational model training.",
       p2:
         "We enforce strict data residency protocols, ensuring that all processing and storage of personally identifiable information occurs on localised, sovereign servers aligned with the client's compliance directives. Sensitive fields undergo programmatic anonymisation and tokenisation prior to LLM processing.",
+      p3:
+        "Mars Consulting is an IMDA Digital Leaders Programme approved organisation, committed to responsible AI deployment aligned with Singapore's national digital economy standards.",
       badgeTitle: "PDPA · Singapore data residency",
       badgeBody:
         "Confidentiality controls remain unbroken while realising the operational velocity of generative AI.",
@@ -497,22 +528,32 @@ const en = {
       q3: "What data residency and confidentiality controls exist for LLM-mediated HR data?",
       a3:
         "Deploying LLMs in human resources necessitates rigorous data governance to satisfy multi-jurisdictional privacy laws, particularly Singapore's PDPA. Our AI architecture operates strictly on enterprise-grade, closed-loop model instances. Client HR data is never utilised for foundational model training. We enforce strict data residency protocols, ensuring that all processing and storage of personally identifiable information occurs on localised, sovereign servers aligned with the client's compliance directives. Prior to LLM processing, sensitive fields undergo programmatic anonymisation and tokenisation. This ensures that confidentiality controls remain unbroken, neutralising the risk of data leakage while realising the operational velocity of generative AI.",
+      q4: "Is this a software platform, or does it involve human oversight?",
+      a4:
+        "Mars's AI automation service is not a pure software deployment. It combines AI calculation engines with senior payroll practitioners who configure, validate, and govern the outputs. The AI handles data processing volume and pattern recognition across complex commission structures and multi-jurisdiction contribution rules; the payroll practitioners apply jurisdiction-specific expertise and sign off on the pre-payroll file before it enters the statutory filing cycle. This human-in-the-loop model ensures that automation speed does not compromise compliance accuracy — particularly across markets where payroll regulations are fragmented and frequently updated.",
     },
     ctaBanner: {
-      headline: "Apply as a pilot partner",
+      headline: "Ready to automate your HR operations?",
       body:
-        "Founding-partner pricing for early deployments. We're onboarding a small cohort of pilot partners to co-design the next generation of HR automation.",
-      cta: "Apply as Pilot Partner",
+        "Our AI automation workflows are live across distributed teams in Singapore, Malaysia, and the UAE. Talk to the AI team about a workflow audit for your organisation — we'll identify the highest-impact automation opportunities within your existing HR and payroll operations.",
+      cta: "Talk to the AI Team",
+    },
+    roadmap: {
+      eyebrow: "What's next",
+      headline: "Building the next layer of workforce infrastructure.",
+      body:
+        "With our IMDA Digital Leaders Programme approval, Mars is developing Digital Employment Passport infrastructure — verifiable, portable records of employment history and skills that travel with the employee. We are also building micro-credential frameworks that connect workforce training outcomes directly to employer compliance records. If you are planning HR technology infrastructure for the next three to five years, talk to us early.",
+      cta: "Talk to the AI Team",
     },
   },
   aboutPage: {
     metaTitle: "About Mars Consulting — Singapore HR & EOR Specialists Since 2009",
     metaDesc:
-      "Mars Consulting was founded in Singapore in April 2009. 17 years of HR, EOR, and executive search experience across 8 APAC markets. MOM EA Licence No. 09C2925.",
+      "Mars Consulting was founded in Singapore in April 2009. EOR, executive search, and HR operations across 8 markets — Singapore, Malaysia, Hong Kong, China, USA, UAE, India, Thailand. MOM EA Licence No. 09C2925.",
     pill: "About Mars Consulting",
-    headlineLead: "Seventeen Years Building the",
-    headlineAccent: "HR Infrastructure",
-    headlineTail: "Behind Global Teams",
+    headlineLead: "The HR Infrastructure",
+    headlineAccent: "Behind Global Teams.",
+    headlineTail: "Built in Singapore since 2009.",
     sub:
       "Mars Consulting was founded in Singapore in April 2009 with one conviction: that great businesses are built by the right people, placed in the right roles, supported by the right systems. Today we are a full-service HR partner across 8 markets — providing Employer of Record, global payroll, executive search, HR outsourcing, and AI-powered process automation to companies at every stage of growth.",
     timeline: {
@@ -523,11 +564,13 @@ const en = {
       y2013:
         "Expanded into Business Process Outsourcing. Extended industry coverage beyond tech and finance into real estate and construction — bringing structured HR operations to sectors that historically relied on informal hiring practices.",
       y2017:
-        "Launched Employer of Record services. Expanded geographic coverage to 6+ countries across APAC, opening the capability to all industries. This marked the shift from regional recruiter to cross-border HR infrastructure provider.",
+        "Launched Employer of Record services — shifting from regional recruiter to cross-border HR infrastructure provider across 8 markets, covering all industries. This marked the point at which Mars became not just a hiring firm, but a full employment and payroll platform for companies operating across borders.",
       y2020:
-        "Introduced HR Outsourcing — embedding experienced HR consultants directly within client organisations for strategic and operational work. This model allows companies to access senior HR capability without the cost of a full-time hire.",
+        "Introduced HR Outsourcing — embedding experienced HR consultants directly within client organisations for strategic and operational work. Extended service ecosystem to include corporate learning and training partnerships, providing clients with access to skills development infrastructure alongside workforce management.",
+      y2025:
+        "Launched AI Automation practice — deploying AI-powered workflows and senior practitioners to help distributed teams automate high-friction HR processes. First live deployments across Singapore, Malaysia, and the UAE.",
       y2026:
-        "Launched AI Innovation practice — helping clients automate HR and business workflows through intelligent process design, WhatsApp-based automation, and embedded AI consulting teams.",
+        "Received IMDA Digital Leaders Programme approval from Singapore's Infocomm Media Development Authority. Began development of Digital Employment Passport and micro-credential infrastructure for the future of regional workforce management.",
     },
     founder: {
       eyebrow: "Founder",
@@ -540,13 +583,14 @@ const en = {
         "With a background spanning enterprise technology and human capital operations, Yuggie built Mars Consulting on the conviction that HR advice must be grounded in operational reality — that the people who understand how systems actually run are best placed to design the structures that support them.",
       p3:
         "This philosophy shapes everything: how we scope engagements, how we staff projects, and how we tell clients when a simpler solution is the right one.",
+      p4:
+        "Over more than a decade of operating across Asia, Mars has built the in-country legal, compliance, and HR operations network that underpins every cross-border engagement — relationships developed through actual deployments in Singapore, Malaysia, Hong Kong, China, the UAE, India, and Thailand, not sourced for individual mandates.",
     },
     numbers: {
-      years: "Years in operation",
+      years: "Established",
       markets: "Markets covered",
       consultants: "Expert consultants",
-      clients: "Global clients",
-      placements: "Successful placements",
+      licences: "SG licences",
     },
     licences: {
       eyebrow: "Licences & regulatory standing",
@@ -558,9 +602,13 @@ const en = {
       momCode: "Licence No. 09C2925",
       momNote:
         "Employment Agency licence — authorising placement of local and foreign candidates in Singapore.",
+      masAuthority: "Monetary Authority of Singapore (MAS)",
+      masLabel: "Payroll Service Exemption",
+      masCode: "MAS exempted entity",
+      masNote: "MAS exemption status for payroll service operations in Singapore.",
       acraAuthority: "ACRA Singapore",
       acraLabel: "Corporate Service Provider",
-      acraCode: "Registered Filing Agent (RFA) · Registered Corporate Secretary",
+      acraCode: "Registered Filing Agent (RFA)",
       acraNote: "Accounting and Corporate Regulatory Authority registration.",
       verifiable:
         "Licence details are publicly verifiable on the MOM Employment Agency Directory and the ACRA BizFile+ register.",
@@ -579,10 +627,10 @@ const en = {
         "Regardless of how many countries or services are involved, one relationship manager is accountable for the full scope of work. You do not manage a supplier network. You manage one call.",
     },
     ctaBanner: {
-      headline: "17 years of being the operator behind the operator",
+      headline: "Established since 2009. Built to be the operator behind the operator.",
       body:
         "Talk to a Singapore-licensed specialist about EOR, executive search, or AI-powered HR automation across APAC.",
-      cta: "Book a Call",
+      cta: "Book a Consultation",
     },
   },
 } as const;
