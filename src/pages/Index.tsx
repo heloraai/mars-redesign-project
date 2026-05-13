@@ -172,7 +172,7 @@ const TrustBar = () => {
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
           />
           <CountStat
-            to={8}
+            to={10}
             label={t("hero.statMarkets")}
             className="font-display text-3xl font-semibold text-foreground"
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
@@ -205,11 +205,6 @@ const LicenseStrip = () => {
       code: t("licenses.mom.code"),
     },
     {
-      authority: t("licenses.mas.authority"),
-      label: t("licenses.mas.label"),
-      code: t("licenses.mas.code"),
-    },
-    {
       authority: t("licenses.acra.authority"),
       label: t("licenses.acra.label"),
       code: t("licenses.acra.code"),
@@ -219,7 +214,7 @@ const LicenseStrip = () => {
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-10">
         <p className="eyebrow text-center">{t("licenses.eyebrow")}</p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
           {items.map((it) => (
             <div
               key={it.label}

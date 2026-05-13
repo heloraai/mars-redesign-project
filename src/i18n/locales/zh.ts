@@ -12,16 +12,16 @@ const zh: Translation = {
   },
   hero: {
     pill: "新加坡 MOM 持牌 · 成立于 2009 年",
-    headlineLead: "在亚太地区招聘、",
+    headlineLead: "在全球 10 个市场招聘、",
     headlineAccent: "发薪并扩展团队。",
     sub:
-      "新加坡持牌 EOR，覆盖 8 个亚太市场。我们担任法律雇主，处理劳动合同、薪资发放、税务申报与离职手续——无需在当地设立实体，第一天起就能合规用人。",
+      "新加坡持牌 EOR，覆盖 10 个市场。我们担任法律雇主，处理劳动合同、薪资发放、税务申报与离职手续——无需在当地设立实体，第一天起就能合规用人。",
     ctaPrimary: "预约咨询",
     ctaSecondary: "了解运作方式",
     statYears: "成立年份",
-    statMarkets: "亚太市场",
+    statMarkets: "覆盖市场",
     statConsultants: "专业顾问",
-    statLicence: "MOM EA 执照 09C2925",
+    statLicence: "MOM EA 执照",
     snapshotEyebrow: "每月合规快照",
     snapshotSample: "示例 · 2026年4月 · 客户A（已匿名）",
     snapshotStatus: "准时",
@@ -29,16 +29,19 @@ const zh: Translation = {
     snapshotDelta: "本月新增 +12",
     snapshotPayroll: "薪资发放",
     snapshotPayrollValue: "SGD 412,890 · 已完成",
-    snapshotBadge: "3 项新加坡执照 · 0 次法定违规",
+    snapshotBadge: "MOM 持牌 · 自 2009 年起 0 次法定违规",
     snapshotEmployeesLabel: "名员工",
     snapshotTaxSG: "CPF · IR8A 已申报",
     snapshotTaxMY: "EPF · SOCSO 已申报",
     snapshotTaxHK: "MPF 已申报",
     snapshotTaxCN: "社会保险 已申报",
+    snapshotTaxVN: "BHXH 已申报",
+    snapshotTaxTH: "社会保障 已申报",
+    snapshotTaxID: "BPJS 已申报",
   },
   marquee: {
     label:
-      "新加坡 MOM 持牌 · 成立于 2009 年 · 8 个市场 · EOR & 薪资 · 招聘 · AI 自动化 · 100+ 顾问 · MOM EA 执照 09C2925",
+      "新加坡 MOM 持牌 · 成立于 2009 年 · 10 个市场 · EOR & 薪资 · 招聘 · AI 自动化 · 100+ 顾问 · MOM EA 执照 09C2925",
   },
   licenses: {
     eyebrow: "在新加坡持牌并受监管",
@@ -46,11 +49,6 @@ const zh: Translation = {
       authority: "人力部（MOM）",
       label: "MOM EA 执照",
       code: "执照编号 09C2925",
-    },
-    mas: {
-      authority: "新加坡金融管理局",
-      label: "薪资服务豁免",
-      code: "MAS 豁免实体",
     },
     acra: {
       authority: "新加坡会计与企业管理局",
@@ -65,9 +63,9 @@ const zh: Translation = {
       tag: "核心业务",
       title: "雇主记录（EOR）与全球薪资",
       body:
-        "在新加坡及另外 7 个亚太市场合规用人——无需设立本地实体。劳动合同、薪资发放、法定申报、离职处理，从第一天起全部由我们负责。",
+        "在新加坡及另外 9 个市场合规用人，覆盖亚洲、中东及美国——无需设立本地实体。劳动合同、薪资发放、法定申报、离职处理，从第一天起全部由我们负责。",
       bullet1: "5 个工作日内完成入职",
-      bullet2: "CPF、EPF、MPF 及各市场法定缴款，我们来申报",
+      bullet2: "CPF、EPF、BPJS、MPF 及各市场法定缴款，我们来申报",
       bullet3: "MOM EA 执照号 09C2925",
       cta: "了解 EOR 服务",
     },
@@ -75,7 +73,7 @@ const zh: Translation = {
       tag: "猎头搜寻",
       title: "招聘与高管猎头",
       body:
-        "覆盖新加坡及亚太地区的永久招聘、合同用工与保密高管猎头。我们主动接触被动候选人，需要时直接衔接 EOR 入职——招聘和用工一条线打通。",
+        "覆盖新加坡及区域的永久招聘、合同用工与保密高管猎头。我们主动接触被动候选人，需要时直接衔接 EOR 入职——招聘和用工一条线打通。",
       bullet1: "永久、合同及保密高管猎头",
       bullet2: "21 天内交付高管候选人短名单",
       bullet3: "科技、金融服务、医疗健康、制造业",
@@ -92,25 +90,32 @@ const zh: Translation = {
     p3:
       "我们的价格不比 SaaS 便宜。我们是当合规出错的代价远超服务费时，你该选的那家。",
     cta: "与专家对话",
+    verifyLine: "欢迎在 LinkedIn 上独立核实我们的团队和资质。",
+    verifyCta: "在 LinkedIn 上查看 ↗",
+    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
   },
   countries: {
     eyebrow: "覆盖范围",
-    headline: "在 8 个市场合规用人——一份新加坡合同统筹管理。",
+    headline: "在 10 个市场合规用人——一份新加坡合同统筹管理。",
     body:
       "自 2009 年起，我们在这些市场持续运营薪资发放、法定申报和劳动合同。你保持运营控制权；我们承担法律雇主责任。",
     statOnboarding: "入职周期",
     statOnboardingValue: "5 天",
     statMisses: "法定违规（自 2009 年）",
-    statLicences: "新加坡执照",
+    statLicences: "MOM 持牌",
+    legendOffice: "办公室",
+    legendService: "服务市场",
     name: {
       SG: "新加坡",
       MY: "马来西亚",
       HK: "香港",
       CN: "中国",
+      IN: "印度",
       US: "美国",
       AE: "阿联酋",
-      IN: "印度",
+      VN: "越南",
       TH: "泰国",
+      ID: "印尼",
     },
   },
   comparison: {
@@ -141,7 +146,7 @@ const zh: Translation = {
         label: "薪资及法定申报",
         entity: "自行处理",
         contractor: "员工自行申报",
-        mars: "CPF/EPF/MPF 等——全部由我们来",
+        mars: "CPF/EPF/BPJS/MPF 等——全部由我们来",
       },
       risk: {
         label: "员工错误分类风险",
@@ -182,7 +187,7 @@ const zh: Translation = {
     step4: {
       title: "薪资和合规由我们处理",
       desc:
-        "每月一张 Mars 发票。各市场的 CPF、EPF、MPF 及同等法定申报——我们发报告给你，你无需额外操作。",
+        "每月一张 Mars 发票。各市场的 CPF、EPF、BPJS、MPF 及同等法定申报——我们发报告给你，你无需额外操作。",
     },
   },
   clients: {
@@ -206,23 +211,23 @@ const zh: Translation = {
       "我们的 AI 层部署在你现有系统的上游，不替换它。WhatsApp 机器人采集休假和报销数据，AI 预处理引擎把原始输入转成结构化的预薪资文件，结果通过 API 推进你的 HRIS 或薪资平台。薪资从业人员做最终审核后再进法定周期。流程更快，审计追踪清晰，下游合规流程不变。",
   },
   aiBlock: {
-    eyebrow: "自 2025 年起 · IMDA 数字领袖计划",
+    eyebrow: "自 2025 年起 · AI 自动化业务",
     title: "AI 驱动的人力资源自动化",
     body:
-      "我们把 AI 工作流和资深 HR 从业人员结合部署，自动化分布式团队里最耗时费力的环节：薪资预处理、员工入离职，以及通过 WhatsApp 处理的医疗证明——让你的团队把精力放在管人上，不是填表上。已获 IMDA 数字领袖计划认可。",
+      "我们把 AI 工作流和资深 HR 从业人员结合部署，自动化分布式团队里最耗时费力的环节：薪资预处理、员工入离职，以及通过 WhatsApp 处理的医疗证明——让你的团队把精力放在管人上，不是填表上。",
     cta: "探索 AI 自动化",
   },
   testimonial: {
     eyebrow: "客户案例",
-    headline: "在亚太扩张的团队都在用 Mars。",
+    headline: "在全球扩张的团队都在用 Mars。",
     body:
-      "Mars Consulting 2009 年成立于新加坡，从精品招聘公司成长为区域雇佣平台——为科技、金融服务及工业企业在亚洲各地处理招聘、薪资与合规。",
+      "Mars Consulting 2009 年成立于新加坡，从精品招聘公司成长为区域雇佣平台——为科技、金融服务及工业企业在亚洲、中东及美国处理招聘、薪资与合规。",
     quote:
       "Mars 不到两周就完成了我们在新加坡和雅加达研究团队的入职。合同、股权确认、当地法定申报——他们全搞定了，我们只管做产品。",
     attribution: "人力资源负责人 · B 轮 AI 公司",
     location: "新加坡 ↔ 亚太区 · 多市场 EOR · 2025",
     statConsultants: "专业顾问",
-    statLicences: "新加坡执照",
+    statLicences: "MOM 持牌",
   },
   contact: {
     eyebrow: "与新加坡持牌专家对话",
@@ -254,10 +259,25 @@ const zh: Translation = {
     },
     submit: "预约 20 分钟通话",
     privacy:
-      "我们会在 4 个工作小时内回复（新加坡时间）。提交即表示同意我们的隐私政策。",
+      "我们会在 4 个工作小时内回复（新加坡时间）。",
+    consent: "提交即表示同意我们的隐私政策。",
+    consentLink: "隐私政策",
+    consentUrl: "/privacy",
+    infoEyebrow: "其他联系方式",
+    emailLabel: "一般咨询",
+    emailValue: "admin@marsconsulting.com.sg",
+    hqLabel: "总部",
+    hqAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+    hoursLabel: "办公时间",
+    hoursValue: "周一至周五，9:00 – 18:00 SGT",
+    linkedinLabel: "领英",
+    linkedinValue: "在领英查看我们的团队",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    teamHintLabel: "想先了解团队？",
+    teamHintValue: "我们的顾问和招聘人员已公开列在领英上。",
   },
   footer: {
-    tagline: "新加坡持牌雇主记录及人力资源服务，覆盖东南亚。自 2009 年起。",
+    tagline: "Mars Consulting Pte Ltd — 新加坡持牌雇主记录、招聘及人力资源服务，覆盖 10 个市场。MOM EA 执照号 09C2925。成立于 2009 年。",
     sections: {
       solutions: "解决方案",
       company: "公司",
@@ -274,31 +294,33 @@ const zh: Translation = {
       mom: "MOM EA 执照 09C2925",
       acra: "ACRA 申报代理",
       privacy: "隐私政策",
+      terms: "使用条款",
     },
-    copyright: "© {{year}} Mars Consulting Pte Ltd. 保留所有权利。",
-    cities: "新加坡 · 雅加达 · 胡志明市 · 吉隆坡",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    copyright: "© {{year}} Mars Consulting Pte Ltd（统一实体编号 200907301Z）。保留所有权利。",
+    cities: "新加坡（总部）· 马来西亚 · 香港 · 中国 · 印度 · 美国",
     compliance:
-      "MOM 综合 EA 执照号 09C2925  ·  MAS 薪资服务豁免  ·  ACRA 注册申报代理",
+      "Mars Consulting Pte Ltd（UEN 200907301Z）· MOM 综合 EA 执照号 09C2925 · ACRA 注册申报代理",
   },
   eorPage: {
     metaTitle: "新加坡及亚太区雇主记录服务 — Mars Consulting",
     metaDesc:
-      "新加坡持牌 EOR，覆盖 8 个市场。从第一天起即提供合规用人、薪资发放及法定申报。无需本地实体。MOM EA 09C2925。",
+      "新加坡持牌 EOR，覆盖 10 个市场。从第一天起即提供合规用人、薪资发放及法定申报。无需本地实体。MOM EA 09C2925。",
     pill: "雇主记录（EOR）与全球薪资",
-    headlineLead: "在亚太地区",
-    headlineAccent: "8 个市场",
+    headlineLead: "在",
+    headlineAccent: "10 个市场",
     headlineTail: "合规用人——无需设立本地实体",
     sub:
       "新加坡持牌雇主记录服务。我们担任法律雇主，你主导工作内容。劳动合同、薪资发放、法定申报、离职处理——从第一天起全部由我们负责。",
     ctaPrimary: "获取 EOR 报价",
     ctaSecondary: "了解运作方式",
     trustLine:
-      "MOM EA 执照号 09C2925 · 成立于 2009 年 · 8 个市场 · 5 天入职",
+      "MOM EA 执照号 09C2925 · 成立于 2009 年 · 10 个市场 · 5 天入职",
     stats: {
       onboarding: "入职周期",
       onboardingValue: "5 天",
-      coverage: "亚太覆盖",
-      coverageValue: "8 个市场",
+      coverage: "覆盖市场",
+      coverageValue: "10",
       clients: "专业顾问",
       clientsValue: "100+",
       misses: "法定违规（自 2009 年）",
@@ -309,7 +331,7 @@ const zh: Translation = {
       item1: "本地语言劳动合同，按各市场定制",
       item2: "入职及离职全流程管理",
       item3: "薪资发放与税务管理",
-      item4: "法定缴款：CPF、EPF、MPF、FICA 等",
+      item4: "法定缴款：CPF、EPF、BPJS、MPF、FICA、BHXH 等",
       item5: "离职处理、最终工资计算及法定结算",
       item6: "工伤及工作场所事故协调",
     },
@@ -338,7 +360,7 @@ const zh: Translation = {
         "我们把外派费用转嫁协议与双边双重征税条约的具体条款对齐，合法地最小化员工和企业的双重税务负担。同时分析各市场的社保上限和外籍员工豁免，在不影响员工净收入、不违反当地合规要求的前提下，尽量压低法定雇主负担。",
     },
     ctaBanner: {
-      headline: "准备好在亚太合规用人了吗？",
+      headline: "准备好在全球市场合规用人了吗？",
       body:
         "逐国成本明细、合同样本、入职清单，以及关于是否该设立本地实体的真实建议。",
       bullet1: "4 个工作小时内提供报价",
@@ -350,15 +372,15 @@ const zh: Translation = {
   recruitmentPage: {
     metaTitle: "新加坡招聘与高管猎头 — Mars Consulting",
     metaDesc:
-      "覆盖新加坡及亚太地区的永久招聘、合同用工及保密高管猎头。MOM EA 持牌，自 2009 年起。科技、金融服务、医疗健康、制造业。",
+      "覆盖新加坡及区域的永久招聘、合同用工及保密高管猎头。MOM EA 持牌，自 2009 年起。科技、金融服务、医疗健康、制造业。",
     pill: "招聘与高管猎头",
-    headlineLead: "覆盖新加坡及亚太地区的",
+    headlineLead: "覆盖新加坡及区域的",
     headlineAccent: "招聘与高管猎头",
     sub:
-      "永久招聘、合同用工及保密高管猎头——由在新加坡及亚太地区科技、金融服务、医疗健康及制造业深耕多年的从业者提供。",
+      "永久招聘、合同用工及保密高管猎头——由在新加坡及 10 个市场的科技、金融服务、医疗健康及制造业深耕多年的从业者提供。",
     ctaPrimary: "讨论委托需求",
     ctaSecondary: "了解我们的流程",
-    trustLine: "MOM EA 执照号 09C2925 · 成立于 2009 年 · 8 个市场",
+    trustLine: "MOM EA 执照号 09C2925 · 成立于 2009 年 · 10 个市场",
     tracks: {
       eyebrow: "服务类型",
       headline: "三种搜寻模式。一支团队。",
@@ -430,8 +452,8 @@ const zh: Translation = {
       serviceTracksValue: "3",
       since: "成立年份",
       sinceValue: "2009",
-      coverage: "亚太覆盖",
-      coverageValue: "8 个市场",
+      coverage: "覆盖市场",
+      coverageValue: "10",
       sprint: "高管候选名单冲刺",
       sprintValue: "21 天",
     },
@@ -456,19 +478,19 @@ const zh: Translation = {
     },
   },
   aiPage: {
-    metaTitle: "新加坡 AI 人力资源自动化 — Mars Consulting · IMDA DLP 认可",
+    metaTitle: "新加坡 AI 人力资源自动化 — Mars Consulting",
     metaDesc:
-      "面向东南亚分布式团队的 AI 驱动人力资源工作流自动化。IMDA 数字领袖计划认可。WhatsApp 医疗证明自动化、AI 薪资预处理、嵌入式 AI 顾问。自 2025 年起。",
-    pill: "AI 自动化 · 自 2025 年起 · IMDA 数字领袖计划",
+      "面向亚洲、中东及美国分布式团队的 AI 驱动人力资源工作流自动化。WhatsApp 医疗证明自动化、AI 薪资预处理、入离职自动化、嵌入式 AI 顾问。自 2025 年起。",
+    pill: "AI 自动化 · 自 2025 年起",
     headlineLead: "自动化那些",
     headlineAccent: "拖慢团队效率的人力资源流程。",
     sub:
       "我们把 AI 工作流和资深 HR 从业人员结合部署，自动化分布式团队里最耗时费力的环节：薪资预处理、员工入离职，以及通过 WhatsApp 处理医疗证明——让你的团队专注管人，不是填表。",
     ctaPrimary: "与 AI 团队对话",
     ctaSecondary: "查看能力介绍",
-    trustBadge1: "IMDA 数字领袖计划",
+    trustBadge1: "PDPA 合规",
     trustBadge2: "新加坡数据驻留",
-    trustBadge3: "PDPA 合规",
+    trustBadge3: "闭环模型实例",
     capabilities: {
       eyebrow: "我们构建的能力",
       headline: "四大核心能力，一套运营层。",
@@ -483,8 +505,8 @@ const zh: Translation = {
       payroll: {
         title: "AI 薪资预处理",
         body:
-          "AI 计算引擎把原始薪资输入——考勤、提成、福利调整——处理成可审计的预薪资文件，配备资深薪资从业人员负责跨 8 个市场的多地薪资运营。与最终财务执行解耦，保留完整审计追踪。",
-        bullet1: "支持 8 个市场的多地薪资",
+          "AI 计算引擎把原始薪资输入——考勤、提成、福利调整——处理成可审计的预薪资文件，配备资深薪资从业人员负责跨 10 个市场的多地薪资运营。与最终财务执行解耦，保留完整审计追踪。",
+        bullet1: "支持 10 个市场的多地薪资",
         bullet2: "预处理周期：数天 → 数小时",
         bullet3: "可审计的加密调整账本",
       },
@@ -495,7 +517,6 @@ const zh: Translation = {
         bullet1: "驻场 AI 负责人 · 2 周部署",
         bullet2: "工作流自动化小组",
         bullet3: "AI 就绪评估与推广路线图",
-        bullet4: "IMDA 数字领袖计划认可机构",
       },
       onboarding: {
         title: "入职与离职自动化",
@@ -513,8 +534,6 @@ const zh: Translation = {
         "在人力资源领域用大模型，数据治理是硬要求。我们的 AI 架构严格运行在企业级闭环模型实例上，客户人力资源数据绝不用于基础模型训练。",
       p2:
         "所有个人身份信息的处理和存储，均在符合客户合规要求的本地主权服务器上进行。敏感字段在进入大模型处理前，经过程序化脱敏和令牌化。",
-      p3:
-        "Mars Consulting 是 IMDA 数字领袖计划认可机构，致力于符合新加坡国家数字经济标准的负责任 AI 应用。",
       badgeTitle: "PDPA · 新加坡数据驻留",
       badgeBody: "在实现生成式 AI 运营效率的同时，数据保密控制始终有效。",
     },
@@ -544,20 +563,22 @@ const zh: Translation = {
       eyebrow: "未来规划",
       headline: "构建下一层劳动力基础设施。",
       body:
-        "凭借 IMDA 数字领袖计划认可，Mars 正在开发数字就业护照基础设施——跟着员工走的可验证、可携带就业历史和技能记录。我们还在构建微证书框架，把劳动力培训成果直接和雇主合规记录连接起来。如果你正在规划未来三到五年的人力资源技术基础设施，欢迎尽早和我们聊。",
+        "Mars 正在开发数字就业护照基础设施——跟着员工走的可验证、可携带就业历史和技能记录。我们还在构建微证书框架，把劳动力培训成果直接和雇主合规记录连接起来。如果你正在规划未来三到五年的人力资源技术基础设施，欢迎尽早和我们聊。",
       cta: "与 AI 团队对话",
     },
   },
   aboutPage: {
     metaTitle: "关于 Mars Consulting — 新加坡人力资源与 EOR 专家，自 2009 年起",
     metaDesc:
-      "Mars Consulting 于 2009 年 4 月在新加坡成立。EOR、高管猎头及人力资源运营，覆盖 8 个市场——新加坡、马来西亚、香港、中国、美国、阿联酋、印度、泰国。MOM EA 执照号 09C2925。",
+      "Mars Consulting 于 2009 年 4 月在新加坡成立。EOR、高管猎头及人力资源运营，覆盖 10 个市场——新加坡、马来西亚、香港、中国、印度、美国、阿联酋、越南、泰国、印尼。MOM EA 执照号 09C2925。",
     pill: "关于 Mars Consulting",
     headlineLead: "全球团队背后的",
     headlineAccent: "人力资源基础设施。",
     headlineTail: "自 2009 年起，根植新加坡。",
     sub:
-      "Mars Consulting 2009 年 4 月在新加坡成立，出发点很简单：好公司需要对的人，在对的位置，有对的系统支撑。今天，我们是覆盖 8 个市场的全服务人力资源合作伙伴——为各阶段企业提供雇主记录、全球薪资、高管猎头、人力资源外包及 AI 驱动的流程自动化。",
+      "Mars Consulting 2009 年 4 月在新加坡成立，出发点很简单：好公司需要对的人，在对的位置，有对的系统支撑。今天，我们是覆盖 10 个市场的全服务人力资源合作伙伴——为各阶段企业提供雇主记录、全球薪资、高管猎头、人力资源外包及 AI 驱动的流程自动化。",
+    overview:
+      "Mars Consulting Pte Ltd（统一实体编号 200907301Z）是一家在新加坡注册成立的人力资源与劳动力解决方案公司，成立于 2009 年 4 月。持有新加坡人力部 MOM EA 执照（号码 09C2925），在 10 个市场提供雇主记录、高管猎头、薪资外包、人力资源外包及 AI 自动化服务——在新加坡、马来西亚、香港、中国、印度和美国设有直属办公室，并在阿联酋、越南、泰国和印尼提供服务。Mars Consulting 拥有 100 余名顾问，总部位于新加坡滨海广场。",
     timeline: {
       eyebrow: "我们的历程",
       headline: "从 2009 年到今天",
@@ -566,13 +587,13 @@ const zh: Translation = {
       y2013:
         "扩展至业务流程外包（BPO）。行业覆盖从科技和金融延伸至房地产和建筑——把结构化人力资源运营带入长期依赖非正式招聘实践的行业。",
       y2017:
-        "推出雇主记录（EOR）服务，从区域招聘公司转型为覆盖 8 个市场的跨境人力资源基础设施提供商。Mars 不再只是招聘公司，而是跨境运营企业的完整雇佣和薪资平台。",
+        "推出雇主记录（EOR）服务，从区域招聘公司转型为跨境人力资源基础设施提供商，业务拓展至亚洲、中东及美国。Mars 不再只是招聘公司，而是跨境运营企业的完整雇佣和薪资平台。",
       y2020:
         "推出人力资源外包——把经验丰富的人力资源顾问直接嵌入客户组织，提供战略和运营支持。同年将服务延伸至企业学习和培训合作。",
       y2025:
         "推出 AI 自动化业务——将 AI 工作流和资深从业人员结合，帮助分布式团队自动化最耗时费力的人力资源环节。在新加坡、马来西亚和阿联酋完成首批实际部署。",
       y2026:
-        "获得 IMDA 数字领袖计划认可。开始为区域劳动力管理的未来开发数字就业护照及微证书基础设施。",
+        "服务覆盖扩展至 10 个市场——越南和印尼加入区域服务版图。开始为下一代区域劳动力管理开发数字就业护照及微证书基础设施。",
     },
     founder: {
       eyebrow: "创始人",
@@ -592,7 +613,15 @@ const zh: Translation = {
       years: "成立年份",
       markets: "覆盖市场",
       consultants: "专业顾问",
-      licences: "新加坡执照",
+      licences: "MOM EA 执照",
+    },
+    team: {
+      eyebrow: "我们的团队",
+      headline: "公开核实我们的顾问。",
+      body:
+        "我们在新加坡、马来西亚、香港、中国、印度和美国的招聘人员、顾问及资深从业者均公开列于领英公司页面——姓名、职位、所在地及任职年限一目了然。",
+      cta: "在领英查看团队 ↗",
+      ctaUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
     },
     licences: {
       eyebrow: "执照与监管状态",
@@ -603,16 +632,51 @@ const zh: Translation = {
       momLabel: "综合 EA 执照",
       momCode: "执照号 09C2925",
       momNote: "就业中介执照——授权在新加坡安置本地及外籍候选人。",
-      masAuthority: "新加坡金融管理局（MAS）",
-      masLabel: "薪资服务豁免",
-      masCode: "MAS 豁免实体",
-      masNote: "在新加坡经营薪资服务的 MAS 豁免状态。",
       acraAuthority: "新加坡会计与企业管理局",
       acraLabel: "企业服务提供商",
       acraCode: "注册申报代理（RFA）",
       acraNote: "会计与企业管理局注册。",
+      entityLabel: "注册实体",
+      entityName: "Mars Consulting Pte Ltd",
+      entityUEN: "统一实体编号 200907301Z",
+      entityAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      entityNote: "公司信息可在 ACRA BizFile+ 公开核实。",
       verifiable:
         "执照详情可在 MOM 就业中介名录和 ACRA BizFile+ 注册系统中公开核实。",
+    },
+    offices: {
+      eyebrow: "我们的办公室",
+      headline: "我们在哪里运营。",
+      body: "Mars Consulting 设有 6 个办公室，并在 10 个市场提供 EOR、薪资和人力资源服务。",
+      sg: {
+        country: "新加坡",
+        badge: "总部",
+        address: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      },
+      my: {
+        country: "马来西亚",
+        address: "Suite 25.03A, Level 25, Johor Bahru City Square Office Tower, 103-108 Jalan Wong Ah Fook, Johor Bahru 80000, Johor",
+      },
+      hk: {
+        country: "香港",
+        address: "Unit 83, 3/F, Yau Lee Centre, No. 45 Hoi Yuen Road, Kwun Tong, Kowloon",
+      },
+      cn: {
+        country: "中国",
+        address: "5/F, Aozhong Building, No. 516 Feihong Road, Honggutan New District, Nanchang, Jiangxi",
+        addressCN: "江西省南昌市红谷滩新区飞虹路516号澳中大厦5楼",
+      },
+      in: {
+        country: "印度",
+        address: "73 Front Basement, National Park, Lajpat Nagar-IV, New Delhi 110024",
+      },
+      us: {
+        country: "美国",
+        address: "1421 Begonia Way, Superior, CO 80027",
+      },
+      serviceLabel: "服务市场（无本地办公室）",
+      serviceMarkets: "阿联酋 · 越南 · 泰国 · 印尼",
+      serviceNote: "通过境内合作伙伴和新加坡客户负责人提供 EOR、薪资和人力资源服务。",
     },
     principles: {
       eyebrow: "我们的立场",
@@ -630,7 +694,7 @@ const zh: Translation = {
     ctaBanner: {
       headline: "自 2009 年成立。做运营者背后的运营者。",
       body:
-        "与新加坡持牌专家谈谈亚太地区的 EOR、高管猎头或 AI 驱动的人力资源自动化。",
+        "与新加坡持牌专家谈谈 10 个市场的 EOR、高管猎头或 AI 驱动的人力资源自动化。",
       cta: "预约咨询",
     },
   },
