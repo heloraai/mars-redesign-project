@@ -21,6 +21,8 @@ const en = {
     statMarkets: "Markets served",
     statConsultants: "Expert consultants",
     statLicence: "MOM EA Licence",
+    statAcra: "ACRA Filing Agent",
+    statAcraValue: "RFA",
     snapshotEyebrow: "Monthly compliance snapshot",
     snapshotSample: "Sample · April 2026 · Client A (anonymised)",
     snapshotStatus: "On time",
