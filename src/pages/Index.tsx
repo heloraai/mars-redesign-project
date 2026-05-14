@@ -174,7 +174,7 @@ const TrustBar = () => {
   return (
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-10">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
           <CountStat
             to={2009}
             label={t("hero.statYears")}
@@ -200,46 +200,12 @@ const TrustBar = () => {
               {t("hero.statLicence")}
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const LicenseStrip = () => {
-  const { t } = useTranslation();
-  const items = [
-    {
-      authority: t("licenses.mom.authority"),
-      label: t("licenses.mom.label"),
-      code: t("licenses.mom.code"),
-    },
-    {
-      authority: t("licenses.acra.authority"),
-      label: t("licenses.acra.label"),
-      code: t("licenses.acra.code"),
-    },
-  ];
-  return (
-    <section className="border-y border-border bg-background">
-      <div className="container-narrow py-10">
-        <p className="eyebrow text-center">{t("licenses.eyebrow")}</p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
-          {items.map((it) => (
-            <div
-              key={it.label}
-              className="flex items-start gap-3 rounded-xl border border-border bg-card p-5 shadow-card"
-            >
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-primary/5 text-primary">
-                <ShieldCheck className="h-5 w-5" />
-              </span>
-              <div>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">{it.authority}</p>
-                <p className="mt-0.5 font-display text-base font-semibold text-foreground">{it.label}</p>
-                <p className="mt-0.5 text-xs text-muted-foreground">{it.code}</p>
-              </div>
-            </div>
-          ))}
+          <div>
+            <p className="font-display text-3xl font-semibold text-foreground">{t("hero.statAcraValue")}</p>
+            <p className="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground">
+              {t("hero.statAcra")}
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -634,7 +600,6 @@ const Index = () => (
     <Hero />
     <TrustBar />
     <LogoMarquee />
-    <LicenseStrip />
     <TwinPillars />
     <HowItWorksSection />
     <ComparisonSection />
