@@ -11,11 +11,11 @@ const id: Translation = {
     bookCall: "Pesan panggilan",
   },
   hero: {
-    pill: "Sejak 2009 · 17 tahun di Singapura",
-    headlineLead: "17 tahun menjadi",
+    pill: "Sejak 2009 · Sejak 2009 di Singapura",
+    headlineLead: "Sejak 2009 menjadi",
     headlineAccent: "operator di balik operator.",
     sub:
-      "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur HR di 8 pasar APAC. Sejak 2009.",
+      "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur HR di 10 pasar APAC. Sejak 2009.",
     ctaPrimary: "Pesan Panggilan",
     ctaSecondary: "Jelajahi Layanan Kami",
     statYears: "Tahun beroperasi",
@@ -73,7 +73,7 @@ const id: Translation = {
       title: "Rekrutmen & Pencarian Eksekutif",
       body:
         "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia di Singapura dan APAC. Kami menjangkau kandidat pasif yang tidak bisa dijangkau platform lain, lalu menyerahkan langsung ke onboarding EOR bila dibutuhkan.",
-      bullet1: "2.560+ penempatan berhasil sejak 2009",
+      bullet1: "100+ penempatan berhasil sejak 2009",
       bullet2: "Shortlist C-suite dalam sprint 21 hari",
       bullet3: "Teknologi, keuangan, kesehatan, manufaktur",
       cta: "Jelajahi Rekrutmen",
@@ -83,7 +83,7 @@ const id: Translation = {
     eyebrow: "Mengapa Mars",
     headline: "Mengapa Mars, bukan platform EOR global?",
     p1:
-      "Platform EOR global — Deel, Remote, Rippling — beroperasi pada model SaaS standar bervolume tinggi. Mereka bekerja dengan baik sampai tidak: pelaporan kompensasi ekuitas lintas yurisdiksi, negosiasi pemutusan non-standar di Indonesia, eksposur PE yang membutuhkan opini penasihat sebelum siklus penggajian pertama.",
+      "Platform EOR global — global EOR SaaS platforms — beroperasi pada model SaaS standar bervolume tinggi. Mereka bekerja dengan baik sampai tidak: pelaporan kompensasi ekuitas lintas yurisdiksi, negosiasi pemutusan non-standar di Indonesia, eksposur PE yang membutuhkan opini penasihat sebelum siklus penggajian pertama.",
     p2:
       "Mars masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola khusus, pengawasan hukum aktif di lapangan, dan intervensi manusia tingkat senior untuk kasus-kasus tepi yang membutuhkannya.",
     p3:
@@ -93,7 +93,7 @@ const id: Translation = {
   countries: {
     eyebrow: "Cakupan",
     headline:
-      "Rekrut secara patuh di 8 pasar APAC — di bawah satu kontrak Singapura.",
+      "Rekrut secara patuh di 10 pasar APAC — di bawah satu kontrak Singapura.",
     body:
       "Kami menjalankan penggajian, pengarsipan statutori, dan kontrak kerja di pasar-pasar ini sejak 2009. Anda tetap operator; kami tetap pemberi kerja sah.",
     statOnboarding: "Onboarding",
@@ -218,7 +218,7 @@ const id: Translation = {
     quote:
       "Mars melakukan onboarding tim riset kami di Singapura dan Jakarta dalam waktu kurang dari dua minggu. Mereka menangani semuanya — kontrak, pengakuan ekuitas, pengarsipan statutori lokal — sehingga kami bisa fokus pada pengiriman model.",
     attribution: "Head of People · Perusahaan AI Series-B",
-    location: "Singapura ↔ Jakarta · 12 perekrutan di 2025",
+    location: "Singapura ↔ APAC · 12 perekrutan di 2025",
     statClients: "Klien global",
     statConsultants: "Konsultan",
     statLicences: "Lisensi SG",
@@ -266,28 +266,28 @@ const id: Translation = {
       privacy: "Privasi",
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Hak cipta dilindungi.",
-    cities: "Singapura · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Lisensi MOM EA Komprehensif No. 09C2925  ·  Penyedia Layanan Korporat ACRA & Agen Pengarsipan Terdaftar  ·  Sekretaris Korporat Terdaftar",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapura & APAC — Mars Consulting",
     metaDesc:
-      "Layanan EOR berlisensi Singapura di 8 pasar. Pekerjaan, penggajian, dan pengarsipan statutori yang patuh sejak hari pertama. Tanpa entitas lokal. MOM EA 09C2925.",
+      "Layanan EOR berlisensi Singapura di 10 pasar. Pekerjaan, penggajian, dan pengarsipan statutori yang patuh sejak hari pertama. Tanpa entitas lokal. MOM EA 09C2925.",
     pill: "Employer of Record & Penggajian Global",
     headlineLead: "Rekrut secara patuh di",
-    headlineAccent: "8 pasar APAC",
+    headlineAccent: "10 pasar APAC",
     headlineTail: "— tanpa mendirikan entitas lokal",
     sub:
       "Layanan Employer of Record berlisensi Singapura. Kami menjadi pemberi kerja sah; Anda mengarahkan pekerjaan. Kontrak kerja, penggajian, pengarsipan statutori, dan offboarding ditangani sejak hari pertama.",
     ctaPrimary: "Dapatkan Penawaran EOR",
     ctaSecondary: "Lihat Cara Kerjanya",
-    trustLine: "Lisensi MOM EA No. 09C2925 · 17 tahun · 8 pasar APAC · Onboarding 5 hari",
+    trustLine: "Lisensi MOM EA No. 09C2925 · Sejak 2009 · 10 pasar APAC · Onboarding 5 hari",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 hari",
       coverage: "Cakupan APAC",
-      coverageValue: "8 pasar",
+      coverageValue: "10 pasar",
       clients: "Klien global",
       clientsValue: "100+",
       misses: "Keterlambatan statutori",
@@ -330,15 +330,15 @@ const id: Translation = {
   recruitmentPage: {
     metaTitle: "Rekrutmen & Pencarian Eksekutif Singapura — Mars Consulting",
     metaDesc:
-      "Penempatan permanen, staffing kontrak, dan pencarian eksekutif C-suite rahasia di Singapura dan APAC. 2.560+ penempatan berhasil. 17 tahun. Berlisensi MOM.",
+      "Penempatan permanen, staffing kontrak, dan pencarian eksekutif C-suite rahasia di Singapura dan APAC. 100+ penempatan berhasil. Sejak 2009. Berlisensi MOM.",
     pill: "Rekrutmen & Pencarian Eksekutif",
     headlineLead: "Rekrutmen & Pencarian Eksekutif di",
     headlineAccent: "Singapura dan APAC",
     sub:
-      "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia — disampaikan oleh praktisi yang telah menempatkan lebih dari 2.560 kandidat di sektor teknologi, jasa keuangan, kesehatan, dan manufaktur sejak 2009.",
+      "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia — disampaikan oleh praktisi yang telah menempatkan lebih dari 100 kandidat di sektor teknologi, jasa keuangan, kesehatan, dan manufaktur sejak 2009.",
     ctaPrimary: "Diskusikan Mandat Pencarian",
     ctaSecondary: "Lihat Proses Kami",
-    trustLine: "Lisensi MOM EA No. 09C2925 · 17 tahun · 8 pasar APAC",
+    trustLine: "Lisensi MOM EA No. 09C2925 · Sejak 2009 · 10 pasar APAC",
     tracks: {
       eyebrow: "Jalur layanan",
       headline: "Tiga jalur pencarian. Satu tim.",
@@ -408,11 +408,11 @@ const id: Translation = {
     },
     stats: {
       placements: "Penempatan berhasil",
-      placementsValue: "2.560+",
+      placementsValue: "100+",
       since: "Sejak 2009",
-      sinceValue: "17 tahun",
+      sinceValue: "Sejak 2009",
       coverage: "Cakupan APAC",
-      coverageValue: "8 pasar",
+      coverageValue: "10 pasar",
       sprint: "Sprint shortlist C-suite",
       sprintValue: "21 hari",
     },
@@ -509,13 +509,13 @@ const id: Translation = {
   aboutPage: {
     metaTitle: "Tentang Mars Consulting — Spesialis HR & EOR Singapura Sejak 2009",
     metaDesc:
-      "Mars Consulting didirikan di Singapura pada April 2009. 17 tahun pengalaman HR, EOR, dan pencarian eksekutif di 8 pasar APAC. Lisensi MOM EA No. 09C2925.",
+      "Mars Consulting didirikan di Singapura pada April 2009. Sejak 2009 pengalaman HR, EOR, dan pencarian eksekutif di 10 pasar APAC. Lisensi MOM EA No. 09C2925.",
     pill: "Tentang Mars Consulting",
     headlineLead: "Tujuh Belas Tahun Membangun",
     headlineAccent: "Infrastruktur HR",
     headlineTail: "di Balik Tim Global",
     sub:
-      "Mars Consulting didirikan di Singapura pada April 2009 dengan satu keyakinan: bahwa bisnis hebat dibangun oleh orang yang tepat, ditempatkan di peran yang tepat, didukung oleh sistem yang tepat. Hari ini kami adalah mitra HR layanan penuh di 8 pasar — menyediakan Employer of Record, penggajian global, pencarian eksekutif, outsourcing HR, dan otomasi proses berbasis AI untuk perusahaan di setiap tahap pertumbuhan.",
+      "Mars Consulting didirikan di Singapura pada April 2009 dengan satu keyakinan: bahwa bisnis hebat dibangun oleh orang yang tepat, ditempatkan di peran yang tepat, didukung oleh sistem yang tepat. Hari ini kami adalah mitra HR layanan penuh di 10 pasar — menyediakan Employer of Record, penggajian global, pencarian eksekutif, outsourcing HR, dan otomasi proses berbasis AI untuk perusahaan di setiap tahap pertumbuhan.",
     timeline: {
       eyebrow: "Perjalanan kami",
       headline: "Bagaimana kami sampai di sini",
@@ -580,7 +580,7 @@ const id: Translation = {
         "Berapa pun negara atau layanan yang terlibat, satu manajer hubungan bertanggung jawab atas keseluruhan ruang lingkup pekerjaan. Anda tidak mengelola jaringan pemasok. Anda mengelola satu panggilan.",
     },
     ctaBanner: {
-      headline: "17 tahun menjadi operator di balik operator",
+      headline: "Sejak 2009 menjadi operator di balik operator",
       body:
         "Bicara dengan spesialis berlisensi Singapura tentang EOR, pencarian eksekutif, atau otomasi HR berbasis AI di seluruh APAC.",
       cta: "Pesan Panggilan",

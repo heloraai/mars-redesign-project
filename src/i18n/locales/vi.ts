@@ -11,11 +11,11 @@ const vi: Translation = {
     bookCall: "Đặt cuộc gọi",
   },
   hero: {
-    pill: "Từ 2009 · 17 năm tại Singapore",
-    headlineLead: "17 năm là",
+    pill: "Từ 2009 · Từ 2009 tại Singapore",
+    headlineLead: "Từ 2009 là",
     headlineAccent: "nhà điều hành đứng sau nhà điều hành.",
     sub:
-      "Employer of Record được cấp phép tại Singapore, tìm kiếm điều hành và hạ tầng HR trên 8 thị trường APAC. Từ 2009.",
+      "Employer of Record được cấp phép tại Singapore, tìm kiếm điều hành và hạ tầng HR trên 10 thị trường. Từ 2009.",
     ctaPrimary: "Đặt Cuộc gọi",
     ctaSecondary: "Khám phá Dịch vụ",
     statYears: "Năm hoạt động",
@@ -73,7 +73,7 @@ const vi: Translation = {
       title: "Tuyển dụng & Tìm kiếm Điều hành",
       body:
         "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm C-suite bí mật trên Singapore và APAC. Chúng tôi tìm các ứng viên thụ động mà các nền tảng khác không tiếp cận được, sau đó bàn giao trực tiếp cho onboarding EOR khi cần.",
-      bullet1: "2.560+ tuyển dụng thành công từ 2009",
+      bullet1: "100+ tuyển dụng thành công từ 2009",
       bullet2: "Danh sách rút gọn C-suite trong 21 ngày",
       bullet3: "Công nghệ, tài chính, y tế, sản xuất",
       cta: "Khám phá Tuyển dụng",
@@ -83,7 +83,7 @@ const vi: Translation = {
     eyebrow: "Tại sao chọn Mars",
     headline: "Tại sao Mars, không phải nền tảng EOR toàn cầu?",
     p1:
-      "Các nền tảng EOR toàn cầu — Deel, Remote, Rippling — vận hành trên mô hình SaaS tiêu chuẩn khối lượng cao. Chúng hoạt động tốt cho đến khi không: báo cáo bồi thường cổ phần qua các khu vực pháp lý, đàm phán chấm dứt không tiêu chuẩn ở Indonesia, phơi nhiễm PE cần ý kiến tư vấn trước chu kỳ bảng lương đầu tiên.",
+      "Các nền tảng EOR toàn cầu — global EOR SaaS platforms — vận hành trên mô hình SaaS tiêu chuẩn khối lượng cao. Chúng hoạt động tốt cho đến khi không: báo cáo bồi thường cổ phần qua các khu vực pháp lý, đàm phán chấm dứt không tiêu chuẩn ở Indonesia, phơi nhiễm PE cần ý kiến tư vấn trước chu kỳ bảng lương đầu tiên.",
     p2:
       "Mars can thiệp khi xung đột quy định địa phương vượt quá phần mềm chung chung. Chúng tôi thay thế quy trình tự động bằng các khung quản trị tùy chỉnh, giám sát pháp lý tích cực tại chỗ và can thiệp con người cấp cao cho các trường hợp ngoại lệ cần thiết.",
     p3:
@@ -93,7 +93,7 @@ const vi: Translation = {
   countries: {
     eyebrow: "Phạm vi",
     headline:
-      "Tuyển dụng tuân thủ trên 8 thị trường APAC — dưới một hợp đồng Singapore.",
+      "Tuyển dụng tuân thủ trên 10 thị trường — dưới một hợp đồng Singapore.",
     body:
       "Chúng tôi đã chạy bảng lương, nộp hồ sơ theo luật và hợp đồng lao động tại các thị trường này từ 2009. Bạn vẫn là nhà điều hành; chúng tôi vẫn là nhà tuyển dụng hợp pháp.",
     statOnboarding: "Onboarding",
@@ -218,7 +218,7 @@ const vi: Translation = {
     quote:
       "Mars onboard nhóm nghiên cứu của chúng tôi tại Singapore và Jakarta trong dưới hai tuần. Họ xử lý tất cả — hợp đồng, xác nhận cổ phần, nộp hồ sơ địa phương — để chúng tôi có thể tập trung phát triển mô hình.",
     attribution: "Head of People · Công ty AI Series-B",
-    location: "Singapore ↔ Jakarta · 12 tuyển dụng năm 2025",
+    location: "Singapore ↔ APAC · 12 tuyển dụng năm 2025",
     statClients: "Khách hàng toàn cầu",
     statConsultants: "Chuyên gia tư vấn",
     statLicences: "Giấy phép SG",
@@ -266,28 +266,28 @@ const vi: Translation = {
       privacy: "Bảo mật",
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Bảo lưu mọi quyền.",
-    cities: "Singapore · Jakarta · TP. Hồ Chí Minh · Kuala Lumpur",
+    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Giấy phép MOM EA Toàn diện Số 09C2925  ·  Nhà cung cấp Dịch vụ Doanh nghiệp ACRA & Đại lý Nộp hồ sơ Đăng ký  ·  Thư ký Doanh nghiệp Đăng ký",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapore & APAC — Mars Consulting",
     metaDesc:
-      "Dịch vụ EOR có giấy phép Singapore trên 8 thị trường. Lao động, bảng lương, nộp hồ sơ tuân thủ ngay ngày đầu. Không cần pháp nhân địa phương. MOM EA 09C2925.",
+      "Dịch vụ EOR có giấy phép Singapore trên 10 thị trường. Lao động, bảng lương, nộp hồ sơ tuân thủ ngay ngày đầu. Không cần pháp nhân địa phương. MOM EA 09C2925.",
     pill: "Employer of Record & Bảng lương Toàn cầu",
     headlineLead: "Tuyển dụng tuân thủ trên",
-    headlineAccent: "8 thị trường APAC",
+    headlineAccent: "10 thị trường",
     headlineTail: "— không cần lập pháp nhân địa phương",
     sub:
       "Dịch vụ Employer of Record có giấy phép Singapore. Chúng tôi là nhà tuyển dụng hợp pháp; bạn chỉ đạo công việc. Hợp đồng lao động, bảng lương, nộp hồ sơ và offboarding xử lý ngay ngày đầu tiên.",
     ctaPrimary: "Nhận Báo giá EOR",
     ctaSecondary: "Xem Cách hoạt động",
-    trustLine: "Giấy phép MOM EA Số 09C2925 · 17 năm · 8 thị trường APAC · Onboarding 5 ngày",
+    trustLine: "Giấy phép MOM EA Số 09C2925 · Từ 2009 · 10 thị trường · Onboarding 5 ngày",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 ngày",
       coverage: "Phạm vi APAC",
-      coverageValue: "8 thị trường",
+      coverageValue: "10 thị trường",
       clients: "Khách hàng toàn cầu",
       clientsValue: "100+",
       misses: "Vi phạm theo luật",
@@ -330,15 +330,15 @@ const vi: Translation = {
   recruitmentPage: {
     metaTitle: "Tuyển dụng & Tìm kiếm Điều hành Singapore — Mars Consulting",
     metaDesc:
-      "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm điều hành C-suite bí mật trên Singapore và APAC. 2.560+ tuyển dụng thành công. 17 năm. Có giấy phép MOM.",
+      "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm điều hành C-suite bí mật trên Singapore và APAC. 100+ tuyển dụng thành công. Từ 2009. Có giấy phép MOM.",
     pill: "Tuyển dụng & Tìm kiếm Điều hành",
     headlineLead: "Tuyển dụng & Tìm kiếm Điều hành trên",
     headlineAccent: "Singapore và APAC",
     sub:
-      "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm C-suite bí mật — được cung cấp bởi các chuyên gia đã đặt hơn 2.560 ứng viên trong công nghệ, dịch vụ tài chính, y tế và sản xuất từ 2009.",
+      "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm C-suite bí mật — được cung cấp bởi các chuyên gia đã đặt hơn 100 ứng viên trong công nghệ, dịch vụ tài chính, y tế và sản xuất từ 2009.",
     ctaPrimary: "Thảo luận Search Mandate",
     ctaSecondary: "Xem Quy trình",
-    trustLine: "Giấy phép MOM EA Số 09C2925 · 17 năm · 8 thị trường APAC",
+    trustLine: "Giấy phép MOM EA Số 09C2925 · Từ 2009 · 10 thị trường",
     tracks: {
       eyebrow: "Hướng dịch vụ",
       headline: "Ba hướng tìm kiếm. Một đội.",
@@ -408,11 +408,11 @@ const vi: Translation = {
     },
     stats: {
       placements: "Tuyển dụng thành công",
-      placementsValue: "2.560+",
+      placementsValue: "100+",
       since: "Từ 2009",
-      sinceValue: "17 năm",
+      sinceValue: "Từ 2009",
       coverage: "Phạm vi APAC",
-      coverageValue: "8 thị trường",
+      coverageValue: "10 thị trường",
       sprint: "Sprint shortlist C-suite",
       sprintValue: "21 ngày",
     },
@@ -509,13 +509,13 @@ const vi: Translation = {
   aboutPage: {
     metaTitle: "Về Mars Consulting — Chuyên gia HR & EOR Singapore Từ 2009",
     metaDesc:
-      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009. 17 năm kinh nghiệm HR, EOR và tìm kiếm điều hành trên 8 thị trường APAC. Giấy phép MOM EA Số 09C2925.",
+      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009. Từ 2009 kinh nghiệm HR, EOR và tìm kiếm điều hành trên 10 thị trường. Giấy phép MOM EA Số 09C2925.",
     pill: "Về Mars Consulting",
     headlineLead: "Mười Bảy Năm Xây dựng",
     headlineAccent: "Hạ tầng HR",
     headlineTail: "Đằng sau các Đội Toàn cầu",
     sub:
-      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009 với một niềm tin: rằng các doanh nghiệp tuyệt vời được xây dựng bởi những người phù hợp, đặt trong các vai trò phù hợp, được hỗ trợ bởi các hệ thống phù hợp. Hôm nay chúng tôi là đối tác HR dịch vụ đầy đủ trên 8 thị trường — cung cấp Employer of Record, bảng lương toàn cầu, tìm kiếm điều hành, HR outsourcing và tự động hóa quy trình bằng AI cho các công ty ở mọi giai đoạn tăng trưởng.",
+      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009 với một niềm tin: rằng các doanh nghiệp tuyệt vời được xây dựng bởi những người phù hợp, đặt trong các vai trò phù hợp, được hỗ trợ bởi các hệ thống phù hợp. Hôm nay chúng tôi là đối tác HR dịch vụ đầy đủ trên 10 thị trường — cung cấp Employer of Record, bảng lương toàn cầu, tìm kiếm điều hành, HR outsourcing và tự động hóa quy trình bằng AI cho các công ty ở mọi giai đoạn tăng trưởng.",
     timeline: {
       eyebrow: "Hành trình của chúng tôi",
       headline: "Chúng tôi đã đến đây như thế nào",
@@ -580,7 +580,7 @@ const vi: Translation = {
         "Bất kể có bao nhiêu quốc gia hay dịch vụ liên quan, một quản lý quan hệ chịu trách nhiệm cho toàn bộ phạm vi công việc. Bạn không quản lý mạng lưới nhà cung cấp. Bạn quản lý một cuộc gọi.",
     },
     ctaBanner: {
-      headline: "17 năm là nhà điều hành đứng sau nhà điều hành",
+      headline: "Từ 2009 là nhà điều hành đứng sau nhà điều hành",
       body:
         "Trao đổi với chuyên gia có giấy phép Singapore về EOR, tìm kiếm điều hành hoặc tự động hóa HR bằng AI trên APAC.",
       cta: "Đặt Cuộc gọi",

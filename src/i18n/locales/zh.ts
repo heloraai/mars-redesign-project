@@ -698,6 +698,66 @@ const zh: Translation = {
       cta: "预约咨询",
     },
   },
+  hrOutsourcingPage: {
+    metaTitle: "新加坡人力资源外包 — 嵌入式 HR 顾问 | Mars Consulting",
+    metaDesc:
+      "面向需要资深 HR 能力但暂不打算全职聘用 HR 总监的企业，提供嵌入式 HR 顾问服务。覆盖新加坡及区域。MOM EA 持牌。",
+    pill: "HR 外包与嵌入式 HR",
+    headlineLead: "资深 HR 能力，",
+    headlineAccent: "不必走全职聘用这条路。",
+    sub:
+      "把资深 HR 顾问直接嵌入你的团队里做战略和运营工作。我们扮演你的 HR 职能——从政策设计到组织调整——适合需要资深能力但还没准备好全职聘用 HR 总监的公司。",
+    ctaPrimary: "讨论 HR 外包需求",
+    ctaSecondary: "了解我们的工作方式",
+    useCases: {
+      eyebrow: "客户什么时候找 Mars",
+      headline: "嵌入式 HR 的四种典型场景。",
+      case1: "成长期公司（50–500 人）尚未配置资深 HR 负责人",
+      case2: "并购整合——统一各被收购实体的 HR 政策",
+      case3: "HR 总监长期休假——过渡期接手保持连续性",
+      case4: "专项项目——组织重整、裁员计划、政策大改",
+    },
+    included: {
+      eyebrow: "服务内容",
+      item1: "资深 HR 从业者兼职或全职嵌入",
+      item2: "政策框架设计与文档化",
+      item3: "薪酬与福利结构搭建",
+      item4: "绩效管理与人才发展框架",
+      item5: "员工关系与申诉处理",
+      item6: "合规审计与法定申报",
+    },
+    integration: {
+      eyebrow: "与 EOR 及招聘联动",
+      body:
+        "嵌入式 HR 服务经常和我们的 EOR、招聘能力一起打包——让你用一个对接关系搞定整个团队的 HR 战略、招聘和雇佣合规。",
+    },
+  },
+  faqPage: {
+    metaTitle: "常见问题 — Mars Consulting",
+    metaDesc:
+      "关于 Mars Consulting 在 10 个市场提供的雇主记录、高管猎头、薪资及 AI 自动化服务的常见问题。",
+    pill: "常见问题",
+    headlineLead: "认真买家会问我们的",
+    headlineAccent: "那些问题。",
+    sub:
+      "客户通常会在第二、第三次通话才问的问题——我们直接放在这里，省掉你的时间。",
+    about: {
+      eyebrow: "关于 Mars Consulting",
+      q1: "Mars Consulting 是一家什么样的公司？什么时候成立的？",
+      a1: "Mars Consulting Pte Ltd（统一实体编号 200907301Z）是一家在新加坡注册成立的 HR 及劳动力解决方案公司，于 2009 年 4 月成立。我们在亚洲、中东及美国的 10 个市场提供雇主记录、高管猎头、薪资外包、人力资源外包及 AI 自动化服务。",
+      q2: "Mars Consulting 持有哪些执照与资质？",
+      a2: "Mars Consulting 持有 MOM 综合就业中介执照（编号 09C2925），以及 ACRA 注册申报代理资格。所有资质均可在新加坡人力部就业中介名录和 ACRA BizFile+ 系统中公开核实。",
+      q3: "Mars Consulting 的办公室分布在哪里？",
+      a3: "我们在新加坡（总部）、马来西亚（新山）、香港（观塘）、中国（南昌）、印度（新德里）、美国（科罗拉多 Superior）设有办公室；阿联酋、越南、泰国和印尼为服务市场。",
+      q4: "如何核实 Mars Consulting 的团队与资质？",
+      a4: "我们的顾问和招聘人员均公开列于 LinkedIn 公司页面。MOM EA 执照可在人力部就业中介名录核实，公司注册可在 ACRA BizFile+ 核实。",
+    },
+    categories: {
+      eor: "EOR & 薪资",
+      recruitment: "招聘与高管猎头",
+      ai: "AI 自动化",
+    },
+  },
 };
 
 export default zh;

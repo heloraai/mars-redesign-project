@@ -14,21 +14,24 @@ import { Button } from "@/components/ui/button";
 import { withBase } from "@/lib/href";
 
 interface CountryCoord {
-  code: "IN" | "TH" | "HK" | "CN" | "US" | "AE" | "MY" | "SG";
+  code: "IN" | "TH" | "HK" | "CN" | "US" | "AE" | "MY" | "SG" | "VN" | "ID";
   payroll: string;
   x: number;
   y: number;
+  office: boolean;
 }
 
 const COUNTRY_COORDS: CountryCoord[] = [
-  { code: "AE", payroll: "WPS · GPSSA", x: 4, y: 28 },
-  { code: "IN", payroll: "EPF · ESI", x: 8, y: 42 },
-  { code: "TH", payroll: "SSO · PIT", x: 32, y: 36 },
-  { code: "MY", payroll: "EPF · SOCSO", x: 38, y: 60 },
-  { code: "SG", payroll: "CPF · IR8A", x: 44, y: 70 },
-  { code: "CN", payroll: "Social Insurance", x: 58, y: 12 },
-  { code: "HK", payroll: "MPF", x: 62, y: 24 },
-  { code: "US", payroll: "FICA · State taxes", x: 90, y: 18 },
+  { code: "US", payroll: "FICA · State taxes", x: 90, y: 18, office: true },
+  { code: "AE", payroll: "WPS · GPSSA", x: 4, y: 30, office: false },
+  { code: "IN", payroll: "EPF · ESI", x: 10, y: 44, office: true },
+  { code: "CN", payroll: "Social Insurance", x: 58, y: 12, office: true },
+  { code: "HK", payroll: "MPF", x: 62, y: 26, office: true },
+  { code: "VN", payroll: "BHXH · PIT", x: 48, y: 40, office: false },
+  { code: "TH", payroll: "SSO · PIT", x: 36, y: 44, office: false },
+  { code: "MY", payroll: "EPF · SOCSO", x: 40, y: 64, office: true },
+  { code: "SG", payroll: "CPF · IR8A", x: 46, y: 72, office: true },
+  { code: "ID", payroll: "BPJS · PPh21", x: 52, y: 84, office: false },
 ];
 
 export const CountriesMapSection = () => {
@@ -68,10 +71,18 @@ export const CountriesMapSection = () => {
               style={{ left: `${c.x}%`, top: `${c.y}%` }}
             >
               <span
-                className="absolute inset-0 -m-2 rounded-full bg-accent/40 animate-pulse-ring"
-                style={{ animationDelay: `${(i * 0.3).toFixed(2)}s` }}
+                className={`absolute inset-0 -m-2 rounded-full animate-pulse-ring ${
+                  c.office ? "bg-accent/40" : "bg-white/25"
+                }`}
+                style={{ animationDelay: `${(i * 0.25).toFixed(2)}s` }}
               />
-              <span className="relative grid h-7 w-7 place-items-center rounded-full bg-accent text-[10px] font-bold text-accent-foreground shadow-elevated">
+              <span
+                className={`relative grid h-7 w-7 place-items-center rounded-full text-[10px] font-bold shadow-elevated ${
+                  c.office
+                    ? "bg-accent text-accent-foreground"
+                    : "border border-white/60 bg-transparent text-white"
+                }`}
+              >
                 {c.code}
               </span>
               <div className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-background px-2.5 py-1.5 text-[11px] font-medium text-foreground opacity-0 shadow-elevated transition-opacity group-hover:opacity-100">
@@ -79,6 +90,16 @@ export const CountriesMapSection = () => {
               </div>
             </div>
           ))}
+          <div className="absolute bottom-3 left-3 flex items-center gap-4 rounded-md bg-black/30 px-3 py-1.5 text-[10px] text-white/85 backdrop-blur-sm">
+            <span className="flex items-center gap-1.5">
+              <span className="h-2.5 w-2.5 rounded-full bg-accent" />
+              {t("countries.legendOffice")}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="h-2.5 w-2.5 rounded-full border border-white/70" />
+              {t("countries.legendService")}
+            </span>
+          </div>
         </div>
       </div>
     </section>

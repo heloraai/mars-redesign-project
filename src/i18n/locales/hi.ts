@@ -12,11 +12,11 @@ const hi: Translation = {
     bookCall: "कॉल बुक करें",
   },
   hero: {
-    pill: "2009 से · सिंगापुर में 17 साल",
-    headlineLead: "17 साल से",
+    pill: "2009 से · सिंगापुर में 2009 से",
+    headlineLead: "2009 से से",
     headlineAccent: "ऑपरेटर के पीछे का ऑपरेटर।",
     sub:
-      "सिंगापुर लाइसेंस्ड Employer of Record, एग्जीक्यूटिव सर्च, और 8 APAC बाज़ारों में HR इन्फ्रास्ट्रक्चर। 2009 से।",
+      "सिंगापुर लाइसेंस्ड Employer of Record, एग्जीक्यूटिव सर्च, और 10 markets बाज़ारों में HR इन्फ्रास्ट्रक्चर। 2009 से।",
     ctaPrimary: "कॉल बुक करें",
     ctaSecondary: "हमारी सेवाएँ देखें",
     statYears: "ऑपरेशन के साल",
@@ -74,7 +74,7 @@ const hi: Translation = {
       title: "भर्ती और एग्जीक्यूटिव सर्च",
       body:
         "सिंगापुर और APAC में स्थायी प्लेसमेंट, कॉन्ट्रैक्ट स्टाफिंग, और गोपनीय C-suite सर्च। हम पैसिव कैंडिडेट खोजते हैं जिन तक अन्य प्लेटफॉर्म नहीं पहुँच सकते, फिर ज़रूरत पड़ने पर सीधे EOR onboarding में हस्तांतरित करते हैं।",
-      bullet1: "2009 से 2,560+ सफल प्लेसमेंट",
+      bullet1: "2009 से 100+ सफल प्लेसमेंट",
       bullet2: "21-दिन sprint में C-suite shortlist",
       bullet3: "टेक्नोलॉजी, फाइनेंस, हेल्थकेयर, मैन्युफैक्चरिंग",
       cta: "भर्ती देखें",
@@ -84,7 +84,7 @@ const hi: Translation = {
     eyebrow: "Mars क्यों",
     headline: "Mars क्यों, ग्लोबल EOR प्लेटफॉर्म नहीं?",
     p1:
-      "ग्लोबल EOR प्लेटफॉर्म — Deel, Remote, Rippling — स्टैंडर्डाइज़्ड, हाई-वॉल्यूम SaaS मॉडल पर काम करते हैं। वे तब तक अच्छा काम करते हैं जब तक नहीं करते: क्षेत्राधिकारों में equity compensation रिपोर्टिंग, इंडोनेशिया में non-standard समाप्ति वार्ता, PE एक्सपोज़र जिसके लिए पहले पेरोल साइकल से पहले counsel opinion चाहिए।",
+      "ग्लोबल EOR प्लेटफॉर्म — global EOR SaaS platforms — स्टैंडर्डाइज़्ड, हाई-वॉल्यूम SaaS मॉडल पर काम करते हैं। वे तब तक अच्छा काम करते हैं जब तक नहीं करते: क्षेत्राधिकारों में equity compensation रिपोर्टिंग, इंडोनेशिया में non-standard समाप्ति वार्ता, PE एक्सपोज़र जिसके लिए पहले पेरोल साइकल से पहले counsel opinion चाहिए।",
     p2:
       "Mars तब हस्तक्षेप करता है जब लोकल रेग्युलेटरी फ्रिक्शन जेनेरिक सॉफ्टवेयर से आगे निकल जाता है। हम ऑटोमेटेड वर्कफ्लो को कस्टम गवर्नेंस फ्रेमवर्क, सक्रिय in-country लीगल देखरेख और सीनियर-लेवल मानवीय हस्तक्षेप से बदलते हैं।",
     p3:
@@ -94,7 +94,7 @@ const hi: Translation = {
   countries: {
     eyebrow: "कवरेज",
     headline:
-      "8 APAC बाज़ारों में कंप्लायंट तरीके से हायर करें — एक सिंगापुर अनुबंध के तहत।",
+      "10 markets बाज़ारों में कंप्लायंट तरीके से हायर करें — एक सिंगापुर अनुबंध के तहत।",
     body:
       "हम 2009 से इन बाज़ारों में पेरोल, स्टैच्यूटरी फाइलिंग और रोज़गार अनुबंध चला रहे हैं। आप ऑपरेटर बने रहते हैं; हम लीगल नियोक्ता बने रहते हैं।",
     statOnboarding: "Onboarding",
@@ -269,26 +269,26 @@ const hi: Translation = {
     copyright: "© {{year}} Mars Consulting Pte Ltd. सर्वाधिकार सुरक्षित।",
     cities: "सिंगापुर · जकार्ता · हो ची मिन्ह सिटी · कुआलालंपुर",
     compliance:
-      "MOM Comprehensive EA लाइसेंस नं. 09C2925  ·  ACRA Corporate Service Provider और Registered Filing Agent  ·  Registered Corporate Secretary",
+      "MOM Comprehensive EA लाइसेंस नं. 09C2925  ·  ACRA Corporate Service Provider और Registered Filing Agent",
   },
   eorPage: {
     metaTitle: "Employer of Record सिंगापुर और APAC — Mars Consulting",
     metaDesc:
-      "8 बाज़ारों में सिंगापुर लाइसेंस्ड EOR सेवाएँ। पहले दिन से कंप्लायंट रोज़गार, पेरोल, और स्टैच्यूटरी फाइलिंग। कोई लोकल एंटिटी आवश्यक नहीं। MOM EA 09C2925.",
+      "10 बाज़ारों में सिंगापुर लाइसेंस्ड EOR सेवाएँ। पहले दिन से कंप्लायंट रोज़गार, पेरोल, और स्टैच्यूटरी फाइलिंग। कोई लोकल एंटिटी आवश्यक नहीं। MOM EA 09C2925.",
     pill: "Employer of Record और ग्लोबल पेरोल",
     headlineLead: "में कंप्लायंट तरीके से हायर करें",
-    headlineAccent: "8 APAC बाज़ार",
+    headlineAccent: "10 markets बाज़ार",
     headlineTail: "— बिना लोकल एंटिटी सेट किए",
     sub:
       "सिंगापुर लाइसेंस्ड Employer of Record सेवाएँ। हम लीगल नियोक्ता बनते हैं; आप काम का निर्देशन करते हैं। पहले दिन से रोज़गार अनुबंध, पेरोल, स्टैच्यूटरी फाइलिंग और ऑफबोर्डिंग संभाले जाते हैं।",
     ctaPrimary: "EOR Quote प्राप्त करें",
     ctaSecondary: "देखें यह कैसे काम करता है",
-    trustLine: "MOM EA लाइसेंस नं. 09C2925 · 17 साल · 8 APAC बाज़ार · 5-दिन onboarding",
+    trustLine: "MOM EA लाइसेंस नं. 09C2925 · 2009 से · 10 markets बाज़ार · 5-दिन onboarding",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 दिन",
       coverage: "APAC कवरेज",
-      coverageValue: "8 बाज़ार",
+      coverageValue: "10 बाज़ार",
       clients: "वैश्विक क्लाइंट",
       clientsValue: "100+",
       misses: "स्टैच्यूटरी मिस",
@@ -331,15 +331,15 @@ const hi: Translation = {
   recruitmentPage: {
     metaTitle: "भर्ती और एग्जीक्यूटिव सर्च सिंगापुर — Mars Consulting",
     metaDesc:
-      "सिंगापुर और APAC में स्थायी प्लेसमेंट, कॉन्ट्रैक्ट स्टाफिंग और गोपनीय C-suite एग्जीक्यूटिव सर्च। 2,560+ सफल प्लेसमेंट। 17 साल। MOM-लाइसेंस्ड।",
+      "सिंगापुर और APAC में स्थायी प्लेसमेंट, कॉन्ट्रैक्ट स्टाफिंग और गोपनीय C-suite एग्जीक्यूटिव सर्च। 100+ सफल प्लेसमेंट। 2009 से। MOM-लाइसेंस्ड।",
     pill: "भर्ती और एग्जीक्यूटिव सर्च",
     headlineLead: "में भर्ती और एग्जीक्यूटिव सर्च",
     headlineAccent: "सिंगापुर और APAC",
     sub:
-      "स्थायी प्लेसमेंट, कॉन्ट्रैक्ट स्टाफिंग, और गोपनीय C-suite सर्च — उन व्यवसायियों द्वारा प्रदान किए गए जिन्होंने 2009 से टेक्नोलॉजी, वित्तीय सेवाओं, हेल्थकेयर और मैन्युफैक्चरिंग में 2,560 से अधिक उम्मीदवारों को रखा है।",
+      "स्थायी प्लेसमेंट, कॉन्ट्रैक्ट स्टाफिंग, और गोपनीय C-suite सर्च — उन व्यवसायियों द्वारा प्रदान किए गए जिन्होंने 2009 से टेक्नोलॉजी, वित्तीय सेवाओं, हेल्थकेयर और मैन्युफैक्चरिंग में 100 से अधिक उम्मीदवारों को रखा है।",
     ctaPrimary: "Search Mandate पर चर्चा करें",
     ctaSecondary: "हमारी प्रक्रिया देखें",
-    trustLine: "MOM EA लाइसेंस नं. 09C2925 · 17 साल · 8 APAC बाज़ार",
+    trustLine: "MOM EA लाइसेंस नं. 09C2925 · 2009 से · 10 markets बाज़ार",
     tracks: {
       eyebrow: "सेवा tracks",
       headline: "तीन सर्च tracks। एक टीम।",
@@ -409,11 +409,11 @@ const hi: Translation = {
     },
     stats: {
       placements: "सफल प्लेसमेंट",
-      placementsValue: "2,560+",
+      placementsValue: "100+",
       since: "2009 से",
-      sinceValue: "17 साल",
+      sinceValue: "2009 से",
       coverage: "APAC कवरेज",
-      coverageValue: "8 बाज़ार",
+      coverageValue: "10 बाज़ार",
       sprint: "C-suite shortlist sprint",
       sprintValue: "21 दिन",
     },
@@ -510,13 +510,13 @@ const hi: Translation = {
   aboutPage: {
     metaTitle: "Mars Consulting के बारे में — सिंगापुर HR और EOR विशेषज्ञ 2009 से",
     metaDesc:
-      "Mars Consulting की स्थापना सिंगापुर में अप्रैल 2009 में हुई थी। 8 APAC बाज़ारों में 17 साल का HR, EOR, और एग्जीक्यूटिव सर्च अनुभव। MOM EA लाइसेंस नं. 09C2925.",
+      "Mars Consulting की स्थापना सिंगापुर में अप्रैल 2009 में हुई थी। 10 markets बाज़ारों में 2009 से का HR, EOR, और एग्जीक्यूटिव सर्च अनुभव। MOM EA लाइसेंस नं. 09C2925.",
     pill: "Mars Consulting के बारे में",
     headlineLead: "सत्रह साल",
     headlineAccent: "HR Infrastructure",
     headlineTail: "ग्लोबल टीमों के पीछे बनाते हुए",
     sub:
-      "Mars Consulting की स्थापना सिंगापुर में अप्रैल 2009 में एक विश्वास के साथ हुई: कि महान व्यवसाय सही लोगों द्वारा बनाए जाते हैं, सही roles में रखे जाते हैं, सही systems द्वारा समर्थित। आज हम 8 बाज़ारों में पूर्ण-सेवा HR partner हैं — हर विकास चरण में कंपनियों को Employer of Record, ग्लोबल पेरोल, एग्जीक्यूटिव सर्च, HR outsourcing, और AI-संचालित प्रक्रिया automation प्रदान करते हैं।",
+      "Mars Consulting की स्थापना सिंगापुर में अप्रैल 2009 में एक विश्वास के साथ हुई: कि महान व्यवसाय सही लोगों द्वारा बनाए जाते हैं, सही roles में रखे जाते हैं, सही systems द्वारा समर्थित। आज हम 10 बाज़ारों में पूर्ण-सेवा HR partner हैं — हर विकास चरण में कंपनियों को Employer of Record, ग्लोबल पेरोल, एग्जीक्यूटिव सर्च, HR outsourcing, और AI-संचालित प्रक्रिया automation प्रदान करते हैं।",
     timeline: {
       eyebrow: "हमारी यात्रा",
       headline: "हम यहाँ कैसे पहुँचे",
@@ -562,7 +562,7 @@ const hi: Translation = {
         "Employment Agency लाइसेंस — सिंगापुर में स्थानीय और विदेशी उम्मीदवारों के placement को अधिकृत करता है।",
       acraAuthority: "ACRA सिंगापुर",
       acraLabel: "Corporate Service Provider",
-      acraCode: "Registered Filing Agent (RFA) · Registered Corporate Secretary",
+      acraCode: "Registered Filing Agent (RFA)",
       acraNote: "Accounting and Corporate Regulatory Authority registration।",
       verifiable:
         "लाइसेंस विवरण MOM Employment Agency Directory और ACRA BizFile+ register पर सार्वजनिक रूप से सत्यापन योग्य हैं।",
@@ -581,7 +581,7 @@ const hi: Translation = {
         "चाहे जितने भी देश या सेवाएँ शामिल हों, एक relationship manager काम के पूरे scope के लिए जवाबदेह है। आप एक supplier network का प्रबंधन नहीं करते। आप एक call का प्रबंधन करते हैं।",
     },
     ctaBanner: {
-      headline: "17 साल से ऑपरेटर के पीछे का ऑपरेटर",
+      headline: "2009 से से ऑपरेटर के पीछे का ऑपरेटर",
       body:
         "APAC में EOR, एग्जीक्यूटिव सर्च, या AI-संचालित HR automation के बारे में सिंगापुर लाइसेंस्ड विशेषज्ञ से बात करें।",
       cta: "कॉल बुक करें",

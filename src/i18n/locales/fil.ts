@@ -11,11 +11,11 @@ const fil: Translation = {
     bookCall: "Mag-book ng tawag",
   },
   hero: {
-    pill: "Mula 2009 · 17 taon sa Singapore",
-    headlineLead: "17 taong nagiging",
+    pill: "Mula 2009 · Mula 2009 sa Singapore",
+    headlineLead: "Mula 2009g nagiging",
     headlineAccent: "operator sa likod ng operator.",
     sub:
-      "Singapore-licensed Employer of Record, executive search, at HR infrastructure sa 8 APAC markets. Mula 2009.",
+      "Singapore-licensed Employer of Record, executive search, at HR infrastructure sa 10 markets. Mula 2009.",
     ctaPrimary: "Mag-book ng Tawag",
     ctaSecondary: "Tuklasin ang Aming Serbisyo",
     statYears: "Taon ng operasyon",
@@ -73,7 +73,7 @@ const fil: Translation = {
       title: "Recruitment at Executive Search",
       body:
         "Permanent placement, contract staffing, at confidential C-suite search sa Singapore at APAC. Hinahanap namin ang passive candidates na hindi maabot ng ibang platform, pagkatapos ay direktang ipinapasa sa EOR onboarding kapag kailangan.",
-      bullet1: "2,560+ matagumpay na placement mula 2009",
+      bullet1: "100+ matagumpay na placement mula 2009",
       bullet2: "C-suite shortlist sa loob ng 21-day sprint",
       bullet3: "Teknolohiya, pinansya, kalusugan, manufacturing",
       cta: "Tuklasin ang Recruitment",
@@ -83,7 +83,7 @@ const fil: Translation = {
     eyebrow: "Bakit Mars",
     headline: "Bakit Mars, hindi global EOR platform?",
     p1:
-      "Ang global EOR platforms — Deel, Remote, Rippling — ay tumatakbo sa standardized, high-volume SaaS models. Gumagana ang mga ito hanggang hindi: equity compensation reporting sa iba't ibang jurisdiction, non-standard termination negotiations sa Indonesia, PE exposure na nangangailangan ng counsel opinion bago ang unang payroll cycle.",
+      "Ang global EOR platforms — global EOR SaaS platforms — ay tumatakbo sa standardized, high-volume SaaS models. Gumagana ang mga ito hanggang hindi: equity compensation reporting sa iba't ibang jurisdiction, non-standard termination negotiations sa Indonesia, PE exposure na nangangailangan ng counsel opinion bago ang unang payroll cycle.",
     p2:
       "Pumapasok ang Mars kapag ang lokal na regulatory friction ay lumalampas sa generic software. Pinapalitan namin ang automated workflows ng bespoke governance frameworks, aktibong in-country legal oversight, at senior-level human intervention para sa edge cases na nangangailangan nito.",
     p3:
@@ -93,7 +93,7 @@ const fil: Translation = {
   countries: {
     eyebrow: "Saklaw",
     headline:
-      "Mag-hire nang compliant sa 8 APAC markets — sa ilalim ng isang Singapore contract.",
+      "Mag-hire nang compliant sa 10 markets — sa ilalim ng isang Singapore contract.",
     body:
       "Pinatatakbo namin ang payroll, statutory filings at employment contracts sa mga pamilihang ito mula 2009. Ikaw pa rin ang operator; kami pa rin ang legal employer.",
     statOnboarding: "Onboarding",
@@ -218,7 +218,7 @@ const fil: Translation = {
     quote:
       "Na-onboard ng Mars ang aming research team sa Singapore at Jakarta sa loob ng wala pang dalawang linggo. Hinawakan nila ang lahat — kontrata, equity acknowledgements, lokal na statutory filings — upang makapag-focus kami sa pag-ship ng models.",
     attribution: "Head of People · Series-B AI company",
-    location: "Singapore ↔ Jakarta · 12 hires noong 2025",
+    location: "Singapore ↔ APAC · 12 hires noong 2025",
     statClients: "Pandaigdigang kliyente",
     statConsultants: "Mga consultant",
     statLicences: "SG licences",
@@ -266,28 +266,28 @@ const fil: Translation = {
       privacy: "Privacy",
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Lahat ng karapatan ay nakareserba.",
-    cities: "Singapore · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
-      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider at Registered Filing Agent  ·  Registered Corporate Secretary",
+      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider at Registered Filing Agent",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapore at APAC — Mars Consulting",
     metaDesc:
-      "Singapore-licensed EOR services sa 8 markets. Compliant employment, payroll, at statutory filings mula sa unang araw. Walang lokal na entity. MOM EA 09C2925.",
+      "Singapore-licensed EOR services sa 10 markets. Compliant employment, payroll, at statutory filings mula sa unang araw. Walang lokal na entity. MOM EA 09C2925.",
     pill: "Employer of Record at Global Payroll",
     headlineLead: "Mag-hire nang compliant sa",
-    headlineAccent: "8 APAC markets",
+    headlineAccent: "10 markets",
     headlineTail: "— nang hindi nag-aayos ng lokal na entity",
     sub:
       "Singapore-licensed Employer of Record services. Kami ang nagiging legal employer; ikaw ang nag-uutos ng trabaho. Employment contracts, payroll, statutory filings, at offboarding hawak mula sa unang araw.",
     ctaPrimary: "Kumuha ng EOR Quote",
     ctaSecondary: "Tingnan Kung Paano Gumana",
-    trustLine: "MOM EA Licence No. 09C2925 · 17 taon · 8 APAC markets · 5-day onboarding",
+    trustLine: "MOM EA Licence No. 09C2925 · Mula 2009 · 10 markets · 5-day onboarding",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 araw",
       coverage: "APAC coverage",
-      coverageValue: "8 markets",
+      coverageValue: "10 markets",
       clients: "Pandaigdigang kliyente",
       clientsValue: "100+",
       misses: "Statutory misses",
@@ -330,15 +330,15 @@ const fil: Translation = {
   recruitmentPage: {
     metaTitle: "Recruitment at Executive Search Singapore — Mars Consulting",
     metaDesc:
-      "Permanent placement, contract staffing at confidential C-suite executive search sa Singapore at APAC. 2,560+ na placement. 17 taon. MOM-licensed.",
+      "Permanent placement, contract staffing at confidential C-suite executive search sa Singapore at APAC. 100+ na placement. Mula 2009. MOM-licensed.",
     pill: "Recruitment at Executive Search",
     headlineLead: "Recruitment at Executive Search sa",
     headlineAccent: "Singapore at APAC",
     sub:
-      "Permanent placement, contract staffing, at confidential C-suite search — inihatid ng mga practitioner na nakapaglagay ng higit sa 2,560 na kandidato sa technology, financial services, healthcare, at manufacturing mula 2009.",
+      "Permanent placement, contract staffing, at confidential C-suite search — inihatid ng mga practitioner na nakapaglagay ng higit sa 100 na kandidato sa technology, financial services, healthcare, at manufacturing mula 2009.",
     ctaPrimary: "Talakayin ang Search Mandate",
     ctaSecondary: "Tingnan ang Aming Proseso",
-    trustLine: "MOM EA Licence No. 09C2925 · 17 taon · 8 APAC markets",
+    trustLine: "MOM EA Licence No. 09C2925 · Mula 2009 · 10 markets",
     tracks: {
       eyebrow: "Mga track ng serbisyo",
       headline: "Tatlong search tracks. Isang team.",
@@ -408,11 +408,11 @@ const fil: Translation = {
     },
     stats: {
       placements: "Matagumpay na placement",
-      placementsValue: "2,560+",
+      placementsValue: "100+",
       since: "Mula 2009",
-      sinceValue: "17 taon",
+      sinceValue: "Mula 2009",
       coverage: "APAC coverage",
-      coverageValue: "8 markets",
+      coverageValue: "10 markets",
       sprint: "C-suite shortlist sprint",
       sprintValue: "21 araw",
     },
@@ -509,13 +509,13 @@ const fil: Translation = {
   aboutPage: {
     metaTitle: "Tungkol sa Mars Consulting — Singapore HR at EOR Specialists Mula 2009",
     metaDesc:
-      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009. 17 taon ng HR, EOR, at executive search experience sa 8 APAC markets. MOM EA Licence No. 09C2925.",
+      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009. Mula 2009 ng HR, EOR, at executive search experience sa 10 markets. MOM EA Licence No. 09C2925.",
     pill: "Tungkol sa Mars Consulting",
     headlineLead: "Labing-pitong Taon ng Pagbuo ng",
     headlineAccent: "HR Infrastructure",
     headlineTail: "Sa Likod ng Global Teams",
     sub:
-      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009 na may iisang paniniwala: na ang mga magagandang negosyo ay binubuo ng tamang tao, inilagay sa tamang role, sinusuportahan ng tamang sistema. Ngayon kami ay full-service HR partner sa 8 markets — nagbibigay ng Employer of Record, global payroll, executive search, HR outsourcing, at AI-powered process automation sa mga kompanya sa bawat yugto ng paglago.",
+      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009 na may iisang paniniwala: na ang mga magagandang negosyo ay binubuo ng tamang tao, inilagay sa tamang role, sinusuportahan ng tamang sistema. Ngayon kami ay full-service HR partner sa 10 markets — nagbibigay ng Employer of Record, global payroll, executive search, HR outsourcing, at AI-powered process automation sa mga kompanya sa bawat yugto ng paglago.",
     timeline: {
       eyebrow: "Aming paglalakbay",
       headline: "Paano kami nakarating dito",
@@ -561,7 +561,7 @@ const fil: Translation = {
         "Employment Agency licence — nagpapahintulot sa placement ng lokal at dayuhang kandidato sa Singapore.",
       acraAuthority: "ACRA Singapore",
       acraLabel: "Corporate Service Provider",
-      acraCode: "Registered Filing Agent (RFA) · Registered Corporate Secretary",
+      acraCode: "Registered Filing Agent (RFA)",
       acraNote: "Accounting at Corporate Regulatory Authority registration.",
       verifiable:
         "Ang detalye ng lisensya ay publicly verifiable sa MOM Employment Agency Directory at ACRA BizFile+ register.",
@@ -580,7 +580,7 @@ const fil: Translation = {
         "Anuman ang dami ng bansa o serbisyong sangkot, isang relationship manager ang responsable sa buong saklaw ng trabaho. Hindi mo pinamamahalaan ang isang network ng supplier. Pinamamahalaan mo ang isang tawag.",
     },
     ctaBanner: {
-      headline: "17 taong nagiging operator sa likod ng operator",
+      headline: "Mula 2009g nagiging operator sa likod ng operator",
       body:
         "Makipag-usap sa Singapore-licensed na specialist tungkol sa EOR, executive search, o AI-powered HR automation sa APAC.",
       cta: "Mag-book ng Tawag",

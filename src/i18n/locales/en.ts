@@ -702,6 +702,66 @@ const en = {
       cta: "Book a Consultation",
     },
   },
+  hrOutsourcingPage: {
+    metaTitle: "HR Outsourcing Singapore — Embedded HR Consultants | Mars Consulting",
+    metaDesc:
+      "Embedded HR consultants for companies that need senior HR capability without hiring a full-time HR director. Across Singapore and the region. MOM EA Licensed.",
+    pill: "HR Outsourcing & Embedded HR",
+    headlineLead: "Senior HR capability",
+    headlineAccent: "without the full-time hire.",
+    sub:
+      "Embedded HR consultants deployed directly inside your organisation for strategic and operational work. We act as your HR function — from policy design to organisational restructuring — for companies that need senior capability without committing to a full-time HR Director.",
+    ctaPrimary: "Discuss an HR Outsourcing Mandate",
+    ctaSecondary: "See How We Work",
+    useCases: {
+      eyebrow: "When companies engage Mars",
+      headline: "Four moments when embedded HR makes sense.",
+      case1: "Growth-stage companies (50–500 staff) without a senior HR leader",
+      case2: "M&A integration — harmonising HR policies across acquired entities",
+      case3: "HR Director on extended leave — interim coverage with continuity",
+      case4: "Special projects — restructuring, redundancy programmes, policy overhauls",
+    },
+    included: {
+      eyebrow: "What's included",
+      item1: "Senior HR practitioner embedded part-time or full-time",
+      item2: "Policy framework design and documentation",
+      item3: "Compensation and benefits structuring",
+      item4: "Performance management and talent development frameworks",
+      item5: "Employee relations and grievance handling",
+      item6: "Compliance audits and statutory reporting",
+    },
+    integration: {
+      eyebrow: "Connects to EOR and recruitment",
+      body:
+        "Embedded HR engagements are frequently scoped alongside our EOR and recruitment capabilities — giving you a single relationship for HR strategy, hiring, and employment compliance across your entire team.",
+    },
+  },
+  faqPage: {
+    metaTitle: "FAQ — Mars Consulting",
+    metaDesc:
+      "Frequently asked questions about Mars Consulting's Employer of Record, executive search, payroll, and AI automation services across 10 markets.",
+    pill: "FAQ",
+    headlineLead: "Questions we get from",
+    headlineAccent: "serious buyers.",
+    sub:
+      "Answers to the questions our clients ask on the second or third call. We've put them here so you can ask them on the first.",
+    about: {
+      eyebrow: "About Mars Consulting",
+      q1: "What is Mars Consulting and when was it founded?",
+      a1: "Mars Consulting Pte Ltd (UEN 200907301Z) is a Singapore-incorporated HR and workforce solutions company, established in April 2009. We provide Employer of Record, executive search, payroll outsourcing, HR outsourcing, and AI automation services across 10 markets in Asia, the Middle East, and the United States.",
+      q2: "What licences and credentials does Mars Consulting hold?",
+      a2: "Mars Consulting holds the MOM Comprehensive Employment Agency Licence (No. 09C2925) and ACRA Registered Filing Agent status. All credentials are publicly verifiable on the MOM Employment Agency Directory and the ACRA BizFile+ register.",
+      q3: "Where are Mars Consulting's offices located?",
+      a3: "Mars Consulting maintains offices in Singapore (HQ), Malaysia (Johor Bahru), Hong Kong (Kwun Tong), China (Nanchang), India (New Delhi), and the United States (Superior, Colorado). We also provide services in the United Arab Emirates, Vietnam, Thailand, and Indonesia as service markets.",
+      q4: "How do I verify Mars Consulting's team and credentials?",
+      a4: "Our consultants and recruiters are publicly listed on our LinkedIn company page. MOM EA Licence details are verifiable at the MOM Employment Agency Directory. Company registration is verifiable at ACRA BizFile+.",
+    },
+    categories: {
+      eor: "EOR & Payroll",
+      recruitment: "Recruitment & Executive Search",
+      ai: "AI Automation",
+    },
+  },
 } as const;
 
 export default en;

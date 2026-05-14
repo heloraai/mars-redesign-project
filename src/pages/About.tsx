@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass } from "lucide-react";
+import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass, Linkedin, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { withBase } from "@/lib/href";
@@ -52,6 +52,19 @@ const Hero = () => {
           {t("aboutPage.headlineTail")}
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">{t("aboutPage.sub")}</p>
+      </div>
+    </section>
+  );
+};
+
+const Overview = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-b border-border bg-secondary/30">
+      <div className="container-narrow py-10 lg:py-12">
+        <p className="max-w-4xl text-sm leading-relaxed text-muted-foreground">
+          {t("aboutPage.overview")}
+        </p>
       </div>
     </section>
   );
@@ -126,9 +139,9 @@ const Numbers = () => {
   const { t } = useTranslation();
   const stats = [
     { n: "2009", l: t("aboutPage.numbers.years") },
-    { n: "8", l: t("aboutPage.numbers.markets") },
+    { n: "10", l: t("aboutPage.numbers.markets") },
     { n: "100+", l: t("aboutPage.numbers.consultants") },
-    { n: "3", l: t("aboutPage.numbers.licences") },
+    { n: "09C2925", l: t("aboutPage.numbers.licences") },
   ];
   return (
     <section className="border-y border-border bg-background">
@@ -160,7 +173,7 @@ const Licences = () => {
           </h2>
           <p className="mt-4 text-muted-foreground">{t("aboutPage.licences.body")}</p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
             <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
               <ShieldCheck className="h-5 w-5" />
@@ -174,21 +187,6 @@ const Licences = () => {
             <p className="mt-1 text-sm text-muted-foreground">{t("aboutPage.licences.momCode")}</p>
             <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
               {t("aboutPage.licences.momNote")}
-            </p>
-          </article>
-          <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
-            <span className="grid h-11 w-11 place-items-center rounded-lg bg-primary/5 text-primary">
-              <ShieldCheck className="h-5 w-5" />
-            </span>
-            <p className="mt-6 text-xs uppercase tracking-wider text-muted-foreground">
-              {t("aboutPage.licences.masAuthority")}
-            </p>
-            <p className="mt-1 font-display text-xl font-semibold text-foreground">
-              {t("aboutPage.licences.masLabel")}
-            </p>
-            <p className="mt-1 text-sm text-muted-foreground">{t("aboutPage.licences.masCode")}</p>
-            <p className="mt-5 border-t border-border pt-4 text-sm italic text-muted-foreground">
-              {t("aboutPage.licences.masNote")}
             </p>
           </article>
           <article className="rounded-2xl border border-border bg-card p-7 shadow-card">
@@ -209,7 +207,121 @@ const Licences = () => {
             </p>
           </article>
         </div>
+        <div className="mt-10 rounded-2xl border border-border bg-secondary/30 p-7">
+          <p className="text-xs uppercase tracking-wider text-muted-foreground">
+            {t("aboutPage.licences.entityLabel")}
+          </p>
+          <p className="mt-1 font-display text-xl font-semibold text-foreground">
+            {t("aboutPage.licences.entityName")}
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {t("aboutPage.licences.entityUEN")} · {t("aboutPage.licences.entityAddress")}
+          </p>
+          <p className="mt-3 text-sm italic text-muted-foreground">
+            {t("aboutPage.licences.entityNote")}
+          </p>
+        </div>
         <p className="mt-8 text-sm text-muted-foreground">{t("aboutPage.licences.verifiable")}</p>
+      </div>
+    </section>
+  );
+};
+
+const TeamModule = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-t border-border bg-background py-24">
+      <div className="container-narrow grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
+        <div>
+          <p className="eyebrow">{t("aboutPage.team.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.team.headline")}
+          </h2>
+        </div>
+        <div className="space-y-5">
+          <p className="text-base leading-relaxed text-muted-foreground">
+            {t("aboutPage.team.body")}
+          </p>
+          <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href={t("aboutPage.team.ctaUrl")} target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-4 w-4" />
+              {t("aboutPage.team.cta")}
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+interface OfficeKey {
+  k: "sg" | "my" | "hk" | "cn" | "in" | "us";
+  hasBadge?: boolean;
+  hasCN?: boolean;
+}
+
+const OFFICES: OfficeKey[] = [
+  { k: "sg", hasBadge: true },
+  { k: "my" },
+  { k: "hk" },
+  { k: "cn", hasCN: true },
+  { k: "in" },
+  { k: "us" },
+];
+
+const Offices = () => {
+  const { t } = useTranslation();
+  return (
+    <section className="border-t border-border bg-secondary/30 py-24">
+      <div className="container-narrow">
+        <div className="max-w-2xl">
+          <p className="eyebrow">{t("aboutPage.offices.eyebrow")}</p>
+          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+            {t("aboutPage.offices.headline")}
+          </h2>
+          <p className="mt-4 text-muted-foreground">{t("aboutPage.offices.body")}</p>
+        </div>
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {OFFICES.map((o) => (
+            <article
+              key={o.k}
+              className="rounded-2xl border border-border bg-card p-6 shadow-card"
+            >
+              <div className="flex items-start justify-between gap-3">
+                <span className="grid h-10 w-10 place-items-center rounded-lg bg-primary/5 text-primary">
+                  <MapPin className="h-5 w-5" />
+                </span>
+                {o.hasBadge ? (
+                  <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent">
+                    {t("aboutPage.offices.sg.badge")}
+                  </span>
+                ) : null}
+              </div>
+              <p className="mt-5 font-display text-lg font-semibold text-foreground">
+                {t(`aboutPage.offices.${o.k}.country`)}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {t(`aboutPage.offices.${o.k}.address`)}
+              </p>
+              {o.hasCN ? (
+                <p className="mt-1 text-sm leading-relaxed text-muted-foreground/85">
+                  {t("aboutPage.offices.cn.addressCN")}
+                </p>
+              ) : null}
+            </article>
+          ))}
+        </div>
+        <div className="mt-10 rounded-2xl border border-dashed border-border bg-card/60 p-6">
+          <p className="text-xs uppercase tracking-wider text-muted-foreground">
+            {t("aboutPage.offices.serviceLabel")}
+          </p>
+          <p className="mt-2 font-display text-base font-semibold text-foreground">
+            {t("aboutPage.offices.serviceMarkets")}
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {t("aboutPage.offices.serviceNote")}
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -292,10 +404,13 @@ const About = () => {
     <main className="min-h-screen bg-background">
       <SiteHeader />
       <Hero />
+      <Overview />
       <Timeline />
       <Founder />
+      <TeamModule />
       <Numbers />
       <Licences />
+      <Offices />
       <Principles />
       <CTABanner />
       <SiteFooter />
