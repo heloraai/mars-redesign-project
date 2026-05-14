@@ -394,37 +394,21 @@ const AIInnovationBlock = () => {
 
 const LogoMarquee = () => {
   const { t } = useTranslation();
-  const items = [
-    "AI / ML",
-    "Series-B AI co · SG ↔ JKT",
-    "Listed industrial group · ID payroll",
-    "US scale-up · VN engineers",
-    "Stealth foundation-model team",
-    "Asia private credit fund",
-    "Cross-border DTC brand",
-    "Tech & SaaS",
-    "Healthcare",
-    "Manufacturing",
-  ];
-  const loop = [...items, ...items];
+  const label = t("marquee.label");
+  const segments = Array.from({ length: 4 }, (_, i) => i);
   return (
-    <section className="border-y border-border bg-background py-6 overflow-hidden">
-      <div className="container-narrow flex items-center gap-6">
-        <span className="shrink-0 text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
-          {t("marquee.label")}
-        </span>
-        <div className="relative flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-          <div className="flex w-max animate-marquee-x gap-10 will-change-transform">
-            {loop.map((label, i) => (
-              <span
-                key={i}
-                className="flex items-center gap-2 whitespace-nowrap text-sm font-medium text-foreground/70"
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                {label}
-              </span>
-            ))}
-          </div>
+    <section className="border-y border-border bg-background py-5 overflow-hidden">
+      <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+        <div className="flex w-max animate-marquee-x will-change-transform">
+          {segments.map((i) => (
+            <span
+              key={i}
+              className="flex items-center gap-3 whitespace-nowrap px-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground"
+            >
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              {label}
+            </span>
+          ))}
         </div>
       </div>
     </section>
