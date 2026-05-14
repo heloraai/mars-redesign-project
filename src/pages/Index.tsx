@@ -649,13 +649,13 @@ const Index = () => (
     <SiteHeader />
     <Hero />
     <TrustBar />
+    <LogoMarquee />
     <LicenseStrip />
     <TwinPillars />
     <HowItWorksSection />
     <ComparisonSection />
     <WhyMarsSection />
     <CountriesMapSection />
-    <LogoMarquee />
     <Clients />
     <FAQTeaser />
     <AIInnovationBlock />
