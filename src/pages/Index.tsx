@@ -9,6 +9,10 @@ import {
   Calendar,
   Check,
   Users,
+  Mail,
+  MapPin,
+  Clock,
+  Linkedin,
 } from "lucide-react";
 import {
   Accordion,
@@ -65,10 +69,13 @@ const CountStat = ({
 const Hero = () => {
   const { t } = useTranslation();
   const snapshotRows: { country: string; ppl: string; tax: string }[] = [
-    { country: t("countries.name.SG"), ppl: `42 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
-    { country: t("countries.name.MY"), ppl: `31 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
-    { country: t("countries.name.HK"), ppl: `24 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
-    { country: t("countries.name.CN"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
+    { country: t("countries.name.SG"), ppl: `38 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
+    { country: t("countries.name.MY"), ppl: `26 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
+    { country: t("countries.name.HK"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
+    { country: t("countries.name.CN"), ppl: `14 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
+    { country: t("countries.name.VN"), ppl: `12 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxVN") },
+    { country: t("countries.name.TH"), ppl: `11 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxTH") },
+    { country: t("countries.name.ID"), ppl: `9 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxID") },
   ];
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
@@ -152,6 +159,10 @@ const Hero = () => {
                 <span className="font-medium text-foreground">{t("hero.snapshotPayrollValue")}</span>
               </div>
             </div>
+            <p className="mt-3 flex items-center gap-2 px-1 text-[10px] font-medium uppercase tracking-wider text-white/70">
+              <ShieldCheck className="h-3 w-3 text-accent" />
+              {t("hero.snapshotBadge")}
+            </p>
           </div>
         </div>
       </div>
@@ -172,7 +183,7 @@ const TrustBar = () => {
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
           />
           <CountStat
-            to={8}
+            to={10}
             label={t("hero.statMarkets")}
             className="font-display text-3xl font-semibold text-foreground"
             labelClassName="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground"
@@ -205,11 +216,6 @@ const LicenseStrip = () => {
       code: t("licenses.mom.code"),
     },
     {
-      authority: t("licenses.mas.authority"),
-      label: t("licenses.mas.label"),
-      code: t("licenses.mas.code"),
-    },
-    {
       authority: t("licenses.acra.authority"),
       label: t("licenses.acra.label"),
       code: t("licenses.acra.code"),
@@ -219,7 +225,7 @@ const LicenseStrip = () => {
     <section className="border-y border-border bg-background">
       <div className="container-narrow py-10">
         <p className="eyebrow text-center">{t("licenses.eyebrow")}</p>
-        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 max-w-2xl mx-auto">
           {items.map((it) => (
             <div
               key={it.label}
@@ -491,7 +497,7 @@ const Testimonial = () => {
           <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 max-w-xs">
             {[
               { n: "100+", l: t("testimonial.statConsultants") },
-              { n: "3", l: t("testimonial.statLicences") },
+              { n: "09C2925", l: t("testimonial.statLicences") },
             ].map((s) => (
               <div key={s.l}>
                 <p className="font-display text-2xl font-semibold">{s.n}</p>
@@ -569,8 +575,69 @@ const Contact = () => {
               >
                 {t("contact.submit")} <ArrowRight />
               </Button>
-              <p className="text-xs text-muted-foreground">{t("contact.privacy")}</p>
+              <p className="text-xs text-muted-foreground">
+                {t("contact.privacy")}{" "}
+                <a
+                  href={withBase(t("contact.consentUrl"))}
+                  className="font-medium text-foreground underline-offset-4 hover:underline"
+                >
+                  {t("contact.consent")}
+                </a>
+              </p>
             </form>
+          </div>
+        </div>
+        <div className="mt-10 grid gap-5 rounded-3xl border border-border bg-card p-8 shadow-card sm:grid-cols-2 lg:grid-cols-4">
+          <div className="sm:col-span-2 lg:col-span-4">
+            <p className="eyebrow">{t("contact.infoEyebrow")}</p>
+          </div>
+          <div className="flex items-start gap-3">
+            <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                {t("contact.emailLabel")}
+              </p>
+              <a
+                href={`mailto:${t("contact.emailValue")}`}
+                className="mt-1 block text-sm font-medium text-foreground hover:underline"
+              >
+                {t("contact.emailValue")}
+              </a>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                {t("contact.hqLabel")}
+              </p>
+              <p className="mt-1 text-sm text-foreground">{t("contact.hqAddress")}</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                {t("contact.hoursLabel")}
+              </p>
+              <p className="mt-1 text-sm text-foreground">{t("contact.hoursValue")}</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3">
+            <Linkedin className="mt-0.5 h-4 w-4 shrink-0 text-[#0A66C2]" />
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                {t("contact.linkedinLabel")}
+              </p>
+              <a
+                href={t("contact.linkedinUrl")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 block text-sm font-medium text-foreground hover:underline"
+              >
+                {t("contact.linkedinValue")} ↗
+              </a>
+            </div>
           </div>
         </div>
       </div>

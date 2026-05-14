@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { withBase } from "@/lib/href";
@@ -23,6 +23,18 @@ export const WhyMarsSection = () => {
               {t("whyMars.cta")} <ArrowRight />
             </a>
           </Button>
+          <div className="mt-4 flex items-center gap-2 border-t border-border pt-5 text-sm text-muted-foreground">
+            <Linkedin className="h-4 w-4 shrink-0 text-[#0A66C2]" />
+            <span>{t("whyMars.verifyLine")}</span>
+            <a
+              href={t("whyMars.verifyUrl")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground hover:underline"
+            >
+              {t("whyMars.verifyCta")}
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { withBase } from "@/lib/href";
 
@@ -10,7 +11,7 @@ export const SiteFooter = () => {
         { label: t("footer.links.eor"), href: "/eor" },
         { label: t("footer.links.recruitment"), href: "/recruitment" },
         { label: t("footer.links.aiLab"), href: "/ai-innovation" },
-        { label: t("footer.links.hrOutsourcing"), href: "/#contact" },
+        { label: t("footer.links.hrOutsourcing"), href: "/hr-outsourcing" },
       ],
     },
     {
@@ -26,7 +27,8 @@ export const SiteFooter = () => {
       l: [
         { label: t("footer.links.mom"), href: "#" },
         { label: t("footer.links.acra"), href: "#" },
-        { label: t("footer.links.privacy"), href: "#" },
+        { label: t("footer.links.privacy"), href: "/privacy" },
+        { label: t("footer.links.terms"), href: "/terms" },
       ],
     },
   ];
@@ -42,6 +44,16 @@ export const SiteFooter = () => {
           <p className="mt-4 max-w-xs text-sm text-muted-foreground">
             {t("footer.tagline")}
           </p>
+          <a
+            href={t("footer.linkedinUrl")}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+          >
+            <Linkedin className="h-4 w-4 text-[#0A66C2]" />
+            LinkedIn
+          </a>
         </div>
         {sections.map((c) => (
           <div key={c.h}>

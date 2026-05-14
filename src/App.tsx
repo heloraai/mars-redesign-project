@@ -8,6 +8,10 @@ import EOR from "./pages/EOR.tsx";
 import Recruitment from "./pages/Recruitment.tsx";
 import AIInnovation from "./pages/AIInnovation.tsx";
 import About from "./pages/About.tsx";
+import Privacy from "./pages/Privacy.tsx";
+import Terms from "./pages/Terms.tsx";
+import HROutsourcing from "./pages/HROutsourcing.tsx";
+import FAQ from "./pages/FAQ.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/recruitment" element={<Recruitment />} />
           <Route path="/ai-innovation" element={<AIInnovation />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/hr-outsourcing" element={<HROutsourcing />} />
+          <Route path="/faq" element={<FAQ />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

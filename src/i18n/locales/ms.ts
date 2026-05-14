@@ -11,20 +11,17 @@ const ms: Translation = {
     bookCall: "Tempah panggilan",
   },
   hero: {
-    pill: "Sejak 2009 · 17 tahun di Singapura",
-    headlineLead: "17 tahun menjadi",
-    headlineAccent: "operator di belakang operator.",
+    pill: "Berlesen MOM Singapura · Ditubuhkan sejak 2009",
+    headlineLead: "Ambil, bayar dan kembangkan pasukan",
+    headlineAccent: "merentasi 10 pasaran.",
     sub:
-      "Employer of Record berlesen Singapura, pencarian eksekutif, dan infrastruktur HR di 8 pasaran APAC. Sejak 2009.",
+      "Employer of Record berlesen Singapura, pencarian eksekutif, dan infrastruktur operasi HR merentasi 10 pasaran — direka untuk syarikat yang memasuki Asia, memperluas pasukan serantau, dan mengurus gaji rentas sempadan tanpa menubuhkan entiti tempatan.",
     ctaPrimary: "Tempah Panggilan",
     ctaSecondary: "Terokai Perkhidmatan Kami",
-    statYears: "Tahun beroperasi",
-    statMarkets: "Pasaran APAC",
-    statEmployers: "Syarikat dilayan",
+    statYears: "Ditubuhkan",
+    statMarkets: "Pasaran",
     statConsultants: "Perunding pakar",
-    statClients: "Pelanggan global",
-    statPlacements: "Penempatan berjaya",
-    statLicence: "Lesen MOM EA 09C2925",
+    statLicence: "Lesen MOM EA",
     snapshotEyebrow: "Snapshot pematuhan bulanan",
     snapshotSample: "Contoh · April 2026 · Pelanggan A (anonim)",
     snapshotStatus: "Tepat masa",
@@ -32,10 +29,11 @@ const ms: Translation = {
     snapshotDelta: "+12 bulan ini",
     snapshotPayroll: "Gaji dijalankan",
     snapshotPayrollValue: "SGD 412,890 · selesai",
-    snapshotBadge: "3 lesen SG · 0 kelewatan statutori",
+    snapshotBadge: "Berlesen MOM · 0 kelewatan statutori sejak 2009",
   },
   marquee: {
-    label: "100+ syarikat · sejak 2009",
+    label:
+      "Berlesen MOM Singapura · Ditubuhkan sejak 2009 · 10 Pasaran · EOR & Gaji · Pengambilan · Automasi AI · 100+ Perunding · Lesen MOM EA 09C2925",
   },
   licenses: {
     eyebrow: "Berlesen & dikawal selia di Singapura",
@@ -62,9 +60,9 @@ const ms: Translation = {
       tag: "Utama",
       title: "Employer of Record & Gaji Global",
       body:
-        "Ambil, bayar, dan kekal patuh di Singapura serta 7 pasaran APAC lain — tanpa menubuhkan entiti tempatan. Kami mengendalikan kontrak pekerjaan, gaji, pemfailan statutori, dan offboarding sejak hari pertama.",
+        "Ambil, bayar, dan kekal patuh di Singapura serta 9 pasaran lain merentasi Asia, Timur Tengah dan Amerika Syarikat — tanpa menubuhkan entiti tempatan. Kami mengendalikan kontrak pekerjaan, gaji, pemfailan statutori, dan offboarding sejak hari pertama.",
       bullet1: "Onboarding dalam 5 hari bekerja",
-      bullet2: "CPF, EPF, BPJS, MPF, dan pemfailan cukai tempatan dikendalikan",
+      bullet2: "CPF, EPF, BPJS, MPF, dan pemfailan statutori setiap pasaran",
       bullet3: "Lesen MOM EA No. 09C2925",
       cta: "Terokai EOR",
     },
@@ -72,8 +70,8 @@ const ms: Translation = {
       tag: "Pencarian",
       title: "Pengambilan & Pencarian Eksekutif",
       body:
-        "Penempatan tetap, staf kontrak, dan pencarian C-suite sulit di seluruh Singapura dan APAC. Kami mencari calon pasif yang tidak boleh dicapai platform lain, kemudian menyerahkan terus ke onboarding EOR apabila perlu.",
-      bullet1: "2,560+ penempatan berjaya sejak 2009",
+        "Penempatan tetap, staf kontrak, dan pencarian C-suite sulit di seluruh Singapura dan rantau ini. Kami mencari calon pasif, kemudian menyerahkan terus ke onboarding EOR apabila perlu.",
+      bullet1: "Mandat tetap, kontrak dan C-suite sulit",
       bullet2: "Senarai pendek C-suite dalam sprint 21 hari",
       bullet3: "Teknologi, kewangan, kesihatan, pembuatan",
       cta: "Terokai Pengambilan",
@@ -83,7 +81,7 @@ const ms: Translation = {
     eyebrow: "Mengapa Mars",
     headline: "Mengapa Mars, bukan platform EOR global?",
     p1:
-      "Platform EOR global — Deel, Remote, Rippling — beroperasi pada model SaaS standard bervolum tinggi. Mereka berfungsi dengan baik sehingga tidak: pelaporan pampasan ekuiti merentas bidang kuasa, rundingan penamatan tidak standard di Indonesia, pendedahan PE yang memerlukan pendapat peguam sebelum kitaran gaji pertama.",
+      "Platform EOR SaaS global beroperasi pada model standard bervolum tinggi. Mereka berfungsi dengan baik sehingga tidak: pelaporan pampasan ekuiti merentas bidang kuasa, rundingan penamatan tidak standard di Malaysia atau China, pendedahan PE yang memerlukan pendapat peguam sebelum kitaran gaji pertama.",
     p2:
       "Mars campur tangan apabila geseran peraturan tempatan melampaui keupayaan perisian generik. Kami menggantikan aliran kerja automatik dengan rangka kerja tadbir urus tersuai, pengawasan undang-undang aktif di lapangan, dan campur tangan manusia peringkat senior untuk kes-kes tepi yang memerlukannya.",
     p3:
@@ -93,21 +91,25 @@ const ms: Translation = {
   countries: {
     eyebrow: "Liputan",
     headline:
-      "Ambil pekerja secara patuh di 8 pasaran APAC — di bawah satu kontrak Singapura.",
+      "Ambil pekerja secara patuh di 10 pasaran — di bawah satu kontrak Singapura.",
     body:
       "Kami menjalankan gaji, pemfailan statutori, dan kontrak pekerjaan di pasaran-pasaran ini sejak 2009. Anda kekal sebagai operator; kami kekal sebagai majikan sah.",
     statOnboarding: "Onboarding",
     statOnboardingValue: "5 hari",
     statMisses: "Kelewatan statutori",
-    statLicences: "Lesen SG",
+    statLicences: "Berlesen MOM",
+    legendOffice: "Pejabat",
+    legendService: "Pasaran perkhidmatan",
     name: {
-      IN: "India",
-      TH: "Thailand",
-      HK: "Hong Kong",
-      VN: "Vietnam",
-      PH: "Filipina",
-      MY: "Malaysia",
       SG: "Singapura",
+      MY: "Malaysia",
+      HK: "Hong Kong",
+      CN: "China",
+      IN: "India",
+      US: "Amerika Syarikat",
+      AE: "Emiriah Arab Bersatu",
+      VN: "Vietnam",
+      TH: "Thailand",
       ID: "Indonesia",
     },
   },
@@ -198,30 +200,29 @@ const ms: Translation = {
       "Platform EOR global beroperasi pada model SaaS standard bervolum tinggi yang retak di bawah kerumitan khusus bidang kuasa — seperti pelaporan pampasan ekuiti di Singapura atau rundingan penamatan tidak standard di Indonesia. Mars Consulting campur tangan apabila geseran peraturan tempatan melampaui keupayaan perisian generik. Kami menggantikan aliran kerja automatik dengan rangka kerja tadbir urus MNC tersuai, terintegrasi terus dengan undang-undang buruh dan kod cukai tempatan. Model kami merapatkan jurang antara EOR berasaskan perisian dan BPO sentuhan tinggi, memastikan operasi rentas sempadan tidak gagal di 'batu terakhir' pematuhan tempatan.",
     q2: "Bagaimana Mars menstrukturkan gaji rentas sempadan tanpa mencetuskan pendedahan permanent establishment?",
     a2:
-      "Gaji rentas sempadan dalam model kami direkayasa melalui tiga lapisan kawalan: pemilihan entiti bidang kuasa, seni bina dispatch buruh, dan kedudukan cukai sejajar perjanjian. Di mana substansi komersial pelanggan tidak mewajarkan entiti berdaftar tempatan, kami menggunakan kenderaan EOR berlesen Singapura dikombinasikan dengan struktur dispatch buruh dwihala di Vietnam, Indonesia, Filipina, Malaysia, dan Thailand — meneutralkan risiko permanent establishment sambil mengekalkan kawalan operasi ke atas headcount, KPI, dan hak penamatan.",
+      "Gaji rentas sempadan dalam model kami direkayasa melalui tiga lapisan kawalan: pemilihan entiti bidang kuasa, seni bina dispatch buruh, dan kedudukan cukai sejajar perjanjian. Di mana substansi komersial pelanggan tidak mewajarkan entiti berdaftar tempatan, kami menggunakan kenderaan EOR berlesen Singapura dikombinasikan dengan struktur dispatch buruh dwihala di Malaysia, China, India, Vietnam, Thailand, Indonesia dan Emiriah Arab Bersatu — meneutralkan risiko permanent establishment sambil mengekalkan kawalan operasi.",
     q3: "Bagaimana hand-off pengambilan terintegrasi dengan onboarding EOR untuk memampatkan time-to-productivity?",
     a3:
       "Titik geseran tradisional dalam ekspansi antarabangsa ialah silo operasi antara pemerolehan bakat dan operasi HR tempatan. Mars menyelesaikan ini dengan merangka hand-off pengambilan dan onboarding EOR yang lancar. Saat seorang calon menandatangani surat tawaran eksekutif, enjin pematuhan EOR kami memulakan urutan onboarding tempatan serentak dengan tempoh notis calon — menjana kontrak pekerjaan khusus bidang kuasa, memulakan permohonan visa kerja yang diperlukan, dan menetapkan profil gaji tempatan. Dengan menjalankan penutupan pengambilan dan protokol onboarding statutori secara selari, kami memampatkan time-to-productivity.",
   },
   aiBlock: {
-    eyebrow: "Sejak 2026",
-    title: "Inovasi AI",
+    eyebrow: "Sejak 2025 · Amalan Automasi AI",
+    title: "Automasi HR Berkuasa AI",
     body:
-      "Kami kini membantu pelanggan mengautomasikan aliran kerja HR dan operasi di belakang pengambilan mereka: ingestion cuti sakit melalui WhatsApp, prapemprosesan gaji berasaskan AI, dan perunding AI tertanam untuk pasukan yang membina keupayaan automasi dalaman.",
-    cta: "Terokai Inovasi AI",
+      "Kami menggunakan aliran kerja AI bersama pengamal HR kanan untuk mengautomasikan proses bergesel tinggi pasukan teragih: prapemprosesan gaji, onboarding dan offboarding pekerja, serta pengurusan sijil perubatan melalui WhatsApp.",
+    cta: "Terokai Automasi AI",
   },
   testimonial: {
     eyebrow: "Cerita pelanggan",
-    headline: "Dipercayai oleh pasukan yang berkembang di seluruh APAC.",
+    headline: "Dipercayai oleh pasukan yang berkembang di rantau ini.",
     body:
-      "Diasaskan di Singapura pada 2009, Mars Consulting telah berkembang dari butik pengambilan menjadi platform pekerjaan serantau — secara senyap menjalankan pengambilan, gaji dan pematuhan untuk startup AI, scale-up dan perusahaan berkaitan kerajaan di seluruh Asia Tenggara.",
+      "Diasaskan di Singapura pada 2009, Mars Consulting telah berkembang dari butik pengambilan menjadi platform pekerjaan serantau — menjalankan pengambilan, gaji dan pematuhan untuk syarikat teknologi, firma perkhidmatan kewangan dan kumpulan industri di seluruh Asia, Timur Tengah dan Amerika Syarikat.",
     quote:
       "Mars onboard pasukan penyelidikan kami di Singapura dan Jakarta dalam masa kurang daripada dua minggu. Mereka mengendalikan semuanya — kontrak, pengakuan ekuiti, pemfailan statutori tempatan — supaya kami boleh fokus pada penghantaran model.",
     attribution: "Head of People · Syarikat AI Series-B",
-    location: "Singapura ↔ Jakarta · 12 pengambilan pada 2025",
-    statClients: "Pelanggan global",
+    location: "Singapura ↔ APAC · Pelancaran EOR multi-pasaran · 2025",
     statConsultants: "Perunding",
-    statLicences: "Lesen SG",
+    statLicences: "Berlesen MOM",
   },
   contact: {
     eyebrow: "Bercakap dengan pakar berlesen Singapura",
@@ -248,7 +249,7 @@ const ms: Translation = {
   },
   footer: {
     tagline:
-      "Employer of Record berlesen Singapura dan perkhidmatan HR di seluruh Asia Tenggara. Sejak 2009.",
+      "Mars Consulting Pte Ltd — Employer of Record berlesen Singapura, pengambilan dan operasi HR merentasi 10 pasaran. Lesen MOM EA No. 09C2925. Ditubuhkan 2009.",
     sections: {
       solutions: "Penyelesaian",
       company: "Syarikat",
@@ -266,28 +267,28 @@ const ms: Translation = {
       privacy: "Privasi",
     },
     copyright: "© {{year}} Mars Consulting Pte Ltd. Hak cipta terpelihara.",
-    cities: "Singapura · Jakarta · Ho Chi Minh City · Kuala Lumpur",
+    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Lesen MOM EA Komprehensif No. 09C2925  ·  Penyedia Perkhidmatan Korporat ACRA & Ejen Pemfailan Berdaftar  ·  Setiausaha Korporat Berdaftar",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapura & APAC — Mars Consulting",
     metaDesc:
-      "Perkhidmatan EOR berlesen Singapura di 8 pasaran. Pekerjaan, gaji, dan pemfailan statutori patuh sejak hari pertama. Tiada entiti tempatan diperlukan. MOM EA 09C2925.",
+      "Perkhidmatan EOR berlesen Singapura di 10 pasaran. Pekerjaan, gaji, dan pemfailan statutori patuh sejak hari pertama. Tiada entiti tempatan diperlukan. MOM EA 09C2925.",
     pill: "Employer of Record & Gaji Global",
     headlineLead: "Ambil pekerja secara patuh di",
-    headlineAccent: "8 pasaran APAC",
+    headlineAccent: "10 pasaran",
     headlineTail: "— tanpa menubuhkan entiti tempatan",
     sub:
       "Perkhidmatan Employer of Record berlesen Singapura. Kami menjadi majikan sah; anda mengarahkan kerja. Kontrak pekerjaan, gaji, pemfailan statutori, dan offboarding dikendalikan sejak hari pertama.",
     ctaPrimary: "Dapatkan Sebut Harga EOR",
     ctaSecondary: "Lihat Cara Ia Berfungsi",
-    trustLine: "Lesen MOM EA No. 09C2925 · 17 tahun · 8 pasaran APAC · Onboarding 5 hari",
+    trustLine: "Lesen MOM EA No. 09C2925 · Sejak 2009 · 10 pasaran · Onboarding 5 hari",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 hari",
       coverage: "Liputan APAC",
-      coverageValue: "8 pasaran",
+      coverageValue: "10 pasaran",
       clients: "Pelanggan global",
       clientsValue: "100+",
       misses: "Kelewatan statutori",
@@ -330,15 +331,15 @@ const ms: Translation = {
   recruitmentPage: {
     metaTitle: "Pengambilan & Pencarian Eksekutif Singapura — Mars Consulting",
     metaDesc:
-      "Penempatan tetap, staf kontrak dan pencarian eksekutif C-suite sulit di seluruh Singapura dan APAC. 2,560+ penempatan berjaya. 17 tahun. Berlesen MOM.",
+      "Penempatan tetap, staf kontrak dan pencarian eksekutif C-suite sulit di seluruh Singapura dan APAC. 100+ penempatan berjaya. Sejak 2009. Berlesen MOM.",
     pill: "Pengambilan & Pencarian Eksekutif",
     headlineLead: "Pengambilan & Pencarian Eksekutif di",
     headlineAccent: "Singapura dan APAC",
     sub:
-      "Penempatan tetap, staf kontrak, dan pencarian C-suite sulit — disampaikan oleh pengamal yang telah menempatkan lebih 2,560 calon merentasi teknologi, perkhidmatan kewangan, kesihatan, dan pembuatan sejak 2009.",
+      "Penempatan tetap, staf kontrak, dan pencarian C-suite sulit — disampaikan oleh pengamal yang telah menempatkan lebih 100 calon merentasi teknologi, perkhidmatan kewangan, kesihatan, dan pembuatan sejak 2009.",
     ctaPrimary: "Bincang Mandat Pencarian",
     ctaSecondary: "Lihat Proses Kami",
-    trustLine: "Lesen MOM EA No. 09C2925 · 17 tahun · 8 pasaran APAC",
+    trustLine: "Lesen MOM EA No. 09C2925 · Sejak 2009 · 10 pasaran",
     tracks: {
       eyebrow: "Trek perkhidmatan",
       headline: "Tiga trek pencarian. Satu pasukan.",
@@ -408,11 +409,11 @@ const ms: Translation = {
     },
     stats: {
       placements: "Penempatan berjaya",
-      placementsValue: "2,560+",
+      placementsValue: "100+",
       since: "Sejak 2009",
-      sinceValue: "17 tahun",
+      sinceValue: "Sejak 2009",
       coverage: "Liputan APAC",
-      coverageValue: "8 pasaran",
+      coverageValue: "10 pasaran",
       sprint: "Sprint senarai pendek C-suite",
       sprintValue: "21 hari",
     },
@@ -509,13 +510,13 @@ const ms: Translation = {
   aboutPage: {
     metaTitle: "Tentang Mars Consulting — Pakar HR & EOR Singapura Sejak 2009",
     metaDesc:
-      "Mars Consulting diasaskan di Singapura pada April 2009. 17 tahun pengalaman HR, EOR, dan pencarian eksekutif merentasi 8 pasaran APAC. Lesen MOM EA No. 09C2925.",
+      "Mars Consulting diasaskan di Singapura pada April 2009. Sejak 2009 pengalaman HR, EOR, dan pencarian eksekutif merentasi 10 pasaran. Lesen MOM EA No. 09C2925.",
     pill: "Tentang Mars Consulting",
     headlineLead: "Tujuh Belas Tahun Membina",
     headlineAccent: "Infrastruktur HR",
     headlineTail: "di Belakang Pasukan Global",
     sub:
-      "Mars Consulting diasaskan di Singapura pada April 2009 dengan satu keyakinan: bahawa perniagaan hebat dibina oleh orang yang tepat, ditempatkan dalam peranan yang tepat, disokong oleh sistem yang tepat. Hari ini kami adalah rakan HR perkhidmatan penuh merentasi 8 pasaran — menyediakan Employer of Record, gaji global, pencarian eksekutif, outsourcing HR, dan automasi proses berasaskan AI kepada syarikat di setiap peringkat pertumbuhan.",
+      "Mars Consulting diasaskan di Singapura pada April 2009 dengan satu keyakinan: bahawa perniagaan hebat dibina oleh orang yang tepat, ditempatkan dalam peranan yang tepat, disokong oleh sistem yang tepat. Hari ini kami adalah rakan HR perkhidmatan penuh merentasi 10 pasaran — menyediakan Employer of Record, gaji global, pencarian eksekutif, outsourcing HR, dan automasi proses berasaskan AI kepada syarikat di setiap peringkat pertumbuhan.",
     timeline: {
       eyebrow: "Perjalanan kami",
       headline: "Bagaimana kami sampai di sini",
@@ -580,7 +581,7 @@ const ms: Translation = {
         "Tidak kira berapa banyak negara atau perkhidmatan terlibat, satu pengurus hubungan akauntabel untuk skop kerja penuh. Anda tidak mengurus rangkaian pembekal. Anda mengurus satu panggilan.",
     },
     ctaBanner: {
-      headline: "17 tahun menjadi operator di belakang operator",
+      headline: "Sejak 2009 menjadi operator di belakang operator",
       body:
         "Bercakap dengan pakar berlesen Singapura tentang EOR, pencarian eksekutif, atau automasi HR berasaskan AI merentasi APAC.",
       cta: "Tempah Panggilan",
