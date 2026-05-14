@@ -52,8 +52,7 @@ const CountStat = ({
 }: CountStatProps) => {
   const { ref, inView } = useInView<HTMLDivElement>();
   const value = useCountUp({ to, start: inView });
-  const display =
-    decimals > 0 ? value.toFixed(decimals) : Math.round(value).toLocaleString("en-US");
+  const display = decimals > 0 ? value.toFixed(decimals) : String(Math.round(value));
   return (
     <div ref={ref}>
       <p className={className ?? "font-display text-2xl font-semibold text-white"}>
