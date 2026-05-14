@@ -69,10 +69,13 @@ const CountStat = ({
 const Hero = () => {
   const { t } = useTranslation();
   const snapshotRows: { country: string; ppl: string; tax: string }[] = [
-    { country: t("countries.name.SG"), ppl: `42 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
-    { country: t("countries.name.MY"), ppl: `31 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
-    { country: t("countries.name.HK"), ppl: `24 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
-    { country: t("countries.name.CN"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
+    { country: t("countries.name.SG"), ppl: `38 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
+    { country: t("countries.name.MY"), ppl: `26 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
+    { country: t("countries.name.HK"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
+    { country: t("countries.name.CN"), ppl: `14 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
+    { country: t("countries.name.VN"), ppl: `12 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxVN") },
+    { country: t("countries.name.TH"), ppl: `11 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxTH") },
+    { country: t("countries.name.ID"), ppl: `9 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxID") },
   ];
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
@@ -156,6 +159,10 @@ const Hero = () => {
                 <span className="font-medium text-foreground">{t("hero.snapshotPayrollValue")}</span>
               </div>
             </div>
+            <p className="mt-3 flex items-center gap-2 px-1 text-[10px] font-medium uppercase tracking-wider text-white/70">
+              <ShieldCheck className="h-3 w-3 text-accent" />
+              {t("hero.snapshotBadge")}
+            </p>
           </div>
         </div>
       </div>
