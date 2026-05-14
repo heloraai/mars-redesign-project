@@ -22,6 +22,8 @@ const zh: Translation = {
     statMarkets: "覆盖市场",
     statConsultants: "专业顾问",
     statLicence: "MOM EA 执照",
+    statAcra: "ACRA 申报代理",
+    statAcraValue: "RFA",
     snapshotEyebrow: "每月合规快照",
     snapshotSample: "示例 · 2026年4月 · 客户A（已匿名）",
     snapshotStatus: "准时",
