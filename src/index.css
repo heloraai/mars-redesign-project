@@ -10,6 +10,8 @@
 
 @layer base {
   :root {
+    color-scheme: light;
+
     /* Surfaces */
     --background: 0 0% 100%;           /* White */
     --foreground: 255 3% 22%;          /* Slightly darker than brand gray, for body */
@@ -68,27 +70,6 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 255 4% 12%;
-    --foreground: 0 0% 96%;
-    --card: 255 4% 16%;
-    --card-foreground: 0 0% 96%;
-    --popover: 255 4% 16%;
-    --popover-foreground: 0 0% 96%;
-    --primary: 0 0% 96%;
-    --primary-foreground: 255 2% 32%;
-    --secondary: 255 3% 22%;
-    --secondary-foreground: 0 0% 96%;
-    --muted: 255 3% 22%;
-    --muted-foreground: 255 2% 65%;
-    --accent: 15 99% 69%;
-    --accent-foreground: 255 4% 12%;
-    --destructive: 0 62% 40%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 255 3% 26%;
-    --input: 255 3% 26%;
-    --ring: 0 0% 96%;
-  }
 }
 
 @layer base {
