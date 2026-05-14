@@ -46,14 +46,14 @@ const zh: Translation = {
   licenses: {
     eyebrow: "在新加坡持牌并受监管",
     mom: {
-      authority: "人力部（MOM）",
-      label: "MOM EA 执照",
+      authority: "新加坡人力部（MOM）",
+      label: "综合就业中介执照",
       code: "执照编号 09C2925",
     },
     acra: {
-      authority: "新加坡会计与企业管理局",
-      label: "企业申报代理",
-      code: "ACRA 注册",
+      authority: "新加坡会计与企业管理局（ACRA）",
+      label: "注册申报代理（RFA）",
+      code: "经 ACRA 授权的企业服务提供商",
     },
   },
   twinPillars: {

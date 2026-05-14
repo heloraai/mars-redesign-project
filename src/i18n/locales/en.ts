@@ -46,13 +46,13 @@ const en = {
     eyebrow: "Licensed & regulated in Singapore",
     mom: {
       authority: "Ministry of Manpower",
-      label: "MOM EA Licence",
+      label: "Comprehensive Employment Agency Licence",
       code: "Licence No. 09C2925",
     },
     acra: {
       authority: "ACRA Singapore",
-      label: "Corporate Filing Agent",
-      code: "ACRA-registered",
+      label: "Registered Filing Agent",
+      code: "Corporate services authorised by ACRA",
     },
   },
   twinPillars: {
