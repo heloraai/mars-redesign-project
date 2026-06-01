@@ -137,12 +137,12 @@ const Hero = () => {
               </div>
 
               <div className="flex flex-1 flex-col rounded-xl bg-background/95 p-5 text-foreground shadow-card">
-                <div className="flex items-end justify-between">
-                  <div>
+                <div className="flex items-end justify-between gap-3">
+                  <div className="min-w-0">
                     <p className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("hero.snapshotHeadcount")}</p>
                     <p className="mt-1 font-display text-4xl font-bold tracking-tight">128</p>
                   </div>
-                  <span className="mb-1 inline-flex items-center gap-1 rounded-md bg-accent/10 px-2 py-1 text-xs font-semibold text-accent">
+                  <span className="mb-1 inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md bg-accent/10 px-2 py-1 text-xs font-semibold text-accent">
                     <ArrowRight className="h-3 w-3 -rotate-45" />
                     {t("hero.snapshotDelta")}
                   </span>
