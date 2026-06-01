@@ -87,17 +87,28 @@ const Hero = () => {
   const { ref: snapshotRef, inView: snapshotInView } = useInView<HTMLDivElement>();
   const progress = useCountUp({ to: 1, start: snapshotInView });
   return (
-    <section className="relative overflow-hidden text-primary-foreground" style={{ background: "linear-gradient(160deg, hsl(255 6% 12%) 0%, hsl(255 3% 22%) 40%, hsl(260 4% 28%) 70%, hsl(255 2% 32%) 100%)" }}>
+    <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
+      {/* Dot texture — identical spec to the subpage heroes so the base
+          background matches across the whole site. */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.14]"
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            "radial-gradient(hsl(var(--primary-foreground)) 1.1px, transparent 1.1px)",
-          backgroundSize: "36px 36px",
+            "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
         }}
       />
-      <div className="pointer-events-none absolute -top-40 left-1/4 h-[600px] w-[600px] rounded-full bg-accent/12 blur-[120px]" />
-      <div className="pointer-events-none absolute -bottom-32 -right-20 h-[500px] w-[500px] rounded-full bg-accent/8 blur-[100px]" />
+      {/* Richer animated aurora than the subpages (home-only flourish): three
+          accent blobs drifting on desynced cycles. */}
+      <div className="pointer-events-none absolute -top-40 -left-24 h-[560px] w-[560px] rounded-full bg-accent/20 blur-[120px] animate-blob-drift" />
+      <div
+        className="pointer-events-none absolute top-1/4 right-[-8%] h-[460px] w-[460px] rounded-full bg-accent/14 blur-[110px] animate-blob-drift"
+        style={{ animationDelay: "-7s", animationDuration: "19s" }}
+      />
+      <div
+        className="pointer-events-none absolute -bottom-32 left-1/3 h-[420px] w-[420px] rounded-full bg-accent/10 blur-[100px] animate-blob-drift"
+        style={{ animationDelay: "-3.5s", animationDuration: "22s" }}
+      />
 
       <div className="container-narrow relative py-24 lg:py-32">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-stretch">
