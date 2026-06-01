@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { useCountUp, useInView } from "@/hooks/use-count-up";
 import { withBase, BOOKING_URL } from "@/lib/href";
-import { headlineGap, isCJKLang } from "@/lib/headline";
+import { headlineGap, needsLooseLeading } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { WhyMarsSection } from "@/components/site/WhyMarsSection";
@@ -62,7 +62,7 @@ const COUNTRY_FLAGS: Record<string, string> = {
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
-  const cjk = isCJKLang(i18n.resolvedLanguage);
+  const cjk = needsLooseLeading(i18n.resolvedLanguage);
   const countries = [
     { code: "SG", name: "Singapore", n: 38 },
     { code: "MY", name: "Malaysia", n: 26 },

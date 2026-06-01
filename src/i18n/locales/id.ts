@@ -11,9 +11,9 @@ const id: Translation = {
     bookCall: "Pesan panggilan",
   },
   hero: {
-    pill: "Sejak 2009 · Sejak 2009 di Singapura",
-    headlineLead: "Sejak 2009 menjadi",
-    headlineAccent: "operator di balik operator.",
+    pill: "Berlisensi MOM Singapura · Berdiri sejak 2009",
+    headlineLead: "Rekrut, bayar, dan kembangkan tim",
+    headlineAccent: "di 10 pasar.",
     sub:
       "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur HR di 10 pasar APAC. Sejak 2009.",
     ctaPrimary: "Pesan Panggilan",

@@ -11,9 +11,9 @@ const fil: Translation = {
     bookCall: "Mag-book ng tawag",
   },
   hero: {
-    pill: "Mula 2009 · Mula 2009 sa Singapore",
-    headlineLead: "Mula 2009g nagiging",
-    headlineAccent: "operator sa likod ng operator.",
+    pill: "Lisensyado ng MOM Singapore · Itinatag noong 2009",
+    headlineLead: "Mag-hire, magbayad, at palaguin ang mga team",
+    headlineAccent: "sa 10 merkado.",
     sub:
       "Singapore-licensed Employer of Record, executive search, at HR infrastructure sa 10 markets. Mula 2009.",
     ctaPrimary: "Mag-book ng Tawag",

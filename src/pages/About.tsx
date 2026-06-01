@@ -6,7 +6,7 @@ import { withBase, BOOKING_URL } from "@/lib/href";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { WorldMap, type CountryCode } from "@/components/site/EORSections";
-import { headlineGap, isCJKLang } from "@/lib/headline";
+import { headlineGap, needsLooseLeading } from "@/lib/headline";
 
 const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
   let el = document.querySelector<HTMLMetaElement>(`meta[${attr}='${name}']`);
@@ -32,7 +32,7 @@ const usePageMeta = () => {
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
-  const cjk = isCJKLang(i18n.resolvedLanguage);
+  const cjk = needsLooseLeading(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div

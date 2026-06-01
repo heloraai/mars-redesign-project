@@ -11,9 +11,9 @@ const vi: Translation = {
     bookCall: "Đặt cuộc gọi",
   },
   hero: {
-    pill: "Từ 2009 · Từ 2009 tại Singapore",
-    headlineLead: "Từ 2009 là",
-    headlineAccent: "nhà điều hành đứng sau nhà điều hành.",
+    pill: "Được cấp phép MOM Singapore · Thành lập từ 2009",
+    headlineLead: "Tuyển dụng, trả lương và mở rộng đội ngũ",
+    headlineAccent: "trên 10 thị trường.",
     sub:
       "Employer of Record được cấp phép tại Singapore, tìm kiếm điều hành và hạ tầng HR trên 10 thị trường. Từ 2009.",
     ctaPrimary: "Đặt Cuộc gọi",

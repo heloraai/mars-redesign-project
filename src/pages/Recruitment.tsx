@@ -23,7 +23,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { withBase, BOOKING_URL } from "@/lib/href";
-import { headlineGap, isCJKLang } from "@/lib/headline";
+import { headlineGap, needsLooseLeading } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -79,7 +79,7 @@ const usePageMeta = () => {
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
-  const cjk = isCJKLang(i18n.resolvedLanguage);
+  const cjk = needsLooseLeading(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div

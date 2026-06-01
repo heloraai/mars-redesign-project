@@ -12,9 +12,9 @@ const hi: Translation = {
     bookCall: "कॉल बुक करें",
   },
   hero: {
-    pill: "2009 से · सिंगापुर में 2009 से",
-    headlineLead: "2009 से से",
-    headlineAccent: "ऑपरेटर के पीछे का ऑपरेटर।",
+    pill: "सिंगापुर MOM लाइसेंस प्राप्त · 2009 से स्थापित",
+    headlineLead: "टीमों को नियुक्त करें, भुगतान करें और बढ़ाएँ",
+    headlineAccent: "10 बाज़ारों में।",
     sub:
       "सिंगापुर लाइसेंस्ड Employer of Record, एग्जीक्यूटिव सर्च, और 10 markets बाज़ारों में HR इन्फ्रास्ट्रक्चर। 2009 से।",
     ctaPrimary: "कॉल बुक करें",

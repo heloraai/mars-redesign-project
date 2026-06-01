@@ -26,14 +26,16 @@ export function headlineGap(before?: string, after?: string): string {
 }
 
 /**
- * Whether a language code is a CJK script (Chinese / Japanese / Korean).
+ * Whether a language's script needs a looser headline line-height.
  *
  * Hero headlines use very tight line-height (e.g. `leading-[1.05]`) which looks
  * balanced for Latin text — ascenders/descenders and x-height leave visual gaps
- * between lines. CJK glyphs fill the full em box, so the same value stacks the
- * lines too close and reads as cramped. Callers use this to swap in a looser
- * leading for CJK headlines.
+ * between lines. Scripts that stack marks vertically need more room:
+ *   - CJK (zh/ja/ko): glyphs fill the full em box, so tight leading reads cramped.
+ *   - Thai (th): above/below vowel signs and tone marks collide at tight leading.
+ *   - Devanagari/Hindi (hi): upper matras and conjunct stacks need headroom.
+ * Callers swap in a looser leading for these.
  */
-export function isCJKLang(lang?: string): boolean {
-  return !!lang && /^(zh|ja|ko)/i.test(lang);
+export function needsLooseLeading(lang?: string): boolean {
+  return !!lang && /^(zh|ja|ko|th|hi)/i.test(lang);
 }

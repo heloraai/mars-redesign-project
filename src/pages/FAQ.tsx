@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { BOOKING_URL } from "@/lib/href";
-import { headlineGap, isCJKLang } from "@/lib/headline";
+import { headlineGap, needsLooseLeading } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -62,7 +62,7 @@ const useFAQSchema = (groups: FAQGroup[]) => {
 
 export default function FAQPage() {
   const { t, i18n } = useTranslation();
-  const cjk = isCJKLang(i18n.resolvedLanguage);
+  const cjk = needsLooseLeading(i18n.resolvedLanguage);
 
   useEffect(() => {
     const prevTitle = document.title;
