@@ -60,6 +60,18 @@ const COUNTRY_FLAGS: Record<string, string> = {
   SG: "🇸🇬", MY: "🇲🇾", HK: "🇭🇰", CN: "🇨🇳", VN: "🇻🇳", TH: "🇹🇭", ID: "🇮🇩",
 };
 
+// Count up the first numeric token inside a localized string (e.g. the payroll
+// value "SGD 412,890 · cleared") from 0 → target as `progress` goes 0 → 1,
+// keeping the surrounding text and thousands separators intact.
+const countUpInString = (str: string, progress: number): string => {
+  const match = str.match(/\d[\d,]*(?:\.\d+)?/);
+  if (!match) return str;
+  const target = Number(match[0].replace(/,/g, ""));
+  if (!Number.isFinite(target)) return str;
+  const current = Math.round(target * progress).toLocaleString("en-US");
+  return str.replace(match[0], current);
+};
+
 const Hero = () => {
   const { t, i18n } = useTranslation();
   const cjk = needsLooseLeading(i18n.resolvedLanguage);
@@ -163,7 +175,7 @@ const Hero = () => {
                 </div>
                 <div className="mt-5 flex items-center justify-between rounded-lg bg-accent/[0.06] px-3 py-2.5">
                   <span className="text-xs text-muted-foreground">{t("hero.snapshotPayroll")}</span>
-                  <span className="font-display text-sm font-semibold text-foreground">{t("hero.snapshotPayrollValue")}</span>
+                  <span className="font-display text-sm font-semibold text-foreground tabular-nums">{countUpInString(t("hero.snapshotPayrollValue"), progress)}</span>
                 </div>
               </div>
 
@@ -341,37 +353,11 @@ const FAQTeaser = () => {
 };
 
 
-const LogoMarquee = () => {
-  const { t } = useTranslation();
-  const label = t("marquee.label");
-  const segments = Array.from({ length: 4 }, (_, i) => i);
-  return (
-    <section className="border-y border-border bg-background py-5 overflow-hidden">
-      <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
-        <div className="flex w-max animate-marquee-x will-change-transform">
-          {segments.map((i) => (
-            <span
-              key={i}
-              className="flex items-center gap-3 whitespace-nowrap px-8 text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground"
-            >
-              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-              {label}
-            </span>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-
-
 const Index = () => (
   <main className="min-h-screen bg-background">
     <SiteHeader />
     <Hero />
     <TrustBar />
-    <LogoMarquee />
     <TwinPillars />
     <WhyMarsSection />
     <CountriesMapSection />

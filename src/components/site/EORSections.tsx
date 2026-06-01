@@ -205,14 +205,20 @@ export const WorldMap = ({
           return (
             <div
               key={c.code}
-              className={`group absolute -translate-x-1/2 -translate-y-1/2 ${
+              className={`group absolute ${
                 isActive ? "z-30" : "z-10"
               } ${interactive ? "cursor-pointer hover:z-30" : "hover:z-30"}`}
               style={{
                 left: `${c.left}%`,
                 top: `${c.top}%`,
+                transformOrigin: "center",
+                // Reveal: pop from small → full size with a slight overshoot,
+                // staggered per marker. Positioning translate stays constant so
+                // only scale animates and the marker keeps its anchor point.
                 opacity: markersShown ? 1 : 0,
-                transition: "opacity 420ms ease-out",
+                transform: `translate(-50%, -50%) scale(${markersShown ? 1 : 0.2})`,
+                transition:
+                  "opacity 300ms ease-out, transform 480ms cubic-bezier(0.34, 1.56, 0.64, 1)",
                 transitionDelay: markersShown && animateReveal ? `${i * 110}ms` : "0ms",
               }}
               onMouseEnter={interactive ? () => onMarkerHover?.(c.code) : undefined}

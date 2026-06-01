@@ -308,6 +308,7 @@ const Offices = () => {
               activeCode={activeCode}
               onMarkerHover={setActiveCode}
               onMarkerSelect={selectMarket}
+              reveal
             />
           </div>
 
