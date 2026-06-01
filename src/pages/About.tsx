@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
-import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass, Linkedin, MapPin } from "lucide-react";
+import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { withBase, BOOKING_URL } from "@/lib/href";
@@ -315,11 +315,6 @@ const Offices = () => {
             ref={panelRef}
             className="flex flex-col gap-2 lg:max-h-[var(--offices-map-h,30rem)] lg:overflow-y-auto lg:pr-1"
           >
-            <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
-              <MapPin className="h-4 w-4 text-accent" />
-              {t("aboutPage.offices.mapHint")}
-            </p>
-
             {OFFICE_ROWS.map(({ code, k, badge }) => {
               const active = activeCode === code;
               return (
