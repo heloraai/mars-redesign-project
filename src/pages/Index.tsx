@@ -99,16 +99,11 @@ const Hero = () => {
         }}
       />
       {/* Richer animated aurora than the subpages (home-only flourish): three
-          accent blobs drifting on desynced cycles. */}
-      <div className="pointer-events-none absolute -top-40 -left-24 h-[560px] w-[560px] rounded-full bg-accent/20 blur-[120px] animate-blob-drift" />
-      <div
-        className="pointer-events-none absolute top-1/4 right-[-8%] h-[460px] w-[460px] rounded-full bg-accent/14 blur-[110px] animate-blob-drift"
-        style={{ animationDelay: "-7s", animationDuration: "19s" }}
-      />
-      <div
-        className="pointer-events-none absolute -bottom-32 left-1/3 h-[420px] w-[420px] rounded-full bg-accent/10 blur-[100px] animate-blob-drift"
-        style={{ animationDelay: "-3.5s", animationDuration: "22s" }}
-      />
+          accent blobs drifting on distinct large paths so the glow visibly
+          moves. */}
+      <div className="pointer-events-none absolute -top-40 -left-24 h-[520px] w-[520px] rounded-full bg-accent/25 blur-[110px] animate-drift-1" />
+      <div className="pointer-events-none absolute top-1/4 right-[-8%] h-[440px] w-[440px] rounded-full bg-accent/18 blur-[100px] animate-drift-2" />
+      <div className="pointer-events-none absolute -bottom-32 left-1/3 h-[400px] w-[400px] rounded-full bg-accent/14 blur-[90px] animate-drift-3" />
 
       <div className="container-narrow relative py-24 lg:py-32">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-stretch">

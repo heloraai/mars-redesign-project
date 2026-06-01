@@ -100,6 +100,20 @@ export default {
           "0%, 100%": { transform: "translate(0,0) scale(1)" },
           "50%": { transform: "translate(30px,-20px) scale(1.08)" },
         },
+        // Larger, visibly-moving aurora paths for the home hero glow blobs.
+        "drift-1": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "33%": { transform: "translate(140px,70px) scale(1.18)" },
+          "66%": { transform: "translate(-90px,40px) scale(0.92)" },
+        },
+        "drift-2": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "50%": { transform: "translate(-160px,-90px) scale(1.22)" },
+        },
+        "drift-3": {
+          "0%, 100%": { transform: "translate(0,0) scale(1)" },
+          "50%": { transform: "translate(120px,-110px) scale(1.12)" },
+        },
         "bar-grow": {
           from: { transform: "scaleY(0.15)" },
           to: { transform: "scaleY(1)" },
@@ -113,6 +127,9 @@ export default {
         "marquee-x-slow": "marquee-x 70s linear infinite",
         "pulse-ring": "pulse-ring 2.6s cubic-bezier(0.4,0,0.6,1) infinite",
         "blob-drift": "blob-drift 14s ease-in-out infinite",
+        "drift-1": "drift-1 22s ease-in-out infinite",
+        "drift-2": "drift-2 28s ease-in-out infinite",
+        "drift-3": "drift-3 18s ease-in-out infinite",
         "bar-grow": "bar-grow 1.1s ease-out both",
       },
     },
