@@ -5,54 +5,57 @@ const id: Translation = {
   nav: {
     eor: "EOR & Penggajian",
     recruitment: "Rekrutmen & Pencarian Eksekutif",
-    aiLab: "Inovasi AI",
+    aiLab: "Otomasi AI",
     about: "Tentang",
     contact: "Kontak",
-    bookCall: "Pesan panggilan",
+    bookCall: "Pesan Konsultasi",
   },
   hero: {
     pill: "Berlisensi MOM Singapura · Berdiri sejak 2009",
     headlineLead: "Rekrut, bayar, dan kembangkan tim",
     headlineAccent: "di 10 pasar.",
     sub:
-      "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur HR di 10 pasar APAC. Sejak 2009.",
-    ctaPrimary: "Pesan Panggilan",
-    ctaSecondary: "Jelajahi Layanan Kami",
-    statYears: "Tahun beroperasi",
-    statMarkets: "Pasar APAC",
-    statEmployers: "Perusahaan dilayani",
+      "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur operasi HR di 10 pasar — dibangun untuk perusahaan yang memasuki Asia, mengembangkan tim regional, dan mengelola penggajian lintas batas tanpa mendirikan entitas lokal.",
+    ctaPrimary: "Pesan Konsultasi",
+    ctaSecondary: "Lihat Cara Kerjanya",
+    statYears: "Berdiri",
+    statMarkets: "Pasar yang dilayani",
     statConsultants: "Konsultan ahli",
-    statClients: "Klien global",
-    statPlacements: "Penempatan berhasil",
-    statLicence: "Lisensi MOM EA 09C2925",
+    statLicence: "MOM EA Licence",
+    statAcra: "Agen Pengarsipan ACRA",
+    statAcraValue: "RFA",
     snapshotEyebrow: "Snapshot kepatuhan bulanan",
     snapshotSample: "Contoh · April 2026 · Klien A (anonim)",
     snapshotStatus: "Tepat waktu",
-    snapshotHeadcount: "Karyawan dikelola",
+    snapshotHeadcount: "Jumlah karyawan yang dikelola",
     snapshotDelta: "+12 bulan ini",
     snapshotPayroll: "Penggajian dijalankan",
-    snapshotPayrollValue: "SGD 412.890 · selesai",
-    snapshotBadge: "3 lisensi SG · 0 keterlambatan statutori",
+    snapshotPayrollValue: "SGD 412,890 · selesai",
+    snapshotBadge: "Berlisensi MOM · 0 kelalaian statutori sejak 2009",
+    snapshotEmployeesLabel: "karyawan",
+    snapshotTaxSG: "CPF · IR8A diajukan",
+    snapshotTaxMY: "EPF · SOCSO diajukan",
+    snapshotTaxHK: "MPF diajukan",
+    snapshotTaxCN: "Asuransi Sosial diajukan",
+    snapshotTaxVN: "BHXH diajukan",
+    snapshotTaxTH: "Jaminan Sosial diajukan",
+    snapshotTaxID: "BPJS diajukan",
   },
   marquee: {
-    label: "100+ perusahaan · sejak 2009",
+    label:
+      "Berlisensi MOM Singapura · Berdiri sejak 2009 · 10 Pasar · EOR & Penggajian · Rekrutmen · Otomasi AI · 100+ Konsultan · MOM EA Licence 09C2925",
   },
   licenses: {
     eyebrow: "Berlisensi & diatur di Singapura",
     mom: {
       authority: "Kementerian Tenaga Kerja",
-      label: "Lisensi MOM EA",
+      label: "Lisensi Agen Ketenagakerjaan Komprehensif",
       code: "Lisensi No. 09C2925",
-    },
-    mas: {
-      authority: "Otoritas Moneter Singapura",
-      label: "Pengecualian Layanan Penggajian",
-      code: "Entitas dikecualikan MAS",
     },
     acra: {
       authority: "ACRA Singapura",
       label: "Agen Pengarsipan Terdaftar",
-      code: "Berlisensi ACRA",
+      code: "Layanan korporat yang diotorisasi oleh ACRA",
     },
   },
   twinPillars: {
@@ -62,20 +65,20 @@ const id: Translation = {
       tag: "Unggulan",
       title: "Employer of Record & Penggajian Global",
       body:
-        "Rekrut, bayar, dan tetap patuh di Singapura serta 7 pasar APAC lainnya — tanpa mendirikan entitas lokal. Kami menangani kontrak kerja, penggajian, pengarsipan statutori, dan offboarding sejak hari pertama.",
+        "Rekrut, bayar, dan tetap patuh di Singapura serta 9 pasar lainnya di Asia, Timur Tengah, dan Amerika Serikat — tanpa mendirikan entitas lokal. Kami menangani kontrak kerja, penggajian, pengarsipan statutori, dan offboarding sejak hari pertama.",
       bullet1: "Onboarding dalam 5 hari kerja",
-      bullet2: "CPF, EPF, BPJS, MPF, dan pengarsipan pajak lokal ditangani",
-      bullet3: "Lisensi MOM EA No. 09C2925",
+      bullet2: "CPF, EPF, BPJS, MPF, dan pengarsipan statutori ditangani di setiap pasar",
+      bullet3: "MOM EA Licence No. 09C2925",
       cta: "Jelajahi EOR",
     },
     recruitment: {
       tag: "Pencarian",
       title: "Rekrutmen & Pencarian Eksekutif",
       body:
-        "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia di Singapura dan APAC. Kami menjangkau kandidat pasif yang tidak bisa dijangkau platform lain, lalu menyerahkan langsung ke onboarding EOR bila dibutuhkan.",
-      bullet1: "100+ penempatan berhasil sejak 2009",
+        "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia di Singapura dan kawasan ini. Kami melakukan pemetaan pasar mendalam untuk menjangkau kandidat pasif, lalu menyerahkan langsung ke onboarding EOR bila dibutuhkan.",
+      bullet1: "Mandat permanen, kontrak, dan C-suite rahasia",
       bullet2: "Shortlist C-suite dalam sprint 21 hari",
-      bullet3: "Teknologi, keuangan, kesehatan, manufaktur",
+      bullet3: "Teknologi, jasa keuangan, kesehatan, manufaktur",
       cta: "Jelajahi Rekrutmen",
     },
   },
@@ -83,31 +86,38 @@ const id: Translation = {
     eyebrow: "Mengapa Mars",
     headline: "Mengapa Mars, bukan platform EOR global?",
     p1:
-      "Platform EOR global — global EOR SaaS platforms — beroperasi pada model SaaS standar bervolume tinggi. Mereka bekerja dengan baik sampai tidak: pelaporan kompensasi ekuitas lintas yurisdiksi, negosiasi pemutusan non-standar di Indonesia, eksposur PE yang membutuhkan opini penasihat sebelum siklus penggajian pertama.",
+      "Platform SaaS EOR global beroperasi pada model standar bervolume tinggi. Mereka bekerja dengan baik sampai tidak: pelaporan kompensasi ekuitas lintas yurisdiksi, negosiasi pemutusan non-standar di Malaysia atau China, eksposur PE yang membutuhkan opini penasihat sebelum siklus penggajian pertama.",
     p2:
       "Mars masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola khusus, pengawasan hukum aktif di lapangan, dan intervensi manusia tingkat senior untuk kasus-kasus tepi yang membutuhkannya.",
     p3:
       "Kami tidak lebih murah dari platform SaaS. Kami adalah yang Anda gunakan ketika biaya kesalahan kepatuhan melebihi biaya layanan kami.",
-    cta: "Bicara dengan spesialis",
+    cta: "Bicara dengan Spesialis",
+    verifyLine: "Verifikasi tim dan kredensial kami secara independen di LinkedIn.",
+    verifyCta: "Lihat di LinkedIn ↗",
+    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
   },
   countries: {
     eyebrow: "Cakupan",
     headline:
-      "Rekrut secara patuh di 10 pasar APAC — di bawah satu kontrak Singapura.",
+      "Rekrut secara patuh di 10 pasar — di bawah satu kontrak Singapura.",
     body:
-      "Kami menjalankan penggajian, pengarsipan statutori, dan kontrak kerja di pasar-pasar ini sejak 2009. Anda tetap operator; kami tetap pemberi kerja sah.",
+      "Kami telah menjalankan penggajian, pengarsipan statutori, dan kontrak kerja di pasar-pasar ini sejak 2009. Anda tetap operator; kami tetap pemberi kerja sah.",
     statOnboarding: "Onboarding",
     statOnboardingValue: "5 hari",
-    statMisses: "Keterlambatan statutori",
-    statLicences: "Lisensi SG",
+    statMisses: "Kelalaian statutori (sejak 2009)",
+    statLicences: "Berlisensi MOM",
+    legendOffice: "Kantor",
+    legendService: "Pasar layanan",
     name: {
-      IN: "India",
-      TH: "Thailand",
-      HK: "Hong Kong",
-      VN: "Vietnam",
-      PH: "Filipina",
-      MY: "Malaysia",
       SG: "Singapura",
+      MY: "Malaysia",
+      HK: "Hong Kong",
+      CN: "China",
+      IN: "India",
+      US: "Amerika Serikat",
+      AE: "Uni Emirat Arab",
+      VN: "Vietnam",
+      TH: "Thailand",
       ID: "Indonesia",
     },
   },
@@ -139,7 +149,7 @@ const id: Translation = {
         label: "Penggajian & pengarsipan statutori",
         entity: "Anda jalankan + arsip",
         contractor: "Pekerja arsip sendiri",
-        mars: "CPF/EPF/BPJS/MPF — kami arsip",
+        mars: "CPF/EPF/BPJS/MPF dan setaranya — kami arsip",
       },
       risk: {
         label: "Risiko salah klasifikasi",
@@ -170,7 +180,7 @@ const id: Translation = {
     step2: {
       title: "Kami menyusun kontrak lokal",
       desc:
-        "Perjanjian kerja patuh, pengalihan IP dan NDA dalam bahasa lokal. Pengakuan ekuitas (RSU / ISO / phantom) ditangani jika ada.",
+        "Perjanjian kerja yang patuh, pengalihan IP, dan NDA dalam bahasa lokal. Pengakuan ekuitas (RSU / ISO / phantom) ditangani jika Anda memilikinya.",
     },
     step3: {
       title: "Karyawan tanda tangan & onboarding",
@@ -180,14 +190,14 @@ const id: Translation = {
     step4: {
       title: "Kami menjalankan penggajian & kepatuhan",
       desc:
-        "Satu invoice bulanan dari Mars. CPF / EPF / BPJS / MPF dan setaranya diarsipkan di setiap pasar — kami kirim laporan; Anda tidak melakukan apa-apa.",
+        "Satu invoice bulanan dari Mars. CPF, EPF, BPJS, MPF, dan pengarsipan statutori setara di setiap pasar — kami kirim laporannya; Anda tidak melakukan apa-apa.",
     },
   },
   clients: {
     eyebrow: "Klien kami",
     headline: "Dipercaya oleh perusahaan di berbagai industri dan tahap",
     logosNote:
-      "Dari startup AI Series-A hingga grup industri tercatat — di sektor teknologi, jasa keuangan, kesehatan, dan manufaktur.",
+      "Dari startup teknologi Series-A hingga grup industri tercatat — di sektor jasa keuangan, kesehatan, manufaktur, dan real estate di Singapura dan di seluruh kawasan.",
   },
   faqTeaser: {
     eyebrow: "FAQ",
@@ -195,60 +205,83 @@ const id: Translation = {
     readAll: "Baca semua tanya jawab ahli →",
     q1: "Di mana posisi Mars ketika platform EOR global 'hampir berfungsi' tetapi gagal pada kompleksitas spesifik yurisdiksi?",
     a1:
-      "Platform EOR global beroperasi pada model SaaS standar bervolume tinggi yang retak di bawah kompleksitas spesifik yurisdiksi — seperti pelaporan kompensasi ekuitas di Singapura atau negosiasi pemutusan non-standar di Indonesia. Mars Consulting masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola MNC khusus, terintegrasi langsung dengan undang-undang ketenagakerjaan dan kode pajak lokal. Model kami menjembatani kesenjangan antara EOR berbasis perangkat lunak dan BPO sentuhan tinggi, memastikan operasi lintas batas tidak gagal di 'mil terakhir' kepatuhan lokal.",
+      "Platform EOR global beroperasi pada model SaaS standar bervolume tinggi yang retak di bawah kompleksitas spesifik yurisdiksi — seperti pelaporan kompensasi ekuitas di Singapura atau negosiasi pemutusan non-standar di Malaysia. Mars Consulting masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola MNC khusus, terintegrasi langsung dengan undang-undang ketenagakerjaan dan kode pajak lokal. Model kami menjembatani kesenjangan antara EOR berbasis perangkat lunak dan BPO sentuhan tinggi, memastikan operasi lintas batas tidak gagal di 'mil terakhir' kepatuhan lokal.",
     q2: "Bagaimana Mars menyusun penggajian lintas batas tanpa memicu eksposur permanent establishment?",
     a2:
-      "Penggajian lintas batas dalam model kami direkayasa melalui tiga lapisan kontrol: pemilihan entitas yurisdiksi, arsitektur dispatch tenaga kerja, dan posisi pajak yang selaras dengan perjanjian. Di mana substansi komersial klien tidak membenarkan entitas terdaftar lokal, kami menerapkan kendaraan EOR berlisensi Singapura dikombinasikan dengan struktur dispatch tenaga kerja bilateral di Vietnam, Indonesia, Filipina, Malaysia, dan Thailand — menetralkan risiko permanent establishment sambil mempertahankan kontrol operasional atas headcount, KPI, dan hak pemutusan.",
-    q3: "Bagaimana hand-off rekrutmen terintegrasi dengan onboarding EOR untuk memadatkan time-to-productivity?",
+      "Penggajian lintas batas dalam model kami direkayasa melalui tiga lapisan kontrol: pemilihan entitas yurisdiksi, arsitektur dispatch tenaga kerja, dan posisi pajak yang selaras dengan perjanjian. Di mana substansi komersial klien tidak membenarkan entitas terdaftar lokal, kami menerapkan kendaraan EOR berlisensi Singapura dikombinasikan dengan struktur dispatch tenaga kerja bilateral di Malaysia, China, India, Vietnam, Thailand, Indonesia, dan Uni Emirat Arab — menetralkan risiko permanent establishment sambil mempertahankan kontrol operasional.",
+    q3: "Bagaimana otomasi AI Mars terintegrasi dengan alur kerja HR dan penggajian yang ada?",
     a3:
-      "Titik friksi tradisional dalam ekspansi internasional adalah silo operasional antara akuisisi talenta dan operasi HR lokal. Mars menyelesaikan ini dengan merancang hand-off rekrutmen dan onboarding EOR yang mulus. Saat seorang kandidat menandatangani surat penawaran eksekutif, mesin kepatuhan EOR kami memulai urutan onboarding lokal bersamaan dengan masa pemberitahuan kandidat — menghasilkan kontrak kerja spesifik yurisdiksi, memulai aplikasi visa kerja yang diperlukan, dan menetapkan profil penggajian lokal. Dengan menjalankan penutupan rekrutmen dan protokol onboarding statutori secara paralel, kami memadatkan time-to-productivity.",
+      "Lapisan otomasi AI kami tidak menggantikan sistem HR Anda yang ada — ia berada di hulu sistem tersebut. Bot ingestion berbasis WhatsApp menangkap data cuti dan pengeluaran, mesin pra-pemrosesan AI mengubah input operasional mentah menjadi file pra-penggajian yang terstruktur, dan output didorong melalui API ke HRIS atau platform penggajian apa pun yang Anda jalankan. Praktisi penggajian manusia meninjau output yang sudah disiapkan sebelum masuk ke siklus statutori. Hasilnya adalah pemrosesan yang lebih cepat dengan jejak audit yang bersih dan tanpa perubahan pada alur kerja kepatuhan hilir Anda.",
   },
   aiBlock: {
-    eyebrow: "Sejak 2026",
-    title: "Inovasi AI",
+    eyebrow: "Sejak 2025 · Praktik Otomasi AI",
+    title: "Otomasi HR Bertenaga AI",
     body:
-      "Kami sekarang membantu klien mengotomasi alur kerja HR dan operasional di balik perekrutan mereka: ingestion cuti sakit melalui WhatsApp, pra-pemrosesan penggajian berbasis AI, dan konsultan AI tertanam untuk tim yang membangun kapabilitas otomasi internal.",
-    cta: "Jelajahi Inovasi AI",
+      "Kami menerapkan alur kerja bertenaga AI bersama praktisi HR senior untuk mengotomasi proses friksi tinggi di sekitar tim terdistribusi: pra-pemrosesan penggajian, onboarding dan offboarding karyawan, serta manajemen surat keterangan medis melalui WhatsApp — sehingga tim Anda mengelola orang, bukan dokumen.",
+    cta: "Jelajahi Otomasi AI",
   },
   testimonial: {
     eyebrow: "Cerita klien",
-    headline: "Dipercaya oleh tim yang berkembang di seluruh APAC.",
+    headline: "Dipercaya oleh tim yang berkembang di seluruh kawasan.",
     body:
-      "Didirikan di Singapura pada 2009, Mars Consulting telah berkembang dari butik rekrutmen menjadi platform pekerjaan regional — secara diam-diam menjalankan perekrutan, penggajian, dan kepatuhan untuk startup AI, scale-up, dan perusahaan terkait pemerintah di seluruh Asia Tenggara.",
+      "Didirikan di Singapura pada 2009, Mars Consulting telah berkembang dari butik rekrutmen menjadi platform pekerjaan regional — menjalankan perekrutan, penggajian, dan kepatuhan untuk perusahaan teknologi, firma jasa keuangan, dan grup industri di Asia, Timur Tengah, dan Amerika Serikat.",
     quote:
       "Mars melakukan onboarding tim riset kami di Singapura dan Jakarta dalam waktu kurang dari dua minggu. Mereka menangani semuanya — kontrak, pengakuan ekuitas, pengarsipan statutori lokal — sehingga kami bisa fokus pada pengiriman model.",
     attribution: "Head of People · Perusahaan AI Series-B",
-    location: "Singapura ↔ APAC · 12 perekrutan di 2025",
-    statClients: "Klien global",
+    location: "Singapura ↔ APAC · Peluncuran EOR multi-pasar · 2025",
     statConsultants: "Konsultan",
-    statLicences: "Lisensi SG",
+    statLicences: "Berlisensi MOM",
   },
   contact: {
     eyebrow: "Bicara dengan spesialis berlisensi Singapura",
-    headline: "Lihat apakah EOR pilihan tepat — dalam 30 menit.",
+    headline: "Bicara dengan spesialis berlisensi Singapura — dalam 30 menit.",
     bullet1: "Rincian biaya negara per negara",
     bullet2: "Contoh kontrak & checklist onboarding",
     bullet3: "Jawaban jujur apakah Anda sebaiknya mendirikan entitas",
     response: "Respons rata-rata: dalam 4 jam kerja",
     label: {
+      service: "Apa yang bisa kami bantu?",
       email: "Email kerja",
       company: "Perusahaan",
-      country: "Negara untuk perekrutan",
-      hires: "Jumlah perekrutan (6 bulan ke depan)",
+      country: "Negara atau kawasan yang diminati",
+      hires: "Ukuran tim yang ingin Anda rekrut",
     },
     placeholder: {
+      service: "Pilih layanan",
       email: "anda@perusahaan.com",
       company: "Nama perusahaan",
-      country: "mis. Indonesia",
-      hires: "5",
+      country: "mis. China, Malaysia, UAE",
+      hires: "mis. 5",
+    },
+    serviceOptions: {
+      eor: "EOR & Penggajian",
+      recruitment: "Rekrutmen & Pencarian Eksekutif",
+      ai: "Otomasi AI",
+      hr: "Outsourcing HR",
+      unsure: "Belum yakin",
     },
     submit: "Pesan panggilan 30 menit saya",
     privacy:
-      "Kami balas dalam 4 jam kerja, waktu Singapura. Dengan mengirim Anda menyetujui kebijakan privasi kami.",
+      "Kami balas dalam 4 jam kerja, waktu Singapura.",
+    consent: "Dengan mengirim, Anda menyetujui Kebijakan Privasi kami.",
+    consentLink: "Kebijakan Privasi",
+    consentUrl: "/privacy",
+    infoEyebrow: "Cara lain untuk menghubungi kami",
+    emailLabel: "Pertanyaan umum",
+    emailValue: "admin@marsconsulting.com.sg",
+    hqLabel: "Kantor pusat",
+    hqAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+    hoursLabel: "Jam kerja",
+    hoursValue: "Senin – Jumat, 9:00 – 18:00 SGT",
+    linkedinLabel: "LinkedIn",
+    linkedinValue: "Lihat tim kami di LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    teamHintLabel: "Lebih suka bertemu tim terlebih dahulu?",
+    teamHintValue: "Konsultan dan perekrut kami terdaftar secara publik di LinkedIn.",
   },
   footer: {
     tagline:
-      "Employer of Record berlisensi Singapura dan layanan HR di seluruh Asia Tenggara. Sejak 2009.",
+      "Mars Consulting Pte Ltd — Employer of Record berlisensi Singapura, rekrutmen, dan operasi HR di 10 pasar. MOM EA Licence No. 09C2925. Berdiri 2009.",
     sections: {
       solutions: "Solusi",
       company: "Perusahaan",
@@ -257,41 +290,54 @@ const id: Translation = {
     links: {
       eor: "EOR & Penggajian",
       recruitment: "Rekrutmen & Pencarian Eksekutif",
-      aiLab: "Inovasi AI",
+      aiLab: "Otomasi AI",
+      hrOutsourcing: "Outsourcing HR",
       about: "Tentang",
       clients: "Klien",
       contact: "Kontak",
-      mom: "Lisensi MOM EA 09C2925",
+      mom: "MOM EA Licence 09C2925",
       acra: "Agen Pengarsipan ACRA",
       privacy: "Privasi",
+      terms: "Ketentuan Penggunaan",
     },
-    copyright: "© {{year}} Mars Consulting Pte Ltd. Hak cipta dilindungi.",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    copyright: "© {{year}} Mars Consulting Pte Ltd (UEN 200907301Z). Hak cipta dilindungi.",
     cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
-      "Lisensi MOM EA Komprehensif No. 09C2925  ·  Penyedia Layanan Korporat ACRA & Agen Pengarsipan Terdaftar  ·  Sekretaris Korporat Terdaftar",
+      "Mars Consulting Pte Ltd (UEN 200907301Z) · MOM Comprehensive EA Licence No. 09C2925 · ACRA Registered Filing Agent",
   },
   eorPage: {
-    metaTitle: "Employer of Record Singapura & APAC — Mars Consulting",
+    metaTitle: "Employer of Record Singapura & di 10 Pasar — Mars Consulting",
     metaDesc:
       "Layanan EOR berlisensi Singapura di 10 pasar. Pekerjaan, penggajian, dan pengarsipan statutori yang patuh sejak hari pertama. Tanpa entitas lokal. MOM EA 09C2925.",
     pill: "Employer of Record & Penggajian Global",
     headlineLead: "Rekrut secara patuh di",
-    headlineAccent: "10 pasar APAC",
+    headlineAccent: "10 pasar",
     headlineTail: "— tanpa mendirikan entitas lokal",
     sub:
       "Layanan Employer of Record berlisensi Singapura. Kami menjadi pemberi kerja sah; Anda mengarahkan pekerjaan. Kontrak kerja, penggajian, pengarsipan statutori, dan offboarding ditangani sejak hari pertama.",
     ctaPrimary: "Dapatkan Penawaran EOR",
     ctaSecondary: "Lihat Cara Kerjanya",
-    trustLine: "Lisensi MOM EA No. 09C2925 · Sejak 2009 · 10 pasar APAC · Onboarding 5 hari",
+    trustLine:
+      "MOM EA Licence No. 09C2925 · Berdiri sejak 2009 · 10 pasar · Onboarding 5 hari",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 hari",
-      coverage: "Cakupan APAC",
-      coverageValue: "10 pasar",
-      clients: "Klien global",
+      coverage: "Pasar yang dilayani",
+      coverageValue: "10",
+      clients: "Konsultan ahli",
       clientsValue: "100+",
-      misses: "Keterlambatan statutori",
+      misses: "Kelalaian statutori (sejak 2009)",
       missesValue: "0",
+    },
+    included: {
+      title: "Apa yang kami tangani atas nama Anda",
+      item1: "Kontrak kerja dalam bahasa lokal, spesifik yurisdiksi",
+      item2: "Manajemen proses onboarding dan pengunduran diri",
+      item3: "Pemrosesan penggajian dan manajemen pajak",
+      item4: "Kontribusi statutori: CPF, EPF, BPJS, MPF, FICA, BHXH, dan setaranya",
+      item5: "Offboarding, perhitungan pembayaran akhir, dan penyelesaian statutori",
+      item6: "Koordinasi cedera kerja dan insiden di tempat kerja",
     },
     faq: {
       eyebrow: "FAQ",
@@ -300,45 +346,45 @@ const id: Translation = {
         "Ini adalah pertanyaan yang ditanyakan klien kami pada panggilan kedua atau ketiga. Kami menaruhnya di sini agar Anda bisa menanyakannya pada panggilan pertama.",
       q1: "Di mana posisi Mars Consulting ketika platform EOR global 'hampir berfungsi' tetapi gagal pada kompleksitas spesifik yurisdiksi?",
       a1:
-        "Platform EOR global beroperasi pada model SaaS standar bervolume tinggi yang retak di bawah kompleksitas spesifik yurisdiksi — seperti pelaporan kompensasi ekuitas di Singapura atau negosiasi pemutusan non-standar di Indonesia. Mars Consulting masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola MNC khusus, terintegrasi langsung dengan undang-undang ketenagakerjaan dan kode pajak lokal. Model kami menjembatani kesenjangan antara EOR berbasis perangkat lunak dan BPO sentuhan tinggi, memastikan operasi lintas batas tidak gagal di 'mil terakhir' kepatuhan lokal. Pendekatan ini mengurangi risiko yurisdiksi dengan menyediakan pengawasan hukum dan operasional aktif di lapangan, menyelesaikan kasus-kasus tepi yang memerlukan intervensi manusia tingkat senior, bukan sekadar antarmuka dasbor.",
+        "Mars Consulting mengisi kesenjangan ketika perangkat lunak EOR standar retak pada kompleksitas spesifik yurisdiksi. Platform EOR global beroperasi pada model SaaS standar bervolume tinggi yang retak di bawah kompleksitas spesifik yurisdiksi — seperti pelaporan kompensasi ekuitas di Singapura atau negosiasi pemutusan non-standar di Malaysia. Mars Consulting masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola MNC khusus, terintegrasi langsung dengan undang-undang ketenagakerjaan dan kode pajak lokal. Model kami menjembatani kesenjangan antara EOR berbasis perangkat lunak dan BPO sentuhan tinggi, memastikan operasi lintas batas tidak gagal di 'mil terakhir' kepatuhan lokal. Pendekatan ini mengurangi risiko yurisdiksi dengan menyediakan pengawasan hukum dan operasional yang aktif di lapangan, menyelesaikan kasus-kasus tepi yang memerlukan intervensi manusia tingkat senior, bukan sekadar antarmuka dasbor.",
       q2: "Bagaimana Mars menyusun tata kelola engagement untuk MNC multi-entitas atau multi-region?",
       a2:
-        "Tata kelola engagement untuk MNC multi-region memerlukan bidang kontrol terpusat yang dilapisi eksekusi statutori terdesentralisasi. Mars menyusun engagement tersebut melalui Service Level Agreement terpadu yang mencakup semua yurisdiksi aktif, dipasangkan dengan pemimpin tata kelola regional khusus yang berbasis di Singapura. Arsitektur ini menjamin satu titik akuntabilitas bagi klien sambil mengeksekusi kewajiban statutori — seperti administrasi tunjangan lokal, pelaporan statutori, dan resolusi sengketa ketenagakerjaan — melalui pakar HR dan hukum in-country yang tertanam. Dengan memisahkan lapisan tata kelola MNC strategis dari eksekusi lokal, kami menegakkan standar pelaporan yang konsisten di seluruh portofolio klien sambil menetralkan risiko kepatuhan dan yurisdiksi lokal sebelum eskalasi ke kantor pusat.",
+        "Tata kelola engagement untuk MNC multi-region memerlukan bidang kontrol terpusat yang dilapisi eksekusi statutori terdesentralisasi. Mars menyusun engagement tersebut melalui Service Level Agreement terpadu yang mencakup semua yurisdiksi aktif, dipasangkan dengan pemimpin tata kelola regional khusus yang berbasis di Singapura. Arsitektur ini menjamin satu titik akuntabilitas bagi klien sambil mengeksekusi kewajiban statutori — seperti administrasi tunjangan lokal, pelaporan statutori, dan resolusi sengketa ketenagakerjaan — melalui pakar HR dan hukum in-country yang tertanam secara mendalam. Dengan memisahkan lapisan tata kelola MNC strategis dari eksekusi lokal, kami menegakkan standar pelaporan yang konsisten di seluruh portofolio klien sambil menetralkan risiko kepatuhan dan yurisdiksi lokal sebelum eskalasi ke tingkat kantor pusat.",
       q3: "Mengapa cost-of-error mendominasi cost-of-service dalam HR lintas batas, dan bagaimana hal ini membentuk filosofi penetapan harga Anda?",
       a3:
         "Dalam penerapan HR dan EOR lintas batas, biaya layanan dasar marginal dibandingkan dengan biaya kesalahan yang terkomposisi. Salah klasifikasi karyawan, gagal menyusun pemutusan dalam batas statutori lokal, atau salah menangani kewajiban pajak lintas batas sering menghasilkan litigasi multi-tahun, larangan operasional, atau penalti finansial berat. Filosofi penetapan harga kami mencerminkan premium mitigasi risiko yang ketat. Daripada bersaing pada volume transaksional, kami banyak berinvestasi pada arsitektur kepatuhan pra-deployment, monitoring hukum berkelanjutan, dan pengawasan operasional tingkat senior. Struktur biaya mensubsidi penerapan keahlian hukum lokal, secara efektif mengalihkan risiko finansial dan yurisdiksi ekspansi lintas batas dari neraca klien ke infrastruktur kami yang dikelola.",
-      q4: "Bagaimana Mars menyusun penggajian lintas batas untuk grup berkantor pusat di Singapura yang merekrut di Asia Tenggara tanpa memicu eksposur permanent establishment?",
+      q4: "Bagaimana Mars menyusun penggajian lintas batas untuk grup berkantor pusat di Singapura yang merekrut di seluruh kawasan tanpa memicu eksposur permanent establishment?",
       a4:
-        "Penggajian lintas batas dalam model kami direkayasa melalui tiga lapisan kontrol: pemilihan entitas yurisdiksi, arsitektur dispatch tenaga kerja, dan posisi pajak yang selaras dengan perjanjian. Di mana substansi komersial klien tidak membenarkan entitas terdaftar lokal, kami menerapkan kendaraan EOR berlisensi Singapura dikombinasikan dengan struktur dispatch tenaga kerja bilateral di Vietnam, Indonesia, Filipina, Malaysia, dan Thailand — menetralkan risiko permanent establishment sambil mempertahankan kontrol operasional atas headcount, KPI, dan hak pemutusan. Perencanaan pajak internasional terintegrasi sebelum siklus penggajian pertama: kami memodelkan interaksi antara recharge biaya secondment, plafon kontribusi sosial sisi pemberi kerja, dan posisi perjanjian pajak ganda yang berlaku sebelum pembayaran apa pun dimulai. Dana mengalir melalui akun operasi yang dipagari dan tunduk pada kontrol KYC/AML tingkat MAS, dengan penggajian lintas batas direkonsiliasi dalam mata uang pelaporan dasar klien dan didukung oleh pengarsipan statutori spesifik yurisdiksi.",
+        "Penggajian lintas batas dalam model kami direkayasa melalui tiga lapisan kontrol: pemilihan entitas yurisdiksi, arsitektur dispatch tenaga kerja, dan posisi pajak yang selaras dengan perjanjian. Di mana substansi komersial klien tidak membenarkan entitas terdaftar lokal, kami menerapkan kendaraan EOR berlisensi Singapura dikombinasikan dengan struktur dispatch tenaga kerja bilateral di Malaysia, China, India, Vietnam, Thailand, Indonesia, dan Uni Emirat Arab — menetralkan risiko permanent establishment sambil mempertahankan kontrol operasional atas headcount, KPI, dan hak pemutusan. Perencanaan pajak internasional terintegrasi di hulu siklus penggajian pertama: kami memodelkan interaksi antara recharge biaya secondment, plafon kontribusi sosial sisi pemberi kerja, dan posisi perjanjian pajak ganda yang berlaku sebelum pembayaran apa pun dimulai.",
       q5: "Kapan dan bagaimana struktur dispatch tenaga kerja berlaku sebagai tuas optimasi biaya?",
       a5:
         "Struktur dispatch tenaga kerja berfungsi sebagai tuas optimasi biaya kritis ketika memasuki pasar Asia dengan beban statutori pemberi kerja yang tinggi atau regulasi pekerjaan permanen yang kaku. Tidak seperti EOR standar, dispatch tenaga kerja memungkinkan klien menggunakan agensi lokal berlisensi untuk secara formal mempekerjakan dan mengirim staf ke lokasi operasional. Struktur ini membatasi kewajiban pesangon statutori, memberikan penskalaan headcount yang fleksibel, dan mengoptimalkan kontribusi pajak sisi pemberi kerja. Kami mengintegrasikan dispatch tenaga kerja dalam kerangka perencanaan pajak internasional yang lebih luas untuk memastikan bahwa chargeback lintas batas untuk tenaga kerja yang dikirim sepenuhnya dapat dikurangkan dan selaras dengan regulasi transfer pricing yang berlaku, secara signifikan mengurangi biaya gabungan modal manusia internasional.",
-      q6: "Bagaimana pendekatan Mars terhadap perencanaan pajak internasional terkait posisi perjanjian dan recharge secondment?",
       a6:
-        "Penerapan modal manusia internasional yang strategis memerlukan perencanaan pajak internasional yang ketat untuk mencegah erosi margin. Kami mengarsiteki penugasan lintas batas dengan menyelaraskan perjanjian recharge secondment dengan ketentuan spesifik perjanjian pajak ganda bilateral. Posisi perjanjian yang tepat ini memungkinkan kami menyusun remunerasi untuk meminimalkan kewajiban pajak ganda secara legal bagi assignee dan entitas korporat. Selanjutnya, dengan menganalisis plafon kontribusi sosial spesifik yurisdiksi dan pengecualian untuk staf ekspatriat, kami mengeksekusi arbitrase kontribusi lokal. Ini memastikan bahwa beban statutori pemberi kerja dimini malkan secara ketat tanpa mengkompromikan retensi bersih karyawan atau melanggar mandat kepatuhan lokal — mengubah penggajian lintas batas dari kewajiban statis menjadi pengeluaran operasional yang dioptimalkan.",
+        "Penerapan modal manusia internasional yang strategis memerlukan perencanaan pajak internasional yang ketat untuk mencegah erosi margin. Kami mengarsiteki penugasan lintas batas dengan menyelaraskan perjanjian recharge secondment dengan ketentuan spesifik perjanjian pajak ganda bilateral. Posisi perjanjian yang tepat ini memungkinkan kami menyusun remunerasi untuk meminimalkan kewajiban pajak ganda secara legal bagi assignee dan entitas korporat. Selanjutnya, dengan menganalisis plafon kontribusi sosial spesifik yurisdiksi dan pengecualian untuk staf ekspatriat, kami mengeksekusi arbitrase kontribusi lokal. Ini memastikan bahwa beban statutori pemberi kerja diminimalkan secara ketat tanpa mengkompromikan retensi bersih karyawan atau melanggar mandat kepatuhan lokal — mengubah penggajian lintas batas dari kewajiban statis menjadi pengeluaran operasional yang dioptimalkan.",
+      q6: "Bagaimana pendekatan Mars terhadap perencanaan pajak internasional terkait posisi perjanjian dan recharge secondment?",
     },
     ctaBanner: {
-      headline: "Siap merekrut secara patuh di seluruh APAC?",
+      headline: "Siap merekrut secara patuh di seluruh kawasan?",
       body:
         "Rincian biaya negara per negara. Contoh kontrak & checklist onboarding. Jawaban jujur apakah Anda sebaiknya mendirikan entitas.",
       bullet1: "Penawaran dalam 4 jam kerja",
       bullet2: "Onboarding dalam 5 hari kerja",
-      bullet3: "Lisensi MOM EA No. 09C2925",
+      bullet3: "MOM EA Licence No. 09C2925",
       cta: "Bicara dengan Spesialis",
     },
   },
   recruitmentPage: {
     metaTitle: "Rekrutmen & Pencarian Eksekutif Singapura — Mars Consulting",
     metaDesc:
-      "Penempatan permanen, staffing kontrak, dan pencarian eksekutif C-suite rahasia di Singapura dan APAC. 100+ penempatan berhasil. Sejak 2009. Berlisensi MOM.",
+      "Penempatan permanen, staffing kontrak, dan pencarian eksekutif C-suite rahasia di Singapura dan kawasan ini. Berlisensi MOM EA sejak 2009. Teknologi, jasa keuangan, kesehatan, manufaktur.",
     pill: "Rekrutmen & Pencarian Eksekutif",
     headlineLead: "Rekrutmen & Pencarian Eksekutif di",
-    headlineAccent: "Singapura dan APAC",
+    headlineAccent: "Singapura dan kawasan ini",
     sub:
-      "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia — disampaikan oleh praktisi yang telah menempatkan lebih dari 100 kandidat di sektor teknologi, jasa keuangan, kesehatan, dan manufaktur sejak 2009.",
+      "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia — disampaikan oleh praktisi dengan pengetahuan pasar mendalam di sektor teknologi, jasa keuangan, kesehatan, dan manufaktur di Singapura dan di 10 pasar.",
     ctaPrimary: "Diskusikan Mandat Pencarian",
     ctaSecondary: "Lihat Proses Kami",
-    trustLine: "Lisensi MOM EA No. 09C2925 · Sejak 2009 · 10 pasar APAC",
+    trustLine: "MOM EA Licence No. 09C2925 · Berdiri sejak 2009 · 10 pasar",
     tracks: {
       eyebrow: "Jalur layanan",
       headline: "Tiga jalur pencarian. Satu tim.",
@@ -407,12 +453,12 @@ const id: Translation = {
       cta: "Pelajari cara kerja EOR",
     },
     stats: {
-      placements: "Penempatan berhasil",
-      placementsValue: "100+",
-      since: "Sejak 2009",
-      sinceValue: "Sejak 2009",
-      coverage: "Cakupan APAC",
-      coverageValue: "10 pasar",
+      serviceTracks: "Jalur layanan",
+      serviceTracksValue: "3",
+      since: "Berdiri",
+      sinceValue: "2009",
+      coverage: "Pasar yang dilayani",
+      coverageValue: "10",
       sprint: "Sprint shortlist C-suite",
       sprintValue: "21 hari",
     },
@@ -429,31 +475,34 @@ const id: Translation = {
     ctaBanner: {
       headline: "Siap memulai pencarian?",
       body:
-        "Apakah Anda membutuhkan VP di Singapura kuartal depan atau pencarian CFO rahasia di tiga yurisdiksi, kami pernah melakukannya.",
+        "Apakah Anda membutuhkan VP di Singapura kuartal depan atau pencarian CFO rahasia di tiga yurisdiksi — tim pencarian regional kami memiliki akses pasar, jaringan in-country, dan infrastruktur operasional untuk menyampaikannya.",
       bullet1: "Sprint shortlist 21 hari untuk mandat eksekutif retained",
       bullet2: "Hand-off EOR langsung untuk penempatan internasional",
-      bullet3: "Lisensi MOM EA No. 09C2925",
+      bullet3: "MOM EA Licence No. 09C2925",
       cta: "Diskusikan Pencarian Rahasia",
     },
   },
   aiPage: {
-    metaTitle: "Inovasi AI & Otomasi HR — Mars Consulting",
+    metaTitle: "Otomasi HR AI Singapura — Mars Consulting",
     metaDesc:
-      "Otomasi alur kerja AI untuk tim HR terdistribusi di Asia Tenggara. Ingestion MC berbasis WhatsApp, pra-pemrosesan penggajian AI, dan konsultasi AI tertanam.",
-    pill: "Inovasi AI · Sejak 2026",
-    headlineLead: "Otomasi alur kerja HR dan operasional",
-    headlineAccent: "di balik perekrutan Anda",
+      "Otomasi alur kerja HR bertenaga AI untuk tim terdistribusi di Asia, Timur Tengah, dan Amerika Serikat. Otomasi MC WhatsApp, pra-pemrosesan penggajian AI, otomasi onboarding/offboarding, konsultan AI tertanam. Sejak 2025.",
+    pill: "Otomasi AI · Sejak 2025",
+    headlineLead: "Otomasi alur kerja HR",
+    headlineAccent: "yang memperlambat tim Anda.",
     sub:
-      "Kami membantu klien mengotomasi proses administratif friksi tinggi yang mengelilingi tim terdistribusi: ingestion cuti sakit melalui WhatsApp, pra-pemrosesan penggajian berbasis AI, dan konsultan AI tertanam untuk tim yang membangun kapabilitas otomasi internal.",
+      "Kami menerapkan alur kerja bertenaga AI bersama praktisi HR senior untuk mengotomasi proses friksi tinggi di sekitar tim terdistribusi: pra-pemrosesan penggajian, onboarding dan offboarding karyawan, serta manajemen surat keterangan medis melalui WhatsApp — sehingga tim Anda mengelola orang, bukan dokumen.",
     ctaPrimary: "Bicara dengan Tim AI",
     ctaSecondary: "Lihat Kapabilitas",
+    trustBadge1: "Patuh PDPA",
+    trustBadge2: "Residensi data Singapura",
+    trustBadge3: "Instance model loop tertutup",
     capabilities: {
       eyebrow: "Apa yang kami bangun",
-      headline: "Tiga kapabilitas. Satu lapisan operasi.",
+      headline: "Empat kapabilitas. Satu lapisan operasi.",
       whatsapp: {
         title: "Bot Otomasi HR WhatsApp",
         body:
-          "Bot otomasi berbasis WhatsApp yang aman berfungsi sebagai karyawan digital berbasis AI. Karyawan mengirim gambar surat sakit atau resi pengeluaran langsung melalui WhatsApp; ekstraksi terstruktur berbasis OCR + LLM mengidentifikasi tanggal, nama klinik, kode diagnosis, dan durasi istirahat.",
+          "Bot otomasi berbasis WhatsApp yang aman berfungsi sebagai karyawan digital berbasis AI. Karyawan mengirim gambar surat keterangan medis atau resi pengeluaran langsung melalui WhatsApp; ekstraksi terstruktur berbasis OCR + LLM mengidentifikasi tanggal, nama klinik, kode diagnosis, dan durasi istirahat.",
         bullet1: "Pemrosesan MC: 14 hari → 3 menit",
         bullet2: "Pembaruan saldo cuti real-time",
         bullet3: "Push API langsung ke HRIS / penggajian",
@@ -461,9 +510,9 @@ const id: Translation = {
       payroll: {
         title: "Pra-pemrosesan Penggajian AI",
         body:
-          "Mesin perhitungan AI yang memproses data operasional mentah — feed POS, log kehadiran, pemicu komisi — menjadi file pra-penggajian yang dapat diaudit. Dipisahkan dari eksekusi finansial final untuk menjaga jejak audit yang tidak dapat diubah untuk pelaporan statutori.",
-        bullet1: "Struktur komisi berjenjang di 40+ lokasi",
-        bullet2: "Waktu siklus pra-penggajian: 5 hari → 4 jam",
+          "Mesin perhitungan AI yang memproses input penggajian mentah — data kehadiran, struktur komisi, penyesuaian tunjangan — menjadi file pra-penggajian yang dapat diaudit, dipasangkan dengan praktisi penggajian senior yang mengatur operasi penggajian multi-yurisdiksi di 10 pasar. Dipisahkan dari eksekusi finansial final untuk menjaga jejak audit yang tidak dapat diubah untuk pelaporan statutori.",
+        bullet1: "Dukungan penggajian multi-yurisdiksi di 10 pasar",
+        bullet2: "Waktu siklus pra-penggajian: hari → jam",
         bullet3: "Ledger penyesuaian ber-hash kriptografis",
       },
       consultants: {
@@ -474,6 +523,14 @@ const id: Translation = {
         bullet2: "Pod otomasi alur kerja",
         bullet3: "Audit kesiapan AI dan playbook implementasi",
       },
+      onboarding: {
+        title: "Otomasi Onboarding & Offboarding",
+        body:
+          "Alur kerja siklus hidup karyawan yang otomatis — dari penerimaan penawaran hingga penyiapan akun statutori sampai offboarding dan pemrosesan pembayaran akhir. Terintegrasi dengan HRIS dan sistem pelaporan statutori untuk menghilangkan langkah manual di setiap tahap perjalanan karyawan.",
+        bullet1: "Pembuatan akun statutori otomatis saat perekrutan",
+        bullet2: "Offboarding dipicu oleh pengunduran diri atau akhir kontrak",
+        bullet3: "Pembayaran akhir dan penyelesaian ditangani dalam tenggat statutori",
+      },
     },
     compliance: {
       eyebrow: "Residensi data & tata kelola",
@@ -481,7 +538,7 @@ const id: Translation = {
       p1:
         "Menerapkan LLM dalam sumber daya manusia memerlukan tata kelola data yang ketat. Arsitektur AI kami beroperasi secara ketat pada instance model loop tertutup tingkat enterprise. Data HR klien tidak pernah digunakan untuk pelatihan model dasar.",
       p2:
-        "Kami menegakkan protokol residensi data yang ketat, memastikan bahwa semua pemrosesan dan penyimpanan informasi pribadi terjadi pada server berdaulat lokal yang selaras dengan arahan kepatuhan klien. Bidang sensitif menjalani anonimisasi dan tokenisasi terprogram sebelum pemrosesan LLM.",
+        "Kami menegakkan protokol residensi data yang ketat, memastikan bahwa semua pemrosesan dan penyimpanan informasi pribadi yang dapat diidentifikasi terjadi pada server berdaulat lokal yang selaras dengan arahan kepatuhan klien. Bidang sensitif menjalani anonimisasi dan tokenisasi terprogram sebelum pemrosesan LLM.",
       badgeTitle: "PDPA · Residensi data Singapura",
       badgeBody:
         "Kontrol kerahasiaan tetap utuh sambil mewujudkan kecepatan operasional AI generatif.",
@@ -491,31 +548,43 @@ const id: Translation = {
       headline: "Pertanyaan tentang AI dalam HR",
       q1: "Bagaimana bot otomasi HR berbasis WhatsApp menangani ingestion dan ekstraksi terstruktur?",
       a1:
-        "Arsitektur otomasi alur kerja AI kami menyelesaikan proses administratif friksi tinggi untuk tim terdistribusi di Asia Tenggara. Kami menerapkan bot otomasi berbasis WhatsApp yang aman berfungsi sebagai karyawan digital berbasis AI. Alur ingestion dimulai dengan karyawan mengirim gambar surat sakit atau resi pengeluaran langsung melalui WhatsApp. Sistem menggunakan OCR canggih dan ekstraksi terstruktur berbasis LLM untuk mengidentifikasi tanggal, nama klinik, kode diagnosis, dan durasi istirahat. Data yang diekstrak ini diverifikasi terhadap batas statutori dan secara otomatis dipush melalui API ke antrian hand-off sistem inti HRIS dan penggajian. Ini menghilangkan entri data manual, menjamin pembaruan saldo cuti real-time, dan memastikan kepatuhan siap-audit.",
+        "Arsitektur otomasi alur kerja AI kami menyelesaikan proses administratif friksi tinggi untuk tim terdistribusi. Kami menerapkan bot otomasi berbasis WhatsApp yang aman berfungsi sebagai karyawan digital berbasis AI. Alur ingestion dimulai dengan karyawan mengirim gambar surat keterangan medis atau resi pengeluaran langsung melalui WhatsApp. Sistem menggunakan OCR canggih dan ekstraksi terstruktur berbasis LLM untuk mengidentifikasi tanggal, nama klinik, kode diagnosis, dan durasi istirahat. Data yang diekstrak ini diverifikasi terhadap batas statutori dan secara otomatis dipush melalui API ke antrian hand-off sistem inti HRIS dan penggajian. Ini menghilangkan entri data manual, menjamin pembaruan saldo cuti real-time, dan memastikan kepatuhan siap-audit.",
       q2: "Bagaimana Otomasi Alur Kerja AI terintegrasi dengan siklus penggajian statutori tanpa merusak jejak audit?",
       a2:
         "Mengintegrasikan otomasi alur kerja AI ke dalam penggajian statutori memerlukan arsitektur toleransi nol-fault. Kami memisahkan lapisan pemrosesan AI dari lapisan eksekusi finansial final untuk menjaga jejak audit yang tidak dapat diubah. Ketika sistem AI kami memproses data operasional mentah, output di-stage di lingkungan validasi pra-penggajian. Hand-off sistem penggajian sangat dipermisi; AI menghasilkan ledger terstruktur dan ber-hash kriptografis dari penyesuaian yang diusulkan. Pengontrol penggajian manusia meninjau output deterministik ini terhadap ambang varians yang ditetapkan sebelum melakukan run. Ini menjamin bahwa sementara AI menangani volume komputasi, pelaporan finansial statutori dan pengarsipan pajak tetap diatur oleh matriks persetujuan yang dapat diverifikasi dan diaudit.",
       q3: "Kontrol residensi data dan kerahasiaan apa yang ada untuk data HR yang dimediasi LLM?",
       a3:
-        "Menerapkan LLM dalam sumber daya manusia memerlukan tata kelola data yang ketat untuk memenuhi undang-undang privasi multi-yurisdiksi, terutama PDPA Singapura. Arsitektur AI kami beroperasi secara ketat pada instance model loop tertutup tingkat enterprise. Data HR klien tidak pernah digunakan untuk pelatihan model dasar. Kami menegakkan protokol residensi data yang ketat, memastikan bahwa semua pemrosesan dan penyimpanan informasi pribadi terjadi pada server berdaulat lokal yang selaras dengan arahan kepatuhan klien. Sebelum pemrosesan LLM, bidang sensitif menjalani anonimisasi dan tokenisasi terprogram. Ini memastikan bahwa kontrol kerahasiaan tetap utuh, menetralkan risiko kebocoran data sambil mewujudkan kecepatan operasional AI generatif.",
+        "Menerapkan LLM dalam sumber daya manusia memerlukan tata kelola data yang ketat untuk memenuhi undang-undang privasi multi-yurisdiksi, terutama PDPA Singapura. Arsitektur AI kami beroperasi secara ketat pada instance model loop tertutup tingkat enterprise. Data HR klien tidak pernah digunakan untuk pelatihan model dasar. Kami menegakkan protokol residensi data yang ketat, memastikan bahwa semua pemrosesan dan penyimpanan informasi pribadi yang dapat diidentifikasi terjadi pada server berdaulat lokal yang selaras dengan arahan kepatuhan klien. Sebelum pemrosesan LLM, bidang sensitif menjalani anonimisasi dan tokenisasi terprogram. Ini memastikan bahwa kontrol kerahasiaan tetap utuh, menetralkan risiko kebocoran data sambil mewujudkan kecepatan operasional AI generatif.",
+      q4: "Apakah ini platform perangkat lunak, atau melibatkan pengawasan manusia?",
+      a4:
+        "Layanan otomasi AI Mars bukan penerapan perangkat lunak murni. Ini menggabungkan mesin perhitungan AI dengan praktisi penggajian senior yang mengkonfigurasi, memvalidasi, dan mengatur output. AI menangani volume pemrosesan data dan pengenalan pola di seluruh struktur komisi yang kompleks dan aturan kontribusi multi-yurisdiksi; praktisi penggajian menerapkan keahlian spesifik yurisdiksi dan menyetujui file pra-penggajian sebelum masuk ke siklus pengarsipan statutori. Model human-in-the-loop ini memastikan bahwa kecepatan otomasi tidak mengkompromikan akurasi kepatuhan — terutama di pasar di mana regulasi penggajian terfragmentasi dan sering diperbarui.",
     },
     ctaBanner: {
-      headline: "Daftar sebagai mitra pilot",
+      headline: "Siap mengotomasi operasi HR Anda?",
       body:
-        "Harga mitra pendiri untuk deployment awal. Kami sedang menerima sekelompok kecil mitra pilot untuk merancang bersama generasi otomasi HR berikutnya.",
-      cta: "Daftar sebagai Mitra Pilot",
+        "Alur kerja otomasi AI kami aktif di seluruh tim terdistribusi di Singapura, Malaysia, dan UAE. Bicara dengan tim AI tentang audit alur kerja untuk organisasi Anda — kami akan mengidentifikasi peluang otomasi berdampak tertinggi dalam operasi HR dan penggajian Anda yang ada.",
+      cta: "Bicara dengan Tim AI",
+    },
+    roadmap: {
+      eyebrow: "Apa selanjutnya",
+      headline: "Membangun lapisan berikutnya dari infrastruktur tenaga kerja.",
+      body:
+        "Mars sedang mengembangkan infrastruktur Digital Employment Passport — catatan riwayat pekerjaan dan keterampilan yang dapat diverifikasi dan portabel yang menyertai karyawan. Kami juga membangun kerangka mikro-kredensial yang menghubungkan hasil pelatihan tenaga kerja langsung ke catatan kepatuhan pemberi kerja. Jika Anda merencanakan infrastruktur teknologi HR untuk tiga hingga lima tahun ke depan, bicaralah dengan kami sejak dini.",
+      cta: "Bicara dengan Tim AI",
     },
   },
   aboutPage: {
     metaTitle: "Tentang Mars Consulting — Spesialis HR & EOR Singapura Sejak 2009",
     metaDesc:
-      "Mars Consulting didirikan di Singapura pada April 2009. Sejak 2009 pengalaman HR, EOR, dan pencarian eksekutif di 10 pasar APAC. Lisensi MOM EA No. 09C2925.",
+      "Mars Consulting didirikan di Singapura pada April 2009. EOR, pencarian eksekutif, dan operasi HR di 10 pasar — Singapura, Malaysia, Hong Kong, China, India, AS, UAE, Vietnam, Thailand, Indonesia. MOM EA Licence No. 09C2925.",
     pill: "Tentang Mars Consulting",
-    headlineLead: "Tujuh Belas Tahun Membangun",
-    headlineAccent: "Infrastruktur HR",
-    headlineTail: "di Balik Tim Global",
+    headlineLead: "Infrastruktur HR",
+    headlineAccent: "di Balik Tim Global.",
+    headlineTail: "Dibangun di Singapura sejak 2009.",
     sub:
       "Mars Consulting didirikan di Singapura pada April 2009 dengan satu keyakinan: bahwa bisnis hebat dibangun oleh orang yang tepat, ditempatkan di peran yang tepat, didukung oleh sistem yang tepat. Hari ini kami adalah mitra HR layanan penuh di 10 pasar — menyediakan Employer of Record, penggajian global, pencarian eksekutif, outsourcing HR, dan otomasi proses berbasis AI untuk perusahaan di setiap tahap pertumbuhan.",
+    overview:
+      "Mars Consulting Pte Ltd (UEN 200907301Z) adalah perusahaan solusi sumber daya manusia dan tenaga kerja yang didirikan di Singapura, berdiri pada April 2009. Berlisensi oleh Kementerian Tenaga Kerja Singapura (MOM EA Licence No. 09C2925), perusahaan menyediakan layanan Employer of Record, pencarian eksekutif, outsourcing penggajian, outsourcing HR, dan otomasi AI di 10 pasar — dengan kantor langsung di Singapura, Malaysia, Hong Kong, China, India, dan Amerika Serikat, serta operasi layanan yang mencakup Uni Emirat Arab, Vietnam, Thailand, dan Indonesia. Mars Consulting mempekerjakan lebih dari 100 konsultan dan berkantor pusat di Marina Square, Singapura.",
     timeline: {
       eyebrow: "Perjalanan kami",
       headline: "Bagaimana kami sampai di sini",
@@ -524,11 +593,13 @@ const id: Translation = {
       y2013:
         "Berekspansi ke Business Process Outsourcing. Memperluas cakupan industri di luar tech dan keuangan ke real estate dan konstruksi — membawa operasi HR terstruktur ke sektor yang secara historis bergantung pada praktik perekrutan informal.",
       y2017:
-        "Meluncurkan layanan Employer of Record. Memperluas cakupan geografis ke 6+ negara di APAC, membuka kapabilitas ke semua industri. Ini menandai pergeseran dari perekrut regional ke penyedia infrastruktur HR lintas batas.",
+        "Meluncurkan layanan Employer of Record — beralih dari perekrut regional menjadi penyedia infrastruktur HR lintas batas. Berekspansi ke Asia, Timur Tengah, dan Amerika Serikat. Ini menandai titik di mana Mars menjadi bukan hanya firma perekrutan, tetapi platform pekerjaan dan penggajian penuh untuk perusahaan yang beroperasi lintas batas.",
       y2020:
-        "Memperkenalkan HR Outsourcing — menanamkan konsultan HR berpengalaman langsung di organisasi klien untuk pekerjaan strategis dan operasional. Model ini memungkinkan perusahaan mengakses kapabilitas HR senior tanpa biaya rekrut purnawaktu.",
+        "Memperkenalkan HR Outsourcing — menanamkan konsultan HR berpengalaman langsung di organisasi klien untuk pekerjaan strategis dan operasional. Memperluas ekosistem layanan untuk mencakup kemitraan pembelajaran dan pelatihan korporat, memberikan klien akses ke infrastruktur pengembangan keterampilan bersama manajemen tenaga kerja.",
+      y2025:
+        "Meluncurkan praktik Otomasi AI — menerapkan alur kerja bertenaga AI dan praktisi senior untuk membantu tim terdistribusi mengotomasi proses HR friksi tinggi. Penerapan langsung pertama di Singapura, Malaysia, dan UAE.",
       y2026:
-        "Meluncurkan praktik Inovasi AI — membantu klien mengotomasi alur kerja HR dan bisnis melalui desain proses cerdas, otomasi berbasis WhatsApp, dan tim konsultasi AI tertanam.",
+        "Memperluas cakupan layanan ke 10 pasar — menambahkan Vietnam dan Indonesia ke jejak layanan regional. Memulai pengembangan infrastruktur Digital Employment Passport dan mikro-kredensial untuk generasi berikutnya dari manajemen tenaga kerja regional.",
     },
     founder: {
       eyebrow: "Pendiri",
@@ -541,13 +612,22 @@ const id: Translation = {
         "Dengan latar belakang yang mencakup teknologi enterprise dan operasi modal manusia, Yuggie membangun Mars Consulting atas keyakinan bahwa nasihat HR harus didasarkan pada realitas operasional — bahwa orang-orang yang memahami bagaimana sistem benar-benar berjalan paling tepat untuk merancang struktur yang mendukungnya.",
       p3:
         "Filosofi ini membentuk segalanya: bagaimana kami menetapkan ruang lingkup engagement, bagaimana kami mengisi proyek, dan bagaimana kami memberi tahu klien ketika solusi yang lebih sederhana adalah pilihan tepat.",
+      p4:
+        "Selama lebih dari satu dekade beroperasi di seluruh Asia, Mars telah membangun jaringan operasi hukum, kepatuhan, dan HR in-country yang menopang setiap engagement lintas batas — hubungan yang dikembangkan melalui penerapan nyata di Singapura, Malaysia, Hong Kong, China, India, dan Amerika Serikat, bukan disumber untuk mandat individu.",
     },
     numbers: {
-      years: "Tahun beroperasi",
-      markets: "Pasar tercakup",
+      years: "Berdiri",
+      markets: "Pasar yang dilayani",
       consultants: "Konsultan ahli",
-      clients: "Klien global",
-      placements: "Penempatan berhasil",
+      licences: "MOM EA Licence",
+    },
+    team: {
+      eyebrow: "Tim kami",
+      headline: "Verifikasi konsultan kami secara publik.",
+      body:
+        "Perekrut, konsultan, dan praktisi senior kami di Singapura, Malaysia, Hong Kong, China, India, dan Amerika Serikat terdaftar secara publik di halaman perusahaan LinkedIn kami — dengan nama, peran, lokasi, dan masa kerja yang terlihat oleh siapa saja.",
+      cta: "Lihat tim di LinkedIn ↗",
+      ctaUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
     },
     licences: {
       eyebrow: "Lisensi & posisi regulasi",
@@ -561,10 +641,51 @@ const id: Translation = {
         "Lisensi Agen Ketenagakerjaan — mengotorisasi penempatan kandidat lokal dan asing di Singapura.",
       acraAuthority: "ACRA Singapura",
       acraLabel: "Penyedia Layanan Korporat",
-      acraCode: "Agen Pengarsipan Terdaftar (RFA) · Sekretaris Korporat Terdaftar",
+      acraCode: "Agen Pengarsipan Terdaftar (RFA)",
       acraNote: "Registrasi Otoritas Regulasi Akuntansi dan Korporat.",
+      entityLabel: "Entitas terdaftar",
+      entityName: "Mars Consulting Pte Ltd",
+      entityUEN: "UEN 200907301Z",
+      entityAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      entityNote: "Detail perusahaan dapat diverifikasi secara publik di ACRA BizFile+.",
       verifiable:
         "Detail lisensi dapat diverifikasi secara publik di Direktori Agen Ketenagakerjaan MOM dan register ACRA BizFile+.",
+    },
+    offices: {
+      eyebrow: "Kantor kami",
+      headline: "Tempat kami beroperasi.",
+      body: "Mars Consulting memelihara 6 kantor dan menyediakan layanan EOR, penggajian, dan HR di 10 pasar.",
+      sg: {
+        country: "Singapura",
+        badge: "Kantor pusat",
+        address: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      },
+      my: {
+        country: "Malaysia",
+        address: "Suite 25.03A, Level 25, Johor Bahru City Square Office Tower, 103-108 Jalan Wong Ah Fook, Johor Bahru 80000, Johor",
+      },
+      hk: {
+        country: "Hong Kong",
+        address: "Unit 83, 3/F, Yau Lee Centre, No. 45 Hoi Yuen Road, Kwun Tong, Kowloon",
+      },
+      cn: {
+        country: "China",
+        address: "5/F, Aozhong Building, No. 516 Feihong Road, Honggutan New District, Nanchang, Jiangxi",
+        addressCN: "江西省南昌市红谷滩新区飞虹路516号澳中大厦5楼",
+      },
+      in: {
+        country: "India",
+        address: "73 Front Basement, National Park, Lajpat Nagar-IV, New Delhi 110024",
+      },
+      us: {
+        country: "Amerika Serikat",
+        address: "1421 Begonia Way, Superior, CO 80027",
+      },
+      serviceLabel: "Pasar layanan (tanpa kantor lokal)",
+      serviceMarkets: "United Arab Emirates · Vietnam · Thailand · Indonesia",
+      servicePartner: "Dipimpin mitra",
+      serviceNote: "Layanan EOR, penggajian, dan HR disampaikan melalui mitra in-country dan pemimpin akun yang berbasis di Singapura.",
+      mapHint: "Arahkan kursor atau ketuk penanda negara mana pun untuk melompat ke alamatnya.",
     },
     principles: {
       eyebrow: "Apa yang kami perjuangkan",
@@ -580,12 +701,72 @@ const id: Translation = {
         "Berapa pun negara atau layanan yang terlibat, satu manajer hubungan bertanggung jawab atas keseluruhan ruang lingkup pekerjaan. Anda tidak mengelola jaringan pemasok. Anda mengelola satu panggilan.",
     },
     ctaBanner: {
-      headline: "Sejak 2009 menjadi operator di balik operator",
+      headline: "Berdiri sejak 2009. Dibangun untuk menjadi operator di balik operator.",
       body:
-        "Bicara dengan spesialis berlisensi Singapura tentang EOR, pencarian eksekutif, atau otomasi HR berbasis AI di seluruh APAC.",
-      cta: "Pesan Panggilan",
+        "Bicara dengan spesialis berlisensi Singapura tentang EOR, pencarian eksekutif, atau otomasi HR berbasis AI di 10 pasar.",
+      cta: "Pesan Konsultasi",
     },
   },
-};
+  hrOutsourcingPage: {
+    metaTitle: "Outsourcing HR Singapura — Konsultan HR Tertanam | Mars Consulting",
+    metaDesc:
+      "Konsultan HR tertanam untuk perusahaan yang membutuhkan kapabilitas HR senior tanpa merekrut direktur HR purnawaktu. Di Singapura dan kawasan ini. Berlisensi MOM EA.",
+    pill: "Outsourcing HR & HR Tertanam",
+    headlineLead: "Kapabilitas HR senior",
+    headlineAccent: "tanpa perekrutan purnawaktu.",
+    sub:
+      "Konsultan HR tertanam yang ditempatkan langsung di dalam organisasi Anda untuk pekerjaan strategis dan operasional. Kami bertindak sebagai fungsi HR Anda — dari desain kebijakan hingga restrukturisasi organisasi — untuk perusahaan yang membutuhkan kapabilitas senior tanpa berkomitmen pada Direktur HR purnawaktu.",
+    ctaPrimary: "Diskusikan Mandat Outsourcing HR",
+    ctaSecondary: "Lihat Cara Kami Bekerja",
+    useCases: {
+      eyebrow: "Kapan perusahaan melibatkan Mars",
+      headline: "Empat momen ketika HR tertanam masuk akal.",
+      case1: "Perusahaan tahap pertumbuhan (50–500 staf) tanpa pemimpin HR senior",
+      case2: "Integrasi M&A — menyelaraskan kebijakan HR di seluruh entitas yang diakuisisi",
+      case3: "Direktur HR cuti panjang — cakupan interim dengan kontinuitas",
+      case4: "Proyek khusus — restrukturisasi, program redundansi, perombakan kebijakan",
+    },
+    included: {
+      eyebrow: "Apa yang termasuk",
+      item1: "Praktisi HR senior tertanam paruh waktu atau purnawaktu",
+      item2: "Desain dan dokumentasi kerangka kebijakan",
+      item3: "Penyusunan kompensasi dan tunjangan",
+      item4: "Kerangka manajemen kinerja dan pengembangan talenta",
+      item5: "Hubungan karyawan dan penanganan keluhan",
+      item6: "Audit kepatuhan dan pelaporan statutori",
+    },
+    integration: {
+      eyebrow: "Terhubung ke EOR dan rekrutmen",
+      body:
+        "Engagement HR tertanam sering kali dirancang bersama kapabilitas EOR dan rekrutmen kami — memberi Anda satu hubungan untuk strategi HR, perekrutan, dan kepatuhan ketenagakerjaan di seluruh tim Anda.",
+    },
+  },
+  faqPage: {
+    metaTitle: "FAQ — Mars Consulting",
+    metaDesc:
+      "Pertanyaan yang sering diajukan tentang layanan Employer of Record, pencarian eksekutif, penggajian, dan otomasi AI Mars Consulting di 10 pasar.",
+    pill: "FAQ",
+    headlineLead: "Pertanyaan yang kami terima dari",
+    headlineAccent: "pembeli serius.",
+    sub:
+      "Jawaban untuk pertanyaan yang ditanyakan klien kami pada panggilan kedua atau ketiga. Kami telah menaruhnya di sini agar Anda bisa menanyakannya pada panggilan pertama.",
+    about: {
+      eyebrow: "Tentang Mars Consulting",
+      q1: "Apa itu Mars Consulting dan kapan didirikan?",
+      a1: "Mars Consulting Pte Ltd (UEN 200907301Z) adalah perusahaan solusi HR dan tenaga kerja yang didirikan di Singapura, berdiri pada April 2009. Kami menyediakan layanan Employer of Record, pencarian eksekutif, outsourcing penggajian, outsourcing HR, dan otomasi AI di 10 pasar di Asia, Timur Tengah, dan Amerika Serikat.",
+      q2: "Lisensi dan kredensial apa yang dimiliki Mars Consulting?",
+      a2: "Mars Consulting memegang MOM Comprehensive Employment Agency Licence (No. 09C2925) dan status ACRA Registered Filing Agent. Semua kredensial dapat diverifikasi secara publik di Direktori Agen Ketenagakerjaan MOM dan register ACRA BizFile+.",
+      q3: "Di mana kantor Mars Consulting berlokasi?",
+      a3: "Mars Consulting memelihara kantor di Singapura (HQ), Malaysia (Johor Bahru), Hong Kong (Kwun Tong), China (Nanchang), India (New Delhi), dan Amerika Serikat (Superior, Colorado). Kami juga menyediakan layanan di Uni Emirat Arab, Vietnam, Thailand, dan Indonesia sebagai pasar layanan.",
+      q4: "Bagaimana saya memverifikasi tim dan kredensial Mars Consulting?",
+      a4: "Konsultan dan perekrut kami terdaftar secara publik di halaman perusahaan LinkedIn kami. Detail MOM EA Licence dapat diverifikasi di Direktori Agen Ketenagakerjaan MOM. Registrasi perusahaan dapat diverifikasi di ACRA BizFile+.",
+    },
+    categories: {
+      eor: "EOR & Penggajian",
+      recruitment: "Rekrutmen & Pencarian Eksekutif",
+      ai: "Otomasi AI",
+    },
+  },
+} as const;
 
 export default id;

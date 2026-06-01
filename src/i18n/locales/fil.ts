@@ -5,54 +5,57 @@ const fil: Translation = {
   nav: {
     eor: "EOR at Payroll",
     recruitment: "Recruitment at Executive Search",
-    aiLab: "AI Innovation",
+    aiLab: "AI Automation",
     about: "Tungkol",
     contact: "Kontakin",
-    bookCall: "Mag-book ng tawag",
+    bookCall: "Mag-book ng Konsultasyon",
   },
   hero: {
     pill: "Lisensyado ng MOM Singapore · Itinatag noong 2009",
     headlineLead: "Mag-hire, magbayad, at palaguin ang mga team",
     headlineAccent: "sa 10 merkado.",
     sub:
-      "Singapore-licensed Employer of Record, executive search, at HR infrastructure sa 10 markets. Mula 2009.",
-    ctaPrimary: "Mag-book ng Tawag",
-    ctaSecondary: "Tuklasin ang Aming Serbisyo",
-    statYears: "Taon ng operasyon",
-    statMarkets: "APAC markets",
-    statEmployers: "Mga kompanyang naserbisyuhan",
-    statConsultants: "Mga eksperto sa pagkonsulta",
-    statClients: "Pandaigdigang kliyente",
-    statPlacements: "Matagumpay na placement",
-    statLicence: "MOM EA Licence 09C2925",
+      "Singapore-licensed Employer of Record, executive search, at HR operations infrastructure sa 10 merkado — binuo para sa mga kompanyang papasok sa Asya, nagpapalago ng mga regional team, at namamahala ng cross-border payroll nang hindi nag-aayos ng lokal na entity.",
+    ctaPrimary: "Mag-book ng Konsultasyon",
+    ctaSecondary: "Tingnan Kung Paano Ito Gumagana",
+    statYears: "Itinatag",
+    statMarkets: "Merkadong naserbisyuhan",
+    statConsultants: "Mga ekspertong consultant",
+    statLicence: "MOM EA Licence",
+    statAcra: "ACRA Filing Agent",
+    statAcraValue: "RFA",
     snapshotEyebrow: "Buwanang compliance snapshot",
     snapshotSample: "Sample · Abril 2026 · Kliyente A (anonymised)",
     snapshotStatus: "Sa oras",
-    snapshotHeadcount: "Empleyado na pinamamahalaan",
+    snapshotHeadcount: "Headcount na pinamamahalaan",
     snapshotDelta: "+12 ngayong buwan",
     snapshotPayroll: "Payroll run",
-    snapshotPayrollValue: "SGD 412,890 · clear",
-    snapshotBadge: "3 SG licences · 0 statutory misses",
+    snapshotPayrollValue: "SGD 412,890 · cleared",
+    snapshotBadge: "MOM Licensed · 0 statutory misses mula 2009",
+    snapshotEmployeesLabel: "empleyado",
+    snapshotTaxSG: "CPF · IR8A isinampa",
+    snapshotTaxMY: "EPF · SOCSO isinampa",
+    snapshotTaxHK: "MPF isinampa",
+    snapshotTaxCN: "Social Insurance isinampa",
+    snapshotTaxVN: "BHXH isinampa",
+    snapshotTaxTH: "Social Security isinampa",
+    snapshotTaxID: "BPJS isinampa",
   },
   marquee: {
-    label: "100+ kompanya · mula 2009",
+    label:
+      "Lisensyado ng MOM Singapore · Itinatag noong 2009 · 10 Merkado · EOR at Payroll · Recruitment · AI Automation · 100+ Consultant · MOM EA Licence 09C2925",
   },
   licenses: {
-    eyebrow: "Licensed at regulated sa Singapore",
+    eyebrow: "Lisensyado at regulated sa Singapore",
     mom: {
       authority: "Ministry of Manpower",
-      label: "MOM EA Licence",
+      label: "Comprehensive Employment Agency Licence",
       code: "Licence No. 09C2925",
-    },
-    mas: {
-      authority: "Monetary Authority of Singapore",
-      label: "Payroll Service Exemption",
-      code: "MAS exempted entity",
     },
     acra: {
       authority: "ACRA Singapore",
       label: "Registered Filing Agent",
-      code: "ACRA-licensed",
+      code: "Corporate services na pinahintulutan ng ACRA",
     },
   },
   twinPillars: {
@@ -62,9 +65,9 @@ const fil: Translation = {
       tag: "Flagship",
       title: "Employer of Record at Global Payroll",
       body:
-        "Mag-hire, magbayad, at manatiling compliant sa Singapore at 7 pang APAC markets — nang hindi nag-aayos ng lokal na entity. Hinahawakan namin ang employment contracts, payroll, statutory filings, at offboarding mula sa unang araw.",
+        "Mag-hire, magbayad, at manatiling compliant sa Singapore at 9 pang merkado sa Asya, sa Gitnang Silangan, at sa Estados Unidos — nang hindi nag-aayos ng lokal na entity. Hinahawakan namin ang employment contracts, payroll, statutory filings, at offboarding mula sa unang araw.",
       bullet1: "Onboarding sa loob ng 5 working days",
-      bullet2: "CPF, EPF, BPJS, MPF, at lokal na tax filings hawak",
+      bullet2: "CPF, EPF, BPJS, MPF, at statutory filings na hawak sa bawat merkado",
       bullet3: "MOM EA Licence No. 09C2925",
       cta: "Tuklasin ang EOR",
     },
@@ -72,42 +75,49 @@ const fil: Translation = {
       tag: "Search",
       title: "Recruitment at Executive Search",
       body:
-        "Permanent placement, contract staffing, at confidential C-suite search sa Singapore at APAC. Hinahanap namin ang passive candidates na hindi maabot ng ibang platform, pagkatapos ay direktang ipinapasa sa EOR onboarding kapag kailangan.",
-      bullet1: "100+ matagumpay na placement mula 2009",
+        "Permanent placement, contract staffing, at confidential C-suite search sa Singapore at sa buong rehiyon. Nagsasagawa kami ng malalim na market mapping upang maabot ang passive candidates, pagkatapos ay direktang ipinapasa sa EOR onboarding kapag kailangan.",
+      bullet1: "Permanent, contract, at confidential C-suite mandates",
       bullet2: "C-suite shortlist sa loob ng 21-day sprint",
-      bullet3: "Teknolohiya, pinansya, kalusugan, manufacturing",
+      bullet3: "Teknolohiya, financial services, healthcare, manufacturing",
       cta: "Tuklasin ang Recruitment",
     },
   },
   whyMars: {
     eyebrow: "Bakit Mars",
-    headline: "Bakit Mars, hindi global EOR platform?",
+    headline: "Bakit Mars, hindi isang global EOR platform?",
     p1:
-      "Ang global EOR platforms — global EOR SaaS platforms — ay tumatakbo sa standardized, high-volume SaaS models. Gumagana ang mga ito hanggang hindi: equity compensation reporting sa iba't ibang jurisdiction, non-standard termination negotiations sa Indonesia, PE exposure na nangangailangan ng counsel opinion bago ang unang payroll cycle.",
+      "Ang global EOR SaaS platforms ay tumatakbo sa standardized, high-volume na mga modelo. Gumagana ang mga ito hanggang hindi na: equity compensation reporting sa iba't ibang jurisdiction, non-standard termination negotiations sa Malaysia o China, PE exposure na nangangailangan ng counsel opinion bago ang unang payroll cycle.",
     p2:
       "Pumapasok ang Mars kapag ang lokal na regulatory friction ay lumalampas sa generic software. Pinapalitan namin ang automated workflows ng bespoke governance frameworks, aktibong in-country legal oversight, at senior-level human intervention para sa edge cases na nangangailangan nito.",
     p3:
-      "Hindi kami mas mura kaysa sa SaaS platform. Kami ang ginagamit mo kapag ang halaga ng compliance error ay lumalampas sa halaga ng aming serbisyo.",
-    cta: "Makipag-usap sa specialist",
+      "Hindi kami mas mura kaysa sa SaaS platform. Kami ang ginagamit mo kapag ang halaga ng isang compliance error ay lumalampas sa halaga ng aming serbisyo.",
+    cta: "Makipag-usap sa Specialist",
+    verifyLine: "I-verify ang aming team at credentials nang nakapag-iisa sa LinkedIn.",
+    verifyCta: "Tingnan sa LinkedIn ↗",
+    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
   },
   countries: {
     eyebrow: "Saklaw",
     headline:
-      "Mag-hire nang compliant sa 10 markets — sa ilalim ng isang Singapore contract.",
+      "Mag-hire nang compliant sa 10 merkado — sa ilalim ng isang Singapore contract.",
     body:
-      "Pinatatakbo namin ang payroll, statutory filings at employment contracts sa mga pamilihang ito mula 2009. Ikaw pa rin ang operator; kami pa rin ang legal employer.",
+      "Pinatatakbo namin ang payroll, statutory filings at employment contracts sa mga merkadong ito mula 2009. Ikaw pa rin ang operator; kami pa rin ang legal employer.",
     statOnboarding: "Onboarding",
     statOnboardingValue: "5 araw",
-    statMisses: "Statutory misses",
-    statLicences: "SG licences",
+    statMisses: "Statutory misses (mula 2009)",
+    statLicences: "MOM Licensed",
+    legendOffice: "Opisina",
+    legendService: "Service market",
     name: {
-      IN: "India",
-      TH: "Thailand",
-      HK: "Hong Kong",
-      VN: "Vietnam",
-      PH: "Pilipinas",
-      MY: "Malaysia",
       SG: "Singapore",
+      MY: "Malaysia",
+      HK: "Hong Kong",
+      CN: "China",
+      IN: "India",
+      US: "Estados Unidos",
+      AE: "United Arab Emirates",
+      VN: "Vietnam",
+      TH: "Thailand",
       ID: "Indonesia",
     },
   },
@@ -124,14 +134,14 @@ const fil: Translation = {
     },
     rows: {
       time: {
-        label: "Oras para mag-hire ng #1 empleyado",
+        label: "Oras para mag-hire ng #1 na empleyado",
         entity: "3–9 buwan",
         contractor: "1–2 linggo",
         mars: "5 working days",
       },
       contract: {
         label: "Lokal na employment contract",
-        entity: "Ikaw ang gumawa",
+        entity: "Ikaw ang gumagawa",
         contractor: "Hindi employment",
         mars: "Lokal na wikang kontrata, IP at NDA",
       },
@@ -139,7 +149,7 @@ const fil: Translation = {
         label: "Payroll at statutory filings",
         entity: "Ikaw ang nagpapatakbo at naghahain",
         contractor: "Worker ang naghahain ng sarili",
-        mars: "CPF/EPF/BPJS/MPF — kami ang naghahain",
+        mars: "CPF/EPF/BPJS/MPF at katumbas — kami ang naghahain",
       },
       risk: {
         label: "Misclassification risk",
@@ -168,87 +178,110 @@ const fil: Translation = {
         "Ibahagi ang bansa, role, salary band at simulang petsa. Magbibigay kami ng quote sa loob ng 4 business hours, kasama ang buong statutory cost breakdown.",
     },
     step2: {
-      title: "Gumagawa kami ng lokal na kontrata",
+      title: "Gumagawa kami ng lokal na mga kontrata",
       desc:
-        "Compliant employment agreement, IP assignment at NDA sa lokal na wika. Hinahawakan ang equity acknowledgements (RSU / ISO / phantom) kung mayroon.",
+        "Compliant employment agreement, IP assignment at NDA sa lokal na wika. Hinahawakan ang equity acknowledgements (RSU / ISO / phantom) kung mayroon ka.",
     },
     step3: {
       title: "Pumipirma at nag-onboard ang empleyado",
       desc:
-        "Statutory accounts binuksan, equipment ipinadala, benefits enrolled. Karamihan ng empleyado fully onboard sa loob ng 5 working days.",
+        "Binuksan ang statutory accounts, ipinadala ang equipment, naka-enroll ang benefits. Karamihan ng empleyado ay fully onboarded sa loob ng 5 working days.",
     },
     step4: {
       title: "Pinatatakbo namin ang payroll at compliance",
       desc:
-        "Isang buwanang invoice mula Mars. CPF / EPF / BPJS / MPF at katumbas inihahain sa bawat market — pinapadala namin sa iyo ang report; wala kang gagawin.",
+        "Isang buwanang invoice mula Mars. CPF, EPF, BPJS, MPF, at katumbas na statutory filings sa bawat merkado — pinapadala namin sa iyo ang report; wala kang gagawin.",
     },
   },
   clients: {
     eyebrow: "Aming mga kliyente",
     headline: "Pinagkakatiwalaan ng mga kompanya sa iba't ibang industriya at yugto",
     logosNote:
-      "Mula sa Series-A AI startups hanggang sa nakalistang industrial groups — sa technology, financial services, healthcare, at manufacturing.",
+      "Mula sa Series-A technology startups hanggang sa nakalistang industrial groups — sa financial services, healthcare, manufacturing, at real estate sa Singapore at sa buong rehiyon.",
   },
   faqTeaser: {
     eyebrow: "FAQ",
-    headline: "Ang mga tanong na ibinabato ng seryosong mamimili",
+    headline: "Ang mga tanong na ibinabato sa amin ng seryosong mamimili",
     readAll: "Basahin ang lahat ng expert Q&A →",
     q1: "Saan kasya ang Mars kapag ang global EOR platform ay 'halos gumagana' ngunit nasisira sa jurisdiction-specific complexity?",
     a1:
-      "Ang global EOR platforms ay tumatakbo sa standardized, high-volume SaaS models na nababasag sa ilalim ng jurisdiction-specific complexities — tulad ng equity compensation reporting sa Singapore o non-standard termination negotiations sa Indonesia. Pumapasok ang Mars Consulting kapag ang lokal na regulatory friction ay lumalampas sa generic software capabilities. Pinapalitan namin ang automated workflows ng bespoke MNC governance frameworks, integrated direkta sa lokal na labour laws at tax codes.",
-    q2: "Paano nag-istraktura ang Mars ng cross-border payroll nang hindi nag-trigger ng permanent establishment exposure?",
+      "Ang global EOR platforms ay tumatakbo sa standardized, high-volume na SaaS models na nababasag sa ilalim ng jurisdiction-specific complexities — tulad ng equity compensation reporting sa Singapore o non-standard termination negotiations sa Malaysia. Pumapasok ang Mars Consulting kapag ang lokal na regulatory friction ay lumalampas sa kakayahan ng generic software. Pinapalitan namin ang automated workflows ng bespoke MNC governance frameworks, na direktang integrated sa lokal na labour laws at tax codes. Ang aming modelo ang tumutulay sa puwang sa pagitan ng software-driven EOR at high-touch BPO, na tinitiyak na hindi nabibigo ang cross-border operations sa 'last mile' ng lokal na compliance.",
+    q2: "Paano nag-istraktura ang Mars ng cross-border payroll nang hindi nagti-trigger ng permanent establishment exposure?",
     a2:
-      "Ang cross-border payroll sa ilalim ng aming modelo ay engineered sa pamamagitan ng tatlong layered controls: jurisdictional entity selection, labour dispatch architecture, at treaty-aligned tax positioning. Kung saan ang commercial substance ng kliyente ay hindi nagsa-sustansya ng lokal na registered entity, ipinapadala namin ang aming Singapore-licensed EOR vehicle sa kombinasyon ng bilateral labour dispatch structures sa Vietnam, Indonesia, Pilipinas, Malaysia, at Thailand — nine-neutralize ang permanent establishment risk habang pinapanatili ang operational control.",
-    q3: "Paano nag-integrate ang recruitment hand-off sa EOR onboarding upang mabawasan ang time-to-productivity?",
+      "Ang cross-border payroll sa ilalim ng aming modelo ay engineered sa pamamagitan ng tatlong layered controls: jurisdictional entity selection, labour dispatch architecture, at treaty-aligned tax positioning. Kung saan ang commercial substance ng kliyente ay hindi sapat upang bigyang-katwiran ang lokal na registered entity, ipinapadala namin ang aming Singapore-licensed EOR vehicle kasama ang bilateral labour dispatch structures sa Malaysia, China, India, Vietnam, Thailand, Indonesia, at United Arab Emirates — na nineneutralize ang permanent establishment risk habang pinapanatili ang operational control.",
+    q3: "Paano nag-integrate ang AI automation ng Mars sa umiiral na HR at payroll workflows?",
     a3:
-      "Ang tradisyonal na friction point sa international expansion ay ang operational silo sa pagitan ng talent acquisition at lokal na HR operations. Nireresolba ito ng Mars sa pamamagitan ng pag-aarkitekto ng seamless recruitment at EOR onboarding handoff. Sa sandaling pumirma ang isang kandidato ng executive offer letter, sinisimulan ng aming EOR compliance engine ang lokal na onboarding sequence kasabay ng notice period ng kandidato.",
+      "Ang aming AI automation layer ay hindi pumapalit sa iyong umiiral na HR systems — nakaupo ito sa upstream nito. Kinukuha ng WhatsApp-based ingestion bot ang leave at expense data, kino-convert ng AI preprocessing engine ang raw operational inputs sa structured pre-payroll files, at ang output ay ipinipush sa pamamagitan ng API papunta sa kahit anong HRIS o payroll platform na ginagamit mo. Sinusuri ng human payroll practitioners ang staged output bago ito pumasok sa statutory cycle. Ang resulta ay mas mabilis na processing na may malinis na audit trail at walang pagbabago sa iyong downstream compliance workflow.",
   },
   aiBlock: {
-    eyebrow: "Mula 2026",
-    title: "AI Innovation",
+    eyebrow: "Mula 2025 · AI Automation Practice",
+    title: "AI-Powered HR Automation",
     body:
-      "Tinutulungan na namin ngayon ang mga kliyente na i-automate ang HR at operational workflows sa likod ng kanilang mga hire: medical leave ingestion sa pamamagitan ng WhatsApp, AI-driven payroll preprocessing, at embedded AI consultants para sa mga koponan na bumubuo ng panloob na automation capabilities.",
-    cta: "Tuklasin ang AI Innovation",
+      "Nag-dedeploy kami ng AI-powered workflows kasama ang senior HR practitioners upang i-automate ang high-friction na mga proseso sa paligid ng distributed teams: payroll preprocessing, employee onboarding at offboarding, at medical certificate management sa pamamagitan ng WhatsApp — upang ang iyong team ay namamahala ng mga tao, hindi ng papeles.",
+    cta: "Tuklasin ang AI Automation",
   },
   testimonial: {
     eyebrow: "Kuwento ng kliyente",
-    headline: "Pinagkakatiwalaan ng mga koponan na lumalago sa APAC.",
+    headline: "Pinagkakatiwalaan ng mga team na lumalago sa buong rehiyon.",
     body:
-      "Itinatag sa Singapore noong 2009, lumago ang Mars Consulting mula sa isang recruiting boutique tungo sa isang regional employment platform — tahimik na nagpapatakbo ng mga hire, payroll at compliance para sa AI startups, scale-ups at government-linked enterprises sa buong Southeast Asia.",
+      "Itinatag sa Singapore noong 2009, lumago ang Mars Consulting mula sa isang recruiting boutique tungo sa isang regional employment platform — nagpapatakbo ng mga hire, payroll at compliance para sa technology companies, financial services firms, at industrial groups sa Asya, sa Gitnang Silangan, at sa Estados Unidos.",
     quote:
       "Na-onboard ng Mars ang aming research team sa Singapore at Jakarta sa loob ng wala pang dalawang linggo. Hinawakan nila ang lahat — kontrata, equity acknowledgements, lokal na statutory filings — upang makapag-focus kami sa pag-ship ng models.",
     attribution: "Head of People · Series-B AI company",
-    location: "Singapore ↔ APAC · 12 hires noong 2025",
-    statClients: "Pandaigdigang kliyente",
+    location: "Singapore ↔ APAC · Multi-market EOR rollout · 2025",
     statConsultants: "Mga consultant",
-    statLicences: "SG licences",
+    statLicences: "MOM Licensed",
   },
   contact: {
-    eyebrow: "Makipag-usap sa Singapore-licensed na specialist",
-    headline: "Tingnan kung tama ang EOR — sa loob ng 30 minuto.",
+    eyebrow: "Makipag-usap sa isang Singapore-licensed na specialist",
+    headline: "Makipag-usap sa isang Singapore-licensed na specialist — sa loob ng 30 minuto.",
     bullet1: "Country-by-country na cost breakdown",
     bullet2: "Sample contract at onboarding checklist",
     bullet3: "Tapat na sagot kung dapat ka mag-set up ng entity sa halip",
     response: "Average na response: wala pang 4 business hours",
     label: {
+      service: "Ano ang maitutulong namin?",
       email: "Work email",
       company: "Kompanya",
-      country: "Bansa kung saan mag-hihire",
-      hires: "Bilang ng mga hire (susunod na 6 buwan)",
+      country: "Bansa o rehiyon na interesado ka",
+      hires: "Laki ng team na nais mong i-hire",
     },
     placeholder: {
+      service: "Pumili ng serbisyo",
       email: "ikaw@kompanya.com",
       company: "Pangalan ng kompanya",
-      country: "hal. Indonesia",
-      hires: "5",
+      country: "hal. China, Malaysia, UAE",
+      hires: "hal. 5",
+    },
+    serviceOptions: {
+      eor: "EOR at Payroll",
+      recruitment: "Recruitment at Executive Search",
+      ai: "AI Automation",
+      hr: "HR Outsourcing",
+      unsure: "Hindi pa sigurado",
     },
     submit: "I-book ang aking 30-min na tawag",
     privacy:
-      "Sumasagot kami sa loob ng 4 business hours, oras ng Singapore. Sa pag-submit, sumasang-ayon ka sa aming privacy policy.",
+      "Sumasagot kami sa loob ng 4 business hours, oras ng Singapore.",
+    consent: "Sa pag-submit, sumasang-ayon ka sa aming Privacy Policy.",
+    consentLink: "Privacy Policy",
+    consentUrl: "/privacy",
+    infoEyebrow: "Iba pang paraan upang maabot kami",
+    emailLabel: "Pangkalahatang katanungan",
+    emailValue: "admin@marsconsulting.com.sg",
+    hqLabel: "Headquarters",
+    hqAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+    hoursLabel: "Oras ng negosyo",
+    hoursValue: "Lunes – Biyernes, 9:00 – 18:00 SGT",
+    linkedinLabel: "LinkedIn",
+    linkedinValue: "Tingnan ang aming team sa LinkedIn",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    teamHintLabel: "Mas gusto mo bang makilala muna ang team?",
+    teamHintValue: "Ang aming mga consultant at recruiter ay nakalista nang publiko sa LinkedIn.",
   },
   footer: {
     tagline:
-      "Singapore-licensed Employer of Record at HR services sa Southeast Asia. Mula 2009.",
+      "Mars Consulting Pte Ltd — Singapore-licensed Employer of Record, recruitment, at HR operations sa 10 merkado. MOM EA Licence No. 09C2925. Itinatag noong 2009.",
     sections: {
       solutions: "Mga Solusyon",
       company: "Kompanya",
@@ -257,68 +290,81 @@ const fil: Translation = {
     links: {
       eor: "EOR at Payroll",
       recruitment: "Recruitment at Executive Search",
-      aiLab: "AI Innovation",
+      aiLab: "AI Automation",
+      hrOutsourcing: "HR Outsourcing",
       about: "Tungkol",
       clients: "Mga Kliyente",
       contact: "Kontakin",
       mom: "MOM EA Licence 09C2925",
       acra: "ACRA Filing Agent",
       privacy: "Privacy",
+      terms: "Mga Tuntunin ng Paggamit",
     },
-    copyright: "© {{year}} Mars Consulting Pte Ltd. Lahat ng karapatan ay nakareserba.",
-    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
+    linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+    copyright: "© {{year}} Mars Consulting Pte Ltd (UEN 200907301Z). Lahat ng karapatan ay nakareserba.",
+    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · Estados Unidos",
     compliance:
-      "MOM Comprehensive EA Licence No. 09C2925  ·  ACRA Corporate Service Provider at Registered Filing Agent",
+      "Mars Consulting Pte Ltd (UEN 200907301Z) · MOM Comprehensive EA Licence No. 09C2925 · ACRA Registered Filing Agent",
   },
   eorPage: {
-    metaTitle: "Employer of Record Singapore at APAC — Mars Consulting",
+    metaTitle: "Employer of Record Singapore at Sa 10 Merkado — Mars Consulting",
     metaDesc:
-      "Singapore-licensed EOR services sa 10 markets. Compliant employment, payroll, at statutory filings mula sa unang araw. Walang lokal na entity. MOM EA 09C2925.",
+      "Singapore-licensed EOR services sa 10 merkado. Compliant employment, payroll, at statutory filings mula sa unang araw. Walang kinakailangang lokal na entity. MOM EA 09C2925.",
     pill: "Employer of Record at Global Payroll",
     headlineLead: "Mag-hire nang compliant sa",
-    headlineAccent: "10 markets",
+    headlineAccent: "10 merkado",
     headlineTail: "— nang hindi nag-aayos ng lokal na entity",
     sub:
-      "Singapore-licensed Employer of Record services. Kami ang nagiging legal employer; ikaw ang nag-uutos ng trabaho. Employment contracts, payroll, statutory filings, at offboarding hawak mula sa unang araw.",
+      "Singapore-licensed Employer of Record services. Kami ang nagiging legal employer; ikaw ang nag-uutos ng trabaho. Employment contracts, payroll, statutory filings, at offboarding na hawak mula sa unang araw.",
     ctaPrimary: "Kumuha ng EOR Quote",
-    ctaSecondary: "Tingnan Kung Paano Gumana",
-    trustLine: "MOM EA Licence No. 09C2925 · Mula 2009 · 10 markets · 5-day onboarding",
+    ctaSecondary: "Tingnan Kung Paano Ito Gumagana",
+    trustLine:
+      "MOM EA Licence No. 09C2925 · Itinatag noong 2009 · 10 merkado · 5-day onboarding",
     stats: {
       onboarding: "Onboarding",
       onboardingValue: "5 araw",
-      coverage: "APAC coverage",
-      coverageValue: "10 markets",
-      clients: "Pandaigdigang kliyente",
+      coverage: "Merkadong naserbisyuhan",
+      coverageValue: "10",
+      clients: "Mga ekspertong consultant",
       clientsValue: "100+",
-      misses: "Statutory misses",
+      misses: "Statutory misses (mula 2009)",
       missesValue: "0",
+    },
+    included: {
+      title: "Ano ang hinahawakan namin para sa iyo",
+      item1: "Employment contracts sa lokal na wika, jurisdiction-specific",
+      item2: "Pamamahala ng onboarding at resignation process",
+      item3: "Payroll processing at tax management",
+      item4: "Statutory contributions: CPF, EPF, BPJS, MPF, FICA, BHXH, at katumbas",
+      item5: "Offboarding, final pay calculation, at statutory clearance",
+      item6: "Koordinasyon ng occupational injury at workplace incident",
     },
     faq: {
       eyebrow: "FAQ",
-      headline: "Mga tanong mula sa seryosong mamimili",
+      headline: "Mga tanong na natatanggap namin mula sa seryosong mamimili",
       sub:
-        "Ito ang mga tanong na itinatanong ng aming kliyente sa pangalawa o pangatlong tawag. Inilagay namin ito rito upang maitanong mo sa unang tawag.",
+        "Ito ang mga tanong na itinatanong ng aming mga kliyente sa pangalawa o pangatlong tawag. Inilagay namin ito rito upang maitanong mo na sa unang tawag.",
       q1: "Saan kasya ang Mars Consulting kapag ang global EOR platform ay 'halos gumagana' ngunit nasisira sa jurisdiction-specific complexity?",
       a1:
-        "Ang global EOR platforms ay tumatakbo sa standardized, high-volume SaaS models na nababasag sa ilalim ng jurisdiction-specific complexities — tulad ng equity compensation reporting sa Singapore o non-standard termination negotiations sa Indonesia. Pumapasok ang Mars Consulting kapag ang lokal na regulatory friction ay lumalampas sa generic software capabilities. Pinapalitan namin ang automated workflows ng bespoke MNC governance frameworks, integrated direkta sa lokal na labour laws at tax codes. Ang aming modelo ay nag-uugnay ng kasalanan sa pagitan ng software-driven EOR at high-touch BPO.",
+        "Pinupunan ng Mars Consulting ang puwang kapag nababasag ang standardized EOR software sa jurisdiction-specific complexity. Ang global EOR platforms ay tumatakbo sa standardized, high-volume na SaaS models na nababasag sa ilalim ng jurisdiction-specific complexities — tulad ng equity compensation reporting sa Singapore o non-standard termination negotiations sa Malaysia. Pumapasok ang Mars Consulting kapag ang lokal na regulatory friction ay lumalampas sa kakayahan ng generic software. Pinapalitan namin ang automated workflows ng bespoke MNC governance frameworks, na direktang integrated sa lokal na labour laws at tax codes. Ang aming modelo ang tumutulay sa puwang sa pagitan ng software-driven EOR at high-touch BPO, na tinitiyak na hindi nabibigo ang cross-border operations sa 'last mile' ng lokal na compliance. Pinapagaan ng pamamaraang ito ang jurisdictional risk sa pamamagitan ng pagbibigay ng aktibo, on-the-ground na legal at operational oversight, na nilulutas ang edge cases na nangangailangan ng senior-level human intervention sa halip na isang dashboard interface lamang.",
       q2: "Paano nag-istraktura ang Mars ng engagement governance para sa multi-entity o multi-region MNCs?",
       a2:
-        "Ang engagement governance para sa multi-region MNCs ay nangangailangan ng centralized control plane na nakapatong sa decentralized statutory execution. Ino-istraktura ng Mars ang mga engagement na ito sa pamamagitan ng pinagsamang Service Level Agreement na sumasaklaw sa lahat ng aktibong jurisdictions, ipinares sa nakatuon na regional governance lead na nakabase sa Singapore.",
+        "Ang engagement governance para sa multi-region MNCs ay nangangailangan ng centralized control plane na nakapatong sa decentralized statutory execution. Ino-istraktura ng Mars ang mga engagement na ito sa pamamagitan ng pinagsamang Service Level Agreement na sumasaklaw sa lahat ng aktibong jurisdictions, na ipinares sa nakatuong regional governance lead na nakabase sa Singapore. Tinitiyak ng arkitekturang ito ang isang punto ng pananagutan para sa kliyente habang isinasagawa ang statutory obligations — tulad ng localised benefits administration, statutory reporting, at labour dispute resolution — sa pamamagitan ng malalim na nakatanim na in-country HR at legal experts. Sa paghihiwalay ng strategic MNC governance layer mula sa localised execution, ipinatutupad namin ang pare-parehong reporting standards sa buong portfolio ng kliyente habang nineneutralize ang localised compliance at jurisdictional risks bago ito tumaas sa antas ng headquarters.",
       q3: "Bakit nangingibabaw ang cost-of-error sa cost-of-service sa cross-border HR, at paano ito humuhubog sa inyong pricing philosophy?",
       a3:
-        "Sa cross-border HR at EOR deployments, ang baseline cost ng serbisyo ay marginal kumpara sa compounded cost ng error. Ang mali sa pag-classify ng empleyado, ang pagkabigo na mai-istraktura ang termination sa loob ng lokal na statutory bounds, o ang mali sa paghawak ng cross-border tax liabilities ay madalas nagreresulta sa multi-year litigation, operational bans, o malulupit na financial penalties.",
-      q4: "Paano nag-istraktura ang Mars ng cross-border payroll para sa Singapore-headquartered group na nag-hihire sa Southeast Asia nang hindi nag-trigger ng permanent establishment exposure?",
+        "Sa cross-border HR at EOR deployments, ang baseline cost ng serbisyo ay marginal kumpara sa compounded cost ng error. Ang maling pag-classify ng empleyado, ang pagkabigong i-istraktura ang termination sa loob ng lokal na statutory bounds, o ang maling paghawak ng cross-border tax liabilities ay madalas nagreresulta sa multi-year litigation, operational bans, o malulupit na financial penalties. Ang aming pricing philosophy ay sumasalamin sa isang mahigpit na risk-mitigation premium. Sa halip na makipagkumpetensya sa transactional volume, malaki ang aming pamumuhunan sa pre-deployment compliance architecture, tuloy-tuloy na legal monitoring, at senior-level operational oversight. Ang fee structure ay sumusuporta sa deployment ng localised legal expertise, na epektibong inililipat ang financial at jurisdictional risk ng cross-border expansion palayo sa balance sheet ng kliyente at papunta sa aming managed infrastructure.",
+      q4: "Paano nag-istraktura ang Mars ng cross-border payroll para sa isang Singapore-headquartered group na nag-hihire sa buong rehiyon nang hindi nagti-trigger ng permanent establishment exposure?",
       a4:
-        "Ang cross-border payroll sa ilalim ng aming modelo ay engineered sa pamamagitan ng tatlong layered controls: jurisdictional entity selection, labour dispatch architecture, at treaty-aligned tax positioning. Kung saan ang commercial substance ng kliyente ay hindi nagsa-sustansya ng lokal na registered entity, ipinapadala namin ang aming Singapore-licensed EOR vehicle sa kombinasyon ng bilateral labour dispatch structures sa Vietnam, Indonesia, Pilipinas, Malaysia, at Thailand — nine-neutralize ang permanent establishment risk habang pinapanatili ang operational control sa headcount, KPIs, at termination rights. Ang international tax planning ay integrated bago ang unang payroll cycle.",
+        "Ang cross-border payroll sa ilalim ng aming modelo ay engineered sa pamamagitan ng tatlong layered controls: jurisdictional entity selection, labour dispatch architecture, at treaty-aligned tax positioning. Kung saan ang commercial substance ng kliyente ay hindi sapat upang bigyang-katwiran ang lokal na registered entity, ipinapadala namin ang aming Singapore-licensed EOR vehicle kasama ang bilateral labour dispatch structures sa Malaysia, China, India, Vietnam, Thailand, Indonesia, at United Arab Emirates — na nineneutralize ang permanent establishment risk habang pinapanatili ang operational control sa headcount, KPIs, at termination rights. Ang international tax planning ay integrated sa upstream ng unang payroll cycle: minomodelo namin ang interaksyon sa pagitan ng secondment cost recharge, employer-side social contribution ceilings, at naaangkop na double-taxation treaty positions bago simulan ang anumang bayad.",
       q5: "Kailan at paano nag-aapply ang labour dispatch structures bilang cost-optimisation lever?",
       a5:
-        "Ang labour dispatch structures ay nagsisilbing kritikal na cost-optimisation lever kapag pumapasok sa Asian markets na may matataas na statutory employer burdens o mahigpit na permanent employment regulations. Hindi tulad ng standard EOR, ang labour dispatch ay pinapayagan ang kliyente na gumamit ng lokal, licensed agency upang pormal na makapag-empleyo at magpadala ng staff sa operational site.",
+        "Ang labour dispatch structures ay nagsisilbing kritikal na cost-optimisation lever kapag pumapasok sa Asian markets na may matataas na statutory employer burdens o mahigpit na permanent employment regulations. Hindi tulad ng standard EOR, ang labour dispatch ay nagpapahintulot sa kliyente na gumamit ng lokal, licensed agency upang pormal na mag-empleyo at magpadala ng staff sa operational site. Ang istrukturang ito ay naglilimita sa statutory severance liabilities, nagbibigay ng flexible headcount scaling, at nag-o-optimize ng employer-side tax contributions. Iniintegrate namin ang labour dispatch sa loob ng mas malawak na international tax planning frameworks upang matiyak na ang cross-border chargebacks para sa dispatched labour ay ganap na deductible at nakahanay sa namamayaning transfer pricing regulations, na makabuluhang nagpapababa sa blended cost ng international human capital.",
       q6: "Paano dumadaan ang Mars sa international tax planning patungkol sa treaty positioning at secondment recharges?",
       a6:
-        "Ang strategic international human capital deployment ay nangangailangan ng masusing international tax planning upang maiwasan ang margin erosion. Ino-arkitekto namin ang cross-border assignments sa pamamagitan ng pagkakahanay ng secondment recharge agreements sa specific provisions ng bilateral double-taxation treaties.",
+        "Ang strategic international human capital deployment ay nangangailangan ng masusing international tax planning upang maiwasan ang margin erosion. Ino-arkitekto namin ang cross-border assignments sa pamamagitan ng pagkakahanay ng secondment recharge agreements sa specific provisions ng bilateral double-taxation treaties. Ang precise na treaty positioning na ito ay nagpapahintulot sa amin na i-istraktura ang remuneration upang legal na bawasan ang dual tax liabilities para sa parehong assignee at corporate entity. Bukod pa rito, sa pamamagitan ng pagsusuri ng jurisdiction-specific social contribution ceilings at exemptions para sa expatriate staff, isinasagawa namin ang localised contribution arbitrage. Tinitiyak nito na ang statutory employer burdens ay mahigpit na nababawasan nang hindi nakokompromiso ang net retention ng empleyado o nilalabag ang lokal na compliance mandates — na ginagawang isang optimized operational expense ang cross-border payroll mula sa isang static na liability.",
     },
     ctaBanner: {
-      headline: "Handa nang mag-hire nang compliant sa APAC?",
+      headline: "Handa nang mag-hire nang compliant sa buong rehiyon?",
       body:
         "Country-by-country cost breakdown. Sample contract at onboarding checklist. Tapat na sagot kung dapat ka mag-set up ng entity sa halip.",
       bullet1: "Quote sa loob ng 4 business hours",
@@ -330,15 +376,15 @@ const fil: Translation = {
   recruitmentPage: {
     metaTitle: "Recruitment at Executive Search Singapore — Mars Consulting",
     metaDesc:
-      "Permanent placement, contract staffing at confidential C-suite executive search sa Singapore at APAC. 100+ na placement. Mula 2009. MOM-licensed.",
+      "Permanent placement, contract staffing at confidential C-suite executive search sa Singapore at sa buong rehiyon. MOM EA licensed mula 2009. Teknolohiya, financial services, healthcare, manufacturing.",
     pill: "Recruitment at Executive Search",
-    headlineLead: "Recruitment at Executive Search sa",
-    headlineAccent: "Singapore at APAC",
+    headlineLead: "Recruitment at Executive Search Sa",
+    headlineAccent: "Singapore at sa buong rehiyon",
     sub:
-      "Permanent placement, contract staffing, at confidential C-suite search — inihatid ng mga practitioner na nakapaglagay ng higit sa 100 na kandidato sa technology, financial services, healthcare, at manufacturing mula 2009.",
+      "Permanent placement, contract staffing, at confidential C-suite search — inihatid ng mga practitioner na may malalim na kaalaman sa merkado sa technology, financial services, healthcare, at manufacturing sa Singapore at sa 10 merkado.",
     ctaPrimary: "Talakayin ang Search Mandate",
     ctaSecondary: "Tingnan ang Aming Proseso",
-    trustLine: "MOM EA Licence No. 09C2925 · Mula 2009 · 10 markets",
+    trustLine: "MOM EA Licence No. 09C2925 · Itinatag noong 2009 · 10 merkado",
     tracks: {
       eyebrow: "Mga track ng serbisyo",
       headline: "Tatlong search tracks. Isang team.",
@@ -357,7 +403,7 @@ const fil: Translation = {
       executive: {
         title: "Executive at C-Suite Search",
         body:
-          "Retained, confidential search para sa C-suite, VP, at Board-level mandates. Nangangako kami sa fully vetted, jurisdiction-ready passive candidate shortlist sa loob ng 21-day initial sprint, namumuno ng milestone-driven SLA.",
+          "Retained, confidential search para sa C-suite, VP, at Board-level mandates. Nangangako kami sa isang fully vetted, jurisdiction-ready passive candidate shortlist sa loob ng 21-day initial sprint, na pinamamahalaan ng milestone-driven SLA.",
         suitable: "CEO, CFO, CTO, COO, VP at higit pa · Cross-border mandates · Stealth-mode searches",
       },
     },
@@ -375,16 +421,16 @@ const fil: Translation = {
     },
     process: {
       eyebrow: "Paano gumagana",
-      headline: "Paano gumagana ang search sa Mars",
+      headline: "Paano gumagana ang isang search sa Mars",
       step1Title: "Mandate Brief",
       step1Body:
-        "Ginugugol namin ang unang sesyon sa pag-unawa hindi lamang sa role, kundi kung bakit ito bukas, kung ano ang mali sa nakaraang hire, at kung anong hitsura ng tagumpay sa 90 araw.",
+        "Ginugugol namin ang unang sesyon sa pag-unawa hindi lamang sa role, kundi kung bakit ito bukas, kung ano ang naging mali sa nakaraang hire, at kung anong hitsura ng tagumpay sa 90 araw.",
       step2Title: "Market Mapping",
       step2Body:
         "Ina-mapa namin ang buong talent pool — aktibong kandidato, passive na kandidato, at talent ng mga kakumpetensya. Tumatanggap ka ng market intelligence report bago ang unang CV.",
       step3Title: "Candidate Outreach",
       step3Body:
-        "Inaakit namin ang mga kandidato nang maingat. Para sa executive mandates, hindi nagsasabi ng pangalan ng kliyente ang aming outreach hanggang sa makumpirma ang mutual interest.",
+        "Inaakit namin ang mga kandidato nang maingat. Para sa executive mandates, hindi binabanggit ng aming outreach ang pangalan ng kliyente hanggang sa makumpirma ang mutual interest.",
       step4Title: "Structured Assessment",
       step4Body:
         "Ang bawat ipinakikitang kandidato ay nakapasa sa structured competency interview, reference check alignment, at jurisdiction-specific background verification framework.",
@@ -401,35 +447,35 @@ const fil: Translation = {
       p1:
         "Ang tradisyonal na friction point sa international expansion ay ang handoff sa pagitan ng talent acquisition at lokal na HR compliance. Karamihan ng mga firma ay tinuturing ang mga ito bilang magkahiwalay na workstreams. Hindi ang Mars.",
       p2:
-        "Sa sandaling tinanggap ng kandidato ang offer, sinisimulan ng aming EOR compliance engine ang lokal na onboarding sequence kasabay ng notice period ng kandidato. Employment contracts ay drafted. Work authorisation ay sinimulan. Payroll profile ay naitatatag. Statutory accounts ay binuksan.",
+        "Sa sandaling tanggapin ng kandidato ang isang offer, sinisimulan ng aming EOR compliance engine ang localised onboarding sequence kasabay ng notice period ng kandidato. Naka-draft ang employment contracts. Sinimulan ang work authorisation. Naitatag ang payroll profile. Binuksan ang statutory accounts.",
       p3:
         "Pagdating ng kandidato sa unang araw, sila ay fully compliant at operational. Hindi pending.",
       cta: "Alamin kung paano gumagana ang EOR",
     },
     stats: {
-      placements: "Matagumpay na placement",
-      placementsValue: "100+",
-      since: "Mula 2009",
-      sinceValue: "Mula 2009",
-      coverage: "APAC coverage",
-      coverageValue: "10 markets",
+      serviceTracks: "Mga track ng serbisyo",
+      serviceTracksValue: "3",
+      since: "Itinatag",
+      sinceValue: "2009",
+      coverage: "Merkadong naserbisyuhan",
+      coverageValue: "10",
       sprint: "C-suite shortlist sprint",
       sprintValue: "21 araw",
     },
     faq: {
       eyebrow: "FAQ",
-      headline: "Mga tanong sa executive mandates",
+      headline: "Mga tanong na natatanggap namin sa executive mandates",
       q1: "Ano ang SLA model para sa cross-border C-suite at VP-level search mandates?",
       a1:
-        "Ang pagsasagawa ng cross-border C-suite at VP-level mandates ay nangangailangan ng absolutong precision at guaranteed na execution timelines. Ang aming retained search model ay namumuno ng masusing, milestone-driven Service Level Agreement. Hindi kami umaasa sa passive job board aggregation.",
+        "Ang pagsasagawa ng cross-border C-suite at VP-level mandates ay nangangailangan ng absolutong precision at garantisadong execution timelines. Ang aming retained search model ay pinamamahalaan ng isang mahigpit, milestone-driven Service Level Agreement. Hindi kami umaasa sa passive job board aggregation. Sa halip, nangangako kami na maghatid ng isang fully vetted, jurisdiction-ready shortlist ng passive candidates sa loob ng 21-day initial sprint. Tinutukoy ng SLA ang mahigpit na metrics para sa candidate presentation, interview scheduling, at final offer negotiation. Sa pag-uugnay ng aming operational cadence sa matibay na contractual deliverables, nagbibigay kami sa MNC headquarters ng predictability na kailangan upang ihanay ang kritikal na executive transitions sa mas malawak na strategic market entry at cross-border expansion timelines.",
       q2: "Paano hinahawakan ang background verification sa magkahalong jurisdictions na may fragmented privacy laws?",
       a2:
-        "Ang cross-jurisdiction background checks ay humaharap sa heavily fragmented na privacy at data access laws. Habang ang financial probity ay madaling i-verify sa Singapore, ang mga jurisdiction tulad ng EU o mainland China ay nag-iimpose ng mahigpit na limitasyon sa pag-access ng civil litigation o employment histories.",
+        "Ang cross-jurisdiction background checks ay humaharap sa heavily fragmented na privacy at data access laws. Habang ang financial probity ay madaling i-verify sa Singapore, ang mga jurisdiction tulad ng EU o mainland China ay nag-iimpose ng mahigpit na limitasyon sa pag-access ng civil litigation o employment histories. Pinapatnubayan ng Mars ang mga puwang na ito sa pamamagitan ng pag-mapa ng verification protocols sa localised legal realities, na tinitiyak ang mahigpit na ICA/MOM compliance sa Singapore at mga katulad na framework sa ibang bansa. Kung saan legal na hinaharangan ang direktang database verification, nagde-deploy kami ng deep-referencing frameworks — sa pagsusuri ng indirect professional footprints at pagsasagawa ng structured, multi-tier interviews sa mga dating superiors upang makabuo ng high-fidelity risk profile kahit na nananatiling opaque ang statutory records.",
     },
     ctaBanner: {
-      headline: "Handa nang magsimula ng search?",
+      headline: "Handa nang magsimula ng isang search?",
       body:
-        "Kung kailangan mo ng VP sa Singapore sa susunod na quarter o confidential CFO search sa tatlong jurisdictions, ginawa na namin dati.",
+        "Kung kailangan mo ng VP sa Singapore sa susunod na quarter o confidential CFO search sa tatlong jurisdictions — ang aming regional search team ay may market access, in-country network, at operational infrastructure upang maghatid.",
       bullet1: "21-day shortlist sprint para sa retained executive mandates",
       bullet2: "Direktang EOR handoff para sa international placements",
       bullet3: "MOM EA Licence No. 09C2925",
@@ -437,23 +483,26 @@ const fil: Translation = {
     },
   },
   aiPage: {
-    metaTitle: "AI Innovation at HR Automation — Mars Consulting",
+    metaTitle: "AI HR Automation Singapore — Mars Consulting",
     metaDesc:
-      "AI workflow automation para sa distributed HR teams sa Southeast Asia. WhatsApp-based MC ingestion, AI payroll preprocessing, at embedded AI consulting.",
-    pill: "AI Innovation · Mula 2026",
-    headlineLead: "Iautomate ang HR at operational workflows",
-    headlineAccent: "sa likod ng iyong mga hire",
+      "AI-powered HR workflow automation para sa distributed teams sa Asya, sa Gitnang Silangan, at sa Estados Unidos. WhatsApp MC automation, AI payroll preprocessing, onboarding/offboarding automation, embedded AI consultants. Mula 2025.",
+    pill: "AI Automation · Mula 2025",
+    headlineLead: "I-automate ang HR workflows",
+    headlineAccent: "na nagpapabagal sa iyong team.",
     sub:
-      "Tinutulungan namin ang mga kliyente na i-automate ang high-friction administrative processes na pumapaligid sa distributed teams: medical leave ingestion sa WhatsApp, AI-driven payroll preprocessing, at embedded AI consultants para sa mga koponan na bumubuo ng panloob na automation capabilities.",
+      "Nag-dedeploy kami ng AI-powered workflows kasama ang senior HR practitioners upang i-automate ang high-friction na mga proseso sa paligid ng distributed teams: payroll preprocessing, employee onboarding at offboarding, at medical certificate management sa pamamagitan ng WhatsApp — upang ang iyong team ay namamahala ng mga tao, hindi ng papeles.",
     ctaPrimary: "Makipag-usap sa AI Team",
     ctaSecondary: "Tingnan ang Mga Kakayahan",
+    trustBadge1: "PDPA-compliant",
+    trustBadge2: "Singapore data residency",
+    trustBadge3: "Closed-loop model instances",
     capabilities: {
-      eyebrow: "Anong binubuo namin",
-      headline: "Tatlong kakayahan. Isang operating layer.",
+      eyebrow: "Ano ang binubuo namin",
+      headline: "Apat na kakayahan. Isang operating layer.",
       whatsapp: {
         title: "WhatsApp HR Automation Bot",
         body:
-          "Isang ligtas, WhatsApp-based automation bot na gumagana bilang AI-driven na digital employee. Nagsusumite ang mga empleyado ng larawan ng medical certificates o expense receipts direkta sa WhatsApp; OCR + LLM-driven structured extraction ang nagke-key ng mga petsa, pangalan ng klinika, diagnosis codes, at rest durations.",
+          "Isang ligtas, WhatsApp-based automation bot na gumagana bilang isang AI-driven na digital employee. Nagsusumite ang mga empleyado ng larawan ng medical certificates o expense receipts direkta sa WhatsApp; ang OCR + LLM-driven structured extraction ang tumutukoy sa mga petsa, pangalan ng klinika, diagnosis codes, at rest durations.",
         bullet1: "MC processing: 14 araw → 3 minuto",
         bullet2: "Real-time leave balance updates",
         bullet3: "Direktang API push sa HRIS / payroll",
@@ -461,27 +510,35 @@ const fil: Translation = {
       payroll: {
         title: "AI Payroll Preprocessing",
         body:
-          "AI calculation engines na nagpoproseso ng raw operational data — POS feeds, attendance logs, commission triggers — papunta sa auditable pre-payroll files. Decoupled mula sa final financial execution upang mapanatili ang immutable audit trails para sa statutory reporting.",
-        bullet1: "Tiered commission structures sa 40+ na lokasyon",
-        bullet2: "Pre-payroll cycle time: 5 araw → 4 oras",
+          "AI calculation engines na nagpoproseso ng raw payroll inputs — attendance data, commission structures, benefits adjustments — papunta sa auditable pre-payroll files, na ipinares sa senior payroll practitioners na namamahala ng multi-jurisdiction payroll operations sa 10 merkado. Decoupled mula sa final financial execution upang mapanatili ang immutable audit trails para sa statutory reporting.",
+        bullet1: "Multi-jurisdiction payroll support sa 10 merkado",
+        bullet2: "Pre-payroll cycle time: araw → oras",
         bullet3: "Cryptographically hashed adjustment ledger",
       },
       consultants: {
         title: "Embedded AI Consultants",
         body:
-          "Senior AI consultants at prompt engineers na ipinadala sa loob ng iyong team. Fractional Head of AI na maipapadala sa loob ng 2 linggo. Bumuo ng panloob na automation capabilities nang hindi nag-hihire ng full AI team.",
+          "Senior AI consultants at prompt engineers na ipinadala sa loob ng iyong team. Fractional Head of AI na maipapadala sa loob ng 2 linggo. Bumuo ng panloob na automation capabilities nang hindi nag-hihire ng buong AI team.",
         bullet1: "Fractional Head of AI · 2-week deployment",
         bullet2: "Workflow automation pods",
         bullet3: "AI readiness audit at rollout playbook",
+      },
+      onboarding: {
+        title: "Onboarding at Offboarding Automation",
+        body:
+          "Automated employee lifecycle workflows — mula sa offer acceptance hanggang sa statutory account setup tungo sa offboarding at final pay processing. Integrated sa HRIS at statutory reporting systems upang alisin ang manual na mga hakbang mula sa bawat yugto ng employee journey.",
+        bullet1: "Automated statutory account creation sa pag-hire",
+        bullet2: "Offboarding na na-trigger ng resignation o contract end",
+        bullet3: "Final pay at clearance na hinawakan sa loob ng statutory deadlines",
       },
     },
     compliance: {
       eyebrow: "Data residency at governance",
       headline: "PDPA-aligned. Closed-loop. Walang training leakage.",
       p1:
-        "Ang pag-deploy ng LLM sa human resources ay nangangailangan ng masusing data governance. Ang aming AI architecture ay tumatakbo nang mahigpit sa enterprise-grade, closed-loop model instances. Ang client HR data ay hindi kailanman ginagamit para sa foundational model training.",
+        "Ang pag-deploy ng LLMs sa human resources ay nangangailangan ng masusing data governance. Ang aming AI architecture ay tumatakbo nang mahigpit sa enterprise-grade, closed-loop model instances. Ang client HR data ay hindi kailanman ginagamit para sa foundational model training.",
       p2:
-        "Ipinatutupad namin ang mahigpit na data residency protocols, na tinitiyak na ang lahat ng pagproseso at pag-imbak ng personally identifiable information ay nangyayari sa lokal, sovereign na servers na nakahanay sa direktiba ng compliance ng kliyente. Ang sensitibong fields ay sumasailalim sa programmatic anonymisation at tokenisation bago ang LLM processing.",
+        "Ipinatutupad namin ang mahigpit na data residency protocols, na tinitiyak na ang lahat ng pagproseso at pag-imbak ng personally identifiable information ay nangyayari sa localised, sovereign na servers na nakahanay sa compliance directives ng kliyente. Ang sensitibong fields ay sumasailalim sa programmatic anonymisation at tokenisation bago ang LLM processing.",
       badgeTitle: "PDPA · Singapore data residency",
       badgeBody:
         "Ang confidentiality controls ay nananatiling buo habang naaabot ang operational velocity ng generative AI.",
@@ -491,44 +548,58 @@ const fil: Translation = {
       headline: "Mga tanong tungkol sa AI sa HR",
       q1: "Paano hinahawakan ng WhatsApp-based HR automation bot ang ingestion at structured extraction?",
       a1:
-        "Ang aming AI workflow automation architecture ay nireresolba ang high-friction administrative processes para sa distributed teams sa Southeast Asia. Nag-deploy kami ng ligtas, WhatsApp-based automation bot na gumagana bilang AI-driven na digital employee. Ang ingestion flow ay nagsisimula sa mga empleyadong nagsusumite ng larawan ng medical certificates o expense receipts direkta sa WhatsApp.",
+        "Ang aming AI workflow automation architecture ay nireresolba ang high-friction administrative processes para sa distributed teams. Nag-deploy kami ng ligtas, WhatsApp-based automation bot na gumagana bilang isang AI-driven na digital employee. Ang ingestion flow ay nagsisimula sa mga empleyadong nagsusumite ng larawan ng medical certificates o expense receipts direkta sa WhatsApp. Ginagamit ng sistema ang advanced OCR at LLM-driven structured extraction upang tukuyin ang mga petsa, pangalan ng klinika, diagnosis codes, at rest durations. Ang extracted data na ito ay nive-verify laban sa statutory limits at awtomatikong ipinipush sa pamamagitan ng API papunta sa core HRIS at payroll system handoff queue. Inaalis nito ang manual na data entry, ginagarantiya ang real-time leave balance updates, at tinitiyak ang audit-ready compliance.",
       q2: "Paano nag-integrate ang AI Workflow Automation sa statutory payroll cycles nang hindi nababasag ang audit trails?",
       a2:
-        "Ang pag-integrate ng AI workflow automation sa statutory payroll ay nangangailangan ng zero-fault tolerance architecture. Hinihiwalay namin ang AI processing layer mula sa final financial execution layer upang mapanatili ang immutable audit trails. Kapag pinoproseso ng aming AI systems ang raw operational data, ang output ay staged sa pre-payroll validation environment.",
+        "Ang pag-integrate ng AI workflow automation sa statutory payroll ay nangangailangan ng zero-fault tolerance architecture. Hinihiwalay namin ang AI processing layer mula sa final financial execution layer upang mapanatili ang immutable audit trails. Kapag pinoproseso ng aming AI systems ang raw operational data, ang output ay staged sa isang pre-payroll validation environment. Ang payroll system handoff ay mahigpit na permissioned; ang AI ay bumubuo ng isang structured, cryptographically hashed ledger ng mga iminumungkahing adjustment. Sinusuri ng human payroll controllers ang deterministic output na ito laban sa itinatag na variance thresholds bago i-commit ang run. Tinitiyak nito na habang hinahawakan ng AI ang computational volume, ang statutory financial reporting at tax filings ay nananatiling pinamamahalaan ng verifiable, auditable approval matrices.",
       q3: "Anong data residency at confidentiality controls ang umiiral para sa LLM-mediated HR data?",
       a3:
-        "Ang pag-deploy ng LLM sa human resources ay nangangailangan ng masusing data governance upang masiyahan ang multi-jurisdictional privacy laws, partikular ang PDPA ng Singapore. Ang aming AI architecture ay tumatakbo nang mahigpit sa enterprise-grade, closed-loop model instances. Ang client HR data ay hindi kailanman ginagamit para sa foundational model training.",
+        "Ang pag-deploy ng LLMs sa human resources ay nangangailangan ng masusing data governance upang matugunan ang multi-jurisdictional privacy laws, partikular ang PDPA ng Singapore. Ang aming AI architecture ay tumatakbo nang mahigpit sa enterprise-grade, closed-loop model instances. Ang client HR data ay hindi kailanman ginagamit para sa foundational model training. Ipinatutupad namin ang mahigpit na data residency protocols, na tinitiyak na ang lahat ng pagproseso at pag-imbak ng personally identifiable information ay nangyayari sa localised, sovereign na servers na nakahanay sa compliance directives ng kliyente. Bago ang LLM processing, ang sensitibong fields ay sumasailalim sa programmatic anonymisation at tokenisation. Tinitiyak nito na ang confidentiality controls ay nananatiling buo, na nineneutralize ang panganib ng data leakage habang naaabot ang operational velocity ng generative AI.",
+      q4: "Ito ba ay isang software platform, o may kasamang human oversight?",
+      a4:
+        "Ang AI automation service ng Mars ay hindi isang purong software deployment. Pinagsasama nito ang AI calculation engines sa senior payroll practitioners na nag-configure, nag-validate, at namamahala ng mga output. Hinahawakan ng AI ang volume ng data processing at pattern recognition sa kumplikadong commission structures at multi-jurisdiction contribution rules; inilalapat ng payroll practitioners ang jurisdiction-specific expertise at pinipirmahan ang pre-payroll file bago ito pumasok sa statutory filing cycle. Tinitiyak ng human-in-the-loop model na ito na ang bilis ng automation ay hindi nakokompromiso ang compliance accuracy — partikular sa mga merkado kung saan ang payroll regulations ay fragmented at madalas na ina-update.",
     },
     ctaBanner: {
-      headline: "Mag-apply bilang pilot partner",
+      headline: "Handa nang i-automate ang iyong HR operations?",
       body:
-        "Founding-partner pricing para sa mga maagang deployment. Tumatanggap kami ng maliit na cohort ng pilot partners upang sama-samang mag-design ng susunod na henerasyon ng HR automation.",
-      cta: "Mag-apply bilang Pilot Partner",
+        "Ang aming AI automation workflows ay live na sa distributed teams sa Singapore, Malaysia, at sa UAE. Makipag-usap sa AI team tungkol sa isang workflow audit para sa iyong organisasyon — tutukuyin namin ang highest-impact automation opportunities sa loob ng iyong umiiral na HR at payroll operations.",
+      cta: "Makipag-usap sa AI Team",
+    },
+    roadmap: {
+      eyebrow: "Ano ang susunod",
+      headline: "Binubuo ang susunod na layer ng workforce infrastructure.",
+      body:
+        "Bumubuo ang Mars ng Digital Employment Passport infrastructure — verifiable, portable na mga rekord ng employment history at skills na sumasama sa empleyado. Bumubuo rin kami ng micro-credential frameworks na nag-uugnay ng workforce training outcomes direkta sa employer compliance records. Kung nagpaplano ka ng HR technology infrastructure para sa susunod na tatlo hanggang limang taon, makipag-usap sa amin nang maaga.",
+      cta: "Makipag-usap sa AI Team",
     },
   },
   aboutPage: {
     metaTitle: "Tungkol sa Mars Consulting — Singapore HR at EOR Specialists Mula 2009",
     metaDesc:
-      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009. Mula 2009 ng HR, EOR, at executive search experience sa 10 markets. MOM EA Licence No. 09C2925.",
+      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009. EOR, executive search, at HR operations sa 10 merkado — Singapore, Malaysia, Hong Kong, China, India, USA, UAE, Vietnam, Thailand, Indonesia. MOM EA Licence No. 09C2925.",
     pill: "Tungkol sa Mars Consulting",
-    headlineLead: "Labing-pitong Taon ng Pagbuo ng",
-    headlineAccent: "HR Infrastructure",
-    headlineTail: "Sa Likod ng Global Teams",
+    headlineLead: "Ang HR Infrastructure",
+    headlineAccent: "Sa Likod ng Global Teams.",
+    headlineTail: "Binuo sa Singapore mula 2009.",
     sub:
-      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009 na may iisang paniniwala: na ang mga magagandang negosyo ay binubuo ng tamang tao, inilagay sa tamang role, sinusuportahan ng tamang sistema. Ngayon kami ay full-service HR partner sa 10 markets — nagbibigay ng Employer of Record, global payroll, executive search, HR outsourcing, at AI-powered process automation sa mga kompanya sa bawat yugto ng paglago.",
+      "Itinatag ang Mars Consulting sa Singapore noong Abril 2009 na may iisang paniniwala: na ang mga magagandang negosyo ay binubuo ng tamang tao, inilagay sa tamang role, sinusuportahan ng tamang sistema. Ngayon kami ay isang full-service HR partner sa 10 merkado — nagbibigay ng Employer of Record, global payroll, executive search, HR outsourcing, at AI-powered process automation sa mga kompanya sa bawat yugto ng paglago.",
+    overview:
+      "Ang Mars Consulting Pte Ltd (UEN 200907301Z) ay isang Singapore-incorporated na human resources at workforce solutions company, na itinatag noong Abril 2009. Lisensyado ng Ministry of Manpower ng Singapore (MOM EA Licence No. 09C2925), ang kompanya ay nagbibigay ng Employer of Record, executive search, payroll outsourcing, HR outsourcing, at AI automation services sa 10 merkado — na may direktang opisina sa Singapore, Malaysia, Hong Kong, China, India, at Estados Unidos, at service operations na sumasaklaw sa United Arab Emirates, Vietnam, Thailand, at Indonesia. Ang Mars Consulting ay may higit sa 100 consultant at naka-headquarter sa Marina Square, Singapore.",
     timeline: {
       eyebrow: "Aming paglalakbay",
       headline: "Paano kami nakarating dito",
       y2009:
         "Itinatag sa Singapore. Sa simula ay nakatuon sa permanent at contract recruitment para sa technology at financial services sectors. Itinayo mula sa unang araw sa prinsipyo na ang HR advice ay kasing-husay lamang ng operational knowledge sa likod nito.",
       y2013:
-        "Pinalawak sa Business Process Outsourcing. Pinalawak ang industriya na saklaw lampas sa tech at finance papunta sa real estate at construction — nagdadala ng structured HR operations sa mga sektor na historically umaasa sa informal hiring practices.",
+        "Pinalawak sa Business Process Outsourcing. Pinalawak ang industry coverage lampas sa tech at finance papunta sa real estate at construction — na nagdadala ng structured HR operations sa mga sektor na historically umaasa sa informal hiring practices.",
       y2017:
-        "Inilunsad ang Employer of Record services. Pinalawak ang geographic coverage sa 6+ na bansa sa APAC, binubuksan ang capability sa lahat ng industriya. Tinandaan nito ang shift mula sa regional recruiter papunta sa cross-border HR infrastructure provider.",
+        "Inilunsad ang Employer of Record services — lumipat mula regional recruiter tungo sa cross-border HR infrastructure provider. Lumawak sa Asya, sa Gitnang Silangan, at sa Estados Unidos. Tinandaan nito ang punto kung saan ang Mars ay naging hindi lamang isang hiring firm, kundi isang ganap na employment at payroll platform para sa mga kompanyang tumatakbo sa iba't ibang hangganan.",
       y2020:
-        "Ipinakilala ang HR Outsourcing — itinanim ang experienced HR consultants direkta sa loob ng client organisations para sa strategic at operational na trabaho. Ang modelong ito ay nagbibigay-daan sa mga kompanya na ma-access ang senior HR capability nang walang gastos ng full-time hire.",
+        "Ipinakilala ang HR Outsourcing — itinanim ang experienced HR consultants direkta sa loob ng client organisations para sa strategic at operational na trabaho. Pinalawak ang service ecosystem upang isama ang corporate learning at training partnerships, na nagbibigay sa mga kliyente ng access sa skills development infrastructure kasabay ng workforce management.",
+      y2025:
+        "Inilunsad ang AI Automation practice — nagde-deploy ng AI-powered workflows at senior practitioners upang tulungan ang distributed teams na i-automate ang high-friction na HR processes. Unang live deployments sa Singapore, Malaysia, at sa UAE.",
       y2026:
-        "Inilunsad ang AI Innovation practice — tumutulong sa mga kliyente na i-automate ang HR at business workflows sa pamamagitan ng intelligent process design, WhatsApp-based automation, at embedded AI consulting teams.",
+        "Pinalawak ang service coverage sa 10 merkado — idinagdag ang Vietnam at Indonesia sa regional service footprint. Sinimulan ang pagbuo ng Digital Employment Passport at micro-credential infrastructure para sa susunod na henerasyon ng regional workforce management.",
     },
     founder: {
       eyebrow: "Tagapagtatag",
@@ -538,16 +609,25 @@ const fil: Translation = {
       p1Tail:
         ", isang Singapore-based HR at enterprise systems professional na may malalim na expertise sa SAP HR platforms at workforce management strategy.",
       p2:
-        "Sa background na sumasaklaw sa enterprise technology at human capital operations, itinayo ni Yuggie ang Mars Consulting sa paniniwala na ang HR advice ay dapat naka-grounded sa operational reality — na ang mga taong nakakaintindi kung paano talaga gumagana ang mga sistema ay siyang pinakamabuti na mag-design ng mga structures na sumusuporta sa kanila.",
+        "Sa background na sumasaklaw sa enterprise technology at human capital operations, itinayo ni Yuggie ang Mars Consulting sa paniniwala na ang HR advice ay dapat naka-grounded sa operational reality — na ang mga taong nakakaintindi kung paano talaga gumagana ang mga sistema ay siyang pinakamabuting mag-design ng mga structures na sumusuporta sa kanila.",
       p3:
         "Ang pilosopyang ito ang humuhubog sa lahat: kung paano namin ina-scope ang engagements, kung paano namin ina-staff ang projects, at kung paano namin sinasabi sa mga kliyente kapag ang mas simpleng solusyon ang tamang pagpipilian.",
+      p4:
+        "Sa loob ng higit sa isang dekada ng pagpapatakbo sa Asya, binuo ng Mars ang in-country legal, compliance, at HR operations network na sumusuporta sa bawat cross-border engagement — mga relasyong binuo sa pamamagitan ng aktwal na deployment sa Singapore, Malaysia, Hong Kong, China, India, at sa Estados Unidos, hindi sourced para sa indibidwal na mandates.",
     },
     numbers: {
-      years: "Taon ng operasyon",
-      markets: "Mga market na saklaw",
-      consultants: "Mga eksperto sa pagkonsulta",
-      clients: "Pandaigdigang kliyente",
-      placements: "Matagumpay na placement",
+      years: "Itinatag",
+      markets: "Merkadong naserbisyuhan",
+      consultants: "Mga ekspertong consultant",
+      licences: "MOM EA Licence",
+    },
+    team: {
+      eyebrow: "Aming team",
+      headline: "I-verify ang aming mga consultant nang publiko.",
+      body:
+        "Ang aming mga recruiter, consultant, at senior practitioners sa Singapore, Malaysia, Hong Kong, China, India, at sa Estados Unidos ay nakalista nang publiko sa aming LinkedIn company page — na may mga pangalan, role, lokasyon, at tenure na nakikita ng sinuman.",
+      cta: "Tingnan ang team sa LinkedIn ↗",
+      ctaUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
     },
     licences: {
       eyebrow: "Mga lisensya at regulatory standing",
@@ -562,30 +642,132 @@ const fil: Translation = {
       acraAuthority: "ACRA Singapore",
       acraLabel: "Corporate Service Provider",
       acraCode: "Registered Filing Agent (RFA)",
-      acraNote: "Accounting at Corporate Regulatory Authority registration.",
+      acraNote: "Accounting and Corporate Regulatory Authority registration.",
+      entityLabel: "Registered entity",
+      entityName: "Mars Consulting Pte Ltd",
+      entityUEN: "UEN 200907301Z",
+      entityAddress: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      entityNote: "Mga detalye ng kompanya na publicly verifiable sa ACRA BizFile+.",
       verifiable:
-        "Ang detalye ng lisensya ay publicly verifiable sa MOM Employment Agency Directory at ACRA BizFile+ register.",
+        "Ang detalye ng lisensya ay publicly verifiable sa MOM Employment Agency Directory at sa ACRA BizFile+ register.",
+    },
+    offices: {
+      eyebrow: "Aming mga opisina",
+      headline: "Kung saan kami tumatakbo.",
+      body: "Ang Mars Consulting ay nagpapanatili ng 6 na opisina at nagbibigay ng EOR, payroll, at HR services sa 10 merkado.",
+      sg: {
+        country: "Singapore",
+        badge: "Headquarters",
+        address: "6 Raffles Boulevard, #03-308 Marina Square, Singapore 039594",
+      },
+      my: {
+        country: "Malaysia",
+        address: "Suite 25.03A, Level 25, Johor Bahru City Square Office Tower, 103-108 Jalan Wong Ah Fook, Johor Bahru 80000, Johor",
+      },
+      hk: {
+        country: "Hong Kong",
+        address: "Unit 83, 3/F, Yau Lee Centre, No. 45 Hoi Yuen Road, Kwun Tong, Kowloon",
+      },
+      cn: {
+        country: "China",
+        address: "5/F, Aozhong Building, No. 516 Feihong Road, Honggutan New District, Nanchang, Jiangxi",
+        addressCN: "江西省南昌市红谷滩新区飞虹路516号澳中大厦5楼",
+      },
+      in: {
+        country: "India",
+        address: "73 Front Basement, National Park, Lajpat Nagar-IV, New Delhi 110024",
+      },
+      us: {
+        country: "Estados Unidos",
+        address: "1421 Begonia Way, Superior, CO 80027",
+      },
+      serviceLabel: "Service markets (walang lokal na opisina)",
+      serviceMarkets: "United Arab Emirates · Vietnam · Thailand · Indonesia",
+      servicePartner: "Partner-led",
+      serviceNote: "EOR, payroll, at HR services na inihahatid sa pamamagitan ng in-country partners at Singapore-based account leads.",
+      mapHint: "I-hover o i-tap ang anumang country marker upang lumukso sa address nito.",
     },
     principles: {
       eyebrow: "Anong pinaninindigan namin",
       headline: "Paano kami gumagana",
       honestTitle: "Honest scoping",
       honestBody:
-        "Sinasabi namin sa mga kliyente kapag sapat na ang SaaS platform at hindi nila kami kailangan. Tumatanggap lang kami ng engagement kung saan ang aming kakayahan ay nagdadagdag ng material value sa mas murang alternative.",
+        "Sinasabi namin sa mga kliyente kapag sapat na ang isang SaaS platform at hindi nila kami kailangan. Tumatanggap lamang kami ng engagement kung saan ang aming kakayahan ay nagdadagdag ng material value sa isang mas murang alternative.",
       depthTitle: "Operational depth",
       depthBody:
-        "Hindi namin nag-su-subcontract ang jurisdiction-specific compliance sa mga third party na hindi pa namin nakatrabaho. Bawat bansang aming pinatatakbo ay may itinatag na in-country partner relationship na binuo sa loob ng mga taon, hindi sourced para sa isang engagement.",
+        "Hindi namin sina-subcontract ang jurisdiction-specific compliance sa mga third party na hindi pa namin nakatrabaho. Bawat bansang aming pinatatakbo ay may itinatag na in-country partner relationship na binuo sa loob ng mga taon, hindi sourced para sa isang engagement.",
       accountTitle: "Isang punto ng pananagutan",
       accountBody:
         "Anuman ang dami ng bansa o serbisyong sangkot, isang relationship manager ang responsable sa buong saklaw ng trabaho. Hindi mo pinamamahalaan ang isang network ng supplier. Pinamamahalaan mo ang isang tawag.",
     },
     ctaBanner: {
-      headline: "Mula 2009g nagiging operator sa likod ng operator",
+      headline: "Itinatag noong 2009. Binuo upang maging operator sa likod ng operator.",
       body:
-        "Makipag-usap sa Singapore-licensed na specialist tungkol sa EOR, executive search, o AI-powered HR automation sa APAC.",
-      cta: "Mag-book ng Tawag",
+        "Makipag-usap sa isang Singapore-licensed na specialist tungkol sa EOR, executive search, o AI-powered HR automation sa 10 merkado.",
+      cta: "Mag-book ng Konsultasyon",
     },
   },
-};
+  hrOutsourcingPage: {
+    metaTitle: "HR Outsourcing Singapore — Embedded HR Consultants | Mars Consulting",
+    metaDesc:
+      "Embedded HR consultants para sa mga kompanyang nangangailangan ng senior HR capability nang hindi nag-hihire ng full-time HR director. Sa Singapore at sa buong rehiyon. MOM EA Licensed.",
+    pill: "HR Outsourcing at Embedded HR",
+    headlineLead: "Senior HR capability",
+    headlineAccent: "nang walang full-time na hire.",
+    sub:
+      "Embedded HR consultants na ipinadala direkta sa loob ng iyong organisasyon para sa strategic at operational na trabaho. Kumikilos kami bilang iyong HR function — mula sa policy design hanggang sa organisational restructuring — para sa mga kompanyang nangangailangan ng senior capability nang hindi nangangako sa isang full-time HR Director.",
+    ctaPrimary: "Talakayin ang HR Outsourcing Mandate",
+    ctaSecondary: "Tingnan Kung Paano Kami Gumagana",
+    useCases: {
+      eyebrow: "Kailan nakikipag-ugnayan sa Mars ang mga kompanya",
+      headline: "Apat na sandali kung kailan may saysay ang embedded HR.",
+      case1: "Growth-stage na mga kompanya (50–500 staff) na walang senior HR leader",
+      case2: "M&A integration — paghahanay ng HR policies sa mga na-acquire na entity",
+      case3: "HR Director na nasa extended leave — interim coverage na may continuity",
+      case4: "Special projects — restructuring, redundancy programmes, policy overhauls",
+    },
+    included: {
+      eyebrow: "Ano ang kasama",
+      item1: "Senior HR practitioner na naka-embed nang part-time o full-time",
+      item2: "Policy framework design at documentation",
+      item3: "Compensation at benefits structuring",
+      item4: "Performance management at talent development frameworks",
+      item5: "Employee relations at grievance handling",
+      item6: "Compliance audits at statutory reporting",
+    },
+    integration: {
+      eyebrow: "Nakaugnay sa EOR at recruitment",
+      body:
+        "Ang embedded HR engagements ay madalas na sina-scope kasama ng aming EOR at recruitment capabilities — na nagbibigay sa iyo ng iisang relasyon para sa HR strategy, hiring, at employment compliance sa buong team mo.",
+    },
+  },
+  faqPage: {
+    metaTitle: "FAQ — Mars Consulting",
+    metaDesc:
+      "Mga madalas na itanong tungkol sa Employer of Record, executive search, payroll, at AI automation services ng Mars Consulting sa 10 merkado.",
+    pill: "FAQ",
+    headlineLead: "Mga tanong na natatanggap namin mula sa",
+    headlineAccent: "seryosong mamimili.",
+    sub:
+      "Mga sagot sa mga tanong na itinatanong ng aming mga kliyente sa pangalawa o pangatlong tawag. Inilagay namin ito rito upang maitanong mo na sa unang tawag.",
+    about: {
+      eyebrow: "Tungkol sa Mars Consulting",
+      q1: "Ano ang Mars Consulting at kailan ito itinatag?",
+      a1: "Ang Mars Consulting Pte Ltd (UEN 200907301Z) ay isang Singapore-incorporated na HR at workforce solutions company, na itinatag noong Abril 2009. Nagbibigay kami ng Employer of Record, executive search, payroll outsourcing, HR outsourcing, at AI automation services sa 10 merkado sa Asya, sa Gitnang Silangan, at sa Estados Unidos.",
+      q2: "Anong mga lisensya at credentials ang hawak ng Mars Consulting?",
+      a2: "Hawak ng Mars Consulting ang MOM Comprehensive Employment Agency Licence (No. 09C2925) at ang ACRA Registered Filing Agent status. Lahat ng credentials ay publicly verifiable sa MOM Employment Agency Directory at sa ACRA BizFile+ register.",
+      q3: "Saan matatagpuan ang mga opisina ng Mars Consulting?",
+      a3: "Ang Mars Consulting ay nagpapanatili ng mga opisina sa Singapore (HQ), Malaysia (Johor Bahru), Hong Kong (Kwun Tong), China (Nanchang), India (New Delhi), at Estados Unidos (Superior, Colorado). Nagbibigay din kami ng serbisyo sa United Arab Emirates, Vietnam, Thailand, at Indonesia bilang service markets.",
+      q4: "Paano ko i-ve-verify ang team at credentials ng Mars Consulting?",
+      a4: "Ang aming mga consultant at recruiter ay nakalista nang publiko sa aming LinkedIn company page. Ang detalye ng MOM EA Licence ay ve-verify sa MOM Employment Agency Directory. Ang company registration ay ve-verify sa ACRA BizFile+.",
+    },
+    categories: {
+      eor: "EOR at Payroll",
+      recruitment: "Recruitment at Executive Search",
+      ai: "AI Automation",
+    },
+  },
+} as const;
 
 export default fil;
+export type Translation = typeof fil;

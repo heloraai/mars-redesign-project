@@ -72,6 +72,8 @@ const Hero = () => {
     { code: "TH", name: "Thailand", n: 11 },
   ];
   const maxHeadcount = 38;
+  const { ref: snapshotRef, inView: snapshotInView } = useInView<HTMLDivElement>();
+  const progress = useCountUp({ to: 1, start: snapshotInView });
   return (
     <section className="relative overflow-hidden text-primary-foreground" style={{ background: "linear-gradient(160deg, hsl(255 6% 12%) 0%, hsl(255 3% 22%) 40%, hsl(260 4% 28%) 70%, hsl(255 2% 32%) 100%)" }}>
       <div
@@ -115,7 +117,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative hidden h-full animate-fade-up [animation-delay:150ms] lg:block">
+          <div ref={snapshotRef} className="relative hidden h-full animate-fade-up [animation-delay:150ms] lg:block">
             <div className="absolute -inset-4 rounded-3xl bg-accent/[0.06] blur-2xl" />
             <div className="relative flex h-full flex-col rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5 backdrop-blur-md">
               <div className="flex items-center justify-between gap-2 pb-4">
@@ -140,7 +142,7 @@ const Hero = () => {
                 <div className="flex items-end justify-between gap-3">
                   <div className="min-w-0">
                     <p className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("hero.snapshotHeadcount")}</p>
-                    <p className="mt-1 font-display text-4xl font-bold tracking-tight">128</p>
+                    <p className="mt-1 font-display text-4xl font-bold tracking-tight tabular-nums">{Math.round(128 * progress)}</p>
                   </div>
                   <span className="mb-1 inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-md bg-accent/10 px-2 py-1 text-xs font-semibold text-accent">
                     <ArrowRight className="h-3 w-3 -rotate-45" />
@@ -153,9 +155,9 @@ const Hero = () => {
                       <span className="text-base leading-none">{COUNTRY_FLAGS[c.code]}</span>
                       <span className="w-20 text-xs font-medium text-foreground">{c.name}</span>
                       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
-                        <div className="h-full rounded-full bg-accent" style={{ width: `${(c.n / maxHeadcount) * 100}%` }} />
+                        <div className="h-full rounded-full bg-accent transition-[width] duration-150 ease-out" style={{ width: `${(c.n / maxHeadcount) * 100 * progress}%` }} />
                       </div>
-                      <span className="w-6 text-right font-display text-sm font-semibold tabular-nums">{c.n}</span>
+                      <span className="w-6 text-right font-display text-sm font-semibold tabular-nums">{Math.round(c.n * progress)}</span>
                     </div>
                   ))}
                 </div>

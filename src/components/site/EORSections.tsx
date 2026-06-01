@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { geoMercator } from "d3-geo";
+import { useInView } from "@/hooks/use-count-up";
 import {
   ArrowRight,
   CheckCircle2,
@@ -97,6 +98,12 @@ interface WorldMapProps {
    * where hover is unavailable.
    */
   onMarkerSelect?: (code: CountryCode) => void;
+  /**
+   * When true, markers start hidden and fade in one-by-one (staggered) the
+   * first time the map scrolls into view. Used on the home coverage map; the
+   * interactive About map leaves it off so its markers are always visible.
+   */
+  reveal?: boolean;
 }
 
 /**
@@ -114,9 +121,21 @@ export const WorldMap = ({
   activeCode = null,
   onMarkerHover,
   onMarkerSelect,
+  reveal = false,
 }: WorldMapProps) => {
   const { t } = useTranslation();
   const interactive = !!onMarkerHover || !!onMarkerSelect;
+
+  // Staggered marker reveal (home coverage map). Markers stay hidden until the
+  // map scrolls into view, then fade in one-by-one. Honour reduced-motion and
+  // environments without IntersectionObserver by showing everything at once.
+  const { ref: revealRef, inView } = useInView<HTMLDivElement>("-10% 0px");
+  const reduceMotion =
+    typeof window !== "undefined" &&
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const animateReveal = reveal && !reduceMotion;
+  const markersShown = !animateReveal || inView;
 
   const markers = useMemo(() => {
     const projection = geoMercator()
@@ -137,7 +156,10 @@ export const WorldMap = ({
   }, []);
 
   return (
-    <div className="relative aspect-[800/460] overflow-hidden rounded-2xl border border-white/10 bg-primary p-2 shadow-elevated">
+    <div
+      ref={revealRef}
+      className="relative aspect-[800/460] overflow-hidden rounded-2xl border border-white/10 bg-primary p-2 shadow-elevated"
+    >
       <div
         className="absolute inset-2 overflow-hidden rounded-xl"
         style={{ containerType: "inline-size" }}
@@ -177,7 +199,7 @@ export const WorldMap = ({
           </Geographies>
         </ComposableMap>
 
-        {markers.map((c) => {
+        {markers.map((c, i) => {
           const isActive = activeCode === c.code;
           const dimmed = interactive && activeCode != null && !isActive;
           return (
@@ -186,7 +208,13 @@ export const WorldMap = ({
               className={`group absolute -translate-x-1/2 -translate-y-1/2 ${
                 isActive ? "z-30" : "z-10"
               } ${interactive ? "cursor-pointer hover:z-30" : "hover:z-30"}`}
-              style={{ left: `${c.left}%`, top: `${c.top}%` }}
+              style={{
+                left: `${c.left}%`,
+                top: `${c.top}%`,
+                opacity: markersShown ? 1 : 0,
+                transition: "opacity 420ms ease-out",
+                transitionDelay: markersShown && animateReveal ? `${i * 110}ms` : "0ms",
+              }}
               onMouseEnter={interactive ? () => onMarkerHover?.(c.code) : undefined}
               onMouseLeave={interactive ? () => onMarkerHover?.(null) : undefined}
               onClick={onMarkerSelect ? () => onMarkerSelect(c.code) : undefined}
@@ -256,7 +284,7 @@ export const CountriesMapSection = () => {
           </h2>
           <p className="mt-5 max-w-lg text-white/70">{t("countries.body")}</p>
         </div>
-        <WorldMap />
+        <WorldMap reveal />
       </div>
     </section>
   );

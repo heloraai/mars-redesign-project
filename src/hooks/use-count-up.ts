@@ -6,12 +6,23 @@ interface CountUpOptions {
   start?: boolean;
 }
 
+function prefersReducedMotion(): boolean {
+  if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+    return false;
+  }
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 export function useCountUp({ to, durationMs = 1400, start = true }: CountUpOptions) {
   const [value, setValue] = useState(0);
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!start) return;
+    if (prefersReducedMotion()) {
+      setValue(to);
+      return;
+    }
     const startTime = performance.now();
     const tick = (now: number) => {
       const elapsed = now - startTime;
