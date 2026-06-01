@@ -98,12 +98,8 @@ const Hero = () => {
           backgroundSize: "28px 28px",
         }}
       />
-      {/* Richer animated aurora than the subpages (home-only flourish): three
-          accent blobs drifting on distinct large paths so the glow visibly
-          moves. */}
-      <div className="pointer-events-none absolute -top-40 -left-24 h-[520px] w-[520px] rounded-full bg-accent/25 blur-[110px] animate-drift-1" />
-      <div className="pointer-events-none absolute top-1/4 right-[-8%] h-[440px] w-[440px] rounded-full bg-accent/18 blur-[100px] animate-drift-2" />
-      <div className="pointer-events-none absolute -bottom-32 left-1/3 h-[400px] w-[400px] rounded-full bg-accent/14 blur-[90px] animate-drift-3" />
+      {/* Soft accent glow — same gentle treatment as the subpage heroes. */}
+      <div className="pointer-events-none absolute -top-32 -left-24 h-[460px] w-[460px] rounded-full bg-accent/25 blur-3xl animate-blob-drift" />
 
       <div className="container-narrow relative py-24 lg:py-32">
         <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-stretch">
