@@ -75,11 +75,11 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden text-primary-foreground" style={{ background: "linear-gradient(160deg, hsl(255 6% 12%) 0%, hsl(255 3% 22%) 40%, hsl(260 4% 28%) 70%, hsl(255 2% 32%) 100%)" }}>
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.06]"
+        className="pointer-events-none absolute inset-0 opacity-[0.18]"
         style={{
           backgroundImage:
-            "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
-          backgroundSize: "30px 30px",
+            "radial-gradient(hsl(var(--primary-foreground)) 1.3px, transparent 1.3px)",
+          backgroundSize: "26px 26px",
         }}
       />
       <div className="pointer-events-none absolute -top-40 left-1/4 h-[600px] w-[600px] rounded-full bg-accent/12 blur-[120px]" />
