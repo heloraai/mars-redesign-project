@@ -118,16 +118,16 @@ const Hero = () => {
           <div className="relative hidden h-full animate-fade-up [animation-delay:150ms] lg:block">
             <div className="absolute -inset-4 rounded-3xl bg-accent/[0.06] blur-2xl" />
             <div className="relative flex h-full flex-col rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5 backdrop-blur-md">
-              <div className="flex items-center justify-between pb-4">
-                <div className="flex items-center gap-2.5">
-                  <div className="grid h-7 w-7 place-items-center rounded-lg bg-accent/15">
+              <div className="flex items-center justify-between gap-2 pb-4">
+                <div className="flex min-w-0 items-center gap-2.5">
+                  <div className="grid h-7 w-7 shrink-0 place-items-center rounded-lg bg-accent/15">
                     <ShieldCheck className="h-3.5 w-3.5 text-accent" />
                   </div>
-                  <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-white/60">
+                  <p className="truncate text-[11px] font-medium uppercase tracking-[0.14em] text-white/60">
                     {t("hero.snapshotEyebrow")}
                   </p>
                 </div>
-                <span className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.08] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white/70 backdrop-blur-sm">
+                <span className="flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-white/15 bg-white/[0.08] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white/70 backdrop-blur-sm">
                   <span className="relative flex h-1.5 w-1.5">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/60" />
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
