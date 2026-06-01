@@ -1,7 +1,7 @@
 import { ArrowRight, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
 
 export const WhyMarsSection = () => {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ export const WhyMarsSection = () => {
           <p>{t("whyMars.p2")}</p>
           <p className="text-foreground font-medium">{t("whyMars.p3")}</p>
           <Button asChild className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("whyMars.cta")} <ArrowRight />
             </a>
           </Button>

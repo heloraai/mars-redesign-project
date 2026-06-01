@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
 interface NavItem {
@@ -15,7 +15,7 @@ const NAV_ITEMS: NavItem[] = [
   { labelKey: "nav.recruitment", href: "/recruitment" },
   { labelKey: "nav.aiLab", href: "/ai-innovation" },
   { labelKey: "nav.about", href: "/about" },
-  { labelKey: "nav.contact", href: "/#contact" },
+  { labelKey: "nav.contact", href: "/contact" },
 ];
 
 export const SiteHeader = () => {
@@ -48,7 +48,7 @@ export const SiteHeader = () => {
             asChild
             className="hidden md:inline-flex h-10 px-5 text-sm bg-accent text-accent-foreground hover:bg-accent/90"
           >
-            <a href={withBase("/#contact")}>{t("nav.bookCall")}</a>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">{t("nav.bookCall")}</a>
           </Button>
           <button
             type="button"
@@ -75,7 +75,9 @@ export const SiteHeader = () => {
               </a>
             ))}
             <a
-              href={withBase("/#contact")}
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-md bg-accent px-3 py-2.5 text-center text-sm font-medium text-accent-foreground hover:bg-accent/90"
             >

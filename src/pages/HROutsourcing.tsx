@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { ArrowRight, CheckCircle2, Briefcase, Users, Target, Wrench } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -29,7 +30,8 @@ const usePageMeta = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div
@@ -46,16 +48,17 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("hrOutsourcingPage.pill")}
         </span>
-        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-          {t("hrOutsourcingPage.headlineLead")}{" "}
-          <span className="text-accent">{t("hrOutsourcingPage.headlineAccent")}</span>
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+          {t("hrOutsourcingPage.headlineLead")}
+          {headlineGap(t("hrOutsourcingPage.headlineLead"), t("hrOutsourcingPage.headlineAccent"))}
+          <span className="whitespace-nowrap text-accent">{t("hrOutsourcingPage.headlineAccent")}</span>
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">
           {t("hrOutsourcingPage.sub")}
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("hrOutsourcingPage.ctaPrimary")} <ArrowRight />
             </a>
           </Button>
@@ -180,7 +183,7 @@ const CTABanner = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <a href={withBase("/#contact")}>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("hrOutsourcingPage.ctaPrimary")} <ArrowRight />
                 </a>
               </Button>

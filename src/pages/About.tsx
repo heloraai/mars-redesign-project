@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from "react";
 import { ArrowRight, ShieldCheck, Building2, Award, Users, Compass, Linkedin, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { WorldMap, type CountryCode } from "@/components/site/EORSections";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 
 const setMeta = (name: string, content: string, attr: "name" | "property" = "name") => {
   let el = document.querySelector<HTMLMetaElement>(`meta[${attr}='${name}']`);
@@ -29,7 +31,8 @@ const usePageMeta = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div
@@ -46,10 +49,11 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("aboutPage.pill")}
         </span>
-        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-          {t("aboutPage.headlineLead")}{" "}
-          <span className="text-accent">{t("aboutPage.headlineAccent")}</span>{" "}
-          {t("aboutPage.headlineTail")}
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+          {t("aboutPage.headlineLead")}
+          {headlineGap(t("aboutPage.headlineLead"), t("aboutPage.headlineAccent"))}
+          <span className="whitespace-nowrap text-accent">{t("aboutPage.headlineAccent")}</span>
+          <span className="mt-1 block font-normal text-white/90">{t("aboutPage.headlineTail")}</span>
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">{t("aboutPage.sub")}</p>
       </div>
@@ -129,32 +133,6 @@ const Founder = () => {
           <p>{t("aboutPage.founder.p2")}</p>
           <p>{t("aboutPage.founder.p3")}</p>
           <p>{t("aboutPage.founder.p4")}</p>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const Numbers = () => {
-  const { t } = useTranslation();
-  const stats = [
-    { n: "2009", l: t("aboutPage.numbers.years") },
-    { n: "10", l: t("aboutPage.numbers.markets") },
-    { n: "100+", l: t("aboutPage.numbers.consultants") },
-    { n: "09C2925", l: t("aboutPage.numbers.licences") },
-  ];
-  return (
-    <section className="border-y border-border bg-background">
-      <div className="container-narrow py-12">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l}>
-              <p className="font-display text-3xl font-semibold text-foreground">{s.n}</p>
-              <p className="mt-1.5 whitespace-nowrap text-[11px] uppercase tracking-wider text-muted-foreground">
-                {s.l}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
@@ -254,23 +232,59 @@ const TeamModule = () => {
   );
 };
 
-interface OfficeKey {
-  k: "sg" | "my" | "hk" | "cn" | "in" | "us";
-  hasBadge?: boolean;
-  hasCN?: boolean;
-}
-
-const OFFICES: OfficeKey[] = [
-  { k: "sg", hasBadge: true },
-  { k: "my" },
-  { k: "hk" },
-  { k: "cn", hasCN: true },
-  { k: "in" },
-  { k: "us" },
+// Physical offices (orange markers) and their i18n sub-keys, in display order.
+const OFFICE_ROWS: { code: CountryCode; k: string; badge?: boolean }[] = [
+  { code: "SG", k: "sg", badge: true },
+  { code: "MY", k: "my" },
+  { code: "HK", k: "hk" },
+  { code: "CN", k: "cn" },
+  { code: "IN", k: "in" },
+  { code: "US", k: "us" },
 ];
+// Markets served through partners (outline markers), no physical office.
+const SERVICE_ROWS: CountryCode[] = ["AE", "VN", "TH", "ID"];
 
 const Offices = () => {
   const { t } = useTranslation();
+  const [activeCode, setActiveCode] = useState<CountryCode | null>(null);
+
+  // Measure the map's rendered height so the address panel can cap its own
+  // height to match — keeping the two columns visually balanced (the address
+  // list scrolls internally instead of overflowing past the map).
+  const mapWrapRef = useRef<HTMLDivElement>(null);
+  const [mapH, setMapH] = useState<number | null>(null);
+  useLayoutEffect(() => {
+    const el = mapWrapRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setMapH(el.offsetHeight));
+    ro.observe(el);
+    setMapH(el.offsetHeight);
+    return () => ro.disconnect();
+  }, []);
+
+  // Each address card registers itself by country code so a map-marker click
+  // can scroll the matching card into view inside the (internally scrolling)
+  // panel — the key interaction on touch, where hover doesn't exist.
+  const panelRef = useRef<HTMLDivElement>(null);
+  const cardRefs = useRef<Partial<Record<CountryCode, HTMLButtonElement | null>>>({});
+  const selectMarket = (code: CountryCode) => {
+    setActiveCode(code);
+    const card = cardRefs.current[code];
+    const panel = panelRef.current;
+    if (!card) return;
+    // Desktop: the panel scrolls internally — pin the selected card to the
+    // panel's top by adjusting only the panel's own scroll (never the page).
+    // The browser clamps to max scroll, so the last entries settle near the
+    // bottom instead of being force-pinned — the natural fallback.
+    if (panel && panel.scrollHeight > panel.clientHeight) {
+      const delta = card.getBoundingClientRect().top - panel.getBoundingClientRect().top;
+      panel.scrollTo({ top: panel.scrollTop + delta - 4, behavior: "smooth" });
+    } else {
+      // Mobile (no internal scroll): just bring the card into the viewport.
+      card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="border-t border-border bg-secondary/30 py-24">
       <div className="container-narrow">
@@ -281,46 +295,111 @@ const Offices = () => {
           </h2>
           <p className="mt-4 text-muted-foreground">{t("aboutPage.offices.body")}</p>
         </div>
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {OFFICES.map((o) => (
-            <article
-              key={o.k}
-              className="rounded-2xl border border-border bg-card p-6 shadow-card"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <span className="grid h-10 w-10 place-items-center rounded-lg bg-primary/5 text-primary">
-                  <MapPin className="h-5 w-5" />
-                </span>
-                {o.hasBadge ? (
-                  <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent">
-                    {t("aboutPage.offices.sg.badge")}
+
+        {/* Map + address list are one linked unit: hover a marker to highlight
+            its address, or hover an address to highlight its marker. The list
+            scrolls within the map's height so the two panels stay balanced. */}
+        <div
+          className="mt-10 grid gap-6 lg:grid-cols-[1.85fr_1fr] lg:items-start"
+          style={{ "--offices-map-h": mapH ? `${mapH}px` : undefined } as CSSProperties}
+        >
+          <div ref={mapWrapRef}>
+            <WorldMap
+              activeCode={activeCode}
+              onMarkerHover={setActiveCode}
+              onMarkerSelect={selectMarket}
+            />
+          </div>
+
+          <div
+            ref={panelRef}
+            className="flex flex-col gap-2 lg:max-h-[var(--offices-map-h,30rem)] lg:overflow-y-auto lg:pr-1"
+          >
+            <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-muted-foreground">
+              <MapPin className="h-4 w-4 text-accent" />
+              {t("aboutPage.offices.mapHint")}
+            </p>
+
+            {OFFICE_ROWS.map(({ code, k, badge }) => {
+              const active = activeCode === code;
+              return (
+                <button
+                  key={code}
+                  ref={(el) => (cardRefs.current[code] = el)}
+                  type="button"
+                  onMouseEnter={() => setActiveCode(code)}
+                  onMouseLeave={() => setActiveCode(null)}
+                  onFocus={() => setActiveCode(code)}
+                  onBlur={() => setActiveCode(null)}
+                  onClick={() => selectMarket(code)}
+                  className={`scroll-mt-2 rounded-xl border p-3.5 text-left transition-colors ${
+                    active
+                      ? "border-accent bg-accent/[0.06] shadow-card"
+                      : "border-border bg-card hover:border-accent/40"
+                  }`}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 shrink-0 rounded-full bg-accent" />
+                    <span className="font-semibold text-foreground">
+                      {t(`aboutPage.offices.${k}.country`)}
+                    </span>
+                    {badge ? (
+                      <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-medium text-accent">
+                        {t("aboutPage.offices.sg.badge")}
+                      </span>
+                    ) : null}
+                  </div>
+                  <p className="mt-1.5 pl-4 text-sm leading-snug text-muted-foreground">
+                    {t(`aboutPage.offices.${k}.address`)}
+                  </p>
+                </button>
+              );
+            })}
+
+            {/* Service markets live in the same list (not a detached box): a
+                slim labelled divider, then cards in the same visual language —
+                only the hollow dot + caption signal "partner-led, no office". */}
+            <div className="mt-2 flex items-center gap-3 px-1">
+              <span className="h-px flex-1 bg-border" />
+              <span className="whitespace-nowrap text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
+                {t("aboutPage.offices.serviceLabel")}
+              </span>
+              <span className="h-px flex-1 bg-border" />
+            </div>
+
+            {SERVICE_ROWS.map((code) => {
+              const active = activeCode === code;
+              return (
+                <button
+                  key={code}
+                  ref={(el) => (cardRefs.current[code] = el)}
+                  type="button"
+                  onMouseEnter={() => setActiveCode(code)}
+                  onMouseLeave={() => setActiveCode(null)}
+                  onFocus={() => setActiveCode(code)}
+                  onBlur={() => setActiveCode(null)}
+                  onClick={() => selectMarket(code)}
+                  className={`scroll-mt-2 flex items-center gap-2 rounded-xl border p-3 text-left transition-colors ${
+                    active
+                      ? "border-accent bg-accent/[0.06] shadow-card"
+                      : "border-border bg-card/60 hover:border-accent/40"
+                  }`}
+                >
+                  <span className="h-2 w-2 shrink-0 rounded-full border border-muted-foreground/60 bg-transparent" />
+                  <span className="font-medium text-foreground">
+                    {t(`countries.name.${code}`)}
                   </span>
-                ) : null}
-              </div>
-              <p className="mt-5 font-display text-lg font-semibold text-foreground">
-                {t(`aboutPage.offices.${o.k}.country`)}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {t(`aboutPage.offices.${o.k}.address`)}
-              </p>
-              {o.hasCN ? (
-                <p className="mt-1 text-sm leading-relaxed text-muted-foreground/85">
-                  {t("aboutPage.offices.cn.addressCN")}
-                </p>
-              ) : null}
-            </article>
-          ))}
-        </div>
-        <div className="mt-10 rounded-2xl border border-dashed border-border bg-card/60 p-6">
-          <p className="text-xs uppercase tracking-wider text-muted-foreground">
-            {t("aboutPage.offices.serviceLabel")}
-          </p>
-          <p className="mt-2 font-display text-base font-semibold text-foreground">
-            {t("aboutPage.offices.serviceMarkets")}
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {t("aboutPage.offices.serviceNote")}
-          </p>
+                  <span className="ml-auto text-[11px] text-muted-foreground">
+                    {t("aboutPage.offices.servicePartner")}
+                  </span>
+                </button>
+              );
+            })}
+
+            <p className="mt-1 px-1 text-xs leading-snug text-muted-foreground">
+              {t("aboutPage.offices.serviceNote")}
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -386,7 +465,7 @@ const CTABanner = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <a href={withBase("/#contact")}>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("aboutPage.ctaBanner.cta")} <ArrowRight />
                 </a>
               </Button>
@@ -408,7 +487,6 @@ const About = () => {
       <Timeline />
       <Founder />
       <TeamModule />
-      <Numbers />
       <Licences />
       <Offices />
       <Principles />

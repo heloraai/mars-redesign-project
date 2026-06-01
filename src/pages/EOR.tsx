@@ -8,12 +8,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhyMarsSection } from "@/components/site/WhyMarsSection";
 import {
-  CountriesMapSection,
   ComparisonSection,
   HowItWorksSection,
 } from "@/components/site/EORSections";
@@ -69,7 +68,8 @@ const usePageMeta = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div
@@ -86,14 +86,17 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("eorPage.pill")}
         </span>
-        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-          {t("eorPage.headlineLead")} <span className="text-accent">{t("eorPage.headlineAccent")}</span>{" "}
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+          {t("eorPage.headlineLead")}
+          {headlineGap(t("eorPage.headlineLead"), t("eorPage.headlineAccent"))}
+          <span className="whitespace-nowrap text-accent">{t("eorPage.headlineAccent")}</span>
+          {headlineGap(t("eorPage.headlineAccent"), t("eorPage.headlineTail"))}
           {t("eorPage.headlineTail")}
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">{t("eorPage.sub")}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("eorPage.ctaPrimary")} <ArrowRight />
             </a>
           </Button>
@@ -213,7 +216,7 @@ const CTABanner = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <a href={withBase("/#contact")}>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("eorPage.ctaBanner.cta")} <ArrowRight />
                 </a>
               </Button>
@@ -231,11 +234,9 @@ const EOR = () => {
     <main className="min-h-screen bg-background">
       <SiteHeader />
       <Hero />
-      <WhyMarsSection />
       <StatsBar />
       <HowItWorksSection />
       <ComparisonSection />
-      <CountriesMapSection />
       <FAQ />
       <CTABanner />
       <SiteFooter />

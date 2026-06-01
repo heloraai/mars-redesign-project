@@ -18,15 +18,17 @@ export const SiteFooter = () => {
       h: t("footer.sections.company"),
       l: [
         { label: t("footer.links.about"), href: "/about" },
-        { label: t("footer.links.clients"), href: "/#clients" },
-        { label: t("footer.links.contact"), href: "/#contact" },
+        { label: t("footer.links.clients"), href: "/recruitment#clients" },
+        { label: t("footer.links.contact"), href: "/contact" },
       ],
     },
     {
       h: t("footer.sections.compliance"),
       l: [
-        { label: t("footer.links.mom"), href: "#" },
-        { label: t("footer.links.acra"), href: "#" },
+        // MOM / ACRA are credentials we display, not pages — no link (was "#",
+        // which just jumped to the top of the page). Rendered as plain text.
+        { label: t("footer.links.mom"), href: null },
+        { label: t("footer.links.acra"), href: null },
         { label: t("footer.links.privacy"), href: "/privacy" },
         { label: t("footer.links.terms"), href: "/terms" },
       ],
@@ -59,13 +61,23 @@ export const SiteFooter = () => {
           <div key={c.h}>
             <p className="text-xs font-semibold uppercase tracking-wider text-foreground">{c.h}</p>
             <ul className="mt-4 space-y-2.5">
-              {c.l.map((i) => (
-                <li key={i.label}>
-                  <a href={i.href.startsWith("/") ? withBase(i.href) : i.href} className="text-sm text-muted-foreground hover:text-foreground">
-                    {i.label}
-                  </a>
-                </li>
-              ))}
+              {c.l.map((i) =>
+                i.href ? (
+                  <li key={i.label}>
+                    <a
+                      href={i.href.startsWith("/") ? withBase(i.href) : i.href}
+                      className="text-sm text-muted-foreground hover:text-foreground"
+                    >
+                      {i.label}
+                    </a>
+                  </li>
+                ) : (
+                  // Credential (MOM / ACRA), not a page — plain text, no jump.
+                  <li key={i.label}>
+                    <span className="text-sm text-muted-foreground">{i.label}</span>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         ))}

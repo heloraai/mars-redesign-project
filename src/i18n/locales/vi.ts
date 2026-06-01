@@ -225,7 +225,7 @@ const vi: Translation = {
   },
   contact: {
     eyebrow: "Trao đổi với chuyên gia có giấy phép Singapore",
-    headline: "Xem EOR có phải lựa chọn đúng — trong 20 phút.",
+    headline: "Xem EOR có phải lựa chọn đúng — trong 30 phút.",
     bullet1: "Phân tích chi phí từng quốc gia",
     bullet2: "Mẫu hợp đồng & checklist onboarding",
     bullet3: "Trả lời thẳng thắn liệu bạn nên lập pháp nhân thay thế",
@@ -242,7 +242,7 @@ const vi: Translation = {
       country: "vd. Indonesia",
       hires: "5",
     },
-    submit: "Đặt cuộc gọi 20 phút",
+    submit: "Đặt cuộc gọi 30 phút",
     privacy:
       "Chúng tôi phản hồi trong 4 giờ làm việc, giờ Singapore. Khi gửi bạn đồng ý với chính sách bảo mật.",
   },

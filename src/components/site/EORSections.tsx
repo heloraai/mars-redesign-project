@@ -1,4 +1,7 @@
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { geoMercator } from "d3-geo";
 import {
   ArrowRight,
   CheckCircle2,
@@ -11,28 +14,226 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
 
-interface CountryCoord {
-  code: "IN" | "TH" | "HK" | "CN" | "US" | "AE" | "MY" | "SG" | "VN" | "ID";
+export type CountryCode =
+  | "IN"
+  | "TH"
+  | "HK"
+  | "CN"
+  | "US"
+  | "AE"
+  | "MY"
+  | "SG"
+  | "VN"
+  | "ID";
+
+interface CountryMarker {
+  code: CountryCode;
   payroll: string;
-  x: number;
-  y: number;
+  /** [longitude, latitude] of the country marker. */
+  coords: [number, number];
   office: boolean;
+  /** Optional [dx, dy] offset in percentage points to fan out tight clusters. */
+  nudge?: [number, number];
 }
 
-const COUNTRY_COORDS: CountryCoord[] = [
-  { code: "US", payroll: "FICA · State taxes", x: 90, y: 18, office: true },
-  { code: "AE", payroll: "WPS · GPSSA", x: 4, y: 30, office: false },
-  { code: "IN", payroll: "EPF · ESI", x: 10, y: 44, office: true },
-  { code: "CN", payroll: "Social Insurance", x: 58, y: 12, office: true },
-  { code: "HK", payroll: "MPF", x: 62, y: 26, office: true },
-  { code: "VN", payroll: "BHXH · PIT", x: 48, y: 40, office: false },
-  { code: "TH", payroll: "SSO · PIT", x: 36, y: 44, office: false },
-  { code: "MY", payroll: "EPF · SOCSO", x: 40, y: 64, office: true },
-  { code: "SG", payroll: "CPF · IR8A", x: 46, y: 72, office: true },
-  { code: "ID", payroll: "BPJS · PPh21", x: 52, y: 84, office: false },
+const COUNTRY_MARKERS: CountryMarker[] = [
+  { code: "US", payroll: "FICA · State taxes", coords: [-95, 39], office: true },
+  { code: "AE", payroll: "WPS · GPSSA", coords: [54, 24], office: false, nudge: [-1.5, 0] },
+  { code: "IN", payroll: "EPF · ESI", coords: [78, 22], office: true, nudge: [-4, -1] },
+  { code: "CN", payroll: "Social Insurance", coords: [104, 35], office: true, nudge: [1, -4] },
+  { code: "HK", payroll: "MPF", coords: [114.2, 22.3], office: true, nudge: [7, -1] },
+  { code: "VN", payroll: "BHXH · PIT", coords: [106, 16], office: false, nudge: [3.5, 3] },
+  { code: "TH", payroll: "SSO · PIT", coords: [100.5, 15], office: false, nudge: [-4.5, 0.5] },
+  { code: "MY", payroll: "EPF · SOCSO", coords: [102, 4], office: true, nudge: [-6, 2.5] },
+  { code: "SG", payroll: "CPF · IR8A", coords: [103.8, 1.3], office: true, nudge: [-1.5, 6] },
+  { code: "ID", payroll: "BPJS · PPh21", coords: [113, -2.5], office: false, nudge: [5, 2.5] },
 ];
+
+/** Country-flag emoji per marker (falls back to the 2-letter code on systems
+ *  without flag-emoji support, e.g. Windows). */
+const FLAG: Record<CountryCode, string> = {
+  US: "🇺🇸",
+  AE: "🇦🇪",
+  IN: "🇮🇳",
+  CN: "🇨🇳",
+  HK: "🇭🇰",
+  VN: "🇻🇳",
+  TH: "🇹🇭",
+  MY: "🇲🇾",
+  SG: "🇸🇬",
+  ID: "🇮🇩",
+};
+
+// Projection framing: Pacific-centered Mercator so the US sits at the left and
+// the SE-Asia cluster lands centre-right, matching the served world-110m.json.
+const MAP_W = 800;
+const MAP_H = 460;
+const PROJECTION_CONFIG = {
+  rotate: [-150, 0, 0] as [number, number, number],
+  scale: 135,
+  center: [0, 16] as [number, number],
+};
+const WORLD_GEO_URL = `${import.meta.env.BASE_URL}world-110m.json`;
+
+interface WorldMapProps {
+  /**
+   * Currently highlighted country (controlled). When set, that marker is
+   * emphasised and the others dim — used to link the map to an external
+   * address panel (About "Where we operate").
+   */
+  activeCode?: CountryCode | null;
+  /**
+   * When provided, the map runs in "interactive" mode: hovering a marker
+   * reports its code (null on leave), pulse rings and floating tooltips are
+   * dropped, and highlighting is driven by `activeCode`. This lets a sibling
+   * address list stay in sync with the map.
+   */
+  onMarkerHover?: (code: CountryCode | null) => void;
+  /**
+   * Fired when a marker is clicked/tapped. Lets the linked address panel jump
+   * (scroll) to the matching entry — the primary interaction on touch devices
+   * where hover is unavailable.
+   */
+  onMarkerSelect?: (code: CountryCode) => void;
+}
+
+/**
+ * Self-contained dark map card (world geography + country flag markers +
+ * legend). Works on any background, so it can be embedded in the dark home
+ * coverage section or inside the light About "Where we operate" section.
+ *
+ * Markers are sized in container-query units (`cqw`), so they scale with the
+ * rendered map width — small map → small markers, large map → large markers —
+ * which keeps the proportions right whether the card is half-width (home) or
+ * full-width (About). When `onMarkerHover` is supplied the map runs in
+ * interactive mode and links to a sibling address panel via `activeCode`.
+ */
+export const WorldMap = ({
+  activeCode = null,
+  onMarkerHover,
+  onMarkerSelect,
+}: WorldMapProps) => {
+  const { t } = useTranslation();
+  const interactive = !!onMarkerHover || !!onMarkerSelect;
+
+  const markers = useMemo(() => {
+    const projection = geoMercator()
+      .rotate(PROJECTION_CONFIG.rotate)
+      .scale(PROJECTION_CONFIG.scale)
+      .center(PROJECTION_CONFIG.center)
+      .translate([MAP_W / 2, MAP_H / 2]);
+    return COUNTRY_MARKERS.map((c) => {
+      const projected = projection(c.coords);
+      const [x, y] = projected ?? [MAP_W / 2, MAP_H / 2];
+      const [dx, dy] = c.nudge ?? [0, 0];
+      return {
+        ...c,
+        left: (x / MAP_W) * 100 + dx,
+        top: (y / MAP_H) * 100 + dy,
+      };
+    });
+  }, []);
+
+  return (
+    <div className="relative aspect-[800/460] overflow-hidden rounded-2xl border border-white/10 bg-primary p-2 shadow-elevated">
+      <div
+        className="absolute inset-2 overflow-hidden rounded-xl"
+        style={{ containerType: "inline-size" }}
+      >
+        <ComposableMap
+          projection="geoMercator"
+          projectionConfig={PROJECTION_CONFIG}
+          width={MAP_W}
+          height={MAP_H}
+          className="h-full w-full"
+          style={{ width: "100%", height: "100%" }}
+        >
+          <Geographies geography={WORLD_GEO_URL}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  style={{
+                    default: {
+                      fill: "rgba(255,255,255,0.06)",
+                      stroke: "rgba(255,255,255,0.16)",
+                      strokeWidth: 0.4,
+                      outline: "none",
+                    },
+                    hover: {
+                      fill: "rgba(255,255,255,0.06)",
+                      stroke: "rgba(255,255,255,0.16)",
+                      strokeWidth: 0.4,
+                      outline: "none",
+                    },
+                    pressed: { outline: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+        </ComposableMap>
+
+        {markers.map((c) => {
+          const isActive = activeCode === c.code;
+          const dimmed = interactive && activeCode != null && !isActive;
+          return (
+            <div
+              key={c.code}
+              className={`group absolute -translate-x-1/2 -translate-y-1/2 ${
+                isActive ? "z-30" : "z-10"
+              } ${interactive ? "cursor-pointer hover:z-30" : "hover:z-30"}`}
+              style={{ left: `${c.left}%`, top: `${c.top}%` }}
+              onMouseEnter={interactive ? () => onMarkerHover?.(c.code) : undefined}
+              onMouseLeave={interactive ? () => onMarkerHover?.(null) : undefined}
+              onClick={onMarkerSelect ? () => onMarkerSelect(c.code) : undefined}
+            >
+              {/* Flag chip — the small ring colour encodes office vs service. */}
+              <span
+                className={`relative grid place-items-center rounded-full bg-black/40 leading-none shadow-elevated backdrop-blur-sm transition-all duration-200 ring-1 ${
+                  c.office ? "ring-accent" : "ring-white/40"
+                } ${
+                  isActive
+                    ? "scale-125 ring-2 ring-white/90"
+                    : "group-hover:scale-125"
+                } ${dimmed ? "opacity-40" : "opacity-100"}`}
+                style={{
+                  padding: "clamp(3px, 0.8cqw, 7px)",
+                  fontSize: "clamp(15px, 2.7cqw, 30px)",
+                }}
+              >
+                <span className="leading-none">{FLAG[c.code]}</span>
+              </span>
+              {/* Country-name label: always shown for the active marker (in the
+                  linked About map) and on hover everywhere. Absolutely placed so
+                  it never reflows neighbouring markers. */}
+              <span
+                className={`pointer-events-none absolute left-1/2 top-full mt-1.5 -translate-x-1/2 whitespace-nowrap rounded-md bg-background px-2 py-1 text-[11px] font-medium text-foreground shadow-elevated transition-opacity duration-150 ${
+                  isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                }`}
+              >
+                {t(`countries.name.${c.code}`)}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      <div className="absolute bottom-3 left-3 z-10 flex items-center gap-4 rounded-md bg-black/30 px-3 py-1.5 text-[10px] text-white/85 backdrop-blur-sm">
+        <span className="flex items-center gap-1.5">
+          <span className="h-2.5 w-2.5 rounded-full bg-accent" />
+          {t("countries.legendOffice")}
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="h-2.5 w-2.5 rounded-full border border-white/70" />
+          {t("countries.legendService")}
+        </span>
+      </div>
+    </div>
+  );
+};
 
 export const CountriesMapSection = () => {
   const { t } = useTranslation();
@@ -55,52 +256,7 @@ export const CountriesMapSection = () => {
           </h2>
           <p className="mt-5 max-w-lg text-white/70">{t("countries.body")}</p>
         </div>
-        <div className="relative aspect-[4/3] rounded-2xl border border-white/10 bg-white/[0.03] p-2 shadow-elevated">
-          <div
-            className="absolute inset-2 rounded-xl"
-            style={{
-              backgroundImage:
-                "radial-gradient(rgba(255,255,255,0.18) 1px, transparent 1px)",
-              backgroundSize: "16px 16px",
-            }}
-          />
-          {COUNTRY_COORDS.map((c, i) => (
-            <div
-              key={c.code}
-              className="group absolute -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${c.x}%`, top: `${c.y}%` }}
-            >
-              <span
-                className={`absolute inset-0 -m-2 rounded-full animate-pulse-ring ${
-                  c.office ? "bg-accent/40" : "bg-white/25"
-                }`}
-                style={{ animationDelay: `${(i * 0.25).toFixed(2)}s` }}
-              />
-              <span
-                className={`relative grid h-7 w-7 place-items-center rounded-full text-[10px] font-bold shadow-elevated ${
-                  c.office
-                    ? "bg-accent text-accent-foreground"
-                    : "border border-white/60 bg-transparent text-white"
-                }`}
-              >
-                {c.code}
-              </span>
-              <div className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-background px-2.5 py-1.5 text-[11px] font-medium text-foreground opacity-0 shadow-elevated transition-opacity group-hover:opacity-100">
-                {t(`countries.name.${c.code}`)} · {c.payroll}
-              </div>
-            </div>
-          ))}
-          <div className="absolute bottom-3 left-3 flex items-center gap-4 rounded-md bg-black/30 px-3 py-1.5 text-[10px] text-white/85 backdrop-blur-sm">
-            <span className="flex items-center gap-1.5">
-              <span className="h-2.5 w-2.5 rounded-full bg-accent" />
-              {t("countries.legendOffice")}
-            </span>
-            <span className="flex items-center gap-1.5">
-              <span className="h-2.5 w-2.5 rounded-full border border-white/70" />
-              {t("countries.legendService")}
-            </span>
-          </div>
-        </div>
+        <WorldMap />
       </div>
     </section>
   );
@@ -172,7 +328,7 @@ export const ComparisonSection = () => {
         </div>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("comparison.cta")} <ArrowRight />
             </a>
           </Button>
@@ -260,7 +416,7 @@ export const HowItWorksSection = () => {
             </h2>
           </div>
           <Button asChild variant="outline">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("howItWorks.ctaQuote")} <ArrowRight />
             </a>
           </Button>

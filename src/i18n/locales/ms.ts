@@ -226,7 +226,7 @@ const ms: Translation = {
   },
   contact: {
     eyebrow: "Bercakap dengan pakar berlesen Singapura",
-    headline: "Lihat sama ada EOR pilihan tepat — dalam 20 minit.",
+    headline: "Lihat sama ada EOR pilihan tepat — dalam 30 minit.",
     bullet1: "Pecahan kos negara demi negara",
     bullet2: "Contoh kontrak & senarai semak onboarding",
     bullet3: "Jawapan jujur sama ada anda perlu menubuhkan entiti",
@@ -243,7 +243,7 @@ const ms: Translation = {
       country: "cth. Indonesia",
       hires: "5",
     },
-    submit: "Tempah panggilan 20 minit saya",
+    submit: "Tempah panggilan 30 minit saya",
     privacy:
       "Kami balas dalam 4 jam bekerja, waktu Singapura. Dengan menghantar anda bersetuju dengan dasar privasi kami.",
   },

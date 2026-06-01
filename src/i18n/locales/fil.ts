@@ -225,7 +225,7 @@ const fil: Translation = {
   },
   contact: {
     eyebrow: "Makipag-usap sa Singapore-licensed na specialist",
-    headline: "Tingnan kung tama ang EOR — sa loob ng 20 minuto.",
+    headline: "Tingnan kung tama ang EOR — sa loob ng 30 minuto.",
     bullet1: "Country-by-country na cost breakdown",
     bullet2: "Sample contract at onboarding checklist",
     bullet3: "Tapat na sagot kung dapat ka mag-set up ng entity sa halip",
@@ -242,7 +242,7 @@ const fil: Translation = {
       country: "hal. Indonesia",
       hires: "5",
     },
-    submit: "I-book ang aking 20-min na tawag",
+    submit: "I-book ang aking 30-min na tawag",
     privacy:
       "Sumasagot kami sa loob ng 4 business hours, oras ng Singapore. Sa pag-submit, sumasang-ayon ka sa aming privacy policy.",
   },

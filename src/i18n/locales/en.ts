@@ -168,7 +168,7 @@ const en = {
   },
   howItWorks: {
     eyebrow: "How EOR works with Mars",
-    headline: "From offer letter to payroll — in one workflow.",
+    headline: "From offer letter to payroll — in one workflow.",
     ctaQuote: "Get a quote",
     stepLabel: "Step",
     step1: {
@@ -233,7 +233,7 @@ const en = {
   },
   contact: {
     eyebrow: "Talk to a Singapore-licensed specialist",
-    headline: "Talk to a Singapore-licensed specialist — in 20 minutes.",
+    headline: "Talk to a Singapore-licensed specialist — in 30 minutes.",
     bullet1: "Country-by-country cost breakdown",
     bullet2: "Sample contract & onboarding checklist",
     bullet3: "Honest answer on whether you should set up an entity instead",
@@ -259,7 +259,7 @@ const en = {
       hr: "HR Outsourcing",
       unsure: "Not sure yet",
     },
-    submit: "Book my 20-min call",
+    submit: "Book my 30-min call",
     privacy:
       "We reply within 4 business hours, Singapore time.",
     consent: "By submitting, you agree to our Privacy Policy.",
@@ -682,7 +682,9 @@ const en = {
       },
       serviceLabel: "Service markets (no local office)",
       serviceMarkets: "United Arab Emirates · Vietnam · Thailand · Indonesia",
+      servicePartner: "Partner-led",
       serviceNote: "EOR, payroll, and HR services delivered through in-country partners and Singapore-based account leads.",
+      mapHint: "Hover or tap any country marker to jump to its address.",
     },
     principles: {
       eyebrow: "What we stand for",

@@ -22,7 +22,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -77,7 +78,8 @@ const usePageMeta = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div
@@ -94,16 +96,17 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("recruitmentPage.pill")}
         </span>
-        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-          {t("recruitmentPage.headlineLead")}{" "}
-          <span className="text-accent">{t("recruitmentPage.headlineAccent")}</span>
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+          {t("recruitmentPage.headlineLead")}
+          {headlineGap(t("recruitmentPage.headlineLead"), t("recruitmentPage.headlineAccent"))}
+          <span className="whitespace-nowrap text-accent">{t("recruitmentPage.headlineAccent")}</span>
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">
           {t("recruitmentPage.sub")}
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("recruitmentPage.ctaPrimary")} <ArrowRight />
             </a>
           </Button>
@@ -294,32 +297,6 @@ const Integration = () => {
   );
 };
 
-const StatsBar = () => {
-  const { t } = useTranslation();
-  const stats = [
-    { n: t("recruitmentPage.stats.serviceTracksValue"), l: t("recruitmentPage.stats.serviceTracks") },
-    { n: t("recruitmentPage.stats.sinceValue"), l: t("recruitmentPage.stats.since") },
-    { n: t("recruitmentPage.stats.coverageValue"), l: t("recruitmentPage.stats.coverage") },
-    { n: t("recruitmentPage.stats.sprintValue"), l: t("recruitmentPage.stats.sprint") },
-  ];
-  return (
-    <section className="border-y border-border bg-background">
-      <div className="container-narrow py-12">
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
-          {stats.map((s) => (
-            <div key={s.l}>
-              <p className="font-display text-3xl font-semibold text-foreground">{s.n}</p>
-              <p className="mt-1.5 text-[11px] uppercase tracking-wider text-muted-foreground">
-                {s.l}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
 const FAQ = () => {
   const { t } = useTranslation();
   const items = (["1", "2"] as const).map((i) => ({
@@ -360,6 +337,56 @@ const FAQ = () => {
   );
 };
 
+const CLIENT_LOGOS: string[] = [
+  "cd2d3a_b0677f4d0b6e48738fffd0611d7555a9mv2.png",
+  "cd2d3a_9d6afc0f1b0244dfacf4138799ef18e9mv2.png",
+  "cd2d3a_63f1981b7e9b49ee87b6bcd314258748mv2.png",
+  "cd2d3a_f866bc6db7b64948890853b22fc727ffmv2.png",
+  "cd2d3a_a15225f158514a19a64c40531e537777mv2.png",
+  "cd2d3a_7359bcf89035429dae024730477f9fc1mv2.png",
+  "cd2d3a_9081dc4a1b0944c280d6cd48655c2278mv2.png",
+  "cd2d3a_54583bb9b07e4932a5e9c8d1e1e48c7amv2.png",
+  "cd2d3a_b3af992ce69b4c58ae72386b0bcf1f37mv2.png",
+  "cd2d3a_b980eb97d2de42e295cc3c098650b177mv2.png",
+  "cd2d3a_5382acda8bb447189ac3e6b95c66f375mv2.png",
+  "cd2d3a_10fe9a1d545d4c16ae5189bf934383c2mv2.png",
+  "cd2d3a_6dd37d513261487b8a99565ba2a4d215mv2.png",
+  "acb62c_2d7c5d44efaf4dbda51f1ad53f08f5e1mv2.jpg",
+  "acb62c_de121da1b70344dba9043203bab102f9mv2.jpg",
+];
+
+const Clients = () => {
+  const { t } = useTranslation();
+  return (
+    <section id="clients" className="border-t border-border bg-background py-24">
+      <div className="container-narrow">
+        <p className="eyebrow text-center">{t("clients.eyebrow")}</p>
+        <h2 className="mx-auto mt-3 max-w-2xl text-center font-display text-3xl font-semibold sm:text-4xl">
+          {t("clients.headline")}
+        </h2>
+        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {CLIENT_LOGOS.map((file) => (
+            <div
+              key={file}
+              className="group flex aspect-[3/2] items-center justify-center rounded-xl border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-elevated"
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}clients/${file}`}
+                alt="Mars Consulting client"
+                loading="lazy"
+                className="max-h-14 w-auto max-w-full object-contain opacity-80 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
+              />
+            </div>
+          ))}
+        </div>
+        <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-muted-foreground">
+          {t("clients.logosNote")}
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const CTABanner = () => {
   const { t } = useTranslation();
   const bullets = [
@@ -392,7 +419,7 @@ const CTABanner = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <a href={withBase("/#contact")}>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("recruitmentPage.ctaBanner.cta")} <ArrowRight />
                 </a>
               </Button>
@@ -414,7 +441,7 @@ const Recruitment = () => {
       <Industries />
       <Process />
       <Integration />
-      <StatsBar />
+      <Clients />
       <FAQ />
       <CTABanner />
       <SiteFooter />

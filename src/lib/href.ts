@@ -6,6 +6,8 @@
  * subpaths (/mars-redesign-project/). Use withBase for every internal href
  * that starts with "/".
  */
+export const BOOKING_URL = "https://igst41nyinw.sg.larksuite.com/scheduler/16c65de5ffb24a29";
+
 export const withBase = (path: string): string => {
   const base = import.meta.env.BASE_URL;
   if (!path.startsWith("/")) return path;

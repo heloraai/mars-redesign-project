@@ -233,7 +233,7 @@ const zh: Translation = {
   },
   contact: {
     eyebrow: "与新加坡持牌专家对话",
-    headline: "20 分钟，和新加坡持牌专家聊清楚。",
+    headline: "30 分钟，和新加坡持牌专家聊清楚。",
     bullet1: "逐国成本明细",
     bullet2: "合同样本与入职清单",
     bullet3: "关于是否应设立本地实体的真实建议",
@@ -259,7 +259,7 @@ const zh: Translation = {
       hr: "人力资源外包",
       unsure: "暂不确定",
     },
-    submit: "预约 20 分钟通话",
+    submit: "预约 30 分钟通话",
     privacy:
       "我们会在 4 个工作小时内回复（新加坡时间）。",
     consent: "提交即表示同意我们的隐私政策。",
@@ -574,9 +574,9 @@ const zh: Translation = {
     metaDesc:
       "Mars Consulting 于 2009 年 4 月在新加坡成立。EOR、高管猎头及人力资源运营，覆盖 10 个市场——新加坡、马来西亚、香港、中国、印度、美国、阿联酋、越南、泰国、印尼。MOM EA 执照号 09C2925。",
     pill: "关于 Mars Consulting",
-    headlineLead: "全球团队背后的",
+    headlineLead: "支撑全球团队的",
     headlineAccent: "人力资源基础设施。",
-    headlineTail: "自 2009 年起，根植新加坡。",
+    headlineTail: "自 2009 年起，扎根新加坡。",
     sub:
       "Mars Consulting 2009 年 4 月在新加坡成立，出发点很简单：好公司需要对的人，在对的位置，有对的系统支撑。今天，我们是覆盖 10 个市场的全服务人力资源合作伙伴——为各阶段企业提供雇主记录、全球薪资、高管猎头、人力资源外包及 AI 驱动的流程自动化。",
     overview:
@@ -678,7 +678,9 @@ const zh: Translation = {
       },
       serviceLabel: "服务市场（无本地办公室）",
       serviceMarkets: "阿联酋 · 越南 · 泰国 · 印尼",
+      servicePartner: "合作伙伴交付",
       serviceNote: "通过境内合作伙伴和新加坡客户负责人提供 EOR、薪资和人力资源服务。",
+      mapHint: "将鼠标移到或点按国家标记，即可跳转到对应地址。",
     },
     principles: {
       eyebrow: "我们的立场",

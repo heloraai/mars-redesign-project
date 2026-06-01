@@ -1,11 +1,15 @@
 import { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
+import { ArrowRight } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -57,7 +61,8 @@ const useFAQSchema = (groups: FAQGroup[]) => {
 };
 
 export default function FAQPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
 
   useEffect(() => {
     const prevTitle = document.title;
@@ -122,9 +127,10 @@ export default function FAQPage() {
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             {t("faqPage.pill")}
           </span>
-          <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-            {t("faqPage.headlineLead")}{" "}
-            <span className="text-accent">{t("faqPage.headlineAccent")}</span>
+          <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+            {t("faqPage.headlineLead")}
+            {headlineGap(t("faqPage.headlineLead"), t("faqPage.headlineAccent"))}
+            <span className="whitespace-nowrap text-accent">{t("faqPage.headlineAccent")}</span>
           </h1>
           <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">
             {t("faqPage.sub")}
@@ -158,6 +164,31 @@ export default function FAQPage() {
               </Accordion>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="bg-background pb-24">
+        <div className="container-narrow">
+          <div className="overflow-hidden rounded-3xl border border-border bg-gradient-hero p-10 text-primary-foreground shadow-elevated lg:p-14">
+            <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+              <div>
+                <h2 className="font-display text-3xl font-semibold sm:text-4xl">
+                  {t("contact.headline")}
+                </h2>
+                <p className="mt-4 max-w-xl text-white/75">{t("contact.response")}</p>
+              </div>
+              <div className="lg:justify-self-end">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90"
+                >
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                    {t("contact.submit")} <ArrowRight />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <SiteFooter />

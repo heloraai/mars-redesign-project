@@ -15,7 +15,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 
@@ -42,7 +43,8 @@ const usePageMeta = () => {
 };
 
 const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
   return (
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div
@@ -59,14 +61,15 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("aiPage.pill")}
         </span>
-        <h1 className="mt-6 max-w-4xl font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[60px]">
-          {t("aiPage.headlineLead")}{" "}
-          <span className="text-accent">{t("aiPage.headlineAccent")}</span>
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+          {t("aiPage.headlineLead")}
+          {headlineGap(t("aiPage.headlineLead"), t("aiPage.headlineAccent"))}
+          <span className="whitespace-nowrap text-accent">{t("aiPage.headlineAccent")}</span>
         </h1>
         <p className="mt-6 max-w-3xl text-base text-white/75 sm:text-lg">{t("aiPage.sub")}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/#contact")}>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               {t("aiPage.ctaPrimary")} <ArrowRight />
             </a>
           </Button>
@@ -125,7 +128,6 @@ const Capabilities = () => {
         t("aiPage.capabilities.consultants.bullet1"),
         t("aiPage.capabilities.consultants.bullet2"),
         t("aiPage.capabilities.consultants.bullet3"),
-        t("aiPage.capabilities.consultants.bullet4"),
       ],
       icon: Users,
     },
@@ -149,7 +151,7 @@ const Capabilities = () => {
             {t("aiPage.capabilities.headline")}
           </h2>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {items.map((c) => {
             const Icon = c.icon;
             return (
@@ -255,28 +257,6 @@ const FAQ = () => {
   );
 };
 
-const Roadmap = () => {
-  const { t } = useTranslation();
-  return (
-    <section className="border-t border-border bg-secondary/40 py-24">
-      <div className="container-narrow max-w-3xl">
-        <p className="eyebrow">{t("aiPage.roadmap.eyebrow")}</p>
-        <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-          {t("aiPage.roadmap.headline")}
-        </h2>
-        <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-          {t("aiPage.roadmap.body")}
-        </p>
-        <Button asChild className="mt-8 bg-primary text-primary-foreground hover:bg-primary/90">
-          <a href={withBase("/#contact")}>
-            {t("aiPage.roadmap.cta")} <ArrowRight />
-          </a>
-        </Button>
-      </div>
-    </section>
-  );
-};
-
 const CTABanner = () => {
   const { t } = useTranslation();
   return (
@@ -296,7 +276,7 @@ const CTABanner = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90"
               >
-                <a href={withBase("/#contact")}>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("aiPage.ctaBanner.cta")} <ArrowRight />
                 </a>
               </Button>
@@ -317,7 +297,6 @@ const AIInnovation = () => {
       <Capabilities />
       <Compliance />
       <FAQ />
-      <Roadmap />
       <CTABanner />
       <SiteFooter />
     </main>

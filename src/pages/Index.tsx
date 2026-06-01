@@ -4,15 +4,9 @@ import {
   ArrowRight,
   ShieldCheck,
   Globe2,
-  Sparkles,
   CheckCircle2,
-  Calendar,
   Check,
   Users,
-  Mail,
-  MapPin,
-  Clock,
-  Linkedin,
 } from "lucide-react";
 import {
   Accordion,
@@ -21,15 +15,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useCountUp, useInView } from "@/hooks/use-count-up";
-import { withBase } from "@/lib/href";
+import { withBase, BOOKING_URL } from "@/lib/href";
+import { headlineGap, isCJKLang } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { WhyMarsSection } from "@/components/site/WhyMarsSection";
-import {
-  CountriesMapSection,
-  ComparisonSection,
-  HowItWorksSection,
-} from "@/components/site/EORSections";
+import { CountriesMapSection } from "@/components/site/EORSections";
 
 interface CountStatProps {
   to: number;
@@ -65,103 +56,120 @@ const CountStat = ({
   );
 };
 
+const COUNTRY_FLAGS: Record<string, string> = {
+  SG: "🇸🇬", MY: "🇲🇾", HK: "🇭🇰", CN: "🇨🇳", VN: "🇻🇳", TH: "🇹🇭", ID: "🇮🇩",
+};
+
 const Hero = () => {
-  const { t } = useTranslation();
-  const snapshotRows: { country: string; ppl: string; tax: string }[] = [
-    { country: t("countries.name.SG"), ppl: `38 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxSG") },
-    { country: t("countries.name.MY"), ppl: `26 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxMY") },
-    { country: t("countries.name.HK"), ppl: `18 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxHK") },
-    { country: t("countries.name.CN"), ppl: `14 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxCN") },
-    { country: t("countries.name.VN"), ppl: `12 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxVN") },
-    { country: t("countries.name.TH"), ppl: `11 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxTH") },
-    { country: t("countries.name.ID"), ppl: `9 ${t("hero.snapshotEmployeesLabel")}`, tax: t("hero.snapshotTaxID") },
+  const { t, i18n } = useTranslation();
+  const cjk = isCJKLang(i18n.resolvedLanguage);
+  const countries = [
+    { code: "SG", name: "Singapore", n: 38 },
+    { code: "MY", name: "Malaysia", n: 26 },
+    { code: "HK", name: "Hong Kong", n: 18 },
+    { code: "CN", name: "China", n: 14 },
+    { code: "VN", name: "Vietnam", n: 12 },
+    { code: "TH", name: "Thailand", n: 11 },
   ];
+  const maxHeadcount = 38;
   return (
-    <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
+    <section className="relative overflow-hidden text-primary-foreground" style={{ background: "linear-gradient(160deg, hsl(255 6% 12%) 0%, hsl(255 3% 22%) 40%, hsl(260 4% 28%) 70%, hsl(255 2% 32%) 100%)" }}>
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        className="pointer-events-none absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
             "radial-gradient(hsl(var(--primary-foreground)) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
+          backgroundSize: "30px 30px",
         }}
       />
-      <div className="pointer-events-none absolute -top-32 -left-24 h-[420px] w-[420px] rounded-full bg-accent/25 blur-3xl animate-blob-drift" />
-      <div className="pointer-events-none absolute -bottom-24 right-0 h-[380px] w-[380px] rounded-full bg-white/10 blur-3xl animate-blob-drift [animation-delay:-7s]" />
-      <div className="container-narrow relative grid gap-12 py-20 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:py-28">
-        <div className="animate-fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-white/80">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            {t("hero.pill")}
-          </span>
-          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] text-white sm:text-5xl lg:text-[64px]">
-            {t("hero.headlineLead")} <span className="text-accent">{t("hero.headlineAccent")}</span>
-          </h1>
-          <p className="mt-6 max-w-xl text-base text-white/75 sm:text-lg">{t("hero.sub")}</p>
-          <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-              <a href="#contact">
-                {t("hero.ctaPrimary")} <ArrowRight />
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white"
-            >
-              <a href="#about">{t("hero.ctaSecondary")}</a>
-            </Button>
-          </div>
-        </div>
+      <div className="pointer-events-none absolute -top-40 left-1/4 h-[600px] w-[600px] rounded-full bg-accent/12 blur-[120px]" />
+      <div className="pointer-events-none absolute -bottom-32 -right-20 h-[500px] w-[500px] rounded-full bg-accent/8 blur-[100px]" />
 
-        {/* Service deliverable preview — monthly compliance snapshot */}
-        <div className="relative animate-fade-up [animation-delay:120ms]">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-elevated backdrop-blur-sm">
-            <div className="flex items-start justify-between gap-4 px-1 pb-4 pt-1">
-              <div>
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-white/65">
-                  {t("hero.snapshotEyebrow")}
-                </p>
-                <p className="mt-1 text-xs text-white/50">{t("hero.snapshotSample")}</p>
-              </div>
-              <span className="rounded-full bg-accent/15 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-accent">
-                {t("hero.snapshotStatus")}
-              </span>
+      <div className="container-narrow relative py-24 lg:py-32">
+        <div className="grid gap-16 lg:grid-cols-[1.1fr_1fr] lg:items-stretch">
+          <div className="animate-fade-up">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-white/12 bg-white/[0.06] px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-white/70 backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+              {t("hero.pill")}
+            </span>
+            <h1 className={`mt-8 font-display text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight text-white ${cjk ? "!leading-[1.18]" : "!leading-[1.02]"}`}>
+              {t("hero.headlineLead")}
+              {headlineGap(t("hero.headlineLead"), t("hero.headlineAccent"))}
+              <span className="whitespace-nowrap bg-gradient-to-r from-accent to-orange-soft bg-clip-text text-transparent">{t("hero.headlineAccent")}</span>
+            </h1>
+            <p className="mt-7 max-w-lg text-base leading-relaxed text-white/60 sm:text-[17px]">{t("hero.sub")}</p>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <Button asChild size="lg" className="h-12 rounded-xl bg-accent px-7 text-[15px] font-semibold text-white shadow-[0_0_24px_hsl(15_99%_69%/0.35)] hover:bg-accent/90 hover:shadow-[0_0_32px_hsl(15_99%_69%/0.45)] transition-shadow">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  {t("hero.ctaPrimary")} <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="h-12 rounded-xl border-white/15 bg-white/[0.06] px-7 text-[15px] text-white backdrop-blur-sm hover:bg-white/10 hover:text-white"
+              >
+                <a href="#about">{t("hero.ctaSecondary")}</a>
+              </Button>
             </div>
-            <div className="rounded-xl bg-background p-5 text-foreground">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-xs text-muted-foreground">{t("hero.snapshotHeadcount")}</p>
-                  <p className="font-display text-3xl font-semibold">128</p>
+          </div>
+
+          <div className="relative hidden h-full animate-fade-up [animation-delay:150ms] lg:block">
+            <div className="absolute -inset-4 rounded-3xl bg-accent/[0.06] blur-2xl" />
+            <div className="relative flex h-full flex-col rounded-2xl border border-white/[0.08] bg-white/[0.04] p-5 backdrop-blur-md">
+              <div className="flex items-center justify-between pb-4">
+                <div className="flex items-center gap-2.5">
+                  <div className="grid h-7 w-7 place-items-center rounded-lg bg-accent/15">
+                    <ShieldCheck className="h-3.5 w-3.5 text-accent" />
+                  </div>
+                  <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-white/60">
+                    {t("hero.snapshotEyebrow")}
+                  </p>
                 </div>
-                <span className="rounded-full bg-accent/10 px-2.5 py-1 text-xs font-medium text-accent">
-                  {t("hero.snapshotDelta")}
+                <span className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/[0.08] px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white/70 backdrop-blur-sm">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent/60" />
+                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-accent" />
+                  </span>
+                  {t("hero.snapshotStatus")}
                 </span>
               </div>
-              <div className="mt-5 space-y-2">
-                {snapshotRows.map((r) => (
-                  <div
-                    key={r.country}
-                    className="flex items-center justify-between rounded-lg border border-border/60 bg-muted/40 px-3 py-2.5"
-                  >
-                    <div className="flex items-center gap-2.5">
-                      <Globe2 className="h-4 w-4 text-primary" />
-                      <span className="text-sm font-medium">{r.country}</span>
-                    </div>
-                    <span className="text-xs text-muted-foreground">{r.ppl} · {r.tax}</span>
+
+              <div className="flex flex-1 flex-col rounded-xl bg-background/95 p-5 text-foreground shadow-card">
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-[11px] uppercase tracking-wider text-muted-foreground">{t("hero.snapshotHeadcount")}</p>
+                    <p className="mt-1 font-display text-4xl font-bold tracking-tight">128</p>
                   </div>
-                ))}
+                  <span className="mb-1 inline-flex items-center gap-1 rounded-md bg-accent/10 px-2 py-1 text-xs font-semibold text-accent">
+                    <ArrowRight className="h-3 w-3 -rotate-45" />
+                    {t("hero.snapshotDelta")}
+                  </span>
+                </div>
+                <div className="mt-5 flex flex-1 flex-col justify-center gap-3.5">
+                  {countries.map((c) => (
+                    <div key={c.code} className="flex items-center gap-3">
+                      <span className="text-base leading-none">{COUNTRY_FLAGS[c.code]}</span>
+                      <span className="w-20 text-xs font-medium text-foreground">{c.name}</span>
+                      <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
+                        <div className="h-full rounded-full bg-accent" style={{ width: `${(c.n / maxHeadcount) * 100}%` }} />
+                      </div>
+                      <span className="w-6 text-right font-display text-sm font-semibold tabular-nums">{c.n}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-5 flex items-center justify-between rounded-lg bg-accent/[0.06] px-3 py-2.5">
+                  <span className="text-xs text-muted-foreground">{t("hero.snapshotPayroll")}</span>
+                  <span className="font-display text-sm font-semibold text-foreground">{t("hero.snapshotPayrollValue")}</span>
+                </div>
               </div>
-              <div className="mt-4 flex items-center justify-between border-t border-border pt-3 text-xs text-muted-foreground">
-                <span>{t("hero.snapshotPayroll")}</span>
-                <span className="font-medium text-foreground">{t("hero.snapshotPayrollValue")}</span>
-              </div>
+
+              <p className="mt-4 flex items-center justify-center gap-2 text-[10px] text-white/35">
+                <ShieldCheck className="h-3 w-3 text-accent/60" />
+                {t("hero.snapshotBadge")}
+              </p>
             </div>
-            <p className="mt-3 flex items-center gap-2 px-1 text-[10px] font-medium uppercase tracking-wider text-white/70">
-              <ShieldCheck className="h-3 w-3 text-accent" />
-              {t("hero.snapshotBadge")}
-            </p>
           </div>
         </div>
       </div>
@@ -230,9 +238,9 @@ const TwinPillarCard = ({ p }: { p: TwinPillar }) => {
   return (
     <article
       id={p.id}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-accent/40 bg-card p-8 shadow-elevated ring-1 ring-accent/20 transition-all hover:-translate-y-0.5"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_0_0_1px_hsl(15_99%_69%/0.45),0_20px_45px_-15px_hsl(15_99%_69%/0.35)]"
     >
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0" />
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       <div className="flex items-center justify-between">
         <span className="grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground">
           <Icon className="h-5 w-5" />
@@ -330,33 +338,6 @@ const FAQTeaser = () => {
   );
 };
 
-const AIInnovationBlock = () => {
-  const { t } = useTranslation();
-  return (
-    <section id="ai-lab" className="border-t border-border bg-background py-16">
-      <div className="container-narrow grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
-        <div className="flex items-center gap-4">
-          <span className="grid h-12 w-12 place-items-center rounded-lg bg-primary/10 text-primary">
-            <Sparkles className="h-5 w-5" />
-          </span>
-          <div>
-            <p className="eyebrow">{t("aiBlock.eyebrow")}</p>
-            <h2 className="font-display text-2xl font-semibold text-foreground">{t("aiBlock.title")}</h2>
-          </div>
-        </div>
-        <div>
-          <p className="text-muted-foreground">{t("aiBlock.body")}</p>
-          <a
-            href={withBase("/ai-innovation")}
-            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:underline"
-          >
-            {t("aiBlock.cta")} <ArrowRight className="h-4 w-4" />
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const LogoMarquee = () => {
   const { t } = useTranslation();
@@ -382,217 +363,6 @@ const LogoMarquee = () => {
 };
 
 
-const CLIENT_LOGOS: string[] = [
-  "cd2d3a_b0677f4d0b6e48738fffd0611d7555a9mv2.png",
-  "cd2d3a_9d6afc0f1b0244dfacf4138799ef18e9mv2.png",
-  "cd2d3a_63f1981b7e9b49ee87b6bcd314258748mv2.png",
-  "cd2d3a_f866bc6db7b64948890853b22fc727ffmv2.png",
-  "cd2d3a_a15225f158514a19a64c40531e537777mv2.png",
-  "cd2d3a_7359bcf89035429dae024730477f9fc1mv2.png",
-  "cd2d3a_9081dc4a1b0944c280d6cd48655c2278mv2.png",
-  "cd2d3a_54583bb9b07e4932a5e9c8d1e1e48c7amv2.png",
-  "cd2d3a_b3af992ce69b4c58ae72386b0bcf1f37mv2.png",
-  "cd2d3a_b980eb97d2de42e295cc3c098650b177mv2.png",
-  "cd2d3a_5382acda8bb447189ac3e6b95c66f375mv2.png",
-  "cd2d3a_10fe9a1d545d4c16ae5189bf934383c2mv2.png",
-  "cd2d3a_6dd37d513261487b8a99565ba2a4d215mv2.png",
-  "acb62c_2d7c5d44efaf4dbda51f1ad53f08f5e1mv2.jpg",
-  "acb62c_de121da1b70344dba9043203bab102f9mv2.jpg",
-];
-
-const Clients = () => {
-  const { t } = useTranslation();
-  return (
-    <section id="clients" className="border-t border-border bg-background py-24">
-      <div className="container-narrow">
-        <p className="eyebrow text-center">{t("clients.eyebrow")}</p>
-        <h2 className="mx-auto mt-3 max-w-2xl text-center font-display text-3xl font-semibold sm:text-4xl">
-          {t("clients.headline")}
-        </h2>
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-          {CLIENT_LOGOS.map((file) => (
-            <div
-              key={file}
-              className="group flex aspect-[3/2] items-center justify-center rounded-xl border border-border bg-card p-5 shadow-card transition-all hover:-translate-y-0.5 hover:shadow-elevated"
-            >
-              <img
-                src={`${import.meta.env.BASE_URL}clients/${file}`}
-                alt="Mars Consulting client"
-                loading="lazy"
-                className="max-h-14 w-auto max-w-full object-contain opacity-80 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0"
-              />
-            </div>
-          ))}
-        </div>
-        <p className="mx-auto mt-10 max-w-3xl text-center text-sm text-muted-foreground">
-          {t("clients.logosNote")}
-        </p>
-      </div>
-    </section>
-  );
-};
-
-const Testimonial = () => {
-  const { t } = useTranslation();
-  return (
-    <section className="bg-primary py-24 text-primary-foreground">
-      <div className="container-narrow grid gap-12 lg:grid-cols-2 lg:items-center">
-        <div>
-          <p className="eyebrow text-white/60">{t("testimonial.eyebrow")}</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            {t("testimonial.headline")}
-          </h2>
-          <p className="mt-5 max-w-lg text-white/75">{t("testimonial.body")}</p>
-          <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/10 pt-8 max-w-xs">
-            {[
-              { n: "100+", l: t("testimonial.statConsultants") },
-              { n: "09C2925", l: t("testimonial.statLicences") },
-            ].map((s) => (
-              <div key={s.l}>
-                <p className="font-display text-2xl font-semibold">{s.n}</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-white/55">{s.l}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-        <figure className="rounded-2xl border border-white/10 bg-white/[0.04] p-8">
-          <blockquote className="font-display text-xl leading-relaxed text-white/90">
-            &ldquo;{t("testimonial.quote")}&rdquo;
-          </blockquote>
-          <figcaption className="mt-6 flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-accent/20 font-display text-sm font-semibold text-accent">
-              A
-            </span>
-            <div>
-              <p className="text-sm font-medium text-white">{t("testimonial.attribution")}</p>
-              <p className="text-xs text-white/60">{t("testimonial.location")}</p>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-  );
-};
-
-const Contact = () => {
-  const { t } = useTranslation();
-  const fields = [
-    { key: "email" as const, type: "email" },
-    { key: "company" as const, type: "text" },
-    { key: "country" as const, type: "text" },
-    { key: "hires" as const, type: "number" },
-  ];
-  return (
-    <section id="contact" className="bg-background py-24">
-      <div className="container-narrow">
-        <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-elevated">
-          <div className="grid gap-0 lg:grid-cols-[1.1fr_1fr]">
-            <div className="bg-gradient-hero p-10 text-primary-foreground lg:p-12">
-              <p className="eyebrow text-white/60">{t("contact.eyebrow")}</p>
-              <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-                {t("contact.headline")}
-              </h2>
-              <ul className="mt-8 space-y-3 text-sm text-white/80">
-                {(["bullet1", "bullet2", "bullet3"] as const).map((k) => (
-                  <li key={k} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-accent" />
-                    <span>{t(`contact.${k}`)}</span>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-10 flex items-center gap-3 text-xs text-white/60">
-                <Calendar className="h-4 w-4" /> {t("contact.response")}
-              </div>
-            </div>
-            <form className="space-y-4 p-10 lg:p-12" onSubmit={(e) => e.preventDefault()}>
-              {fields.map((f) => (
-                <div key={f.key}>
-                  <label className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                    {t(`contact.label.${f.key}`)}
-                  </label>
-                  <input
-                    type={f.type}
-                    placeholder={t(`contact.placeholder.${f.key}`)}
-                    className="mt-1.5 h-11 w-full rounded-md border border-input bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
-                  />
-                </div>
-              ))}
-              <Button
-                type="submit"
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-                size="lg"
-              >
-                {t("contact.submit")} <ArrowRight />
-              </Button>
-              <p className="text-xs text-muted-foreground">
-                {t("contact.privacy")}{" "}
-                <a
-                  href={withBase(t("contact.consentUrl"))}
-                  className="font-medium text-foreground underline-offset-4 hover:underline"
-                >
-                  {t("contact.consent")}
-                </a>
-              </p>
-            </form>
-          </div>
-        </div>
-        <div className="mt-10 grid gap-5 rounded-3xl border border-border bg-card p-8 shadow-card sm:grid-cols-2 lg:grid-cols-4">
-          <div className="sm:col-span-2 lg:col-span-4">
-            <p className="eyebrow">{t("contact.infoEyebrow")}</p>
-          </div>
-          <div className="flex items-start gap-3">
-            <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                {t("contact.emailLabel")}
-              </p>
-              <a
-                href={`mailto:${t("contact.emailValue")}`}
-                className="mt-1 block text-sm font-medium text-foreground hover:underline"
-              >
-                {t("contact.emailValue")}
-              </a>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                {t("contact.hqLabel")}
-              </p>
-              <p className="mt-1 text-sm text-foreground">{t("contact.hqAddress")}</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                {t("contact.hoursLabel")}
-              </p>
-              <p className="mt-1 text-sm text-foreground">{t("contact.hoursValue")}</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <Linkedin className="mt-0.5 h-4 w-4 shrink-0 text-[#0A66C2]" />
-            <div>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">
-                {t("contact.linkedinLabel")}
-              </p>
-              <a
-                href={t("contact.linkedinUrl")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-1 block text-sm font-medium text-foreground hover:underline"
-              >
-                {t("contact.linkedinValue")} ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const Index = () => (
   <main className="min-h-screen bg-background">
@@ -601,15 +371,9 @@ const Index = () => (
     <TrustBar />
     <LogoMarquee />
     <TwinPillars />
-    <HowItWorksSection />
-    <ComparisonSection />
     <WhyMarsSection />
     <CountriesMapSection />
-    <Clients />
     <FAQTeaser />
-    <AIInnovationBlock />
-    <Testimonial />
-    <Contact />
     <SiteFooter />
   </main>
 );
