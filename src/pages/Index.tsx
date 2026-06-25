@@ -1,60 +1,20 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  ShieldCheck,
-  Globe2,
-  CheckCircle2,
-  Check,
-  Users,
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { useCountUp, useInView } from "@/hooks/use-count-up";
 import { withBase, BOOKING_URL } from "@/lib/href";
 import { headlineGap, needsLooseLeading } from "@/lib/headline";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { WhyMarsSection } from "@/components/site/WhyMarsSection";
 import { CountriesMapSection } from "@/components/site/EORSections";
-
-interface CountStatProps {
-  to: number;
-  suffix?: string;
-  prefix?: string;
-  decimals?: number;
-  label: string;
-  className?: string;
-  labelClassName?: string;
-}
-
-const CountStat = ({
-  to,
-  suffix = "",
-  prefix = "",
-  decimals = 0,
-  label,
-  className,
-  labelClassName,
-}: CountStatProps) => {
-  const { ref, inView } = useInView<HTMLDivElement>();
-  const value = useCountUp({ to, start: inView });
-  const display = decimals > 0 ? value.toFixed(decimals) : String(Math.round(value));
-  return (
-    <div ref={ref}>
-      <p className={className ?? "font-display text-2xl font-semibold text-white"}>
-        {prefix}
-        {display}
-        {suffix}
-      </p>
-      <p className={labelClassName ?? "mt-1 text-xs uppercase tracking-wider text-white/55"}>{label}</p>
-    </div>
-  );
-};
+import { CountStat } from "@/components/site/home/CountStat";
+import { WhoWeAreSection } from "@/components/site/home/WhoWeAreSection";
+import { CoreServicesSection } from "@/components/site/home/CoreServicesSection";
+import { WhyMarsSection } from "@/components/site/home/WhyMarsSection";
+import { LogoMarqueeSection } from "@/components/site/home/LogoMarqueeSection";
+import { FaqSection } from "@/components/site/home/FaqSection";
+import { VsSoftwareSection } from "@/components/site/home/VsSoftwareSection";
+import { FinalCtaSection } from "@/components/site/home/FinalCtaSection";
 
 const COUNTRY_FLAGS: Record<string, string> = {
   SG: "🇸🇬", MY: "🇲🇾", HK: "🇭🇰", CN: "🇨🇳", VN: "🇻🇳", TH: "🇹🇭", ID: "🇮🇩",
@@ -119,14 +79,6 @@ const Hero = () => {
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {t("hero.ctaPrimary")} <ArrowRight className="ml-1 h-4 w-4" />
                 </a>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="h-12 rounded-xl border-white/15 bg-white/[0.06] px-7 text-[15px] text-white backdrop-blur-sm hover:bg-white/10 hover:text-white"
-              >
-                <a href="#about">{t("hero.ctaSecondary")}</a>
               </Button>
             </div>
           </div>
@@ -236,134 +188,29 @@ const TrustBar = () => {
   );
 };
 
-interface TwinPillar {
-  id: string;
-  keyBase: "twinPillars.eor" | "twinPillars.recruitment";
-  ctaHref: string;
-  icon: React.ComponentType<{ className?: string }>;
-}
-
-const TWIN_PILLARS: TwinPillar[] = [
-  { id: "eor", keyBase: "twinPillars.eor", ctaHref: "/eor", icon: Globe2 },
-  { id: "recruitment", keyBase: "twinPillars.recruitment", ctaHref: "/recruitment", icon: Users },
-];
-
-const TwinPillarCard = ({ p }: { p: TwinPillar }) => {
-  const { t } = useTranslation();
-  const Icon = p.icon;
-  return (
-    <article
-      id={p.id}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-8 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-[0_0_0_1px_hsl(15_99%_69%/0.45),0_20px_45px_-15px_hsl(15_99%_69%/0.35)]"
-    >
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-accent/0 via-accent to-accent/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      <div className="flex items-center justify-between">
-        <span className="grid h-12 w-12 place-items-center rounded-lg bg-primary text-primary-foreground">
-          <Icon className="h-5 w-5" />
-        </span>
-        <span className="rounded-full border border-border bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-          {t(`${p.keyBase}.tag`)}
-        </span>
-      </div>
-      <h3 className="mt-6 font-display text-2xl font-semibold leading-tight text-foreground">
-        {t(`${p.keyBase}.title`)}
-      </h3>
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{t(`${p.keyBase}.body`)}</p>
-      <ul className="mt-5 space-y-2.5">
-        {(["bullet1", "bullet2", "bullet3"] as const).map((bk) => (
-          <li key={bk} className="flex items-start gap-2.5 text-sm text-foreground/85">
-            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-            <span>{t(`${p.keyBase}.${bk}`)}</span>
-          </li>
-        ))}
-      </ul>
-      <div className="mt-auto pt-7 border-t border-border">
-        <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-          <a href={withBase(p.ctaHref)}>
-            {t(`${p.keyBase}.cta`)} <ArrowRight />
-          </a>
-        </Button>
-      </div>
-    </article>
-  );
-};
-
-const TwinPillars = () => {
-  const { t } = useTranslation();
-  return (
-    <section className="bg-background py-24">
-      <div className="container-narrow">
-        <div className="max-w-3xl">
-          <p className="eyebrow">{t("twinPillars.eyebrow")}</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            {t("twinPillars.headline")}
-          </h2>
-        </div>
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          {TWIN_PILLARS.map((p) => (
-            <TwinPillarCard key={p.id} p={p} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-const FAQTeaser = () => {
-  const { t } = useTranslation();
-  const items = (["1", "2", "3"] as const).map((i) => ({
-    q: t(`faqTeaser.q${i}`),
-    a: t(`faqTeaser.a${i}`),
-  }));
-  return (
-    <section className="border-t border-border bg-background py-24">
-      <div className="container-narrow">
-        <div className="max-w-2xl">
-          <p className="eyebrow">{t("faqTeaser.eyebrow")}</p>
-          <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
-            {t("faqTeaser.headline")}
-          </h2>
-        </div>
-        <Accordion
-          type="single"
-          collapsible
-          className="mt-10 grid gap-3 rounded-2xl border border-border bg-card p-3 shadow-card"
-        >
-          {items.map((item, i) => (
-            <AccordionItem
-              key={i}
-              value={`faq-${i}`}
-              className="rounded-xl border border-border/70 bg-background last:border-b"
-            >
-              <AccordionTrigger className="px-5 text-left text-base font-medium text-foreground hover:no-underline">
-                {item.q}
-              </AccordionTrigger>
-              <AccordionContent className="px-5 text-sm leading-relaxed text-muted-foreground">
-                {item.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-        <p className="mt-6 text-sm text-muted-foreground">
-          <a href={withBase("/eor#faq")} className="font-medium text-foreground underline-offset-4 hover:underline">
-            {t("faqTeaser.readAll")}
-          </a>
-        </p>
-      </div>
-    </section>
-  );
-};
-
-
 const Index = () => (
   <main className="min-h-screen bg-background">
     <SiteHeader />
+    {/* SECTION 1 — Hero */}
     <Hero />
+    {/* Verified credentials strip (under hero) */}
     <TrustBar />
-    <TwinPillars />
+    {/* SECTION 2 — Who We Are */}
+    <WhoWeAreSection />
+    {/* SECTION 3 — What We Do (Core Services) */}
+    <CoreServicesSection />
+    {/* Why Mars */}
     <WhyMarsSection />
+    {/* Coverage map — reinforces the multi-country story */}
     <CountriesMapSection />
-    <FAQTeaser />
+    {/* Different From Software */}
+    <VsSoftwareSection />
+    {/* Our clients — logo wall, between Different-from-Software and FAQ */}
+    <LogoMarqueeSection />
+    {/* FAQ */}
+    <FaqSection />
+    {/* Final CTA */}
+    <FinalCtaSection />
     <SiteFooter />
   </main>
 );

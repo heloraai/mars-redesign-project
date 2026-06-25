@@ -2,21 +2,21 @@
 
 const en = {
   nav: {
-    eor: "EOR & Payroll",
-    recruitment: "Recruitment & Executive Search",
-    aiLab: "AI Automation",
+    executiveSearch: "Executive Search",
+    payroll: "Payroll Anywhere",
+    workforceOps: "Workforce Operations",
     about: "About",
     contact: "Contact",
     bookCall: "Book a Consultation",
   },
   hero: {
     pill: "Singapore MOM Licensed · Established since 2009",
-    headlineLead: "Hire, pay and scale teams",
-    headlineAccent: "across 10 markets.",
+    headlineLead: "Workforce Operations,",
+    headlineAccent: "Delivered.",
     sub:
-      "Singapore-licensed Employer of Record, executive search, and HR operations infrastructure across 10 markets — built for companies entering Asia, scaling regional teams, and managing cross-border payroll without setting up local entities.",
+      "Executive Search. Global Payroll. Cross-Border Workforce Management. Delivered with the speed modern businesses demand.",
     ctaPrimary: "Book a Consultation",
-    ctaSecondary: "See How It Works",
+    ctaSecondary: "Explore What We Do",
     statYears: "Established",
     statMarkets: "Markets served",
     statConsultants: "Expert consultants",
@@ -57,43 +57,123 @@ const en = {
       code: "Corporate services authorised by ACRA",
     },
   },
-  twinPillars: {
-    eyebrow: "What we do",
-    headline: "Two things we do better than anyone else in the region.",
-    eor: {
-      tag: "Flagship",
-      title: "Employer of Record & Global Payroll",
+  whoWeAre: {
+    eyebrow: "Who we are",
+    headline: "Built for Workforce Complexity.",
+    body1:
+      "Mars helps businesses hire, manage and pay talent across borders. We combine technology-enabled operations with experienced workforce specialists to deliver outcomes where speed, accuracy and execution matter most.",
+    body2:
+      "Whether supporting a critical executive hire or managing payroll across multiple jurisdictions, our focus remains the same: Reliable execution. Every time.",
+  },
+  coreServices: {
+    eyebrow: "What We Do.",
+    headline: "Core Services",
+    executiveSearch: {
+      tag: "Executive Search",
+      title: "Executive Search",
       body:
-        "Hire, pay, and stay compliant in Singapore and 9 other markets across Asia, the Middle East, and the United States — without setting up a local entity. We handle employment contracts, payroll, statutory filings, and offboarding from day one.",
-      bullet1: "Onboarding in 5 working days",
-      bullet2: "CPF, EPF, BPJS, MPF, and statutory filings handled in each market",
-      bullet3: "MOM EA Licence No. 09C2925",
-      cta: "Explore EOR",
+        "Leadership hiring, specialist recruitment and difficult-to-fill positions. Market mapping and talent intelligence. Critical hires delivered with precision.",
+      cta: "Explore Executive Search",
     },
-    recruitment: {
-      tag: "Search",
-      title: "Recruitment & Executive Search",
+    payrollAnywhere: {
+      tag: "Payroll Anywhere",
+      title: "Payroll Anywhere",
       body:
-        "Permanent placement, contract staffing, and confidential C-suite search across Singapore and the region. We conduct deep market mapping to reach passive candidates, then hand off directly into EOR onboarding when needed.",
-      bullet1: "Permanent, contract, and confidential C-suite mandates",
-      bullet2: "C-suite shortlist within 21-day sprint",
-      bullet3: "Technology, financial services, healthcare, manufacturing",
-      cta: "Explore Recruitment",
+        "Accurate payroll processing across multiple countries. Salary disbursement, statutory reporting and employee payslips — with cross-border workforce support.",
+      cta: "Explore Payroll Anywhere",
+    },
+    workforceOps: {
+      tag: "Workforce Operations",
+      title: "Workforce Operations",
+      body:
+        "Employee onboarding and offboarding, employment lifecycle administration, documentation management and compliance coordination.",
+      cta: "Explore Workforce Operations",
     },
   },
-  whyMars: {
-    eyebrow: "Why Mars",
-    headline: "Why Mars, not a global EOR platform?",
-    p1:
-      "Global EOR SaaS platforms operate on standardised, high-volume models. They work well until they don't: equity compensation reporting across jurisdictions, non-standard termination negotiations in Malaysia or China, PE exposure that needs a counsel opinion before payroll cycle one.",
-    p2:
-      "Mars intervenes where localised regulatory friction outpaces generic software. We replace automated workflows with bespoke governance frameworks, active in-country legal oversight, and senior-level human intervention for the edge cases that require it.",
-    p3:
-      "We are not cheaper than a SaaS platform. We are what you use when the cost of a compliance error exceeds the cost of our service.",
-    cta: "Talk to a Specialist",
-    verifyLine: "Verify our team and credentials independently on LinkedIn.",
-    verifyCta: "View on LinkedIn ↗",
-    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+  whyChoose: {
+    eyebrow: "Why clients choose Mars",
+    headline: "Execution at a Different Level.",
+    b1Title: "Employee Activation",
+    b1Body:
+      "Rapid employee activation — onboard or offboard employees with streamlined workflows and operational precision.",
+    b2Title: "Talent Matching",
+    b2Body:
+      "Fast talent matching — rapid identification and qualification of candidates from global talent networks.",
+    b3Title: "Payroll Delivery",
+    b3Body:
+      "Reliable, fast payroll delivery supported by optimised payment operations.",
+    b4Title: "Global Workforce Coverage",
+    b4Body:
+      "Support across multiple countries through one operational framework.",
+    b5Title: "Human Expertise Beyond Automation",
+    b5Body:
+      "Technology handles routine processes. Experienced specialists solve the exceptions.",
+  },
+  challenges: {
+    eyebrow: "Business challenges we solve",
+    headline: "Designed for Real Operational Challenges.",
+    c1Problem: "Hiring takes too long",
+    c1Solution:
+      "Significantly reduce sourcing, screening and shortlisting cycles.",
+    c2Problem: "Payroll is fragmented",
+    c2Solution:
+      "Create a consistent payroll operation across multiple jurisdictions.",
+    c3Problem: "Workforce operations create bottlenecks",
+    c3Solution:
+      "Automate routine workflows while maintaining human oversight.",
+    c4Problem: "Compliance risks are growing",
+    c4Solution:
+      "Local execution supported by regional workforce expertise.",
+  },
+  industries: {
+    eyebrow: "Who we work with",
+    headline: "Trusted by Growing Businesses.",
+    i1: "Technology",
+    i2: "Data Centers",
+    i3: "Manufacturing",
+    i4: "Professional Services",
+    i5: "Financial Services",
+    i6: "Private Equity Portfolio Companies",
+    i7: "Regional Expansion Projects",
+    i8: "Cross-Border Employers",
+  },
+  approach: {
+    eyebrow: "Our approach",
+    headline: "Technology-Enabled. Human-Led.",
+    p1Title: "Technology-Enabled",
+    p1Body: "Automation where efficiency matters.",
+    p2Title: "Human-Led",
+    p2Body: "Experienced workforce professionals where judgment matters.",
+    p3Title: "Outcome-Focused",
+    p3Body: "Measured by execution, speed and accuracy. Not activity.",
+  },
+  metrics: {
+    eyebrow: "Performance",
+    headline: "Numbers That Matter.",
+    yearsLabel: "Years of workforce expertise",
+    yearsValue: "2009",
+    marketsLabel: "Markets served",
+    marketsValue: "10",
+    consultantsLabel: "Expert consultants",
+    consultantsValue: "100+",
+    onboardingLabel: "Onboarding",
+    onboardingValue: "5 days",
+    missesLabel: "Statutory misses (since 2009)",
+    missesValue: "0",
+  },
+  vsSoftware: {
+    eyebrow: "Different from software",
+    headline: "When the Platform Stops, Mars Starts.",
+    body:
+      "Most workforce platforms automate tasks. Mars solves exceptions — complex hiring, cross-border payroll, regulatory complexity, sensitive workforce situations and business-critical workforce operations. When automation reaches its limits, experienced professionals make the difference.",
+  },
+  finalCta: {
+    eyebrow: "Get started",
+    headline: "Workforce Operations Without Operational Friction.",
+    body:
+      "Whether you are hiring critical talent, managing global payroll or expanding into new markets, Mars delivers workforce operations with speed, precision and accountability.",
+    ctaPrimary: "Book a Consultation",
+    ctaSecondary: "Contact Our Team",
   },
   countries: {
     eyebrow: "Coverage",
@@ -198,20 +278,6 @@ const en = {
     logosNote:
       "From Series-A technology startups to listed industrial groups — across financial services, healthcare, manufacturing, and real estate in Singapore and across the region.",
   },
-  faqTeaser: {
-    eyebrow: "FAQ",
-    headline: "The questions serious buyers ask us",
-    readAll: "Read all expert Q&A →",
-    q1: "Where does Mars fit when a global EOR platform 'almost works' but breaks at jurisdiction-specific complexity?",
-    a1:
-      "Global EOR platforms operate on standardised, high-volume SaaS models that fracture under jurisdiction-specific complexities — such as equity compensation reporting in Singapore or non-standard termination negotiations in Malaysia. Mars Consulting intervenes where localised regulatory friction outpaces generic software capabilities. We replace automated workflows with bespoke MNC governance frameworks, integrating directly with local labour laws and tax codes. Our model bridges the gap between software-driven EOR and high-touch BPO, ensuring that cross-border operations do not fail at the 'last mile' of local compliance.",
-    q2: "How does Mars structure cross-border payroll without triggering permanent establishment exposure?",
-    a2:
-      "Cross-border payroll under our model is engineered through three layered controls: jurisdictional entity selection, labour dispatch architecture, and treaty-aligned tax positioning. Where the client's commercial substance does not justify a local registered entity, we deploy our Singapore-licensed EOR vehicle in combination with bilateral labour dispatch structures across Malaysia, China, India, Vietnam, Thailand, Indonesia, and the United Arab Emirates — neutralising permanent establishment risk while preserving operational control.",
-    q3: "How does Mars's AI automation integrate with existing HR and payroll workflows?",
-    a3:
-      "Our AI automation layer does not replace your existing HR systems — it sits upstream of them. The WhatsApp-based ingestion bot captures leave and expense data, the AI preprocessing engine converts raw operational inputs into structured pre-payroll files, and the output is pushed via API into whichever HRIS or payroll platform you run. Human payroll practitioners review the staged output before it enters the statutory cycle. The result is faster processing with a clean audit trail and no change to your downstream compliance workflow.",
-  },
   aiBlock: {
     eyebrow: "Since 2025 · AI Automation Practice",
     title: "AI-Powered HR Automation",
@@ -287,11 +353,12 @@ const en = {
       compliance: "Compliance",
     },
     links: {
-      eor: "EOR & Payroll",
-      recruitment: "Recruitment & Executive Search",
+      executiveSearch: "Executive Search",
+      payroll: "Payroll Anywhere",
+      workforceOps: "Workforce Operations",
       aiLab: "AI Automation",
-      hrOutsourcing: "HR Outsourcing",
       about: "About",
+      insights: "Insights",
       clients: "Clients",
       contact: "Contact",
       mom: "MOM EA Licence 09C2925",
@@ -304,6 +371,41 @@ const en = {
     cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Mars Consulting Pte Ltd (UEN 200907301Z) · MOM Comprehensive EA Licence No. 09C2925 · ACRA Registered Filing Agent",
+  },
+  insightsPage: {
+    metaTitle: "Insights — Mars Consulting",
+    metaDesc:
+      "Perspectives on executive search, cross-border payroll and workforce operations from Mars Consulting.",
+    pill: "Insights",
+    headlineLead: "Workforce intelligence,",
+    headlineAccent: "shared.",
+    sub:
+      "Practical perspectives on executive search, cross-border payroll and workforce operations — drawn from how we actually deliver for clients across multiple jurisdictions.",
+    eyebrow: "Latest perspectives",
+    heading: "What we're thinking about.",
+    comingSoon:
+      "Full articles are on the way. Here are the themes our team is publishing on.",
+    a1Tag: "Executive Search",
+    a1Title: "Why critical hires stall — and how to move faster",
+    a1Excerpt:
+      "The real bottleneck in leadership hiring is rarely the shortlist. A look at where executive searches lose time and how disciplined market mapping closes the gap.",
+    a2Tag: "Payroll Anywhere",
+    a2Title: "Running consistent payroll across multiple jurisdictions",
+    a2Excerpt:
+      "Fragmented payroll is a compliance risk as much as an operational one. How a single operating framework keeps statutory filings on time across markets.",
+    a3Tag: "Workforce Operations",
+    a3Title: "Where automation ends and judgment begins",
+    a3Excerpt:
+      "Platforms handle routine onboarding and offboarding well. The exceptions — sensitive cases and edge-case compliance — still need experienced people.",
+    a4Tag: "Compliance",
+    a4Title: "Staying ahead of regional employment rules",
+    a4Excerpt:
+      "Employment and statutory requirements shift constantly across the region. A practical view on building local execution into your workforce operations.",
+    ctaHeading: "Want this applied to your operations?",
+    ctaBody:
+      "Talk to our team about executive search, global payroll or workforce operations across your markets.",
+    ctaPrimary: "Book a Consultation",
+    ctaSecondary: "Contact Our Team",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapore & Across 10 Markets — Mars Consulting",

@@ -11,11 +11,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { labelKey: "nav.eor", href: "/eor" },
-  { labelKey: "nav.recruitment", href: "/recruitment" },
-  { labelKey: "nav.aiLab", href: "/ai-innovation" },
+  { labelKey: "nav.executiveSearch", href: "/recruitment" },
+  { labelKey: "nav.payroll", href: "/eor" },
+  { labelKey: "nav.workforceOps", href: "/hr-outsourcing" },
   { labelKey: "nav.about", href: "/about" },
-  { labelKey: "nav.contact", href: "/contact" },
 ];
 
 export const SiteHeader = () => {

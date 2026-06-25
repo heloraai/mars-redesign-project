@@ -185,20 +185,6 @@ const Licences = () => {
             </p>
           </article>
         </div>
-        <div className="mt-10 rounded-2xl border border-border bg-secondary/30 p-7">
-          <p className="text-xs uppercase tracking-wider text-muted-foreground">
-            {t("aboutPage.licences.entityLabel")}
-          </p>
-          <p className="mt-1 font-display text-xl font-semibold text-foreground">
-            {t("aboutPage.licences.entityName")}
-          </p>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {t("aboutPage.licences.entityUEN")} · {t("aboutPage.licences.entityAddress")}
-          </p>
-          <p className="mt-3 text-sm italic text-muted-foreground">
-            {t("aboutPage.licences.entityNote")}
-          </p>
-        </div>
         <p className="mt-8 text-sm text-muted-foreground">{t("aboutPage.licences.verifiable")}</p>
       </div>
     </section>

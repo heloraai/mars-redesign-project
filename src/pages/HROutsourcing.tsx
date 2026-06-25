@@ -118,23 +118,23 @@ const Included = () => {
   const items = ["item1", "item2", "item3", "item4", "item5", "item6"] as const;
   return (
     <section className="border-t border-border bg-secondary/40 py-24">
-      <div className="container-narrow grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-start">
-        <div>
-          <p className="eyebrow">{t("hrOutsourcingPage.included.eyebrow")}</p>
-        </div>
-        <ul className="space-y-3">
+      <div className="container-narrow">
+        <p className="eyebrow">{t("hrOutsourcingPage.included.eyebrow")}</p>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((k) => (
-            <li
+            <article
               key={k}
-              className="flex items-start gap-3 rounded-xl border border-border bg-card px-5 py-4 shadow-card"
+              className="flex h-full flex-col gap-4 rounded-2xl border border-border bg-card p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/50 hover:shadow-elevated"
             >
-              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-              <span className="text-base text-foreground">
+              <span className="grid h-11 w-11 place-items-center rounded-lg bg-accent/10 text-accent">
+                <CheckCircle2 className="h-5 w-5" />
+              </span>
+              <span className="text-base font-medium leading-snug text-foreground">
                 {t(`hrOutsourcingPage.included.${k}`)}
               </span>
-            </li>
+            </article>
           ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
@@ -145,18 +145,22 @@ const Integration = () => {
   return (
     <section className="bg-background py-24">
       <div className="container-narrow">
-        <div className="overflow-hidden rounded-3xl border border-border bg-card p-10 shadow-elevated lg:p-14">
-          <p className="eyebrow">{t("hrOutsourcingPage.integration.eyebrow")}</p>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            {t("hrOutsourcingPage.integration.body")}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href={withBase("/eor")}>EOR & Payroll <ArrowRight /></a>
-            </Button>
-            <Button asChild variant="outline">
-              <a href={withBase("/recruitment")}>Recruitment <ArrowRight /></a>
-            </Button>
+        <div className="overflow-hidden rounded-3xl border border-border bg-card p-10 shadow-elevated lg:p-12">
+          <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-center">
+            <div>
+              <p className="eyebrow">{t("hrOutsourcingPage.integration.eyebrow")}</p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                {t("hrOutsourcingPage.integration.body")}
+              </p>
+            </div>
+            <div className="flex flex-col gap-3 sm:flex-row lg:flex-col lg:justify-self-end">
+              <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <a href={withBase("/eor")}>EOR & Payroll <ArrowRight /></a>
+              </Button>
+              <Button asChild variant="outline">
+                <a href={withBase("/recruitment")}>Recruitment <ArrowRight /></a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

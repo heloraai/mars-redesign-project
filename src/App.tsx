@@ -12,6 +12,7 @@ import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import HROutsourcing from "./pages/HROutsourcing.tsx";
 import FAQ from "./pages/FAQ.tsx";
+import Insights from "./pages/Insights.tsx";
 import Contact from "./pages/Contact.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/hr-outsourcing" element={<HROutsourcing />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -3,21 +3,21 @@ import type { Translation } from "./en";
 
 const id: Translation = {
   nav: {
-    eor: "EOR & Penggajian",
-    recruitment: "Rekrutmen & Pencarian Eksekutif",
-    aiLab: "Otomasi AI",
+    executiveSearch: "Pencarian Eksekutif",
+    payroll: "Payroll Anywhere",
+    workforceOps: "Operasi Tenaga Kerja",
     about: "Tentang",
     contact: "Kontak",
     bookCall: "Pesan Konsultasi",
   },
   hero: {
     pill: "Berlisensi MOM Singapura · Berdiri sejak 2009",
-    headlineLead: "Rekrut, bayar, dan kembangkan tim",
-    headlineAccent: "di 10 pasar.",
+    headlineLead: "Operasi Tenaga Kerja,",
+    headlineAccent: "Terwujud.",
     sub:
-      "Employer of Record berlisensi Singapura, pencarian eksekutif, dan infrastruktur operasi HR di 10 pasar — dibangun untuk perusahaan yang memasuki Asia, mengembangkan tim regional, dan mengelola penggajian lintas batas tanpa mendirikan entitas lokal.",
+      "Pencarian Eksekutif. Penggajian Global. Manajemen Tenaga Kerja Lintas Batas. Terwujud dengan kecepatan yang dituntut bisnis modern.",
     ctaPrimary: "Pesan Konsultasi",
-    ctaSecondary: "Lihat Cara Kerjanya",
+    ctaSecondary: "Jelajahi Layanan Kami",
     statYears: "Berdiri",
     statMarkets: "Pasar yang dilayani",
     statConsultants: "Konsultan ahli",
@@ -58,43 +58,123 @@ const id: Translation = {
       code: "Layanan korporat yang diotorisasi oleh ACRA",
     },
   },
-  twinPillars: {
-    eyebrow: "Apa yang kami lakukan",
-    headline: "Dua hal yang kami lakukan lebih baik dari siapa pun di kawasan ini.",
-    eor: {
-      tag: "Unggulan",
-      title: "Employer of Record & Penggajian Global",
+  whoWeAre: {
+    eyebrow: "Siapa kami",
+    headline: "Dibangun untuk Kompleksitas Tenaga Kerja.",
+    body1:
+      "Mars membantu bisnis merekrut, mengelola, dan membayar talenta lintas batas. Kami memadukan operasi yang didukung teknologi dengan spesialis tenaga kerja berpengalaman untuk memberikan hasil di mana kecepatan, akurasi, dan eksekusi paling penting.",
+    body2:
+      "Baik mendukung perekrutan eksekutif yang kritis maupun mengelola penggajian di berbagai yurisdiksi, fokus kami tetap sama: Eksekusi yang andal. Setiap saat.",
+  },
+  coreServices: {
+    eyebrow: "Apa yang Kami Lakukan.",
+    headline: "Layanan Inti",
+    executiveSearch: {
+      tag: "Pencarian Eksekutif",
+      title: "Pencarian Eksekutif",
       body:
-        "Rekrut, bayar, dan tetap patuh di Singapura serta 9 pasar lainnya di Asia, Timur Tengah, dan Amerika Serikat — tanpa mendirikan entitas lokal. Kami menangani kontrak kerja, penggajian, pengarsipan statutori, dan offboarding sejak hari pertama.",
-      bullet1: "Onboarding dalam 5 hari kerja",
-      bullet2: "CPF, EPF, BPJS, MPF, dan pengarsipan statutori ditangani di setiap pasar",
-      bullet3: "MOM EA Licence No. 09C2925",
-      cta: "Jelajahi EOR",
+        "Perekrutan kepemimpinan, rekrutmen spesialis, dan posisi yang sulit diisi. Pemetaan pasar dan intelijen talenta. Perekrutan kritis yang disampaikan dengan presisi.",
+      cta: "Jelajahi Pencarian Eksekutif",
     },
-    recruitment: {
-      tag: "Pencarian",
-      title: "Rekrutmen & Pencarian Eksekutif",
+    payrollAnywhere: {
+      tag: "Payroll Anywhere",
+      title: "Payroll Anywhere",
       body:
-        "Penempatan permanen, staffing kontrak, dan pencarian C-suite rahasia di Singapura dan kawasan ini. Kami melakukan pemetaan pasar mendalam untuk menjangkau kandidat pasif, lalu menyerahkan langsung ke onboarding EOR bila dibutuhkan.",
-      bullet1: "Mandat permanen, kontrak, dan C-suite rahasia",
-      bullet2: "Shortlist C-suite dalam sprint 21 hari",
-      bullet3: "Teknologi, jasa keuangan, kesehatan, manufaktur",
-      cta: "Jelajahi Rekrutmen",
+        "Pemrosesan penggajian yang akurat di berbagai negara. Pencairan gaji, pelaporan statutori, dan slip gaji karyawan — dengan dukungan tenaga kerja lintas batas.",
+      cta: "Jelajahi Payroll Anywhere",
+    },
+    workforceOps: {
+      tag: "Operasi Tenaga Kerja",
+      title: "Operasi Tenaga Kerja",
+      body:
+        "Onboarding dan offboarding karyawan, administrasi siklus hidup ketenagakerjaan, manajemen dokumentasi, dan koordinasi kepatuhan.",
+      cta: "Jelajahi Operasi Tenaga Kerja",
     },
   },
-  whyMars: {
-    eyebrow: "Mengapa Mars",
-    headline: "Mengapa Mars, bukan platform EOR global?",
-    p1:
-      "Platform SaaS EOR global beroperasi pada model standar bervolume tinggi. Mereka bekerja dengan baik sampai tidak: pelaporan kompensasi ekuitas lintas yurisdiksi, negosiasi pemutusan non-standar di Malaysia atau China, eksposur PE yang membutuhkan opini penasihat sebelum siklus penggajian pertama.",
-    p2:
-      "Mars masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola khusus, pengawasan hukum aktif di lapangan, dan intervensi manusia tingkat senior untuk kasus-kasus tepi yang membutuhkannya.",
-    p3:
-      "Kami tidak lebih murah dari platform SaaS. Kami adalah yang Anda gunakan ketika biaya kesalahan kepatuhan melebihi biaya layanan kami.",
-    cta: "Bicara dengan Spesialis",
-    verifyLine: "Verifikasi tim dan kredensial kami secara independen di LinkedIn.",
-    verifyCta: "Lihat di LinkedIn ↗",
-    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+  whyChoose: {
+    eyebrow: "Mengapa klien memilih Mars",
+    headline: "Eksekusi pada Level yang Berbeda.",
+    b1Title: "Aktivasi Karyawan",
+    b1Body:
+      "Aktivasi karyawan yang cepat — onboarding atau offboarding karyawan dengan alur kerja yang efisien dan presisi operasional.",
+    b2Title: "Pencocokan Talenta",
+    b2Body:
+      "Pencocokan talenta yang cepat — identifikasi dan kualifikasi kandidat secara cepat dari jaringan talenta global.",
+    b3Title: "Penyampaian Penggajian",
+    b3Body:
+      "Penyampaian penggajian yang andal dan cepat, didukung oleh operasi pembayaran yang dioptimalkan.",
+    b4Title: "Cakupan Tenaga Kerja Global",
+    b4Body:
+      "Dukungan di berbagai negara melalui satu kerangka operasional.",
+    b5Title: "Keahlian Manusia di Luar Otomasi",
+    b5Body:
+      "Teknologi menangani proses rutin. Spesialis berpengalaman menyelesaikan pengecualian.",
+  },
+  challenges: {
+    eyebrow: "Tantangan bisnis yang kami selesaikan",
+    headline: "Dirancang untuk Tantangan Operasional Nyata.",
+    c1Problem: "Perekrutan memakan waktu terlalu lama",
+    c1Solution:
+      "Pangkas secara signifikan siklus pencarian, penyaringan, dan penyusunan daftar pendek kandidat.",
+    c2Problem: "Penggajian terfragmentasi",
+    c2Solution:
+      "Ciptakan operasi penggajian yang konsisten di berbagai yurisdiksi.",
+    c3Problem: "Operasi tenaga kerja menciptakan hambatan",
+    c3Solution:
+      "Otomatiskan alur kerja rutin sambil mempertahankan pengawasan manusia.",
+    c4Problem: "Risiko kepatuhan semakin meningkat",
+    c4Solution:
+      "Eksekusi lokal yang didukung oleh keahlian tenaga kerja regional.",
+  },
+  industries: {
+    eyebrow: "Dengan siapa kami bekerja",
+    headline: "Dipercaya oleh Bisnis yang Berkembang.",
+    i1: "Teknologi",
+    i2: "Pusat Data",
+    i3: "Manufaktur",
+    i4: "Jasa Profesional",
+    i5: "Jasa Keuangan",
+    i6: "Perusahaan Portofolio Private Equity",
+    i7: "Proyek Ekspansi Regional",
+    i8: "Pemberi Kerja Lintas Batas",
+  },
+  approach: {
+    eyebrow: "Pendekatan kami",
+    headline: "Didukung Teknologi. Dipimpin Manusia.",
+    p1Title: "Didukung Teknologi",
+    p1Body: "Otomasi di mana efisiensi penting.",
+    p2Title: "Dipimpin Manusia",
+    p2Body: "Profesional tenaga kerja berpengalaman di mana penilaian penting.",
+    p3Title: "Berfokus pada Hasil",
+    p3Body: "Diukur dari eksekusi, kecepatan, dan akurasi. Bukan aktivitas.",
+  },
+  metrics: {
+    eyebrow: "Kinerja",
+    headline: "Angka yang Berarti.",
+    yearsLabel: "Tahun keahlian tenaga kerja",
+    yearsValue: "2009",
+    marketsLabel: "Pasar yang dilayani",
+    marketsValue: "10",
+    consultantsLabel: "Konsultan ahli",
+    consultantsValue: "100+",
+    onboardingLabel: "Onboarding",
+    onboardingValue: "5 hari",
+    missesLabel: "Kelalaian statutori (sejak 2009)",
+    missesValue: "0",
+  },
+  vsSoftware: {
+    eyebrow: "Berbeda dari perangkat lunak",
+    headline: "Ketika Platform Berhenti, Mars Mulai.",
+    body:
+      "Sebagian besar platform tenaga kerja mengotomatiskan tugas. Mars menyelesaikan pengecualian — perekrutan yang kompleks, penggajian lintas batas, kompleksitas regulasi, situasi tenaga kerja yang sensitif, dan operasi tenaga kerja yang kritis bagi bisnis. Ketika otomasi mencapai batasnya, profesional berpengalaman membuat perbedaan.",
+  },
+  finalCta: {
+    eyebrow: "Mulai",
+    headline: "Operasi Tenaga Kerja Tanpa Friksi Operasional.",
+    body:
+      "Baik Anda merekrut talenta kritis, mengelola penggajian global, atau berekspansi ke pasar baru, Mars memberikan operasi tenaga kerja dengan kecepatan, presisi, dan akuntabilitas.",
+    ctaPrimary: "Pesan Konsultasi",
+    ctaSecondary: "Hubungi Tim Kami",
   },
   countries: {
     eyebrow: "Cakupan",
@@ -199,20 +279,6 @@ const id: Translation = {
     logosNote:
       "Dari startup teknologi Series-A hingga grup industri tercatat — di sektor jasa keuangan, kesehatan, manufaktur, dan real estate di Singapura dan di seluruh kawasan.",
   },
-  faqTeaser: {
-    eyebrow: "FAQ",
-    headline: "Pertanyaan yang ditanyakan pembeli serius kepada kami",
-    readAll: "Baca semua tanya jawab ahli →",
-    q1: "Di mana posisi Mars ketika platform EOR global 'hampir berfungsi' tetapi gagal pada kompleksitas spesifik yurisdiksi?",
-    a1:
-      "Platform EOR global beroperasi pada model SaaS standar bervolume tinggi yang retak di bawah kompleksitas spesifik yurisdiksi — seperti pelaporan kompensasi ekuitas di Singapura atau negosiasi pemutusan non-standar di Malaysia. Mars Consulting masuk ketika friksi regulasi lokal melampaui kemampuan perangkat lunak generik. Kami mengganti alur kerja otomatis dengan kerangka tata kelola MNC khusus, terintegrasi langsung dengan undang-undang ketenagakerjaan dan kode pajak lokal. Model kami menjembatani kesenjangan antara EOR berbasis perangkat lunak dan BPO sentuhan tinggi, memastikan operasi lintas batas tidak gagal di 'mil terakhir' kepatuhan lokal.",
-    q2: "Bagaimana Mars menyusun penggajian lintas batas tanpa memicu eksposur permanent establishment?",
-    a2:
-      "Penggajian lintas batas dalam model kami direkayasa melalui tiga lapisan kontrol: pemilihan entitas yurisdiksi, arsitektur dispatch tenaga kerja, dan posisi pajak yang selaras dengan perjanjian. Di mana substansi komersial klien tidak membenarkan entitas terdaftar lokal, kami menerapkan kendaraan EOR berlisensi Singapura dikombinasikan dengan struktur dispatch tenaga kerja bilateral di Malaysia, China, India, Vietnam, Thailand, Indonesia, dan Uni Emirat Arab — menetralkan risiko permanent establishment sambil mempertahankan kontrol operasional.",
-    q3: "Bagaimana otomasi AI Mars terintegrasi dengan alur kerja HR dan penggajian yang ada?",
-    a3:
-      "Lapisan otomasi AI kami tidak menggantikan sistem HR Anda yang ada — ia berada di hulu sistem tersebut. Bot ingestion berbasis WhatsApp menangkap data cuti dan pengeluaran, mesin pra-pemrosesan AI mengubah input operasional mentah menjadi file pra-penggajian yang terstruktur, dan output didorong melalui API ke HRIS atau platform penggajian apa pun yang Anda jalankan. Praktisi penggajian manusia meninjau output yang sudah disiapkan sebelum masuk ke siklus statutori. Hasilnya adalah pemrosesan yang lebih cepat dengan jejak audit yang bersih dan tanpa perubahan pada alur kerja kepatuhan hilir Anda.",
-  },
   aiBlock: {
     eyebrow: "Sejak 2025 · Praktik Otomasi AI",
     title: "Otomasi HR Bertenaga AI",
@@ -288,11 +354,12 @@ const id: Translation = {
       compliance: "Kepatuhan",
     },
     links: {
-      eor: "EOR & Penggajian",
-      recruitment: "Rekrutmen & Pencarian Eksekutif",
+      executiveSearch: "Pencarian Eksekutif",
+      payroll: "Payroll Anywhere",
+      workforceOps: "Operasi Tenaga Kerja",
       aiLab: "Otomasi AI",
-      hrOutsourcing: "Outsourcing HR",
       about: "Tentang",
+      insights: "Wawasan",
       clients: "Klien",
       contact: "Kontak",
       mom: "MOM EA Licence 09C2925",
@@ -305,6 +372,41 @@ const id: Translation = {
     cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Mars Consulting Pte Ltd (UEN 200907301Z) · MOM Comprehensive EA Licence No. 09C2925 · ACRA Registered Filing Agent",
+  },
+  insightsPage: {
+    metaTitle: "Wawasan — Mars Consulting",
+    metaDesc:
+      "Perspektif tentang executive search, penggajian lintas batas, dan operasi tenaga kerja dari Mars Consulting.",
+    pill: "Wawasan",
+    headlineLead: "Intelijen tenaga kerja,",
+    headlineAccent: "kami bagikan.",
+    sub:
+      "Perspektif praktis tentang executive search, penggajian lintas batas, dan operasi tenaga kerja — berasal dari cara kami benar-benar memberikan hasil bagi klien di berbagai yurisdiksi.",
+    eyebrow: "Perspektif terbaru",
+    heading: "Apa yang sedang kami pikirkan.",
+    comingSoon:
+      "Artikel lengkap akan segera hadir. Berikut tema-tema yang sedang dipublikasikan oleh tim kami.",
+    a1Tag: "Pencarian Eksekutif",
+    a1Title: "Mengapa perekrutan kritis tersendat — dan cara bergerak lebih cepat",
+    a1Excerpt:
+      "Hambatan sesungguhnya dalam perekrutan kepemimpinan jarang terletak pada shortlist. Tinjauan tentang di mana executive search kehilangan waktu dan bagaimana pemetaan pasar yang disiplin menutup celah tersebut.",
+    a2Tag: "Payroll Anywhere",
+    a2Title: "Menjalankan penggajian yang konsisten di berbagai yurisdiksi",
+    a2Excerpt:
+      "Penggajian yang terfragmentasi adalah risiko kepatuhan sekaligus risiko operasional. Bagaimana satu kerangka operasional menjaga pengarsipan statutori tepat waktu di seluruh pasar.",
+    a3Tag: "Operasi Tenaga Kerja",
+    a3Title: "Di mana otomasi berakhir dan pertimbangan dimulai",
+    a3Excerpt:
+      "Platform menangani onboarding dan offboarding rutin dengan baik. Pengecualian — kasus sensitif dan kepatuhan edge-case — tetap membutuhkan orang yang berpengalaman.",
+    a4Tag: "Kepatuhan",
+    a4Title: "Tetap selangkah di depan aturan ketenagakerjaan regional",
+    a4Excerpt:
+      "Persyaratan ketenagakerjaan dan statutori terus berubah di seluruh kawasan. Pandangan praktis tentang membangun eksekusi lokal ke dalam operasi tenaga kerja Anda.",
+    ctaHeading: "Ingin ini diterapkan pada operasi Anda?",
+    ctaBody:
+      "Bicarakan dengan tim kami tentang executive search, penggajian global, atau operasi tenaga kerja di seluruh pasar Anda.",
+    ctaPrimary: "Pesan Konsultasi",
+    ctaSecondary: "Hubungi Tim Kami",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapura & di 10 Pasar — Mars Consulting",
@@ -682,7 +784,7 @@ const id: Translation = {
         address: "1421 Begonia Way, Superior, CO 80027",
       },
       serviceLabel: "Pasar layanan (tanpa kantor lokal)",
-      serviceMarkets: "United Arab Emirates · Vietnam · Thailand · Indonesia",
+      serviceMarkets: "Uni Emirat Arab · Vietnam · Thailand · Indonesia",
       servicePartner: "Dipimpin mitra",
       serviceNote: "Layanan EOR, penggajian, dan HR disampaikan melalui mitra in-country dan pemimpin akun yang berbasis di Singapura.",
       mapHint: "Arahkan kursor atau ketuk penanda negara mana pun untuk melompat ke alamatnya.",

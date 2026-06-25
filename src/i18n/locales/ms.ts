@@ -3,21 +3,21 @@ import type { Translation } from "./en";
 
 const ms: Translation = {
   nav: {
-    eor: "EOR & Gaji",
-    recruitment: "Pengambilan & Pencarian Eksekutif",
-    aiLab: "Automasi AI",
+    executiveSearch: "Pencarian Eksekutif",
+    payroll: "Payroll Anywhere",
+    workforceOps: "Operasi Tenaga Kerja",
     about: "Tentang",
     contact: "Hubungi",
     bookCall: "Tempah Perundingan",
   },
   hero: {
     pill: "Berlesen MOM Singapura · Ditubuhkan sejak 2009",
-    headlineLead: "Ambil, bayar dan kembangkan pasukan",
-    headlineAccent: "merentasi 10 pasaran.",
+    headlineLead: "Operasi Tenaga Kerja,",
+    headlineAccent: "Disampaikan.",
     sub:
-      "Employer of Record berlesen Singapura, pencarian eksekutif, dan infrastruktur operasi HR merentasi 10 pasaran — direka untuk syarikat yang memasuki Asia, memperluas pasukan serantau, dan mengurus gaji rentas sempadan tanpa menubuhkan entiti tempatan.",
+      "Pencarian Eksekutif. Gaji Global. Pengurusan Tenaga Kerja Rentas Sempadan. Disampaikan dengan kelajuan yang dituntut perniagaan moden.",
     ctaPrimary: "Tempah Perundingan",
-    ctaSecondary: "Lihat Cara Ia Berfungsi",
+    ctaSecondary: "Terokai Perkhidmatan Kami",
     statYears: "Ditubuhkan",
     statMarkets: "Pasaran dilayan",
     statConsultants: "Perunding pakar",
@@ -58,43 +58,123 @@ const ms: Translation = {
       code: "Perkhidmatan korporat dibenarkan oleh ACRA",
     },
   },
-  twinPillars: {
-    eyebrow: "Apa yang kami buat",
-    headline: "Dua perkara yang kami lakukan lebih baik daripada sesiapa di rantau ini.",
-    eor: {
-      tag: "Utama",
-      title: "Employer of Record & Gaji Global",
+  whoWeAre: {
+    eyebrow: "Siapa kami",
+    headline: "Dibina untuk Kerumitan Tenaga Kerja.",
+    body1:
+      "Mars membantu perniagaan mengambil, mengurus dan membayar bakat merentasi sempadan. Kami menggabungkan operasi berkuasa teknologi dengan pakar tenaga kerja berpengalaman untuk menyampaikan hasil di mana kelajuan, ketepatan dan pelaksanaan paling penting.",
+    body2:
+      "Sama ada menyokong pengambilan eksekutif kritikal atau mengurus gaji merentasi pelbagai bidang kuasa, fokus kami kekal sama: Pelaksanaan boleh dipercayai. Setiap masa.",
+  },
+  coreServices: {
+    eyebrow: "Apa yang Kami Buat.",
+    headline: "Perkhidmatan Teras",
+    executiveSearch: {
+      tag: "Pencarian Eksekutif",
+      title: "Pencarian Eksekutif",
       body:
-        "Ambil, bayar, dan kekal patuh di Singapura serta 9 pasaran lain merentasi Asia, Timur Tengah dan Amerika Syarikat — tanpa menubuhkan entiti tempatan. Kami mengendalikan kontrak pekerjaan, gaji, pemfailan statutori, dan offboarding sejak hari pertama.",
-      bullet1: "Onboarding dalam 5 hari bekerja",
-      bullet2: "CPF, EPF, BPJS, MPF, dan pemfailan statutori dikendalikan di setiap pasaran",
-      bullet3: "Lesen MOM EA No. 09C2925",
-      cta: "Terokai EOR",
+        "Pengambilan kepimpinan, pengambilan pakar dan jawatan yang sukar diisi. Pemetaan pasaran dan risikan bakat. Pengambilan kritikal disampaikan dengan ketepatan.",
+      cta: "Terokai Pencarian Eksekutif",
     },
-    recruitment: {
-      tag: "Pencarian",
-      title: "Pengambilan & Pencarian Eksekutif",
+    payrollAnywhere: {
+      tag: "Payroll Anywhere",
+      title: "Payroll Anywhere",
       body:
-        "Penempatan tetap, staf kontrak, dan pencarian C-suite sulit di seluruh Singapura dan rantau ini. Kami menjalankan pemetaan pasaran mendalam untuk mencapai calon pasif, kemudian menyerahkan terus ke onboarding EOR apabila perlu.",
-      bullet1: "Mandat tetap, kontrak, dan C-suite sulit",
-      bullet2: "Senarai pendek C-suite dalam sprint 21 hari",
-      bullet3: "Teknologi, perkhidmatan kewangan, kesihatan, pembuatan",
-      cta: "Terokai Pengambilan",
+        "Pemprosesan gaji tepat merentasi pelbagai negara. Pengagihan gaji, pelaporan statutori dan slip gaji pekerja — dengan sokongan tenaga kerja rentas sempadan.",
+      cta: "Terokai Payroll Anywhere",
+    },
+    workforceOps: {
+      tag: "Operasi Tenaga Kerja",
+      title: "Operasi Tenaga Kerja",
+      body:
+        "Onboarding dan offboarding pekerja, pentadbiran kitaran hayat pekerjaan, pengurusan dokumentasi dan penyelarasan pematuhan.",
+      cta: "Terokai Operasi Tenaga Kerja",
     },
   },
-  whyMars: {
-    eyebrow: "Mengapa Mars",
-    headline: "Mengapa Mars, bukan platform EOR global?",
-    p1:
-      "Platform SaaS EOR global beroperasi pada model standard bervolum tinggi. Mereka berfungsi dengan baik sehingga tidak: pelaporan pampasan ekuiti merentas bidang kuasa, rundingan penamatan tidak standard di Malaysia atau China, pendedahan PE yang memerlukan pendapat peguam sebelum kitaran gaji pertama.",
-    p2:
-      "Mars campur tangan apabila geseran peraturan tempatan melampaui keupayaan perisian generik. Kami menggantikan aliran kerja automatik dengan rangka kerja tadbir urus tersuai, pengawasan undang-undang aktif di lapangan, dan campur tangan manusia peringkat senior untuk kes-kes tepi yang memerlukannya.",
-    p3:
-      "Kami bukan lebih murah daripada platform SaaS. Kami adalah yang anda gunakan apabila kos kesilapan pematuhan melebihi kos perkhidmatan kami.",
-    cta: "Bercakap dengan Pakar",
-    verifyLine: "Sahkan pasukan dan kelayakan kami secara bebas di LinkedIn.",
-    verifyCta: "Lihat di LinkedIn ↗",
-    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+  whyChoose: {
+    eyebrow: "Mengapa pelanggan memilih Mars",
+    headline: "Pelaksanaan pada Tahap Berbeza.",
+    b1Title: "Pengaktifan Pekerja",
+    b1Body:
+      "Pengaktifan pekerja pantas — onboard atau offboard pekerja dengan aliran kerja diperkemas dan ketepatan operasi.",
+    b2Title: "Padanan Bakat",
+    b2Body:
+      "Padanan bakat pantas — pengenalpastian dan kelayakan calon yang cepat daripada rangkaian bakat global.",
+    b3Title: "Penyampaian Gaji",
+    b3Body:
+      "Penyampaian gaji yang boleh dipercayai dan pantas, disokong oleh operasi pembayaran yang dioptimumkan.",
+    b4Title: "Liputan Tenaga Kerja Global",
+    b4Body:
+      "Sokongan merentasi pelbagai negara melalui satu rangka kerja operasi.",
+    b5Title: "Kepakaran Manusia Melangkaui Automasi",
+    b5Body:
+      "Teknologi mengendalikan proses rutin. Pakar berpengalaman menyelesaikan pengecualian.",
+  },
+  challenges: {
+    eyebrow: "Cabaran perniagaan yang kami selesaikan",
+    headline: "Direka untuk Cabaran Operasi Sebenar.",
+    c1Problem: "Pengambilan mengambil masa terlalu lama",
+    c1Solution:
+      "Kurangkan dengan ketara kitaran pencarian, penyaringan dan penyenaraian pendek.",
+    c2Problem: "Gaji berpecah-pecah",
+    c2Solution:
+      "Wujudkan operasi gaji yang konsisten merentasi pelbagai bidang kuasa.",
+    c3Problem: "Operasi tenaga kerja mencipta kesesakan",
+    c3Solution:
+      "Automasikan aliran kerja rutin sambil mengekalkan pengawasan manusia.",
+    c4Problem: "Risiko pematuhan semakin meningkat",
+    c4Solution:
+      "Pelaksanaan tempatan disokong oleh kepakaran tenaga kerja serantau.",
+  },
+  industries: {
+    eyebrow: "Dengan siapa kami bekerja",
+    headline: "Dipercayai oleh Perniagaan yang Sedang Berkembang.",
+    i1: "Teknologi",
+    i2: "Pusat Data",
+    i3: "Pembuatan",
+    i4: "Perkhidmatan Profesional",
+    i5: "Perkhidmatan Kewangan",
+    i6: "Syarikat Portfolio Ekuiti Persendirian",
+    i7: "Projek Pengembangan Serantau",
+    i8: "Majikan Rentas Sempadan",
+  },
+  approach: {
+    eyebrow: "Pendekatan kami",
+    headline: "Berkuasa Teknologi. Diketuai Manusia.",
+    p1Title: "Berkuasa Teknologi",
+    p1Body: "Automasi di mana kecekapan penting.",
+    p2Title: "Diketuai Manusia",
+    p2Body: "Profesional tenaga kerja berpengalaman di mana pertimbangan penting.",
+    p3Title: "Berfokus Hasil",
+    p3Body: "Diukur dengan pelaksanaan, kelajuan dan ketepatan. Bukan aktiviti.",
+  },
+  metrics: {
+    eyebrow: "Prestasi",
+    headline: "Nombor yang Penting.",
+    yearsLabel: "Tahun kepakaran tenaga kerja",
+    yearsValue: "2009",
+    marketsLabel: "Pasaran dilayan",
+    marketsValue: "10",
+    consultantsLabel: "Perunding pakar",
+    consultantsValue: "100+",
+    onboardingLabel: "Onboarding",
+    onboardingValue: "5 hari",
+    missesLabel: "Kelewatan statutori (sejak 2009)",
+    missesValue: "0",
+  },
+  vsSoftware: {
+    eyebrow: "Berbeza daripada perisian",
+    headline: "Apabila Platform Berhenti, Mars Bermula.",
+    body:
+      "Kebanyakan platform tenaga kerja mengautomasikan tugas. Mars menyelesaikan pengecualian — pengambilan kompleks, gaji rentas sempadan, kerumitan pengawalseliaan, situasi tenaga kerja sensitif dan operasi tenaga kerja kritikal perniagaan. Apabila automasi mencapai hadnya, profesional berpengalaman membuat perbezaan.",
+  },
+  finalCta: {
+    eyebrow: "Mulakan",
+    headline: "Operasi Tenaga Kerja Tanpa Geseran Operasi.",
+    body:
+      "Sama ada anda mengambil bakat kritikal, mengurus gaji global atau mengembang ke pasaran baharu, Mars menyampaikan operasi tenaga kerja dengan kelajuan, ketepatan dan akauntabiliti.",
+    ctaPrimary: "Tempah Perundingan",
+    ctaSecondary: "Hubungi Pasukan Kami",
   },
   countries: {
     eyebrow: "Liputan",
@@ -199,20 +279,6 @@ const ms: Translation = {
     logosNote:
       "Dari startup teknologi Series-A ke kumpulan industri tersenarai — merentasi perkhidmatan kewangan, kesihatan, pembuatan, dan hartanah di Singapura dan seluruh rantau ini.",
   },
-  faqTeaser: {
-    eyebrow: "Soalan Lazim",
-    headline: "Soalan yang ditanya pembeli serius kepada kami",
-    readAll: "Baca semua soal jawab pakar →",
-    q1: "Di mana tempat Mars apabila platform EOR global 'hampir berfungsi' tetapi gagal pada kerumitan khusus bidang kuasa?",
-    a1:
-      "Platform EOR global beroperasi pada model SaaS standard bervolum tinggi yang retak di bawah kerumitan khusus bidang kuasa — seperti pelaporan pampasan ekuiti di Singapura atau rundingan penamatan tidak standard di Malaysia. Mars Consulting campur tangan apabila geseran peraturan tempatan melampaui keupayaan perisian generik. Kami menggantikan aliran kerja automatik dengan rangka kerja tadbir urus MNC tersuai, terintegrasi terus dengan undang-undang buruh dan kod cukai tempatan. Model kami merapatkan jurang antara EOR berasaskan perisian dan BPO sentuhan tinggi, memastikan operasi rentas sempadan tidak gagal di 'batu terakhir' pematuhan tempatan.",
-    q2: "Bagaimana Mars menstrukturkan gaji rentas sempadan tanpa mencetuskan pendedahan permanent establishment?",
-    a2:
-      "Gaji rentas sempadan dalam model kami direkayasa melalui tiga lapisan kawalan: pemilihan entiti bidang kuasa, seni bina dispatch buruh, dan kedudukan cukai sejajar perjanjian. Di mana substansi komersial pelanggan tidak mewajarkan entiti berdaftar tempatan, kami menggunakan kenderaan EOR berlesen Singapura dikombinasikan dengan struktur dispatch buruh dwihala di Malaysia, China, India, Vietnam, Thailand, Indonesia, dan Emiriah Arab Bersatu — meneutralkan risiko permanent establishment sambil mengekalkan kawalan operasi.",
-    q3: "Bagaimana automasi AI Mars terintegrasi dengan aliran kerja HR dan gaji sedia ada?",
-    a3:
-      "Lapisan automasi AI kami tidak menggantikan sistem HR sedia ada anda — ia terletak di hulu daripadanya. Bot ingestion berasaskan WhatsApp menangkap data cuti dan perbelanjaan, enjin prapemprosesan AI menukar input operasi mentah menjadi fail pra-gaji berstruktur, dan output dipush melalui API ke mana-mana platform HRIS atau gaji yang anda jalankan. Pengamal gaji manusia menyemak output yang di-stage sebelum ia memasuki kitaran statutori. Hasilnya ialah pemprosesan lebih pantas dengan jejak audit bersih dan tiada perubahan kepada aliran kerja pematuhan hiliran anda.",
-  },
   aiBlock: {
     eyebrow: "Sejak 2025 · Amalan Automasi AI",
     title: "Automasi HR Berkuasa AI",
@@ -288,11 +354,12 @@ const ms: Translation = {
       compliance: "Pematuhan",
     },
     links: {
-      eor: "EOR & Gaji",
-      recruitment: "Pengambilan & Pencarian Eksekutif",
+      executiveSearch: "Pencarian Eksekutif",
+      payroll: "Payroll Anywhere",
+      workforceOps: "Operasi Tenaga Kerja",
       aiLab: "Automasi AI",
-      hrOutsourcing: "HR Outsourcing",
       about: "Tentang",
+      insights: "Wawasan",
       clients: "Pelanggan",
       contact: "Hubungi",
       mom: "Lesen MOM EA 09C2925",
@@ -305,6 +372,41 @@ const ms: Translation = {
     cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
     compliance:
       "Mars Consulting Pte Ltd (UEN 200907301Z) · Lesen EA Komprehensif MOM No. 09C2925 · Ejen Pemfailan Berdaftar ACRA",
+  },
+  insightsPage: {
+    metaTitle: "Wawasan — Mars Consulting",
+    metaDesc:
+      "Perspektif tentang pencarian eksekutif, gaji rentas sempadan dan operasi tenaga kerja daripada Mars Consulting.",
+    pill: "Wawasan",
+    headlineLead: "Risikan tenaga kerja,",
+    headlineAccent: "dikongsi bersama.",
+    sub:
+      "Perspektif praktikal tentang pencarian eksekutif, gaji rentas sempadan dan operasi tenaga kerja — berdasarkan cara kami benar-benar menyampaikan untuk pelanggan merentasi pelbagai bidang kuasa.",
+    eyebrow: "Perspektif terkini",
+    heading: "Apa yang menjadi fokus pemikiran kami.",
+    comingSoon:
+      "Artikel penuh akan menyusul tidak lama lagi. Berikut ialah tema yang sedang diterbitkan oleh pasukan kami.",
+    a1Tag: "Pencarian Eksekutif",
+    a1Title: "Mengapa pengambilan kritikal tersekat — dan cara bergerak lebih pantas",
+    a1Excerpt:
+      "Kesesakan sebenar dalam pengambilan kepimpinan jarang sekali pada senarai pendek. Tinjauan tentang di mana pencarian eksekutif kehilangan masa dan bagaimana pemetaan pasaran yang berdisiplin merapatkan jurang itu.",
+    a2Tag: "Payroll Anywhere",
+    a2Title: "Menjalankan gaji yang konsisten merentasi pelbagai bidang kuasa",
+    a2Excerpt:
+      "Gaji yang berpecah-pecah ialah risiko pematuhan sama seperti risiko operasi. Bagaimana satu rangka kerja operasi memastikan pemfailan statutori tepat pada masanya merentasi pasaran.",
+    a3Tag: "Operasi Tenaga Kerja",
+    a3Title: "Di mana automasi berakhir dan pertimbangan bermula",
+    a3Excerpt:
+      "Platform mengendalikan onboarding dan offboarding rutin dengan baik. Pengecualian — kes sensitif dan pematuhan luar biasa — masih memerlukan orang yang berpengalaman.",
+    a4Tag: "Pematuhan",
+    a4Title: "Sentiasa mendahului peraturan pekerjaan serantau",
+    a4Excerpt:
+      "Keperluan pekerjaan dan statutori sentiasa berubah merentasi rantau ini. Pandangan praktikal tentang membina pelaksanaan tempatan ke dalam operasi tenaga kerja anda.",
+    ctaHeading: "Mahu ini diterapkan pada operasi anda?",
+    ctaBody:
+      "Berbincang dengan pasukan kami tentang pencarian eksekutif, gaji global atau operasi tenaga kerja merentasi pasaran anda.",
+    ctaPrimary: "Tempah Perundingan",
+    ctaSecondary: "Hubungi Pasukan Kami",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapura & Merentasi 10 Pasaran — Mars Consulting",
@@ -427,7 +529,7 @@ const ms: Translation = {
         "Kami menghabiskan sesi pertama memahami bukan sahaja peranan, tetapi mengapa ia terbuka, apa yang salah dengan ambilan terakhir, dan rupa kejayaan dalam 90 hari.",
       step2Title: "Pemetaan Pasaran",
       step2Body:
-        "Kami memetakan keseluruhan pool bakat — calon aktif, calon pasif, dan bakat pesaing. Anda menerima laporan risikan pasaran sebelum CV pertama.",
+        "Kami memetakan keseluruhan kumpulan bakat — calon aktif, calon pasif, dan bakat pesaing. Anda menerima laporan risikan pasaran sebelum CV pertama.",
       step3Title: "Outreach Calon",
       step3Body:
         "Kami melibatkan calon secara diskret. Untuk mandat eksekutif, outreach kami tidak menyebut nama pelanggan sehingga minat bersama disahkan.",
@@ -591,9 +693,9 @@ const ms: Translation = {
       y2009:
         "Diasaskan di Singapura. Pada awalnya fokus pada pengambilan tetap dan kontrak untuk sektor teknologi dan perkhidmatan kewangan. Dibina sejak hari pertama atas prinsip bahawa nasihat HR hanyalah sebaik pengetahuan operasi di belakangnya.",
       y2013:
-        "Berekspansi ke Business Process Outsourcing. Memperluas liputan industri di luar tech dan kewangan ke hartanah dan pembinaan — membawa operasi HR berstruktur ke sektor yang secara sejarah bergantung pada amalan pengambilan tidak formal.",
+        "Berkembang ke Business Process Outsourcing. Memperluas liputan industri di luar tech dan kewangan ke hartanah dan pembinaan — membawa operasi HR berstruktur ke sektor yang secara sejarah bergantung pada amalan pengambilan tidak formal.",
       y2017:
-        "Melancarkan perkhidmatan Employer of Record — beralih daripada perekrut serantau kepada penyedia infrastruktur HR rentas sempadan. Berekspansi merentasi Asia, Timur Tengah, dan Amerika Syarikat. Ini menandakan titik di mana Mars menjadi bukan sekadar firma pengambilan, tetapi platform pekerjaan dan gaji penuh untuk syarikat yang beroperasi merentas sempadan.",
+        "Melancarkan perkhidmatan Employer of Record — beralih daripada perekrut serantau kepada penyedia infrastruktur HR rentas sempadan. Berkembang merentasi Asia, Timur Tengah, dan Amerika Syarikat. Ini menandakan titik di mana Mars menjadi bukan sekadar firma pengambilan, tetapi platform pekerjaan dan gaji penuh untuk syarikat yang beroperasi merentas sempadan.",
       y2020:
         "Memperkenalkan HR Outsourcing — menanam perunding HR berpengalaman terus dalam organisasi pelanggan untuk kerja strategik dan operasi. Memperluas ekosistem perkhidmatan untuk merangkumi pembelajaran korporat dan perkongsian latihan, menyediakan pelanggan akses kepada infrastruktur pembangunan kemahiran bersama pengurusan tenaga kerja.",
       y2025:
@@ -695,7 +797,7 @@ const ms: Translation = {
         "Kami beritahu pelanggan apabila platform SaaS sudah memadai dan mereka tidak memerlukan kami. Kami hanya terlibat di mana keupayaan kami menambah nilai material berbanding alternatif lebih murah.",
       depthTitle: "Kedalaman operasi",
       depthBody:
-        "Kami tidak men-subkontrakkan pematuhan khusus bidang kuasa kepada pihak ketiga yang tidak pernah kami kerja sama. Setiap negara tempat kami beroperasi mempunyai hubungan rakan in-country yang dibina selama bertahun-tahun, bukan disumber untuk satu engagement.",
+        "Kami tidak mensubkontrakkan pematuhan khusus bidang kuasa kepada pihak ketiga yang belum pernah kami bekerjasama. Setiap negara tempat kami beroperasi mempunyai hubungan rakan in-country yang dibina selama bertahun-tahun, bukan disumber untuk satu engagement.",
       accountTitle: "Satu titik akauntabiliti",
       accountBody:
         "Tidak kira berapa banyak negara atau perkhidmatan terlibat, satu pengurus hubungan akauntabel untuk skop kerja penuh. Anda tidak mengurus rangkaian pembekal. Anda mengurus satu panggilan.",

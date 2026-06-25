@@ -104,16 +104,42 @@ export default {
           from: { transform: "scaleY(0.15)" },
           to: { transform: "scaleY(1)" },
         },
+        // Gentle infinite y-bob for floating accents / badges.
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+        // Connector lines / underlines that draw in from the left.
+        "draw-x": {
+          from: { transform: "scaleX(0)" },
+          to: { transform: "scaleX(1)" },
+        },
+        // Animated background-position for gradient text / borders.
+        "gradient-pan": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        // Subtle scale-in pop for icons appearing on scroll.
+        "icon-pop": {
+          "0%": { opacity: "0", transform: "scale(0.8)" },
+          "60%": { opacity: "1", transform: "scale(1.06)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fade-up 0.6s ease-out both",
         "marquee-x": "marquee-x 40s linear infinite",
+        "marquee-x-reverse": "marquee-x 40s linear infinite reverse",
         "marquee-x-slow": "marquee-x 70s linear infinite",
         "pulse-ring": "pulse-ring 2.6s cubic-bezier(0.4,0,0.6,1) infinite",
         "blob-drift": "blob-drift 14s ease-in-out infinite",
         "bar-grow": "bar-grow 1.1s ease-out both",
+        float: "float 6s ease-in-out infinite",
+        "draw-x": "draw-x 0.7s ease-out both",
+        "gradient-pan": "gradient-pan 6s ease-in-out infinite",
+        "icon-pop": "icon-pop 0.5s ease-out both",
       },
     },
   },

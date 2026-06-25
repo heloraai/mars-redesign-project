@@ -8,16 +8,18 @@ export const SiteFooter = () => {
     {
       h: t("footer.sections.solutions"),
       l: [
-        { label: t("footer.links.eor"), href: "/eor" },
-        { label: t("footer.links.recruitment"), href: "/recruitment" },
+        { label: t("footer.links.executiveSearch"), href: "/recruitment" },
+        { label: t("footer.links.payroll"), href: "/eor" },
+        { label: t("footer.links.workforceOps"), href: "/hr-outsourcing" },
+        // AI Automation kept as a secondary link so /ai-innovation stays reachable.
         { label: t("footer.links.aiLab"), href: "/ai-innovation" },
-        { label: t("footer.links.hrOutsourcing"), href: "/hr-outsourcing" },
       ],
     },
     {
       h: t("footer.sections.company"),
       l: [
         { label: t("footer.links.about"), href: "/about" },
+        { label: t("footer.links.insights"), href: "/insights" },
         { label: t("footer.links.clients"), href: "/recruitment#clients" },
         { label: t("footer.links.contact"), href: "/contact" },
       ],

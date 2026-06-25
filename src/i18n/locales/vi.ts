@@ -3,21 +3,21 @@ import type { Translation } from "./en";
 
 const vi: Translation = {
   nav: {
-    eor: "EOR & Bảng lương",
-    recruitment: "Tuyển dụng & Tìm kiếm Điều hành",
-    aiLab: "Tự động hóa AI",
+    executiveSearch: "Tìm kiếm Điều hành",
+    payroll: "Bảng lương Mọi nơi",
+    workforceOps: "Vận hành Lực lượng Lao động",
     about: "Giới thiệu",
     contact: "Liên hệ",
     bookCall: "Đặt lịch Tư vấn",
   },
   hero: {
     pill: "Được cấp phép MOM Singapore · Thành lập từ 2009",
-    headlineLead: "Tuyển dụng, trả lương và mở rộng đội ngũ",
-    headlineAccent: "trên 10 thị trường.",
+    headlineLead: "Vận hành Lực lượng Lao động,",
+    headlineAccent: "Được thực thi trọn vẹn.",
     sub:
-      "Employer of Record được cấp phép tại Singapore, tìm kiếm điều hành và hạ tầng vận hành HR trên 10 thị trường — được xây dựng cho các công ty thâm nhập châu Á, mở rộng đội ngũ khu vực và quản lý bảng lương xuyên biên giới mà không cần thành lập pháp nhân địa phương.",
+      "Tìm kiếm Điều hành. Bảng lương Toàn cầu. Quản lý Lực lượng Lao động Xuyên biên giới. Được thực thi với tốc độ mà các doanh nghiệp hiện đại yêu cầu.",
     ctaPrimary: "Đặt lịch Tư vấn",
-    ctaSecondary: "Xem Cách hoạt động",
+    ctaSecondary: "Khám phá Dịch vụ của Chúng tôi",
     statYears: "Thành lập",
     statMarkets: "Thị trường phục vụ",
     statConsultants: "Chuyên gia tư vấn",
@@ -58,43 +58,123 @@ const vi: Translation = {
       code: "Dịch vụ doanh nghiệp được ACRA ủy quyền",
     },
   },
-  twinPillars: {
-    eyebrow: "Những gì chúng tôi làm",
-    headline: "Hai điều chúng tôi làm tốt hơn bất kỳ ai khác trong khu vực.",
-    eor: {
-      tag: "Chủ lực",
-      title: "Employer of Record & Bảng lương Toàn cầu",
+  whoWeAre: {
+    eyebrow: "Chúng tôi là ai",
+    headline: "Được tạo ra cho Sự phức tạp của Lực lượng Lao động.",
+    body1:
+      "Mars giúp các doanh nghiệp tuyển dụng, quản lý và trả lương cho nhân tài xuyên biên giới. Chúng tôi kết hợp vận hành được hỗ trợ bởi công nghệ với các chuyên gia lực lượng lao động giàu kinh nghiệm để mang lại kết quả ở những nơi tốc độ, độ chính xác và sự thực thi quan trọng nhất.",
+    body2:
+      "Dù là hỗ trợ một vị trí điều hành quan trọng hay quản lý bảng lương trên nhiều khu vực pháp lý, trọng tâm của chúng tôi vẫn không đổi: Thực thi đáng tin cậy. Mỗi lần.",
+  },
+  coreServices: {
+    eyebrow: "Những gì chúng tôi làm.",
+    headline: "Dịch vụ Cốt lõi",
+    executiveSearch: {
+      tag: "Tìm kiếm Điều hành",
+      title: "Tìm kiếm Điều hành",
       body:
-        "Tuyển dụng, trả lương và duy trì tuân thủ tại Singapore và 9 thị trường khác trên khắp châu Á, Trung Đông và Hoa Kỳ — mà không cần thành lập pháp nhân địa phương. Chúng tôi xử lý hợp đồng lao động, bảng lương, nộp hồ sơ theo luật và offboarding ngay từ ngày đầu tiên.",
-      bullet1: "Onboarding trong 5 ngày làm việc",
-      bullet2: "CPF, EPF, BPJS, MPF và nộp hồ sơ theo luật được xử lý tại mỗi thị trường",
-      bullet3: "Giấy phép MOM EA Số 09C2925",
-      cta: "Khám phá EOR",
+        "Tuyển dụng lãnh đạo, tuyển dụng chuyên gia và các vị trí khó tuyển. Lập bản đồ thị trường và trí tuệ nhân tài. Các vị trí quan trọng được thực hiện với độ chính xác.",
+      cta: "Khám phá Tìm kiếm Điều hành",
     },
-    recruitment: {
-      tag: "Tìm kiếm",
-      title: "Tuyển dụng & Tìm kiếm Điều hành",
+    payrollAnywhere: {
+      tag: "Bảng lương Mọi nơi",
+      title: "Bảng lương Mọi nơi",
       body:
-        "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm C-suite bí mật trên khắp Singapore và khu vực. Chúng tôi tiến hành lập bản đồ thị trường chuyên sâu để tiếp cận các ứng viên thụ động, sau đó bàn giao trực tiếp vào onboarding EOR khi cần.",
-      bullet1: "Mandate cố định, hợp đồng và C-suite bí mật",
-      bullet2: "Danh sách rút gọn C-suite trong sprint 21 ngày",
-      bullet3: "Công nghệ, dịch vụ tài chính, y tế, sản xuất",
-      cta: "Khám phá Tuyển dụng",
+        "Xử lý bảng lương chính xác trên nhiều quốc gia. Chi trả lương, báo cáo theo luật và phiếu lương nhân viên — cùng hỗ trợ lực lượng lao động xuyên biên giới.",
+      cta: "Khám phá Bảng lương Mọi nơi",
+    },
+    workforceOps: {
+      tag: "Vận hành Lực lượng Lao động",
+      title: "Vận hành Lực lượng Lao động",
+      body:
+        "Onboarding và offboarding nhân viên, quản trị vòng đời lao động, quản lý tài liệu và điều phối tuân thủ.",
+      cta: "Khám phá Vận hành Lực lượng Lao động",
     },
   },
-  whyMars: {
-    eyebrow: "Tại sao chọn Mars",
-    headline: "Tại sao Mars, không phải một nền tảng EOR toàn cầu?",
-    p1:
-      "Các nền tảng EOR SaaS toàn cầu vận hành trên mô hình tiêu chuẩn hóa, khối lượng cao. Chúng hoạt động tốt cho đến khi không còn: báo cáo bồi thường cổ phần qua các khu vực pháp lý, đàm phán chấm dứt không tiêu chuẩn ở Malaysia hoặc Trung Quốc, phơi nhiễm PE cần ý kiến tư vấn pháp lý trước chu kỳ bảng lương đầu tiên.",
-    p2:
-      "Mars can thiệp khi ma sát quy định địa phương vượt quá phần mềm chung chung. Chúng tôi thay thế quy trình tự động bằng các khung quản trị tùy chỉnh, giám sát pháp lý tích cực tại chỗ và can thiệp con người cấp cao cho các trường hợp ngoại lệ cần thiết.",
-    p3:
-      "Chúng tôi không rẻ hơn một nền tảng SaaS. Chúng tôi là thứ bạn sử dụng khi chi phí của một lỗi tuân thủ vượt quá chi phí dịch vụ của chúng tôi.",
-    cta: "Trao đổi với chuyên gia",
-    verifyLine: "Xác minh đội ngũ và chứng chỉ của chúng tôi một cách độc lập trên LinkedIn.",
-    verifyCta: "Xem trên LinkedIn ↗",
-    verifyUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
+  whyChoose: {
+    eyebrow: "Tại sao khách hàng chọn Mars",
+    headline: "Sự thực thi ở một Đẳng cấp Khác.",
+    b1Title: "Kích hoạt Nhân viên",
+    b1Body:
+      "Kích hoạt nhân viên nhanh chóng — onboard hoặc offboard nhân viên với các quy trình tinh gọn và độ chính xác vận hành.",
+    b2Title: "Ghép nối Nhân tài",
+    b2Body:
+      "Ghép nối nhân tài nhanh — nhận diện và xác định ứng viên nhanh chóng từ các mạng lưới nhân tài toàn cầu.",
+    b3Title: "Giao Bảng lương",
+    b3Body:
+      "Giao bảng lương đáng tin cậy, nhanh chóng được hỗ trợ bởi các hoạt động thanh toán được tối ưu.",
+    b4Title: "Phủ sóng Lực lượng Lao động Toàn cầu",
+    b4Body:
+      "Hỗ trợ trên nhiều quốc gia thông qua một khung vận hành duy nhất.",
+    b5Title: "Chuyên môn Con người Vượt trên Tự động hóa",
+    b5Body:
+      "Công nghệ xử lý các quy trình thường lệ. Các chuyên gia giàu kinh nghiệm giải quyết các trường hợp ngoại lệ.",
+  },
+  challenges: {
+    eyebrow: "Các thách thức kinh doanh chúng tôi giải quyết",
+    headline: "Được thiết kế cho các Thách thức Vận hành Thực tế.",
+    c1Problem: "Tuyển dụng mất quá nhiều thời gian",
+    c1Solution:
+      "Giảm đáng kể các chu kỳ tìm nguồn, sàng lọc và lập danh sách rút gọn.",
+    c2Problem: "Bảng lương bị phân mảnh",
+    c2Solution:
+      "Tạo một hoạt động bảng lương nhất quán trên nhiều khu vực pháp lý.",
+    c3Problem: "Vận hành lực lượng lao động tạo ra điểm nghẽn",
+    c3Solution:
+      "Tự động hóa các quy trình thường lệ trong khi duy trì sự giám sát của con người.",
+    c4Problem: "Rủi ro tuân thủ đang gia tăng",
+    c4Solution:
+      "Thực thi địa phương được hỗ trợ bởi chuyên môn lực lượng lao động khu vực.",
+  },
+  industries: {
+    eyebrow: "Chúng tôi làm việc với ai",
+    headline: "Được các Doanh nghiệp Đang phát triển Tin tưởng.",
+    i1: "Công nghệ",
+    i2: "Trung tâm Dữ liệu",
+    i3: "Sản xuất",
+    i4: "Dịch vụ Chuyên nghiệp",
+    i5: "Dịch vụ Tài chính",
+    i6: "Các Công ty Danh mục Private Equity",
+    i7: "Các Dự án Mở rộng Khu vực",
+    i8: "Các Nhà tuyển dụng Xuyên biên giới",
+  },
+  approach: {
+    eyebrow: "Cách tiếp cận của chúng tôi",
+    headline: "Được hỗ trợ bởi Công nghệ. Dẫn dắt bởi Con người.",
+    p1Title: "Được hỗ trợ bởi Công nghệ",
+    p1Body: "Tự động hóa ở nơi hiệu quả quan trọng.",
+    p2Title: "Dẫn dắt bởi Con người",
+    p2Body: "Các chuyên gia lực lượng lao động giàu kinh nghiệm ở nơi sự phán đoán quan trọng.",
+    p3Title: "Tập trung vào Kết quả",
+    p3Body: "Được đo lường bằng sự thực thi, tốc độ và độ chính xác. Không phải hoạt động.",
+  },
+  metrics: {
+    eyebrow: "Hiệu suất",
+    headline: "Những Con số Quan trọng.",
+    yearsLabel: "Năm kinh nghiệm lực lượng lao động",
+    yearsValue: "2009",
+    marketsLabel: "Thị trường phục vụ",
+    marketsValue: "10",
+    consultantsLabel: "Chuyên gia tư vấn",
+    consultantsValue: "100+",
+    onboardingLabel: "Onboarding",
+    onboardingValue: "5 ngày",
+    missesLabel: "Vi phạm theo luật (từ 2009)",
+    missesValue: "0",
+  },
+  vsSoftware: {
+    eyebrow: "Khác với phần mềm",
+    headline: "Khi Nền tảng Dừng lại, Mars Bắt đầu.",
+    body:
+      "Hầu hết các nền tảng lực lượng lao động tự động hóa các tác vụ. Mars giải quyết các trường hợp ngoại lệ — tuyển dụng phức tạp, bảng lương xuyên biên giới, sự phức tạp về quy định, các tình huống lực lượng lao động nhạy cảm và các hoạt động lực lượng lao động trọng yếu đối với doanh nghiệp. Khi tự động hóa đạt đến giới hạn của nó, các chuyên gia giàu kinh nghiệm tạo nên sự khác biệt.",
+  },
+  finalCta: {
+    eyebrow: "Bắt đầu",
+    headline: "Vận hành Lực lượng Lao động Không Ma sát Vận hành.",
+    body:
+      "Dù bạn đang tuyển dụng nhân tài quan trọng, quản lý bảng lương toàn cầu hay mở rộng vào các thị trường mới, Mars mang lại vận hành lực lượng lao động với tốc độ, độ chính xác và trách nhiệm giải trình.",
+    ctaPrimary: "Đặt lịch Tư vấn",
+    ctaSecondary: "Liên hệ Đội ngũ của Chúng tôi",
   },
   countries: {
     eyebrow: "Phạm vi",
@@ -199,20 +279,6 @@ const vi: Translation = {
     logosNote:
       "Từ startup công nghệ Series-A đến các tập đoàn công nghiệp niêm yết — trong dịch vụ tài chính, y tế, sản xuất và bất động sản tại Singapore và khắp khu vực.",
   },
-  faqTeaser: {
-    eyebrow: "Câu hỏi thường gặp",
-    headline: "Những câu hỏi mà người mua nghiêm túc hỏi chúng tôi",
-    readAll: "Đọc toàn bộ Q&A chuyên gia →",
-    q1: "Mars phù hợp ở đâu khi một nền tảng EOR toàn cầu 'gần như hoạt động' nhưng gãy ở độ phức tạp riêng của khu vực pháp lý?",
-    a1:
-      "Các nền tảng EOR toàn cầu vận hành trên các mô hình SaaS tiêu chuẩn hóa, khối lượng cao bị gãy dưới các độ phức tạp riêng của khu vực pháp lý — như báo cáo bồi thường cổ phần ở Singapore hay đàm phán chấm dứt không tiêu chuẩn ở Malaysia. Mars Consulting can thiệp khi ma sát quy định địa phương vượt quá năng lực phần mềm chung chung. Chúng tôi thay thế quy trình tự động bằng các khung quản trị MNC tùy chỉnh, tích hợp trực tiếp với luật lao động và mã thuế địa phương. Mô hình của chúng tôi bắc cầu khoảng cách giữa EOR điều khiển bằng phần mềm và BPO chạm cao, đảm bảo rằng các hoạt động xuyên biên giới không thất bại ở 'dặm cuối' của tuân thủ địa phương.",
-    q2: "Mars cấu trúc bảng lương xuyên biên giới như thế nào mà không kích hoạt phơi nhiễm permanent establishment?",
-    a2:
-      "Bảng lương xuyên biên giới trong mô hình của chúng tôi được thiết kế qua ba lớp kiểm soát: chọn pháp nhân khu vực pháp lý, kiến trúc dispatch lao động và định vị thuế phù hợp với hiệp định. Khi thực thể thương mại của khách hàng không biện minh cho một pháp nhân địa phương được đăng ký, chúng tôi triển khai phương tiện EOR được cấp phép tại Singapore kết hợp với các cấu trúc dispatch lao động song phương tại Malaysia, Trung Quốc, Ấn Độ, Việt Nam, Thái Lan, Indonesia và Các Tiểu vương quốc Ả Rập Thống nhất — trung hòa rủi ro permanent establishment đồng thời duy trì kiểm soát hoạt động.",
-    q3: "Tự động hóa AI của Mars tích hợp với các quy trình HR và bảng lương hiện có như thế nào?",
-    a3:
-      "Lớp tự động hóa AI của chúng tôi không thay thế các hệ thống HR hiện có của bạn — nó nằm ở thượng nguồn của chúng. Bot nhập liệu dựa trên WhatsApp thu thập dữ liệu nghỉ phép và chi phí, engine tiền xử lý AI chuyển đổi đầu vào vận hành thô thành các tệp tiền bảng lương có cấu trúc, và đầu ra được đẩy qua API vào bất kỳ nền tảng HRIS hay bảng lương nào bạn đang chạy. Các chuyên gia bảng lương con người xem xét đầu ra đã được dàn dựng trước khi nó đi vào chu kỳ theo luật. Kết quả là xử lý nhanh hơn với một audit trail sạch sẽ và không có thay đổi nào đối với quy trình tuân thủ ở hạ nguồn của bạn.",
-  },
   aiBlock: {
     eyebrow: "Từ 2025 · Thực hành Tự động hóa AI",
     title: "Tự động hóa HR bằng AI",
@@ -224,7 +290,7 @@ const vi: Translation = {
     eyebrow: "Câu chuyện khách hàng",
     headline: "Được các đội ngũ mở rộng khắp khu vực tin tưởng.",
     body:
-      "Thành lập tại Singapore năm 2009, Mars Consulting đã phát triển từ một boutique tuyển dụng thành một nền tảng việc làm khu vực — chạy tuyển dụng, bảng lương và tuân thủ cho các công ty công nghệ, các hãng dịch vụ tài chính và các tập đoàn công nghiệp trên khắp châu Á, Trung Đông và Hoa Kỳ.",
+      "Thành lập tại Singapore năm 2009, Mars Consulting đã phát triển từ một công ty tuyển dụng nhỏ chuyên biệt thành một nền tảng việc làm khu vực — chạy tuyển dụng, bảng lương và tuân thủ cho các công ty công nghệ, các hãng dịch vụ tài chính và các tập đoàn công nghiệp trên khắp châu Á, Trung Đông và Hoa Kỳ.",
     quote:
       "Mars onboard nhóm nghiên cứu của chúng tôi tại Singapore và Jakarta trong dưới hai tuần. Họ xử lý tất cả — hợp đồng, xác nhận cổ phần, nộp hồ sơ theo luật địa phương — để chúng tôi có thể tập trung phát triển mô hình.",
     attribution: "Head of People · Công ty AI Series-B",
@@ -288,11 +354,12 @@ const vi: Translation = {
       compliance: "Tuân thủ",
     },
     links: {
-      eor: "EOR & Bảng lương",
-      recruitment: "Tuyển dụng & Tìm kiếm Điều hành",
+      executiveSearch: "Tìm kiếm Điều hành",
+      payroll: "Bảng lương Mọi nơi",
+      workforceOps: "Vận hành Lực lượng Lao động",
       aiLab: "Tự động hóa AI",
-      hrOutsourcing: "HR Outsourcing",
       about: "Giới thiệu",
+      insights: "Insights",
       clients: "Khách hàng",
       contact: "Liên hệ",
       mom: "Giấy phép MOM EA 09C2925",
@@ -302,9 +369,44 @@ const vi: Translation = {
     },
     linkedinUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
     copyright: "© {{year}} Mars Consulting Pte Ltd (UEN 200907301Z). Bảo lưu mọi quyền.",
-    cities: "Singapore (HQ) · Malaysia · Hong Kong · China · India · United States",
+    cities: "Singapore (HQ) · Malaysia · Hồng Kông · Trung Quốc · Ấn Độ · Hoa Kỳ",
     compliance:
       "Mars Consulting Pte Ltd (UEN 200907301Z) · Giấy phép EA Toàn diện MOM Số 09C2925 · Đại lý Nộp hồ sơ Đăng ký ACRA",
+  },
+  insightsPage: {
+    metaTitle: "Insights — Mars Consulting",
+    metaDesc:
+      "Góc nhìn về tuyển dụng điều hành, bảng lương xuyên biên giới và vận hành lực lượng lao động từ Mars Consulting.",
+    pill: "Insights",
+    headlineLead: "Trí tuệ lực lượng lao động,",
+    headlineAccent: "được chia sẻ.",
+    sub:
+      "Những góc nhìn thiết thực về tuyển dụng điều hành, bảng lương xuyên biên giới và vận hành lực lượng lao động — đúc kết từ cách chúng tôi thực sự triển khai cho khách hàng trên nhiều khu vực pháp lý.",
+    eyebrow: "Góc nhìn mới nhất",
+    heading: "Những điều chúng tôi đang suy ngẫm.",
+    comingSoon:
+      "Các bài viết đầy đủ sắp ra mắt. Dưới đây là những chủ đề đội ngũ của chúng tôi đang xuất bản.",
+    a1Tag: "Tìm kiếm Điều hành",
+    a1Title: "Vì sao các vị trí trọng yếu bị đình trệ — và cách đẩy nhanh tiến độ",
+    a1Excerpt:
+      "Điểm nghẽn thực sự trong tuyển dụng lãnh đạo hiếm khi nằm ở danh sách rút gọn. Một góc nhìn về nơi các cuộc tìm kiếm điều hành đánh mất thời gian và cách lập bản đồ thị trường kỷ luật khép lại khoảng cách đó.",
+    a2Tag: "Bảng lương Mọi nơi",
+    a2Title: "Vận hành bảng lương nhất quán trên nhiều khu vực pháp lý",
+    a2Excerpt:
+      "Bảng lương phân mảnh vừa là rủi ro tuân thủ vừa là rủi ro vận hành. Cách một khung vận hành duy nhất giữ cho việc nộp hồ sơ theo luật đúng hạn trên các thị trường.",
+    a3Tag: "Vận hành Lực lượng Lao động",
+    a3Title: "Nơi tự động hóa kết thúc và phán đoán bắt đầu",
+    a3Excerpt:
+      "Các nền tảng xử lý tốt việc onboarding và offboarding thường lệ. Các trường hợp ngoại lệ — những tình huống nhạy cảm và tuân thủ ở ranh giới — vẫn cần đến những con người giàu kinh nghiệm.",
+    a4Tag: "Tuân thủ",
+    a4Title: "Đi trước các quy định lao động trong khu vực",
+    a4Excerpt:
+      "Các yêu cầu về lao động và theo luật liên tục thay đổi khắp khu vực. Một góc nhìn thiết thực về việc đưa năng lực thực thi địa phương vào vận hành lực lượng lao động của bạn.",
+    ctaHeading: "Muốn áp dụng điều này vào vận hành của bạn?",
+    ctaBody:
+      "Trao đổi với đội ngũ của chúng tôi về tuyển dụng điều hành, bảng lương toàn cầu hoặc vận hành lực lượng lao động trên các thị trường của bạn.",
+    ctaPrimary: "Đặt lịch Tư vấn",
+    ctaSecondary: "Liên hệ Đội ngũ của Chúng tôi",
   },
   eorPage: {
     metaTitle: "Employer of Record Singapore & Trên 10 Thị trường — Mars Consulting",
@@ -346,22 +448,22 @@ const vi: Translation = {
         "Đây là những câu hỏi khách hàng của chúng tôi đặt ra ở cuộc gọi thứ hai hoặc thứ ba. Chúng tôi đặt chúng ở đây để bạn có thể hỏi ngay từ cuộc gọi đầu tiên.",
       q1: "Mars Consulting phù hợp ở đâu khi một nền tảng EOR toàn cầu 'gần như hoạt động' nhưng gãy ở độ phức tạp riêng của khu vực pháp lý?",
       a1:
-        "Mars Consulting lấp đầy khoảng trống khi phần mềm EOR tiêu chuẩn hóa gãy ở độ phức tạp riêng của khu vực pháp lý. Các nền tảng EOR toàn cầu vận hành trên các mô hình SaaS tiêu chuẩn hóa, khối lượng cao bị gãy dưới các độ phức tạp riêng của khu vực pháp lý — như báo cáo bồi thường cổ phần ở Singapore hay đàm phán chấm dứt không tiêu chuẩn ở Malaysia. Mars Consulting can thiệp khi ma sát quy định địa phương vượt quá năng lực phần mềm chung chung. Chúng tôi thay thế quy trình tự động bằng các khung quản trị MNC tùy chỉnh, tích hợp trực tiếp với luật lao động và mã thuế địa phương. Mô hình của chúng tôi bắc cầu khoảng cách giữa EOR điều khiển bằng phần mềm và BPO chạm cao, đảm bảo rằng các hoạt động xuyên biên giới không thất bại ở 'dặm cuối' của tuân thủ địa phương. Cách tiếp cận này giảm thiểu rủi ro khu vực pháp lý bằng cách cung cấp giám sát pháp lý và vận hành tích cực, tại chỗ, giải quyết các trường hợp ngoại lệ cần can thiệp con người cấp cao thay vì chỉ một giao diện dashboard.",
-      q2: "Mars cấu trúc quản trị engagement cho các MNC đa pháp nhân hoặc đa khu vực như thế nào?",
+        "Mars Consulting lấp đầy khoảng trống khi phần mềm EOR tiêu chuẩn hóa gãy ở độ phức tạp riêng của khu vực pháp lý. Các nền tảng EOR toàn cầu vận hành trên các mô hình SaaS tiêu chuẩn hóa, khối lượng cao bị gãy dưới các độ phức tạp riêng của khu vực pháp lý — như báo cáo bồi thường cổ phần ở Singapore hay đàm phán chấm dứt không tiêu chuẩn ở Malaysia. Mars Consulting can thiệp khi ma sát quy định địa phương vượt quá năng lực phần mềm chung chung. Chúng tôi thay thế quy trình tự động bằng các khung quản trị MNC tùy chỉnh, tích hợp trực tiếp với luật lao động và mã thuế địa phương. Mô hình của chúng tôi bắc cầu khoảng cách giữa EOR điều khiển bằng phần mềm và BPO tương tác sâu sát, đảm bảo rằng các hoạt động xuyên biên giới không thất bại ở 'dặm cuối' của tuân thủ địa phương. Cách tiếp cận này giảm thiểu rủi ro khu vực pháp lý bằng cách cung cấp giám sát pháp lý và vận hành tích cực, tại chỗ, giải quyết các trường hợp ngoại lệ cần can thiệp con người cấp cao thay vì chỉ một giao diện bảng điều khiển.",
+      q2: "Mars cấu trúc quản trị hợp tác cho các MNC đa pháp nhân hoặc đa khu vực như thế nào?",
       a2:
-        "Quản trị engagement cho các MNC đa khu vực yêu cầu một mặt phẳng kiểm soát tập trung phủ trên thực thi theo luật phi tập trung. Mars cấu trúc các engagement này thông qua một Service Level Agreement thống nhất bao quát mọi khu vực pháp lý đang hoạt động, ghép với một người dẫn đầu quản trị khu vực chuyên trách đặt tại Singapore. Kiến trúc này đảm bảo một điểm chịu trách nhiệm duy nhất cho khách hàng đồng thời thực thi các nghĩa vụ theo luật — như quản lý phúc lợi địa phương, báo cáo theo luật và giải quyết tranh chấp lao động — qua các chuyên gia HR và pháp lý nội địa được nhúng sâu. Bằng cách tách lớp quản trị MNC chiến lược khỏi thực thi địa phương, chúng tôi thực thi các tiêu chuẩn báo cáo nhất quán trên toàn danh mục của khách hàng đồng thời trung hòa các rủi ro tuân thủ và khu vực pháp lý địa phương trước khi chúng leo thang lên cấp trụ sở chính.",
+        "Quản trị hợp tác cho các MNC đa khu vực yêu cầu một mặt phẳng kiểm soát tập trung phủ trên thực thi theo luật phi tập trung. Mars cấu trúc các hợp tác này thông qua một Thỏa thuận Mức Dịch vụ (SLA) thống nhất bao quát mọi khu vực pháp lý đang hoạt động, ghép với một người dẫn đầu quản trị khu vực chuyên trách đặt tại Singapore. Kiến trúc này đảm bảo một điểm chịu trách nhiệm duy nhất cho khách hàng đồng thời thực thi các nghĩa vụ theo luật — như quản lý phúc lợi địa phương, báo cáo theo luật và giải quyết tranh chấp lao động — qua các chuyên gia HR và pháp lý nội địa được nhúng sâu. Bằng cách tách lớp quản trị MNC chiến lược khỏi thực thi địa phương, chúng tôi thực thi các tiêu chuẩn báo cáo nhất quán trên toàn danh mục của khách hàng đồng thời trung hòa các rủi ro tuân thủ và khu vực pháp lý địa phương trước khi chúng leo thang lên cấp trụ sở chính.",
       q3: "Tại sao chi phí lỗi chiếm ưu thế hơn chi phí dịch vụ trong HR xuyên biên giới, và điều này định hình triết lý giá của bạn ra sao?",
       a3:
         "Trong các triển khai HR và EOR xuyên biên giới, chi phí dịch vụ cơ sở là rất nhỏ so với chi phí lỗi tích lũy. Phân loại sai một nhân viên, không cấu trúc một việc chấm dứt trong phạm vi luật địa phương, hoặc xử lý sai các trách nhiệm thuế xuyên biên giới thường dẫn đến tranh tụng nhiều năm, lệnh cấm hoạt động hoặc các khoản phạt tài chính nặng. Triết lý giá của chúng tôi phản ánh một khoản phí giảm thiểu rủi ro nghiêm ngặt. Thay vì cạnh tranh về khối lượng giao dịch, chúng tôi đầu tư mạnh vào kiến trúc tuân thủ trước triển khai, giám sát pháp lý liên tục và giám sát vận hành cấp cao. Cấu trúc phí tài trợ cho việc triển khai chuyên môn pháp lý địa phương, chuyển dịch rủi ro tài chính và khu vực pháp lý của mở rộng xuyên biên giới ra khỏi bảng cân đối của khách hàng và sang hạ tầng được quản lý của chúng tôi.",
       q4: "Mars cấu trúc bảng lương xuyên biên giới cho một tập đoàn có trụ sở tại Singapore tuyển dụng khắp khu vực mà không kích hoạt phơi nhiễm permanent establishment ra sao?",
       a4:
-        "Bảng lương xuyên biên giới trong mô hình của chúng tôi được thiết kế qua ba lớp kiểm soát: chọn pháp nhân khu vực pháp lý, kiến trúc dispatch lao động và định vị thuế phù hợp với hiệp định. Khi thực thể thương mại của khách hàng không biện minh cho một pháp nhân địa phương được đăng ký, chúng tôi triển khai phương tiện EOR được cấp phép tại Singapore kết hợp với các cấu trúc dispatch lao động song phương tại Malaysia, Trung Quốc, Ấn Độ, Việt Nam, Thái Lan, Indonesia và Các Tiểu vương quốc Ả Rập Thống nhất — trung hòa rủi ro permanent establishment đồng thời duy trì kiểm soát hoạt động trên headcount, KPI và quyền chấm dứt. Lập kế hoạch thuế quốc tế được tích hợp ở thượng nguồn của chu kỳ bảng lương đầu tiên: chúng tôi mô hình hóa tương tác giữa recharge chi phí biệt phái, trần đóng góp xã hội phía nhà tuyển dụng và các vị thế hiệp định thuế kép áp dụng trước khi bất kỳ khoản thanh toán nào được khởi tạo.",
-      q5: "Khi nào và làm thế nào các cấu trúc dispatch lao động áp dụng như một đòn bẩy tối ưu chi phí?",
+        "Bảng lương xuyên biên giới trong mô hình của chúng tôi được thiết kế qua ba lớp kiểm soát: chọn pháp nhân khu vực pháp lý, kiến trúc phái cử lao động và định vị thuế phù hợp với hiệp định. Khi thực thể thương mại của khách hàng không biện minh cho một pháp nhân địa phương được đăng ký, chúng tôi triển khai phương tiện EOR được cấp phép tại Singapore kết hợp với các cấu trúc phái cử lao động song phương tại Malaysia, Trung Quốc, Ấn Độ, Việt Nam, Thái Lan, Indonesia và Các Tiểu vương quốc Ả Rập Thống nhất — trung hòa rủi ro cơ sở thường trú đồng thời duy trì kiểm soát hoạt động trên số lượng nhân sự, KPI và quyền chấm dứt. Lập kế hoạch thuế quốc tế được tích hợp ở thượng nguồn của chu kỳ bảng lương đầu tiên: chúng tôi mô hình hóa tương tác giữa việc tái phân bổ chi phí biệt phái, trần đóng góp xã hội phía nhà tuyển dụng và các vị thế hiệp định thuế kép áp dụng trước khi bất kỳ khoản thanh toán nào được khởi tạo.",
+      q5: "Khi nào và làm thế nào các cấu trúc phái cử lao động áp dụng như một đòn bẩy tối ưu chi phí?",
       a5:
-        "Các cấu trúc dispatch lao động đóng vai trò một đòn bẩy tối ưu chi phí quan trọng khi thâm nhập các thị trường châu Á có gánh nặng theo luật của nhà tuyển dụng cao hoặc các quy định lao động cố định cứng nhắc. Không như EOR tiêu chuẩn, dispatch lao động cho phép khách hàng sử dụng một đại lý địa phương được cấp phép để chính thức thuê và phái cử nhân viên đến địa điểm hoạt động. Cấu trúc này giới hạn các trách nhiệm bồi thường thôi việc theo luật, cung cấp khả năng mở rộng headcount linh hoạt và tối ưu hóa các đóng góp thuế phía nhà tuyển dụng. Chúng tôi tích hợp dispatch lao động trong các khung lập kế hoạch thuế quốc tế rộng hơn để đảm bảo rằng các khoản chargeback xuyên biên giới cho lao động được phái cử là hoàn toàn khấu trừ được và phù hợp với các quy định chuyển giá hiện hành, giảm đáng kể chi phí pha trộn của vốn nhân lực quốc tế.",
-      q6: "Mars tiếp cận lập kế hoạch thuế quốc tế về định vị hiệp định và recharge biệt phái như thế nào?",
+        "Các cấu trúc phái cử lao động đóng vai trò một đòn bẩy tối ưu chi phí quan trọng khi thâm nhập các thị trường châu Á có gánh nặng theo luật của nhà tuyển dụng cao hoặc các quy định lao động cố định cứng nhắc. Không như EOR tiêu chuẩn, phái cử lao động cho phép khách hàng sử dụng một đại lý địa phương được cấp phép để chính thức thuê và phái cử nhân viên đến địa điểm hoạt động. Cấu trúc này giới hạn các trách nhiệm bồi thường thôi việc theo luật, cung cấp khả năng mở rộng số lượng nhân sự linh hoạt và tối ưu hóa các đóng góp thuế phía nhà tuyển dụng. Chúng tôi tích hợp phái cử lao động trong các khung lập kế hoạch thuế quốc tế rộng hơn để đảm bảo rằng các khoản phân bổ chi phí xuyên biên giới cho lao động được phái cử là hoàn toàn khấu trừ được và phù hợp với các quy định chuyển giá hiện hành, giảm đáng kể chi phí pha trộn của vốn nhân lực quốc tế.",
+      q6: "Mars tiếp cận lập kế hoạch thuế quốc tế về định vị hiệp định và tái phân bổ chi phí biệt phái như thế nào?",
       a6:
-        "Triển khai vốn nhân lực quốc tế chiến lược yêu cầu lập kế hoạch thuế quốc tế nghiêm ngặt để ngăn xói mòn biên lợi nhuận. Chúng tôi kiến trúc các phân công xuyên biên giới bằng cách điều chỉnh các thỏa thuận recharge biệt phái với các điều khoản cụ thể của các hiệp định thuế kép song phương. Định vị hiệp định chính xác này cho phép chúng tôi cấu trúc thù lao để giảm thiểu một cách hợp pháp các trách nhiệm thuế kép cho cả người được phân công và pháp nhân doanh nghiệp. Hơn nữa, bằng cách phân tích các trần đóng góp xã hội đặc thù khu vực pháp lý và các miễn trừ cho nhân viên nước ngoài, chúng tôi thực hiện arbitrage đóng góp địa phương. Điều này đảm bảo rằng các gánh nặng theo luật của nhà tuyển dụng được giảm thiểu nghiêm ngặt mà không làm tổn hại đến mức giữ lại ròng của nhân viên hoặc vi phạm các yêu cầu tuân thủ địa phương — biến bảng lương xuyên biên giới từ một khoản nợ tĩnh thành một chi phí vận hành được tối ưu hóa.",
+        "Triển khai vốn nhân lực quốc tế chiến lược yêu cầu lập kế hoạch thuế quốc tế nghiêm ngặt để ngăn xói mòn biên lợi nhuận. Chúng tôi kiến trúc các phân công xuyên biên giới bằng cách điều chỉnh các thỏa thuận tái phân bổ chi phí biệt phái với các điều khoản cụ thể của các hiệp định thuế kép song phương. Định vị hiệp định chính xác này cho phép chúng tôi cấu trúc thù lao để giảm thiểu một cách hợp pháp các trách nhiệm thuế kép cho cả người được phân công và pháp nhân doanh nghiệp. Hơn nữa, bằng cách phân tích các trần đóng góp xã hội đặc thù khu vực pháp lý và các miễn trừ cho nhân viên nước ngoài, chúng tôi tận dụng chênh lệch đóng góp địa phương. Điều này đảm bảo rằng các gánh nặng theo luật của nhà tuyển dụng được giảm thiểu nghiêm ngặt mà không làm tổn hại đến mức giữ lại ròng của nhân viên hoặc vi phạm các yêu cầu tuân thủ địa phương — biến bảng lương xuyên biên giới từ một khoản nợ tĩnh thành một chi phí vận hành được tối ưu hóa.",
     },
     ctaBanner: {
       headline: "Sẵn sàng tuyển dụng tuân thủ khắp khu vực?",
@@ -382,7 +484,7 @@ const vi: Translation = {
     headlineAccent: "Singapore và khu vực",
     sub:
       "Tuyển dụng cố định, nhân viên hợp đồng và tìm kiếm C-suite bí mật — được cung cấp bởi các chuyên gia với kiến thức thị trường sâu sắc trên công nghệ, dịch vụ tài chính, y tế và sản xuất tại Singapore và trên 10 thị trường.",
-    ctaPrimary: "Thảo luận một Search Mandate",
+    ctaPrimary: "Thảo luận một Nhiệm vụ Tìm kiếm",
     ctaSecondary: "Xem Quy trình của Chúng tôi",
     trustLine: "Giấy phép MOM EA Số 09C2925 · Thành lập từ 2009 · 10 thị trường",
     tracks: {
@@ -391,20 +493,20 @@ const vi: Translation = {
       permanent: {
         title: "Tuyển dụng Cố định",
         body:
-          "Tuyển dụng cố định cấp trung đến cấp cao trên mọi ngành. Chúng tôi tìm nguồn các ứng viên chủ động và thụ động, tiến hành các cuộc phỏng vấn có cấu trúc và trình bày một shortlist đã được kiểm tra — không phải một bãi CV.",
+          "Tuyển dụng cố định cấp trung đến cấp cao trên mọi ngành. Chúng tôi tìm nguồn các ứng viên chủ động và thụ động, tiến hành các cuộc phỏng vấn có cấu trúc và trình bày một danh sách rút gọn đã được kiểm tra — không phải một bãi CV.",
         suitable: "Cấp Manager đến Director · Mọi ngành · Vai trò Singapore và khu vực",
       },
       contract: {
         title: "Nhân viên Hợp đồng & Tạm thời",
         body:
-          "Tuyển dụng ngắn hạn, theo dự án và tạm thời với tuân thủ luật đầy đủ. Đặc biệt hiệu quả cho các đợt ramp dự án BPO, nghỉ thai sản và headcount thâm nhập thị trường trước một quyết định tuyển cố định.",
-        suitable: "Engagement 3–24 tháng · Đội dự án · Thâm nhập thị trường",
+          "Tuyển dụng ngắn hạn, theo dự án và tạm thời với tuân thủ luật đầy đủ. Đặc biệt hiệu quả cho các đợt tăng quy mô dự án BPO, nghỉ thai sản và nhân sự thâm nhập thị trường trước một quyết định tuyển cố định.",
+        suitable: "Hợp đồng 3–24 tháng · Đội dự án · Thâm nhập thị trường",
       },
       executive: {
         title: "Tìm kiếm Điều hành & C-Suite",
         body:
-          "Tìm kiếm retained, bí mật cho các mandate C-suite, VP và cấp Hội đồng. Chúng tôi cam kết một shortlist ứng viên thụ động được kiểm tra đầy đủ, sẵn sàng theo khu vực pháp lý trong một sprint khởi đầu 21 ngày, được điều chỉnh bởi một SLA dựa trên milestone.",
-        suitable: "CEO, CFO, CTO, COO, VP trở lên · Mandate xuyên biên giới · Tìm kiếm chế độ stealth",
+          "Tìm kiếm retained, bí mật cho các nhiệm vụ C-suite, VP và cấp Hội đồng. Chúng tôi cam kết một danh sách rút gọn ứng viên thụ động được kiểm tra đầy đủ, sẵn sàng theo khu vực pháp lý trong một sprint khởi đầu 21 ngày, được điều chỉnh bởi một SLA dựa trên cột mốc.",
+        suitable: "CEO, CFO, CTO, COO, VP trở lên · Nhiệm vụ xuyên biên giới · Tìm kiếm chế độ bí mật",
       },
     },
     industries: {
@@ -422,24 +524,24 @@ const vi: Translation = {
     process: {
       eyebrow: "Cách hoạt động",
       headline: "Cách một cuộc tìm kiếm hoạt động với Mars",
-      step1Title: "Brief Mandate",
+      step1Title: "Tóm tắt Nhiệm vụ",
       step1Body:
         "Chúng tôi dành phiên đầu tiên để hiểu không chỉ vai trò mà còn tại sao nó mở, lần tuyển trước đã sai gì và thành công trong 90 ngày trông như thế nào.",
       step2Title: "Lập bản đồ Thị trường",
       step2Body:
-        "Chúng tôi lập bản đồ toàn bộ pool nhân tài — ứng viên chủ động, ứng viên thụ động và nhân tài của đối thủ. Bạn nhận một báo cáo intelligence thị trường trước CV đầu tiên.",
+        "Chúng tôi lập bản đồ toàn bộ nguồn nhân tài — ứng viên chủ động, ứng viên thụ động và nhân tài của đối thủ. Bạn nhận một báo cáo thông tin thị trường trước CV đầu tiên.",
       step3Title: "Tiếp cận Ứng viên",
       step3Body:
-        "Chúng tôi tiếp cận ứng viên một cách kín đáo. Đối với các mandate điều hành, việc tiếp cận của chúng tôi không nêu tên khách hàng cho đến khi sự quan tâm hai bên được xác nhận.",
+        "Chúng tôi tiếp cận ứng viên một cách kín đáo. Đối với các nhiệm vụ điều hành, việc tiếp cận của chúng tôi không nêu tên khách hàng cho đến khi sự quan tâm hai bên được xác nhận.",
       step4Title: "Đánh giá Có cấu trúc",
       step4Body:
         "Mọi ứng viên được trình bày đã vượt qua một cuộc phỏng vấn năng lực có cấu trúc, sự đồng nhất kiểm tra tham chiếu và một khung xác minh nền tảng đặc thù khu vực pháp lý.",
-      step5Title: "Trình bày Shortlist",
+      step5Title: "Trình bày Danh sách Rút gọn",
       step5Body:
-        "Bạn nhận một shortlist 3–5 ứng viên đủ tiêu chuẩn đầy đủ trong khung thời gian sprint đã thỏa thuận, kèm các tóm tắt đánh giá bằng văn bản.",
+        "Bạn nhận một danh sách rút gọn 3–5 ứng viên đủ tiêu chuẩn đầy đủ trong khung thời gian sprint đã thỏa thuận, kèm các tóm tắt đánh giá bằng văn bản.",
       step6Title: "Đề nghị & Chốt",
       step6Body:
-        "Chúng tôi quản lý đàm phán đề nghị, các kịch bản counter-offer và chuyển đổi thời gian báo trước. Đối với tuyển dụng khu vực, chúng tôi phối hợp trực tiếp với đội onboarding EOR.",
+        "Chúng tôi quản lý đàm phán đề nghị, các kịch bản đề nghị đối ứng và chuyển đổi thời gian báo trước. Đối với tuyển dụng khu vực, chúng tôi phối hợp trực tiếp với đội onboarding EOR.",
     },
     integration: {
       eyebrow: "Tuyển dụng + EOR",
@@ -447,7 +549,7 @@ const vi: Translation = {
       p1:
         "Điểm ma sát truyền thống trong mở rộng quốc tế là bàn giao giữa thu hút nhân tài và tuân thủ HR địa phương. Hầu hết các hãng xem đây là các luồng công việc riêng biệt. Mars thì không.",
       p2:
-        "Khoảnh khắc một ứng viên chấp nhận một đề nghị, engine tuân thủ EOR của chúng tôi khởi động chuỗi onboarding địa phương song song với thời gian báo trước của ứng viên. Hợp đồng lao động được soạn. Cấp phép làm việc được khởi động. Hồ sơ bảng lương được thiết lập. Tài khoản theo luật được mở.",
+        "Khoảnh khắc một ứng viên chấp nhận một đề nghị, bộ máy tuân thủ EOR của chúng tôi khởi động chuỗi onboarding địa phương song song với thời gian báo trước của ứng viên. Hợp đồng lao động được soạn. Cấp phép làm việc được khởi động. Hồ sơ bảng lương được thiết lập. Tài khoản theo luật được mở.",
       p3:
         "Đến lúc ứng viên bước vào ngày đầu tiên, họ đã tuân thủ đầy đủ và sẵn sàng vận hành. Không phải đang chờ xử lý.",
       cta: "Tìm hiểu cách EOR hoạt động",
@@ -459,24 +561,24 @@ const vi: Translation = {
       sinceValue: "2009",
       coverage: "Thị trường phục vụ",
       coverageValue: "10",
-      sprint: "Sprint shortlist C-suite",
+      sprint: "Sprint danh sách rút gọn C-suite",
       sprintValue: "21 ngày",
     },
     faq: {
       eyebrow: "Câu hỏi thường gặp",
-      headline: "Những câu hỏi chúng tôi nhận trên các mandate điều hành",
-      q1: "Mô hình SLA cho các mandate tìm kiếm C-suite và VP xuyên biên giới là gì?",
+      headline: "Những câu hỏi chúng tôi nhận về các nhiệm vụ điều hành",
+      q1: "Mô hình SLA cho các nhiệm vụ tìm kiếm C-suite và VP xuyên biên giới là gì?",
       a1:
-        "Thực hiện các mandate C-suite và VP xuyên biên giới yêu cầu độ chính xác tuyệt đối và các lịch trình thực thi được đảm bảo. Mô hình tìm kiếm retained của chúng tôi được điều chỉnh bởi một Service Level Agreement nghiêm ngặt, dựa trên milestone. Chúng tôi không dựa vào tổng hợp job board thụ động. Thay vào đó, chúng tôi cam kết cung cấp một shortlist ứng viên thụ động được kiểm tra đầy đủ, sẵn sàng theo khu vực pháp lý trong một sprint khởi đầu 21 ngày. SLA xác định các chỉ số nghiêm ngặt cho việc trình bày ứng viên, lên lịch phỏng vấn và đàm phán đề nghị cuối cùng. Bằng cách gắn nhịp độ vận hành của chúng tôi với các deliverable hợp đồng cứng, chúng tôi cung cấp cho các trụ sở chính MNC khả năng dự đoán cần thiết để điều chỉnh các chuyển đổi điều hành quan trọng với các lịch trình thâm nhập thị trường chiến lược và mở rộng xuyên biên giới rộng hơn.",
+        "Thực hiện các nhiệm vụ C-suite và VP xuyên biên giới yêu cầu độ chính xác tuyệt đối và các lịch trình thực thi được đảm bảo. Mô hình tìm kiếm retained của chúng tôi được điều chỉnh bởi một Thỏa thuận Mức Dịch vụ (SLA) nghiêm ngặt, dựa trên cột mốc. Chúng tôi không dựa vào việc tổng hợp tin tuyển dụng thụ động. Thay vào đó, chúng tôi cam kết cung cấp một danh sách rút gọn ứng viên thụ động được kiểm tra đầy đủ, sẵn sàng theo khu vực pháp lý trong một sprint khởi đầu 21 ngày. SLA xác định các chỉ số nghiêm ngặt cho việc trình bày ứng viên, lên lịch phỏng vấn và đàm phán đề nghị cuối cùng. Bằng cách gắn nhịp độ vận hành của chúng tôi với các sản phẩm bàn giao hợp đồng cứng, chúng tôi cung cấp cho các trụ sở chính MNC khả năng dự đoán cần thiết để điều chỉnh các chuyển đổi điều hành quan trọng với các lịch trình thâm nhập thị trường chiến lược và mở rộng xuyên biên giới rộng hơn.",
       q2: "Xác minh nền tảng được xử lý như thế nào trên các khu vực pháp lý hỗn hợp với các luật riêng tư phân mảnh?",
       a2:
-        "Kiểm tra nền tảng xuyên khu vực pháp lý đối mặt với các luật riêng tư và truy cập dữ liệu phân mảnh nặng. Trong khi tính trung thực tài chính dễ dàng xác minh được ở Singapore, các khu vực pháp lý như EU hay Trung Quốc đại lục áp đặt các giới hạn nghiêm ngặt về truy cập tranh tụng dân sự hay lịch sử việc làm. Mars điều hướng các khoảng trống này bằng cách lập bản đồ các giao thức xác minh đến các thực tế pháp lý địa phương, đảm bảo tuân thủ ICA/MOM nghiêm ngặt ở Singapore và các khung tương tự ở nước ngoài. Khi xác minh cơ sở dữ liệu trực tiếp bị chặn về mặt pháp lý, chúng tôi triển khai các khung tham chiếu sâu — phân tích các dấu chân nghề nghiệp gián tiếp và thực hiện các cuộc phỏng vấn nhiều tầng, có cấu trúc với các cấp trên cũ để tạo một hồ sơ rủi ro độ trung thực cao ngay cả khi các hồ sơ theo luật vẫn không rõ ràng.",
+        "Kiểm tra nền tảng xuyên khu vực pháp lý đối mặt với các luật riêng tư và truy cập dữ liệu phân mảnh nặng. Trong khi tính trung thực tài chính dễ dàng xác minh được ở Singapore, các khu vực pháp lý như EU hay Trung Quốc đại lục áp đặt các giới hạn nghiêm ngặt về truy cập tranh tụng dân sự hay lịch sử việc làm. Mars điều hướng các khoảng trống này bằng cách lập bản đồ các giao thức xác minh đến các thực tế pháp lý địa phương, đảm bảo tuân thủ ICA/MOM nghiêm ngặt ở Singapore và các khung tương tự ở nước ngoài. Khi xác minh cơ sở dữ liệu trực tiếp bị chặn về mặt pháp lý, chúng tôi triển khai các khung tham chiếu sâu — phân tích các dấu vết nghề nghiệp gián tiếp và thực hiện các cuộc phỏng vấn nhiều tầng, có cấu trúc với các cấp trên cũ để tạo một hồ sơ rủi ro độ trung thực cao ngay cả khi các hồ sơ theo luật vẫn không rõ ràng.",
     },
     ctaBanner: {
       headline: "Sẵn sàng bắt đầu một cuộc tìm kiếm?",
       body:
         "Cho dù bạn cần một VP ở Singapore vào quý tới hay một cuộc tìm kiếm CFO bí mật trên ba khu vực pháp lý — đội tìm kiếm khu vực của chúng tôi có quyền truy cập thị trường, mạng lưới nội địa và hạ tầng vận hành để thực hiện.",
-      bullet1: "Sprint shortlist 21 ngày cho các mandate điều hành retained",
+      bullet1: "Sprint danh sách rút gọn 21 ngày cho các nhiệm vụ điều hành retained",
       bullet2: "Bàn giao EOR trực tiếp cho các tuyển dụng quốc tế",
       bullet3: "Giấy phép MOM EA Số 09C2925",
       cta: "Thảo luận một Cuộc Tìm kiếm Bí mật",
@@ -510,10 +612,10 @@ const vi: Translation = {
       payroll: {
         title: "Tiền xử lý Bảng lương AI",
         body:
-          "Các engine tính toán AI xử lý các đầu vào bảng lương thô — dữ liệu chấm công, cấu trúc hoa hồng, điều chỉnh phúc lợi — thành các tệp tiền bảng lương có thể audit, ghép với các chuyên gia bảng lương cấp cao quản trị các hoạt động bảng lương đa khu vực pháp lý trên 10 thị trường. Tách rời khỏi thực thi tài chính cuối cùng để giữ các audit trail bất biến cho báo cáo theo luật.",
+          "Các bộ máy tính toán AI xử lý các đầu vào bảng lương thô — dữ liệu chấm công, cấu trúc hoa hồng, điều chỉnh phúc lợi — thành các tệp tiền bảng lương có thể kiểm toán, ghép với các chuyên gia bảng lương cấp cao quản trị các hoạt động bảng lương đa khu vực pháp lý trên 10 thị trường. Tách rời khỏi thực thi tài chính cuối cùng để giữ các dấu vết kiểm toán bất biến cho báo cáo theo luật.",
         bullet1: "Hỗ trợ bảng lương đa khu vực pháp lý trên 10 thị trường",
         bullet2: "Thời gian chu kỳ tiền bảng lương: ngày → giờ",
-        bullet3: "Sổ điều chỉnh được hash mã hóa",
+        bullet3: "Sổ điều chỉnh được băm mã hóa",
       },
       consultants: {
         title: "Các Chuyên gia Tư vấn AI Nhúng",
@@ -521,7 +623,7 @@ const vi: Translation = {
           "Các chuyên gia tư vấn AI cấp cao và prompt engineer được triển khai bên trong đội ngũ của bạn. Fractional Head of AI có thể triển khai trong 2 tuần. Xây dựng các năng lực tự động hóa nội bộ mà không cần thuê một đội AI đầy đủ.",
         bullet1: "Fractional Head of AI · Triển khai 2 tuần",
         bullet2: "Các pod tự động hóa quy trình",
-        bullet3: "Audit sẵn sàng AI và playbook triển khai",
+        bullet3: "Đánh giá mức độ sẵn sàng AI và cẩm nang triển khai",
       },
       onboarding: {
         title: "Tự động hóa Onboarding & Offboarding",
@@ -548,21 +650,21 @@ const vi: Translation = {
       headline: "Những câu hỏi về AI trong HR",
       q1: "Bot tự động hóa HR dựa trên WhatsApp xử lý nhập liệu và trích xuất có cấu trúc như thế nào?",
       a1:
-        "Kiến trúc tự động hóa quy trình AI của chúng tôi giải quyết các quy trình hành chính ma sát cao cho các đội ngũ phân tán. Chúng tôi triển khai một bot tự động hóa dựa trên WhatsApp an toàn hoạt động như một nhân viên kỹ thuật số được điều khiển bằng AI. Luồng nhập liệu bắt đầu với việc nhân viên gửi hình ảnh giấy chứng nhận y tế hoặc biên lai chi phí trực tiếp qua WhatsApp. Hệ thống sử dụng OCR tiên tiến và trích xuất có cấu trúc điều khiển bằng LLM để xác định ngày tháng, tên phòng khám, mã chẩn đoán và thời gian nghỉ. Dữ liệu được trích xuất này được xác minh dựa trên các giới hạn theo luật và tự động được đẩy qua API vào hàng đợi bàn giao hệ thống HRIS và bảng lương cốt lõi. Điều này loại bỏ nhập dữ liệu thủ công, đảm bảo cập nhật số dư phép thời gian thực và đảm bảo tuân thủ sẵn sàng cho audit.",
-      q2: "Tự động hóa Quy trình AI tích hợp với các chu kỳ bảng lương theo luật như thế nào mà không phá vỡ các audit trail?",
+        "Kiến trúc tự động hóa quy trình AI của chúng tôi giải quyết các quy trình hành chính ma sát cao cho các đội ngũ phân tán. Chúng tôi triển khai một bot tự động hóa dựa trên WhatsApp an toàn hoạt động như một nhân viên kỹ thuật số được điều khiển bằng AI. Luồng nhập liệu bắt đầu với việc nhân viên gửi hình ảnh giấy chứng nhận y tế hoặc biên lai chi phí trực tiếp qua WhatsApp. Hệ thống sử dụng OCR tiên tiến và trích xuất có cấu trúc điều khiển bằng LLM để xác định ngày tháng, tên phòng khám, mã chẩn đoán và thời gian nghỉ. Dữ liệu được trích xuất này được xác minh dựa trên các giới hạn theo luật và tự động được đẩy qua API vào hàng đợi bàn giao hệ thống HRIS và bảng lương cốt lõi. Điều này loại bỏ nhập dữ liệu thủ công, đảm bảo cập nhật số dư phép thời gian thực và đảm bảo tuân thủ sẵn sàng cho kiểm toán.",
+      q2: "Tự động hóa Quy trình AI tích hợp với các chu kỳ bảng lương theo luật như thế nào mà không phá vỡ các dấu vết kiểm toán?",
       a2:
-        "Tích hợp tự động hóa quy trình AI vào bảng lương theo luật yêu cầu một kiến trúc dung sai lỗi bằng không. Chúng tôi tách lớp xử lý AI khỏi lớp thực thi tài chính cuối cùng để giữ các audit trail bất biến. Khi các hệ thống AI của chúng tôi xử lý dữ liệu vận hành thô, đầu ra được dàn dựng trong một môi trường xác thực tiền bảng lương. Việc bàn giao hệ thống bảng lương được phân quyền nghiêm ngặt; AI tạo một sổ các điều chỉnh được đề xuất có cấu trúc, được hash mã hóa. Các bộ điều khiển bảng lương con người xem xét đầu ra xác định này dựa trên các ngưỡng phương sai đã thiết lập trước khi commit kỳ chạy. Điều này đảm bảo rằng trong khi AI xử lý khối lượng tính toán, báo cáo tài chính theo luật và nộp hồ sơ thuế vẫn được quản trị bởi các ma trận phê duyệt có thể xác minh, có thể audit.",
+        "Tích hợp tự động hóa quy trình AI vào bảng lương theo luật yêu cầu một kiến trúc dung sai lỗi bằng không. Chúng tôi tách lớp xử lý AI khỏi lớp thực thi tài chính cuối cùng để giữ các dấu vết kiểm toán bất biến. Khi các hệ thống AI của chúng tôi xử lý dữ liệu vận hành thô, đầu ra được dàn dựng trong một môi trường xác thực tiền bảng lương. Việc bàn giao hệ thống bảng lương được phân quyền nghiêm ngặt; AI tạo một sổ các điều chỉnh được đề xuất có cấu trúc, được băm mã hóa. Các bộ điều khiển bảng lương là con người xem xét đầu ra xác định này dựa trên các ngưỡng phương sai đã thiết lập trước khi xác nhận kỳ chạy. Điều này đảm bảo rằng trong khi AI xử lý khối lượng tính toán, báo cáo tài chính theo luật và nộp hồ sơ thuế vẫn được quản trị bởi các ma trận phê duyệt có thể xác minh, có thể kiểm toán.",
       q3: "Các kiểm soát cư trú dữ liệu và bảo mật nào tồn tại cho dữ liệu HR qua trung gian LLM?",
       a3:
         "Triển khai LLM trong nhân sự đòi hỏi quản trị dữ liệu nghiêm ngặt để đáp ứng các luật riêng tư đa khu vực pháp lý, đặc biệt PDPA của Singapore. Kiến trúc AI của chúng tôi vận hành nghiêm ngặt trên các phiên bản mô hình closed-loop cấp doanh nghiệp. Dữ liệu HR của khách hàng không bao giờ được sử dụng để huấn luyện mô hình nền tảng. Chúng tôi thực thi các giao thức cư trú dữ liệu nghiêm ngặt, đảm bảo rằng mọi xử lý và lưu trữ thông tin nhận dạng cá nhân diễn ra trên các máy chủ chủ quyền, địa phương phù hợp với các chỉ thị tuân thủ của khách hàng. Trước khi xử lý LLM, các trường nhạy cảm trải qua ẩn danh hóa và token hóa lập trình. Điều này đảm bảo rằng các kiểm soát bảo mật vẫn không bị phá vỡ, trung hòa rủi ro rò rỉ dữ liệu trong khi đạt được tốc độ vận hành của AI tạo sinh.",
       q4: "Đây là một nền tảng phần mềm, hay nó liên quan đến giám sát con người?",
       a4:
-        "Dịch vụ tự động hóa AI của Mars không phải một triển khai phần mềm thuần túy. Nó kết hợp các engine tính toán AI với các chuyên gia bảng lương cấp cao, những người cấu hình, xác thực và quản trị các đầu ra. AI xử lý khối lượng xử lý dữ liệu và nhận diện mẫu trên các cấu trúc hoa hồng phức tạp và các quy tắc đóng góp đa khu vực pháp lý; các chuyên gia bảng lương áp dụng chuyên môn đặc thù khu vực pháp lý và phê duyệt tệp tiền bảng lương trước khi nó đi vào chu kỳ nộp hồ sơ theo luật. Mô hình human-in-the-loop này đảm bảo rằng tốc độ tự động hóa không làm tổn hại đến độ chính xác tuân thủ — đặc biệt trên các thị trường nơi các quy định bảng lương bị phân mảnh và được cập nhật thường xuyên.",
+        "Dịch vụ tự động hóa AI của Mars không phải một triển khai phần mềm thuần túy. Nó kết hợp các bộ máy tính toán AI với các chuyên gia bảng lương cấp cao, những người cấu hình, xác thực và quản trị các đầu ra. AI xử lý khối lượng xử lý dữ liệu và nhận diện mẫu trên các cấu trúc hoa hồng phức tạp và các quy tắc đóng góp đa khu vực pháp lý; các chuyên gia bảng lương áp dụng chuyên môn đặc thù khu vực pháp lý và phê duyệt tệp tiền bảng lương trước khi nó đi vào chu kỳ nộp hồ sơ theo luật. Mô hình human-in-the-loop này đảm bảo rằng tốc độ tự động hóa không làm tổn hại đến độ chính xác tuân thủ — đặc biệt trên các thị trường nơi các quy định bảng lương bị phân mảnh và được cập nhật thường xuyên.",
     },
     ctaBanner: {
       headline: "Sẵn sàng tự động hóa các hoạt động HR của bạn?",
       body:
-        "Các quy trình tự động hóa AI của chúng tôi đang hoạt động trên các đội ngũ phân tán tại Singapore, Malaysia và UAE. Trao đổi với đội AI về một cuộc audit quy trình cho tổ chức của bạn — chúng tôi sẽ xác định các cơ hội tự động hóa có tác động cao nhất trong các hoạt động HR và bảng lương hiện có của bạn.",
+        "Các quy trình tự động hóa AI của chúng tôi đang hoạt động trên các đội ngũ phân tán tại Singapore, Malaysia và UAE. Trao đổi với đội AI về một cuộc đánh giá quy trình cho tổ chức của bạn — chúng tôi sẽ xác định các cơ hội tự động hóa có tác động cao nhất trong các hoạt động HR và bảng lương hiện có của bạn.",
       cta: "Trao đổi với Đội AI",
     },
     roadmap: {
@@ -576,7 +678,7 @@ const vi: Translation = {
   aboutPage: {
     metaTitle: "Về Mars Consulting — Chuyên gia HR & EOR Singapore Từ 2009",
     metaDesc:
-      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009. EOR, tìm kiếm điều hành và vận hành HR trên 10 thị trường — Singapore, Malaysia, Hong Kong, China, India, USA, UAE, Vietnam, Thailand, Indonesia. Giấy phép MOM EA Số 09C2925.",
+      "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009. EOR, tìm kiếm điều hành và vận hành HR trên 10 thị trường — Singapore, Malaysia, Hồng Kông, Trung Quốc, Ấn Độ, Hoa Kỳ, UAE, Việt Nam, Thái Lan, Indonesia. Giấy phép MOM EA Số 09C2925.",
     pill: "Về Mars Consulting",
     headlineLead: "Hạ tầng HR",
     headlineAccent: "Đằng sau các Đội ngũ Toàn cầu.",
@@ -584,14 +686,14 @@ const vi: Translation = {
     sub:
       "Mars Consulting được thành lập tại Singapore vào tháng 4 năm 2009 với một niềm tin: rằng các doanh nghiệp tuyệt vời được xây dựng bởi đúng người, đặt trong đúng vai trò, được hỗ trợ bởi đúng hệ thống. Hôm nay chúng tôi là một đối tác HR dịch vụ đầy đủ trên 10 thị trường — cung cấp Employer of Record, bảng lương toàn cầu, tìm kiếm điều hành, HR outsourcing và tự động hóa quy trình bằng AI cho các công ty ở mọi giai đoạn tăng trưởng.",
     overview:
-      "Mars Consulting Pte Ltd (UEN 200907301Z) là một công ty giải pháp nhân sự và lực lượng lao động được thành lập tại Singapore vào tháng 4 năm 2009. Được cấp phép bởi Bộ Nhân lực Singapore (Giấy phép MOM EA Số 09C2925), công ty cung cấp các dịch vụ Employer of Record, tìm kiếm điều hành, bảng lương outsourcing, HR outsourcing và tự động hóa AI trên 10 thị trường — với các văn phòng trực tiếp tại Singapore, Malaysia, Hong Kong, China, India và Hoa Kỳ, cùng các hoạt động dịch vụ bao phủ Các Tiểu vương quốc Ả Rập Thống nhất, Vietnam, Thailand và Indonesia. Mars Consulting có hơn 100 chuyên gia tư vấn và có trụ sở chính tại Marina Square, Singapore.",
+      "Mars Consulting Pte Ltd (UEN 200907301Z) là một công ty giải pháp nhân sự và lực lượng lao động được thành lập tại Singapore vào tháng 4 năm 2009. Được cấp phép bởi Bộ Nhân lực Singapore (Giấy phép MOM EA Số 09C2925), công ty cung cấp các dịch vụ Employer of Record, tìm kiếm điều hành, thuê ngoài bảng lương, HR Outsourcing và tự động hóa AI trên 10 thị trường — với các văn phòng trực tiếp tại Singapore, Malaysia, Hồng Kông, Trung Quốc, Ấn Độ và Hoa Kỳ, cùng các hoạt động dịch vụ bao phủ Các Tiểu vương quốc Ả Rập Thống nhất, Việt Nam, Thái Lan và Indonesia. Mars Consulting có hơn 100 chuyên gia tư vấn và có trụ sở chính tại Marina Square, Singapore.",
     timeline: {
       eyebrow: "Hành trình của chúng tôi",
       headline: "Chúng tôi đã đến đây như thế nào",
       y2009:
         "Thành lập tại Singapore. Ban đầu tập trung vào tuyển dụng cố định và hợp đồng cho các ngành công nghệ và dịch vụ tài chính. Được xây dựng từ ngày đầu trên nguyên tắc rằng lời khuyên HR chỉ tốt như kiến thức vận hành đằng sau nó.",
       y2013:
-        "Mở rộng vào Business Process Outsourcing. Mở rộng phạm vi ngành ngoài tech và tài chính sang bất động sản và xây dựng — mang vận hành HR có cấu trúc đến các ngành lịch sử dựa vào các thực hành tuyển dụng không chính thức.",
+        "Mở rộng vào Business Process Outsourcing. Mở rộng phạm vi ngành ngoài công nghệ và tài chính sang bất động sản và xây dựng — mang vận hành HR có cấu trúc đến các ngành vốn dựa vào các thực hành tuyển dụng không chính thức trong lịch sử.",
       y2017:
         "Ra mắt các dịch vụ Employer of Record — chuyển từ một nhà tuyển dụng khu vực thành một nhà cung cấp hạ tầng HR xuyên biên giới. Mở rộng trên khắp châu Á, Trung Đông và Hoa Kỳ. Đây đánh dấu điểm mà tại đó Mars trở thành không chỉ một hãng tuyển dụng, mà là một nền tảng việc làm và bảng lương đầy đủ cho các công ty hoạt động xuyên biên giới.",
       y2020:
@@ -599,7 +701,7 @@ const vi: Translation = {
       y2025:
         "Ra mắt thực hành Tự động hóa AI — triển khai các quy trình điều khiển bằng AI và các chuyên gia cấp cao để giúp các đội ngũ phân tán tự động hóa các quy trình HR ma sát cao. Các triển khai trực tiếp đầu tiên trên khắp Singapore, Malaysia và UAE.",
       y2026:
-        "Mở rộng phạm vi dịch vụ đến 10 thị trường — thêm Vietnam và Indonesia vào dấu chân dịch vụ khu vực. Bắt đầu phát triển hạ tầng Hộ chiếu Việc làm Kỹ thuật số và micro-credential cho thế hệ tiếp theo của quản lý lực lượng lao động khu vực.",
+        "Mở rộng phạm vi dịch vụ đến 10 thị trường — thêm Việt Nam và Indonesia vào phạm vi phủ sóng dịch vụ khu vực. Bắt đầu phát triển hạ tầng Hộ chiếu Việc làm Kỹ thuật số và chứng chỉ vi mô cho thế hệ quản lý lực lượng lao động khu vực tiếp theo.",
     },
     founder: {
       eyebrow: "Người sáng lập",
@@ -611,9 +713,9 @@ const vi: Translation = {
       p2:
         "Với một nền tảng trải dài qua công nghệ doanh nghiệp và vận hành vốn nhân lực, Yuggie xây dựng Mars Consulting trên niềm tin rằng lời khuyên HR phải bắt nguồn từ thực tế vận hành — rằng những người hiểu cách các hệ thống thực sự chạy là người tốt nhất để thiết kế các cấu trúc hỗ trợ chúng.",
       p3:
-        "Triết lý này định hình mọi thứ: cách chúng tôi xác định phạm vi các engagement, cách chúng tôi bố trí các dự án và cách chúng tôi nói với khách hàng khi một giải pháp đơn giản hơn là lựa chọn đúng.",
+        "Triết lý này định hình mọi thứ: cách chúng tôi xác định phạm vi các hợp tác, cách chúng tôi bố trí các dự án và cách chúng tôi nói với khách hàng khi một giải pháp đơn giản hơn là lựa chọn đúng.",
       p4:
-        "Trải qua hơn một thập kỷ hoạt động khắp châu Á, Mars đã xây dựng mạng lưới vận hành pháp lý, tuân thủ và HR nội địa làm nền tảng cho mọi engagement xuyên biên giới — các mối quan hệ được phát triển qua các triển khai thực tế tại Singapore, Malaysia, Hong Kong, China, India và Hoa Kỳ, không phải được tìm nguồn cho các mandate riêng lẻ.",
+        "Trải qua hơn một thập kỷ hoạt động khắp châu Á, Mars đã xây dựng mạng lưới vận hành pháp lý, tuân thủ và HR nội địa làm nền tảng cho mọi hợp tác xuyên biên giới — các mối quan hệ được phát triển qua các triển khai thực tế tại Singapore, Malaysia, Hồng Kông, Trung Quốc, Ấn Độ và Hoa Kỳ, không phải được tìm nguồn cho từng nhiệm vụ riêng lẻ.",
     },
     numbers: {
       years: "Thành lập",
@@ -625,7 +727,7 @@ const vi: Translation = {
       eyebrow: "Đội ngũ của chúng tôi",
       headline: "Xác minh các chuyên gia tư vấn của chúng tôi một cách công khai.",
       body:
-        "Các nhà tuyển dụng, chuyên gia tư vấn và chuyên gia cấp cao của chúng tôi trên khắp Singapore, Malaysia, Hong Kong, China, India và Hoa Kỳ được liệt kê công khai trên trang công ty LinkedIn của chúng tôi — với tên, vai trò, địa điểm và thời gian công tác hiển thị cho bất kỳ ai.",
+        "Các nhà tuyển dụng, chuyên gia tư vấn và chuyên gia cấp cao của chúng tôi trên khắp Singapore, Malaysia, Hồng Kông, Trung Quốc, Ấn Độ và Hoa Kỳ được liệt kê công khai trên trang công ty LinkedIn của chúng tôi — với tên, vai trò, địa điểm và thời gian công tác hiển thị cho bất kỳ ai.",
       cta: "Xem đội ngũ trên LinkedIn ↗",
       ctaUrl: "https://www.linkedin.com/company/marsconsulting%E9%BA%A6%E5%A3%AB%E5%92%A8%E8%AF%A2/",
     },
@@ -682,9 +784,9 @@ const vi: Translation = {
         address: "1421 Begonia Way, Superior, CO 80027",
       },
       serviceLabel: "Các thị trường dịch vụ (không có văn phòng địa phương)",
-      serviceMarkets: "United Arab Emirates · Vietnam · Thailand · Indonesia",
+      serviceMarkets: "Các Tiểu vương quốc Ả Rập Thống nhất · Việt Nam · Thái Lan · Indonesia",
       servicePartner: "Dẫn dắt bởi đối tác",
-      serviceNote: "Các dịch vụ EOR, bảng lương và HR được cung cấp thông qua các đối tác nội địa và các account lead đặt tại Singapore.",
+      serviceNote: "Các dịch vụ EOR, bảng lương và HR được cung cấp thông qua các đối tác nội địa và các phụ trách khách hàng đặt tại Singapore.",
       mapHint: "Di chuột hoặc chạm bất kỳ điểm đánh dấu quốc gia nào để chuyển đến địa chỉ của nó.",
     },
     principles: {
@@ -695,7 +797,7 @@ const vi: Translation = {
         "Chúng tôi nói với khách hàng khi một nền tảng SaaS là đủ và họ không cần chúng tôi. Chúng tôi chỉ tham gia khi năng lực của chúng tôi thêm giá trị thực chất so với một lựa chọn rẻ hơn.",
       depthTitle: "Chiều sâu vận hành",
       depthBody:
-        "Chúng tôi không thầu phụ tuân thủ đặc thù khu vực pháp lý cho các bên thứ ba mà chúng tôi chưa từng làm việc cùng. Mỗi quốc gia chúng tôi hoạt động đều có một mối quan hệ đối tác nội địa được thiết lập, xây dựng qua nhiều năm, không phải được tìm nguồn cho một engagement đơn lẻ.",
+        "Chúng tôi không thầu phụ tuân thủ đặc thù khu vực pháp lý cho các bên thứ ba mà chúng tôi chưa từng làm việc cùng. Mỗi quốc gia chúng tôi hoạt động đều có một mối quan hệ đối tác nội địa được thiết lập, xây dựng qua nhiều năm, không phải được tìm nguồn cho một lần hợp tác đơn lẻ.",
       accountTitle: "Một điểm chịu trách nhiệm duy nhất",
       accountBody:
         "Bất kể có bao nhiêu quốc gia hay dịch vụ liên quan, một quản lý quan hệ chịu trách nhiệm cho toàn bộ phạm vi công việc. Bạn không quản lý một mạng lưới nhà cung cấp. Bạn quản lý một cuộc gọi.",
@@ -716,10 +818,10 @@ const vi: Translation = {
     headlineAccent: "mà không cần tuyển toàn thời gian.",
     sub:
       "Các chuyên gia tư vấn HR nhúng được triển khai trực tiếp bên trong tổ chức của bạn cho công việc chiến lược và vận hành. Chúng tôi đóng vai trò chức năng HR của bạn — từ thiết kế chính sách đến tái cấu trúc tổ chức — cho các công ty cần năng lực cấp cao mà không cam kết với một Giám đốc HR toàn thời gian.",
-    ctaPrimary: "Thảo luận một Mandate HR Outsourcing",
+    ctaPrimary: "Thảo luận một Nhiệm vụ HR Outsourcing",
     ctaSecondary: "Xem Cách Chúng tôi Làm việc",
     useCases: {
-      eyebrow: "Khi nào các công ty engage Mars",
+      eyebrow: "Khi nào các công ty hợp tác với Mars",
       headline: "Bốn thời điểm khi HR nhúng có ý nghĩa.",
       case1: "Các công ty giai đoạn tăng trưởng (50–500 nhân viên) không có một lãnh đạo HR cấp cao",
       case2: "Tích hợp M&A — hài hòa các chính sách HR trên các pháp nhân được mua lại",
@@ -733,12 +835,12 @@ const vi: Translation = {
       item3: "Cấu trúc hóa lương thưởng và phúc lợi",
       item4: "Các khung quản lý hiệu suất và phát triển nhân tài",
       item5: "Quan hệ nhân viên và xử lý khiếu nại",
-      item6: "Audit tuân thủ và báo cáo theo luật",
+      item6: "Kiểm toán tuân thủ và báo cáo theo luật",
     },
     integration: {
       eyebrow: "Kết nối với EOR và tuyển dụng",
       body:
-        "Các engagement HR nhúng thường được xác định phạm vi cùng với các năng lực EOR và tuyển dụng của chúng tôi — mang lại cho bạn một mối quan hệ duy nhất cho chiến lược HR, tuyển dụng và tuân thủ việc làm trên toàn bộ đội ngũ của bạn.",
+        "Các hợp tác HR nhúng thường được xác định phạm vi cùng với các năng lực EOR và tuyển dụng của chúng tôi — mang lại cho bạn một mối quan hệ duy nhất cho chiến lược HR, tuyển dụng và tuân thủ việc làm trên toàn bộ đội ngũ của bạn.",
     },
   },
   faqPage: {
@@ -753,11 +855,11 @@ const vi: Translation = {
     about: {
       eyebrow: "Về Mars Consulting",
       q1: "Mars Consulting là gì và được thành lập khi nào?",
-      a1: "Mars Consulting Pte Ltd (UEN 200907301Z) là một công ty giải pháp HR và lực lượng lao động được thành lập tại Singapore vào tháng 4 năm 2009. Chúng tôi cung cấp các dịch vụ Employer of Record, tìm kiếm điều hành, bảng lương outsourcing, HR outsourcing và tự động hóa AI trên 10 thị trường ở châu Á, Trung Đông và Hoa Kỳ.",
+      a1: "Mars Consulting Pte Ltd (UEN 200907301Z) là một công ty giải pháp HR và lực lượng lao động được thành lập tại Singapore vào tháng 4 năm 2009. Chúng tôi cung cấp các dịch vụ Employer of Record, tìm kiếm điều hành, thuê ngoài bảng lương, HR Outsourcing và tự động hóa AI trên 10 thị trường ở châu Á, Trung Đông và Hoa Kỳ.",
       q2: "Mars Consulting nắm giữ những giấy phép và chứng chỉ nào?",
       a2: "Mars Consulting nắm giữ Giấy phép Đại lý Việc làm Toàn diện MOM (Số 09C2925) và vị thế Đại lý Nộp hồ sơ Đăng ký ACRA. Tất cả các chứng chỉ đều có thể xác minh công khai trên Danh bạ Đại lý Việc làm MOM và đăng ký ACRA BizFile+.",
       q3: "Các văn phòng của Mars Consulting nằm ở đâu?",
-      a3: "Mars Consulting duy trì các văn phòng tại Singapore (HQ), Malaysia (Johor Bahru), Hong Kong (Kwun Tong), China (Nanchang), India (New Delhi) và Hoa Kỳ (Superior, Colorado). Chúng tôi cũng cung cấp các dịch vụ tại Các Tiểu vương quốc Ả Rập Thống nhất, Vietnam, Thailand và Indonesia với tư cách là các thị trường dịch vụ.",
+      a3: "Mars Consulting duy trì các văn phòng tại Singapore (HQ), Malaysia (Johor Bahru), Hồng Kông (Kwun Tong), Trung Quốc (Nanchang), Ấn Độ (New Delhi) và Hoa Kỳ (Superior, Colorado). Chúng tôi cũng cung cấp các dịch vụ tại Các Tiểu vương quốc Ả Rập Thống nhất, Việt Nam, Thái Lan và Indonesia với tư cách là các thị trường dịch vụ.",
       q4: "Làm thế nào để tôi xác minh đội ngũ và chứng chỉ của Mars Consulting?",
       a4: "Các chuyên gia tư vấn và nhà tuyển dụng của chúng tôi được liệt kê công khai trên trang công ty LinkedIn của chúng tôi. Chi tiết Giấy phép MOM EA có thể xác minh tại Danh bạ Đại lý Việc làm MOM. Đăng ký công ty có thể xác minh tại ACRA BizFile+.",
     },
