@@ -13,7 +13,6 @@ import { CoreServicesSection } from "@/components/site/home/CoreServicesSection"
 import { WhyMarsSection } from "@/components/site/home/WhyMarsSection";
 import { LogoMarqueeSection } from "@/components/site/home/LogoMarqueeSection";
 import { FaqSection } from "@/components/site/home/FaqSection";
-import { VsSoftwareSection } from "@/components/site/home/VsSoftwareSection";
 import { FinalCtaSection } from "@/components/site/home/FinalCtaSection";
 
 const COUNTRY_FLAGS: Record<string, string> = {
@@ -203,9 +202,7 @@ const Index = () => (
     <WhyMarsSection />
     {/* Coverage map — reinforces the multi-country story */}
     <CountriesMapSection />
-    {/* Different From Software */}
-    <VsSoftwareSection />
-    {/* Our clients — logo wall, between Different-from-Software and FAQ */}
+    {/* Our clients — logo wall */}
     <LogoMarqueeSection />
     {/* FAQ */}
     <FaqSection />
