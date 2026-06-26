@@ -67,7 +67,7 @@ const Hero = () => {
               <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
               {t("hero.pill")}
             </span>
-            <h1 className={`mt-8 font-display text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight text-white ${cjk ? "!leading-[1.18]" : "!leading-[1.02]"}`}>
+            <h1 className={`mt-8 font-display text-[clamp(2.5rem,5vw,4.5rem)] font-semibold tracking-tight text-white ${cjk ? "!leading-[1.18] [text-wrap:balance]" : "!leading-[1.02]"}`}>
               {t("hero.headlineLead")}
               {headlineGap(t("hero.headlineLead"), t("hero.headlineAccent"))}
               <span className="whitespace-nowrap bg-gradient-to-r from-accent to-orange-soft bg-clip-text text-transparent">{t("hero.headlineAccent")}</span>

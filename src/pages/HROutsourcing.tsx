@@ -48,7 +48,7 @@ const Hero = () => {
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           {t("hrOutsourcingPage.pill")}
         </span>
-        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22]" : "!leading-[1.05]"}`}>
+        <h1 className={`mt-6 max-w-4xl font-display text-4xl font-semibold text-white sm:text-5xl lg:text-[60px] ${cjk ? "!leading-[1.22] [text-wrap:balance]" : "!leading-[1.05]"}`}>
           {t("hrOutsourcingPage.headlineLead")}
           {headlineGap(t("hrOutsourcingPage.headlineLead"), t("hrOutsourcingPage.headlineAccent"))}
           <span className="whitespace-nowrap text-accent">{t("hrOutsourcingPage.headlineAccent")}</span>

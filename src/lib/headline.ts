@@ -17,11 +17,17 @@ export function headlineGap(before?: string, after?: string): string {
   const b = after[0];
   const aCJK = CJK_CHAR.test(a) || CJK_PUNCT.test(a);
   const bCJK = CJK_CHAR.test(b) || CJK_PUNCT.test(b);
-  // Only collapse the space when BOTH sides sit in a CJK context — CJK text
-  // sets its own spacing. When one side is Latin/digit, keep the ASCII space,
-  // so e.g. an em-dash in an English headline reads "10 markets — without"
-  // rather than the cramped "10 markets— without".
+  // Both sides CJK: collapse entirely — CJK text sets its own spacing.
   if (aCJK && bCJK) return "";
+  // Mixed boundary (one side CJK, the other Latin/digit): keep the pangu space
+  // for legibility, but make it NON-BREAKING. A regular space here is a line-
+  // break opportunity, and since the accent segment is `whitespace-nowrap`, the
+  // browser orphans the CJK lead onto its own line (e.g. "在" alone, then
+  // "10 个市场…" wraps below). A non-breaking space glues lead + accent together.
+  if (aCJK !== bCJK) return " ";
+  // Both Latin: keep a normal, breakable space, so e.g. an em-dash in an English
+  // headline reads "10 markets — without" rather than the cramped
+  // "10 markets— without", and may wrap naturally.
   return " ";
 }
 
