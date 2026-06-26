@@ -6,7 +6,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import EOR from "./pages/EOR.tsx";
 import Recruitment from "./pages/Recruitment.tsx";
-import AIInnovation from "./pages/AIInnovation.tsx";
 import About from "./pages/About.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
@@ -29,7 +28,6 @@ const App = () => (
           <Route path="/payroll-anywhere" element={<EOR />} />
           <Route path="/executive-search" element={<Recruitment />} />
           <Route path="/workforce-operations" element={<HROutsourcing />} />
-          <Route path="/ai-innovation" element={<AIInnovation />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
