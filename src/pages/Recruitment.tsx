@@ -287,7 +287,7 @@ const Integration = () => {
           <p>{t("recruitmentPage.integration.p2")}</p>
           <p className="text-white">{t("recruitmentPage.integration.p3")}</p>
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={withBase("/eor#how")}>
+            <a href={withBase("/payroll-anywhere#how")}>
               {t("recruitmentPage.integration.cta")} <ArrowRight />
             </a>
           </Button>

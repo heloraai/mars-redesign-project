@@ -8,11 +8,10 @@ export const SiteFooter = () => {
     {
       h: t("footer.sections.solutions"),
       l: [
-        // Labels mirror each subpage's own (already-translated) pill so the
-        // footer always matches the destination page in every locale.
-        { label: t("recruitmentPage.pill"), href: "/recruitment" },
-        { label: t("eorPage.pill"), href: "/eor" },
-        { label: t("hrOutsourcingPage.pill"), href: "/hr-outsourcing" },
+        // Footer Solutions mirror the header nav labels (kept in sync).
+        { label: t("footer.links.executiveSearch"), href: "/executive-search" },
+        { label: t("footer.links.payroll"), href: "/payroll-anywhere" },
+        { label: t("footer.links.workforceOps"), href: "/workforce-operations" },
       ],
     },
     {
@@ -20,7 +19,7 @@ export const SiteFooter = () => {
       l: [
         { label: t("footer.links.about"), href: "/about" },
         { label: t("footer.links.insights"), href: "/insights" },
-        { label: t("footer.links.clients"), href: "/recruitment#clients" },
+        { label: t("footer.links.clients"), href: "/executive-search#clients" },
         { label: t("footer.links.contact"), href: "/contact" },
       ],
     },

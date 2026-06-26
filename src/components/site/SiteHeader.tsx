@@ -11,9 +11,9 @@ interface NavItem {
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { labelKey: "nav.executiveSearch", href: "/recruitment" },
-  { labelKey: "nav.payroll", href: "/eor" },
-  { labelKey: "nav.workforceOps", href: "/hr-outsourcing" },
+  { labelKey: "nav.executiveSearch", href: "/executive-search" },
+  { labelKey: "nav.payroll", href: "/payroll-anywhere" },
+  { labelKey: "nav.workforceOps", href: "/workforce-operations" },
   { labelKey: "nav.about", href: "/about" },
 ];
 

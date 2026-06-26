@@ -155,10 +155,10 @@ const Integration = () => {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col lg:justify-self-end">
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <a href={withBase("/eor")}>EOR & Payroll <ArrowRight /></a>
+                <a href={withBase("/payroll-anywhere")}>EOR & Payroll <ArrowRight /></a>
               </Button>
               <Button asChild variant="outline">
-                <a href={withBase("/recruitment")}>Recruitment <ArrowRight /></a>
+                <a href={withBase("/executive-search")}>Recruitment <ArrowRight /></a>
               </Button>
             </div>
           </div>

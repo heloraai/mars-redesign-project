@@ -15,9 +15,9 @@ interface ServiceCard {
 }
 
 const SERVICE_CARDS: ServiceCard[] = [
-  { id: "executive-search", keyBase: "coreServices.executiveSearch", href: "/recruitment", icon: Search },
-  { id: "payroll-anywhere", keyBase: "coreServices.payrollAnywhere", href: "/eor", icon: Globe2 },
-  { id: "workforce-operations", keyBase: "coreServices.workforceOps", href: "/hr-outsourcing", icon: Users },
+  { id: "executive-search", keyBase: "coreServices.executiveSearch", href: "/executive-search", icon: Search },
+  { id: "payroll-anywhere", keyBase: "coreServices.payrollAnywhere", href: "/payroll-anywhere", icon: Globe2 },
+  { id: "workforce-operations", keyBase: "coreServices.workforceOps", href: "/workforce-operations", icon: Users },
 ];
 
 const ServiceCardItem = ({ card }: { card: ServiceCard }) => {
