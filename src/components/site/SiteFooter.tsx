@@ -8,11 +8,11 @@ export const SiteFooter = () => {
     {
       h: t("footer.sections.solutions"),
       l: [
-        { label: t("footer.links.executiveSearch"), href: "/recruitment" },
-        { label: t("footer.links.payroll"), href: "/eor" },
-        { label: t("footer.links.workforceOps"), href: "/hr-outsourcing" },
-        // AI Automation kept as a secondary link so /ai-innovation stays reachable.
-        { label: t("footer.links.aiLab"), href: "/ai-innovation" },
+        // Labels mirror each subpage's own (already-translated) pill so the
+        // footer always matches the destination page in every locale.
+        { label: t("recruitmentPage.pill"), href: "/recruitment" },
+        { label: t("eorPage.pill"), href: "/eor" },
+        { label: t("hrOutsourcingPage.pill"), href: "/hr-outsourcing" },
       ],
     },
     {
